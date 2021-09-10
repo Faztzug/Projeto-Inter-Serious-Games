@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trancisao de Cena
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - Text
   - 
   - 
   - 
@@ -39,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Text
+    uniqueID: 1793859183
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -15,6 +13,12 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float margemDeAndo;
     [SerializeField] private float segundosPararDeAndarAoColidir;
     private float contadorPararDeAndarAoColidir;
+
+    public bool emDialogo = false;
+    private Ray ray;
+    private RaycastHit2D raycastHit2d;
+
+
 
     private void Start()
     {
@@ -32,10 +36,8 @@ public class PlayerControl : MonoBehaviour
 
             rgbd.MovePosition(Vector2.MoveTowards(currentPosition, touchPosition, velocidade * Time.fixedDeltaTime));
 
-
             if (currentPosition == touchPosition
-                || Mathf.Abs(distanceX) < margemDeParada && Mathf.Abs(distanceY) < margemDeParada)
-                //
+                || Mathf.Abs(distanceX) < margemDeParada && Mathf.Abs(distanceY) < margemDeParada)            
             {
                 andando = false;
                 //rgbd.velocity = Vector2.zero;
@@ -46,7 +48,6 @@ public class PlayerControl : MonoBehaviour
 
     private void Update()
     {
-        
     }
 
     public void CalcularDistancia()
@@ -79,10 +80,10 @@ public class PlayerControl : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if(andando == true)
+        if (andando == true)
         {
             contadorPararDeAndarAoColidir -= 1 * Time.deltaTime;
-            if(contadorPararDeAndarAoColidir < 0)
+            if (contadorPararDeAndarAoColidir < 0)
             {
                 andando = false;
                 //rgbd.velocity = Vector2.zero;
@@ -90,15 +91,12 @@ public class PlayerControl : MonoBehaviour
                 contadorPararDeAndarAoColidir = segundosPararDeAndarAoColidir;
             }
         }
-        
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         contadorPararDeAndarAoColidir = segundosPararDeAndarAoColidir;
     }
-
-
 
     public void UpdatePosition()
     {
@@ -114,13 +112,38 @@ public class PlayerControl : MonoBehaviour
     }
 
     public void Andar()
-    {   
-        
-        //Touch touch = Input.GetTouch(0);
-        touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    {
+        if (emDialogo == false)
+        {
+            //Touch touch = Input.GetTouch(0);
+            touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        andando = true;
-        Debug.Log("touch " + touchPosition);
+            andando = true;
+            Debug.Log("touch " + touchPosition);
+        }
+    }
+
+    public void ContinueDialogue()
+    {
+        if (emDialogo == true)
+            GetComponent<AoColidirComInteragivel>().NPCFalandoDM.NextSentence();
+
+        /*if (emDialogo == true)
+        {
+
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            raycastHit2d = Physics2D.GetRayIntersection(ray);
+            if (raycastHit2d.collider != null)
+            {
+                //Debug.Log("Raycast Hit on: " + raycastHit2d.collider.name);
+                if(raycastHit2d.collider.name == 
+                    GetComponent<AoColidirComInteragivel>().NPCCollisionName)
+                {
+                    raycastHit2d.collider.GetComponent<DialogueManager>().NextSentence();
+                }
+            }
+        }*/
+
 
     }
 }
