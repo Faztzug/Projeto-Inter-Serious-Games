@@ -15,8 +15,11 @@ public class PlayerControl : MonoBehaviour
     private float contadorPararDeAndarAoColidir;
 
     public bool emDialogo = false;
+    public bool emResposdendo = false;
     private Ray ray;
     private RaycastHit2D raycastHit2d;
+
+    public DialogueManager NPCfalando;
 
 
 
@@ -125,8 +128,8 @@ public class PlayerControl : MonoBehaviour
 
     public void ContinueDialogue()
     {
-        if (emDialogo == true)
-            GetComponent<AoColidirComInteragivel>().NPCFalandoDM.NextSentence();
+        if (emDialogo == true && emResposdendo == false)
+            NPCfalando.NextSentence();
 
         /*if (emDialogo == true)
         {
