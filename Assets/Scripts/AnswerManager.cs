@@ -22,6 +22,7 @@ public class AnswerManager : MonoBehaviour
     public void GerarRespostas(string text)
     {
         playerControl.emDialogo = true;
+        playerControl.andando = false;
         playerControl.emResposdendo = true;
         
         respostaPrefab.GetComponentInChildren<TextMeshProUGUI>().text = text;

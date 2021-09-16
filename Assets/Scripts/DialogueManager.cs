@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour
     public void StartingDialogue(int startSentence, int finalSentence)
     {
         playerControl.emDialogo = true;
+        playerControl.andando = false;
         playerControl.NPCfalando = this;
         this.startSentence = startSentence;
         this.finalSentence = finalSentence;
@@ -46,12 +47,11 @@ public class DialogueManager : MonoBehaviour
     public void NextSentence()
     {
         typingEffect.StopAllCoroutines();
-        Debug.Log("Call: " + currentSentence + dialogueData.sentences[currentSentence]);
+        
         if (NextSentenceFirstCall == true
             || dialogueTextMeshPro.text == dialogueData.sentences[currentSentence]) //-1
         {
-            Debug.Log("FirstCall: " + currentSentence + dialogueData.sentences[currentSentence]);
-
+            
             dialogueTextMeshPro.color = dialogueData.textColor;
 
             //coloca o texto na mesma posição do personagem
@@ -60,22 +60,16 @@ public class DialogueManager : MonoBehaviour
             //e então altera a posição do texto em + textPosition
             dialogueTextMeshPro.transform.Translate(Camera.main.ViewportToScreenPoint(dialogueData.textPosition));
             
-            Debug.Log("COMPARAR: \n" + dialogueTextMeshPro.text + "\n" + dialogueData.sentences[currentSentence]);
             if (dialogueTextMeshPro.text == dialogueData.sentences[currentSentence])
             {
-                Debug.Log("CurrentSentence++");
                 currentSentence++;
             }
 
             if (currentSentence < numberSentences && currentSentence <= finalSentence)
             {
-                //dialogueTextMeshPro.text = dialogueData.sentences[currentSentence];
+                Debug.Log("FirstCall: " + currentSentence + dialogueData.sentences[currentSentence]);
                 typingEffect.CallTyping(dialogueData.sentences[currentSentence]);
-                
-                
-
                 NextSentenceFirstCall = false;
-                Debug.Log("FirstCall: "+ currentSentence + dialogueData.sentences[currentSentence]);
             }
             else if (currentSentence >= numberSentences || currentSentence >= finalSentence)
             {

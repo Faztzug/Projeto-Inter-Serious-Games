@@ -1,5 +1,6 @@
 public class DialogueTriggerEsferaTeste : DialogueTrigger
 {
+
     public override void StartDialogue()
     {
         if (estadoDeMundo.testeQuestBarrilVermelho == false)
@@ -27,8 +28,9 @@ public class DialogueTriggerEsferaTeste : DialogueTrigger
             FindObjectOfType<DialogueTriggerPlayer>().MomentoDeResponder(lastSentence, NPCname);
         }
         else if (lastSentence == 8)
-            FindObjectOfType<DialogueTriggerPlayer>().StartDialogue(0, 0);
+            FindObjectOfType<DialogueTriggerPlayer>().StartDialogue(0,0);
         else if (lastSentence == 9)
             FindObjectOfType<DialogueTriggerPlayer>().StartDialogue(1, 1);
+        
     }
 }

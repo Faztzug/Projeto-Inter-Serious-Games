@@ -6,7 +6,7 @@ public class PlayerControl : MonoBehaviour
     [HideInInspector] public Vector2 touchPosition; //variavel para posição do toque, aonde o personagem irá precisar ir
     private Vector2 currentPosition; //posição do personagem
     private Rigidbody2D rgbd;
-    private bool andando; //se o personagem ainda não chegou ao destino
+    public bool andando; //se o personagem ainda não chegou ao destino
     private float distanceX;
     private float distanceY;
     [SerializeField] private float margemDeParada;
@@ -16,6 +16,7 @@ public class PlayerControl : MonoBehaviour
 
     public bool emDialogo = false;
     public bool emResposdendo = false;
+
     private Ray ray;
     private RaycastHit2D raycastHit2d;
 
@@ -125,6 +126,7 @@ public class PlayerControl : MonoBehaviour
             Debug.Log("touch " + touchPosition);
         }
     }
+    
 
     public void ContinueDialogue()
     {
@@ -146,7 +148,7 @@ public class PlayerControl : MonoBehaviour
                 }
             }
         }*/
-
-
     }
+    
 }
+

@@ -11,7 +11,7 @@ public class AoColidirComInteragivel : MonoBehaviour
     {
         if (collision.CompareTag("NPC"))
         {
-            GetComponent<PlayerControl>().emDialogo = true;
+            //GetComponent<PlayerControl>().emDialogo = true;
             NPCCollisionName = collision.name;
             NPCFalandoDM = collision.GetComponent<DialogueManager>();
             dialogueTrigger = collision.GetComponent<DialogueTrigger>();

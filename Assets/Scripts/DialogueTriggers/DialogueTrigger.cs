@@ -24,7 +24,7 @@ public class DialogueTrigger : MonoBehaviour
         
     }
 
-    public void StartDialogue(int start, int end)
+    public virtual void StartDialogue(int start, int end)
     {
         dialogueManager.StartingDialogue(start, end);
     }

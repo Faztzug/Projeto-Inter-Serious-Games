@@ -17,6 +17,12 @@ GameObject:
   - component: {fileID: 1603772666}
   - component: {fileID: 1603772659}
   - component: {fileID: 1603772663}
+  - component: {fileID: 375687996}
+  - component: {fileID: 375688004}
+  - component: {fileID: 375688006}
+  - component: {fileID: 375688007}
+  - component: {fileID: 375688008}
+  - component: {fileID: 375688009}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -51,10 +57,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 0, y: 0}
+  touchPosition: {x: 2.0417914, y: -0.32682836}
   margemDeParada: 0.1
   margemDeAndo: 0.05
   segundosPararDeAndarAoColidir: 0.5
+  emDialogo: 0
+  emResposdendo: 0
+  NPCfalando: {fileID: 0}
 --- !u!212 &465966177179946060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -209,3 +218,93 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452646c4b4670fa4da087b1c18bd24e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &375687996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465966177179946061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47bc62db992f0984298976b2a0dbd1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Responses:
+  - Sim
+  - "N\xE3o"
+--- !u!114 &375688004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465966177179946061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1c4dd383a29774e9c3f02861b86fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCCollisionName: 
+  NPCFalandoDM: {fileID: 0}
+  dialogueTrigger: {fileID: 0}
+--- !u!114 &375688006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465966177179946061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1100d754345c5634ab1386a20e56c64b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textTypingSpeed: 10
+  testeQuestBarrilVermelho: 1
+  testeBarrilVermelhoDestruido: 1
+--- !u!114 &375688007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465966177179946061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34da50cd3cd8fc14493f87a023b15857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &375688008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465966177179946061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 643681e6b7932bd49b1378dcc8245a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberSentences: 0
+--- !u!114 &375688009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465966177179946061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f5c7f2d0ab3bb4b885c75d125cda24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    textColor: {r: 1, g: 0.36361492, b: 0.3161235, a: 1}
+    characterName: Paulo Augusto
+    textPosition: {x: 0, y: 0.28}
+    sentences:
+    - Eu sou Paulo Augusto
+    - Cala a boca Piranha
+    - "N\xE3o se coloca ketchup sobre a pizza!"

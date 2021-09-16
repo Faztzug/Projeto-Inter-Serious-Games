@@ -1,19 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class testStarDialogue : MonoBehaviour
 {
-    DialogueTriggerEsferaTeste esfera;
-    [SerializeField] int start;
-    [SerializeField] int end;
+    [SerializeField] private DialogueTrigger dialogueTrigger;
+    [SerializeField] private bool playAll;
+    [SerializeField] private int start;
+    [SerializeField] private int end;
 
-    private void Start()
-    {
-        esfera = FindObjectOfType<DialogueTriggerEsferaTeste>();
-    }
+    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        esfera.StartDialogue(start, end);
+        if (playAll)
+            dialogueTrigger.StartDialogue();
+        else
+            dialogueTrigger.StartDialogue(start, end);
     }
 }

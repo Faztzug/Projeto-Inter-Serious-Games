@@ -19,6 +19,13 @@ public class DialogueTriggerPlayer : DialogueTrigger
         sentences = dialogueData.dialogue.sentences;
         responses = dialogueResponses.Responses;
     }
+
+    public override void EndOfDialogue(int lastSentence, string NPCname)
+    {
+        
+        base.EndOfDialogue(lastSentence, NPCname);
+    }
+
     public void MomentoDeResponder(int sentence, string NPCname)
     {
         NPCPerguntando = NPCname;
