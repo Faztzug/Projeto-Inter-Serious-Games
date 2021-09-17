@@ -27,13 +27,13 @@ public class TypingEffect : MonoBehaviour
 
     IEnumerator TypingSentence(string sentence)
     {
-
+        Debug.Log("Start Typing: "+sentence);
         dialogueTextMeshPro.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
 
-            dialogueTextMeshPro.text += letter;
             yield return new WaitForSeconds(0.5f / (textTypingSpeed + 5));
+            dialogueTextMeshPro.text += letter;
         }
     }
 }
