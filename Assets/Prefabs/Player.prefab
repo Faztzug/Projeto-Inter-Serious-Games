@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: -5.3174605, y: 1.3809526}
+  touchPosition: {x: 1.0570155, y: -2.605716}
   andando: 1
   margemDeParada: 0.1
   margemDeAndo: 0.05
@@ -105,7 +105,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1735015684064942320, guid: d4da2fca198fc8445a527f0d1f7c42bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
