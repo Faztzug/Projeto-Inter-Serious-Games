@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 375688007}
   - component: {fileID: 375688008}
   - component: {fileID: 375688009}
+  - component: {fileID: 5491225684420223664}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -57,7 +58,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 2.0417914, y: -0.32682836}
+  touchPosition: {x: -5.3174605, y: 1.3809526}
+  andando: 1
   margemDeParada: 0.1
   margemDeAndo: 0.05
   segundosPararDeAndarAoColidir: 0.5
@@ -308,3 +310,25 @@ MonoBehaviour:
     - Eu sou Paulo Augusto
     - Cala a boca Piranha
     - "N\xE3o se coloca ketchup sobre a pizza!"
+--- !u!114 &5491225684420223664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465966177179946061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa088ffca4748ea41840465a17e4f207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0000000000000000
+  slots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
