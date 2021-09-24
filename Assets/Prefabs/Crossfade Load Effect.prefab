@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2426558468473842444}
   - component: {fileID: 2426558468473842435}
   - component: {fileID: 2426558468473842434}
+  - component: {fileID: 1004186828}
   m_Layer: 5
   m_Name: Crossfade Load Effect
   m_TagString: Trancisao de Cena
@@ -133,6 +134,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1004186828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426558468473842433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b36950b1d1bd04083e950c4b9150bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempoDeCrossfade: 1
 --- !u!1 &2426558469378638456
 GameObject:
   m_ObjectHideFlags: 0

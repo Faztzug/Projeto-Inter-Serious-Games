@@ -27,10 +27,15 @@ public class CrossfadeLoadEffect : MonoBehaviour
         yield return new WaitForSeconds(tempoDeCrossfade);
 
         SceneManager.LoadScene(cena);
+
+        if(GameObject.FindGameObjectWithTag("Player") != null)
+        {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
         player.GetComponent<PlayerControl>().touchPosition = novaPosicao;
         player.transform.position = novaPosicao;
+        }
+
         crossfadeTransition.SetTrigger("End");
     }
 }
