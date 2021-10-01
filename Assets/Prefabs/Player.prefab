@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 375688008}
   - component: {fileID: 375688009}
   - component: {fileID: 5491225684420223664}
+  - component: {fileID: 476339362}
+  - component: {fileID: 476339361}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -58,8 +60,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 1.0570155, y: -2.605716}
+  touchPosition: {x: -0.4213176, y: -4.261295}
   andando: 1
+  distanceX: 0
+  distanceY: 0
   margemDeParada: 0.1
   margemDeAndo: 0.05
   segundosPararDeAndarAoColidir: 0.5
@@ -106,7 +110,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1735015684064942320, guid: d4da2fca198fc8445a527f0d1f7c42bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af01eb8c297e8bb48b487d20dbe0ac78, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -154,8 +158,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.875}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.78125, y: 1.75}
+    pivot: {x: 0.5, y: 0.1}
+    oldSize: {x: 3.4450002, y: 3.4450002}
     newSize: {x: 1.78125, y: 1.75}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -193,7 +197,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.35}
+  m_Offset: {x: 0, y: 0.65}
   serializedVersion: 2
   m_Radius: 0.3
 --- !u!114 &1603772659
@@ -332,3 +336,34 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!95 &476339362
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465966177179946061}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 554f3e3a67effe641b6217a4f80384d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &476339361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465966177179946061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2c0d8dc122b11449b8047289da7cfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
