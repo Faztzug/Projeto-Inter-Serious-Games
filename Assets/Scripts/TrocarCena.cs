@@ -15,13 +15,14 @@ public class TrocarCena : MonoBehaviour
 
     private void Start()
     {
-        crossfade = FindObjectOfType<CrossfadeLoadEffect>();
+        
         
     }
 
 
     public void CarregarCena()
     {
+        crossfade = FindObjectOfType<CrossfadeLoadEffect>();
         crossfade.ChamarCrossfade(carregarCena, novaPosicao);    
     }
 

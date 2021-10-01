@@ -7,8 +7,8 @@ public class PlayerControl : MonoBehaviour
     private Vector2 currentPosition; //posição do personagem
     private Rigidbody2D rgbd;
     public bool andando; //se o personagem ainda não chegou ao destino
-    private float distanceX;
-    private float distanceY;
+    [HideInInspector]public float distanceX;
+    [HideInInspector]public float distanceY;
     [SerializeField] private float margemDeParada;
     [SerializeField] private float margemDeAndo;
     [SerializeField] private float segundosPararDeAndarAoColidir;

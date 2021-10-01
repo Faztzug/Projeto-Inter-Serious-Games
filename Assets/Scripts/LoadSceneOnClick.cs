@@ -9,12 +9,13 @@ public class LoadSceneOnClick : MonoBehaviour
 
     private void Start()
     {
-        crossfade = FindObjectOfType<CrossfadeLoadEffect>();
+        
 
     }
 
     public void LoadScene(string sceneName)
     {
+        crossfade = FindObjectOfType<CrossfadeLoadEffect>();
         crossfade.ChamarCrossfade(sceneName, Vector2.zero);
     }
 
