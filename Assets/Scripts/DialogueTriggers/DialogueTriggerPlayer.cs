@@ -21,9 +21,21 @@ public class DialogueTriggerPlayer : DialogueTrigger
     }
 
     public override void EndOfDialogue(int lastSentence, string NPCname)
-    {
-        
+    {      
         base.EndOfDialogue(lastSentence, NPCname);
+        if (lastSentence == 4)
+        {
+            FindObjectOfType<DTGovernandor>().GetComponentInParent<FazerAndar>().AndePara(new Vector2(-7.2f, -2.3f));
+            Debug.Log("Last Sentence 4");
+        }
+        else if (lastSentence == 6)
+            FindObjectOfType<DTEmpresarioRuim>().StartDialogue(2,5);
+        else if(lastSentence == 7)
+            FindObjectOfType<DTEmpresarioRuim>().StartDialogue(6, 6);
+        else if (lastSentence == 8)
+            FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(5, 8);
+        else if(lastSentence == 10)
+            FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(9, 9);
     }
 
     public void MomentoDeResponder(int sentence, string NPCname)

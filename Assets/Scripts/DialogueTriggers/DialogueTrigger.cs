@@ -8,13 +8,15 @@ public class DialogueTrigger : MonoBehaviour
     protected EstadoDeMundo estadoDeMundo;
     protected DialogueManager dialogueManager;
     protected PlayerControl player;
+    protected DialogueTriggerPlayer DTplayer;
     
 
     private void Start()
     {
         estadoDeMundo = FindObjectOfType<EstadoDeMundo>();
         dialogueManager = GetComponent<DialogueManager>();
-        player = FindObjectOfType<PlayerControl>();
+        player = estadoDeMundo.gameObject.GetComponent<PlayerControl>();
+        DTplayer = estadoDeMundo.gameObject.GetComponent<DialogueTriggerPlayer>();
         
     }
 

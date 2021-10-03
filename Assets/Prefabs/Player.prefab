@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 465966177179946063}
   - component: {fileID: 1938422011}
+  - component: {fileID: 375688009}
   - component: {fileID: 465966177179946060}
   - component: {fileID: 1938422012}
   - component: {fileID: 1603772664}
@@ -22,7 +23,6 @@ GameObject:
   - component: {fileID: 375688006}
   - component: {fileID: 375688007}
   - component: {fileID: 375688008}
-  - component: {fileID: 375688009}
   - component: {fileID: 5491225684420223664}
   - component: {fileID: 476339362}
   - component: {fileID: 476339361}
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: -0.4213176, y: -4.261295}
+  touchPosition: {x: -1.6546223, y: -2.11409}
   andando: 1
   distanceX: 0
   distanceY: 0
@@ -70,6 +70,36 @@ MonoBehaviour:
   emDialogo: 0
   emResposdendo: 0
   NPCfalando: {fileID: 0}
+--- !u!114 &375688009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465966177179946061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f5c7f2d0ab3bb4b885c75d125cda24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    textColor: {r: 1, g: 0.910833, b: 0.42933106, a: 1}
+    characterName: Paulo Augusto
+    textPosition: {x: 0, y: 0.3}
+    sentences:
+    - Eu sou Paulo Augusto
+    - Cala a boca Piranha
+    - "N\xE3o se coloca ketchup sobre a pizza!"
+    - "Bom dia,Daniela, s\xF3 vou terminar de me vestir e j\xE1 des\xE7o."
+    - "Bom dia senhores (Nome ER e Governador) e agrade\xE7o os cumprimentos. "
+    - ' Por favor, estou curioso sobre sua proposta.'
+    - "Hum\u2026 Precisarei pensar sobre isso, senhor. \nPoderei te responder mais
+      tarde?"
+    - "Daniela agrade\xE7o a preocupa\xE7\xE3o, mas pensarei na proposta dele e talvez
+      ele tenha mudado, mas sim ficarei de olho nele."
+    - "Bom dia senhor, sim essa m\xE1quina \xE9 totalmente segura, "
+    - "j\xE1 sobre o seu problema, irei estudar sobre as hip\xF3teses e te falarei
+      amanh\xE3 de manh\xE3, tudo bem?\nFique bem e faremos nosso melhor."
 --- !u!212 &465966177179946060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -134,7 +164,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -267,6 +297,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textTypingSpeed: 10
+  turno: 1
+  ato: 1
+  conheceuGovernadorEEmpresario: 0
+  conheceuFazendeiro: 0
   testeQuestBarrilVermelho: 1
   testeBarrilVermelhoDestruido: 1
 --- !u!114 &375688007
@@ -294,26 +328,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberSentences: 0
---- !u!114 &375688009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465966177179946061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2f5c7f2d0ab3bb4b885c75d125cda24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    textColor: {r: 1, g: 0.36361492, b: 0.3161235, a: 1}
-    characterName: Paulo Augusto
-    textPosition: {x: 0, y: 0.28}
-    sentences:
-    - Eu sou Paulo Augusto
-    - Cala a boca Piranha
-    - "N\xE3o se coloca ketchup sobre a pizza!"
 --- !u!114 &5491225684420223664
 MonoBehaviour:
   m_ObjectHideFlags: 0
