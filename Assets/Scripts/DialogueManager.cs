@@ -19,6 +19,8 @@ public class DialogueManager : MonoBehaviour
     private PlayerControl playerControl;
     private bool NextSentenceFirstCall;
 
+    private EstadoDeMundo estadoDeMundo;
+
     private void Start()
     {
         NextSentenceFirstCall = true;
@@ -31,6 +33,7 @@ public class DialogueManager : MonoBehaviour
         numberSentences = dialogueData.sentences.Length;
 
         playerControl = FindObjectOfType<PlayerControl>();
+        estadoDeMundo = playerControl.gameObject.GetComponent<EstadoDeMundo>();
     }
 
     public void StartingDialogue(int startSentence, int finalSentence)
@@ -59,7 +62,11 @@ public class DialogueManager : MonoBehaviour
 
             //e então altera a posição do texto em + textPosition
             dialogueTextMeshPro.transform.Translate(Camera.main.ViewportToScreenPoint(dialogueData.textPosition));
-            
+
+            //checagem se o texto está fora da tela, e correção de posição
+            TextBoxRearrange();
+
+
             if (dialogueTextMeshPro.text == dialogueData.sentences[currentSentence])
             {
                 currentSentence++;
@@ -89,5 +96,41 @@ public class DialogueManager : MonoBehaviour
             dialogueTextMeshPro.text = dialogueData.sentences[currentSentence]; //-1
             NextSentenceFirstCall = true;
         }
+    }
+
+    public void TextBoxRearrange()
+    {
+        Vector2 textViewPortPosition = Camera.main.ScreenToViewportPoint(dialogueTextMeshPro.transform.position);
+        Debug.Log(textViewPortPosition);
+
+        if (textViewPortPosition.y > estadoDeMundo.textBoxBoundsY)
+        {
+            
+            dialogueTextMeshPro.transform.position = 
+                Camera.main.ViewportToScreenPoint
+                (new Vector2(textViewPortPosition.x, estadoDeMundo.textBoxBoundsY));
+            Debug.Log(textViewPortPosition);
+        }
+
+        if (textViewPortPosition.x > estadoDeMundo.textBoxBoundsX)
+        {
+
+            dialogueTextMeshPro.transform.position =
+                Camera.main.ViewportToScreenPoint
+                (new Vector2(estadoDeMundo.textBoxBoundsX, textViewPortPosition.y));
+            Debug.Log(textViewPortPosition);
+        }
+
+        if (textViewPortPosition.x < 1-estadoDeMundo.textBoxBoundsX)
+        {
+
+            dialogueTextMeshPro.transform.position =
+                Camera.main.ViewportToScreenPoint
+                (new Vector2(1-estadoDeMundo.textBoxBoundsX, textViewPortPosition.y));
+            Debug.Log(textViewPortPosition);
+        }
+
+
+
     }
 }

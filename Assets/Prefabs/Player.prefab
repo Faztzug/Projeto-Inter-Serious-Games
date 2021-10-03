@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: -1.6546223, y: -2.11409}
+  touchPosition: {x: -2.6073124, y: -3.989684}
   andando: 1
   distanceX: 0
   distanceY: 0
@@ -297,6 +297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textTypingSpeed: 10
+  textBoxBoundsY: 0.905
+  textBoxBoundsX: 0.79
   turno: 1
   ato: 1
   conheceuGovernadorEEmpresario: 0

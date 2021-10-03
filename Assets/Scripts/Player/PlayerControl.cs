@@ -123,7 +123,7 @@ public class PlayerControl : MonoBehaviour
             touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             andando = true;
-            Debug.Log("touch " + touchPosition);
+            //Debug.Log("touch " + touchPosition);
         }
     }
     
