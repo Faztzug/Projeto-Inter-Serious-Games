@@ -88,7 +88,7 @@ MonoBehaviour:
     textPosition: {x: 0, y: 0.3}
     sentences:
     - Eu sou Paulo Augusto
-    - Cala a boca Piranha
+    - "N\xE3o"
     - "N\xE3o se coloca ketchup sobre a pizza!"
     - "Bom dia,Daniela, s\xF3 vou terminar de me vestir e j\xE1 des\xE7o."
     - "Bom dia senhores (Nome ER e Governador) e agrade\xE7o os cumprimentos. "
