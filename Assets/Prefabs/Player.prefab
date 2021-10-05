@@ -303,8 +303,8 @@ MonoBehaviour:
   ato: 1
   conheceuGovernadorEEmpresario: 0
   conheceuFazendeiro: 0
-  testeQuestBarrilVermelho: 1
-  testeBarrilVermelhoDestruido: 1
+  testeQuestBarrilVermelho: 0
+  testeBarrilVermelhoDestruido: 0
 --- !u!114 &375688007
 MonoBehaviour:
   m_ObjectHideFlags: 0
