@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DontDestroy : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
         for (int i = 0; i < Object.FindObjectsOfType<DontDestroy>().Length; i++)
         {
@@ -12,13 +12,15 @@ public class DontDestroy : MonoBehaviour
             {
                 if(Object.FindObjectsOfType<DontDestroy>()[i].gameObject.name == gameObject.name)
                 {
-                    Destroy(gameObject);
+                    //DestroyImmediate(this.gameObject);
+                    gameObject.SetActive(false);
+                    Destroy(this.gameObject);
                 }
 
             }
         }
 
-
+        
         DontDestroyOnLoad(gameObject);
     }
 
