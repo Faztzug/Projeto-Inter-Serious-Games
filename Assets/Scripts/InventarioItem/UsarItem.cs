@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class UsarItem : MonoBehaviour
 {
-    private Transform player;
+    private Transform maquina;
     public GameObject item;
+    private GameObject slot;
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        maquina = GameObject.FindGameObjectWithTag("Maquina").transform;
+        slot = GameObject.Find("Slots");
     }
 
     public void Use()
     {
-        Vector2 playerPos = new Vector2(player.position.x, player.position.y + 2);
-        Instantiate(item, playerPos, Quaternion.identity);
+        slot.active = false;
+        Vector2 maquinaPos = new Vector2(maquina.position.x, maquina.position.y);
+        Instantiate(item, maquinaPos, Quaternion.identity);
         Destroy(gameObject);
     }
 }

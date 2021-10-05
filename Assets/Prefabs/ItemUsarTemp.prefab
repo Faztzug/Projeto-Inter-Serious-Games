@@ -146,3 +146,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 4704984978612144618, guid: fde885d201d13ad42a7eac5cae4a6f1f, type: 3}
+  slot: {fileID: 0}
