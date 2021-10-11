@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
 
     private TextMeshProUGUI dialogueTextMeshPro;
     private TypingEffect typingEffect;
+    private TextBoxDialogue textBox;
 
     private PlayerControl playerControl;
     private bool NextSentenceFirstCall;
@@ -26,6 +27,7 @@ public class DialogueManager : MonoBehaviour
         NextSentenceFirstCall = true;
         typingEffect = FindObjectOfType<TypingEffect>();
         dialogueTextMeshPro = typingEffect.gameObject.GetComponent<TextMeshProUGUI>();
+        textBox = FindObjectOfType<TextBoxDialogue>();
 
         dialogueTrigger = GetComponent<DialogueTrigger>();
 
@@ -54,17 +56,20 @@ public class DialogueManager : MonoBehaviour
         if (NextSentenceFirstCall == true
             || dialogueTextMeshPro.text == dialogueData.sentences[currentSentence]) //-1
         {
-            
-            dialogueTextMeshPro.color = dialogueData.textColor;
+            //altera cor da caixa
+            textBox.box.color = dialogueData.characterColor;
+            //dialogueTextMeshPro.color = dialogueData.characterColor;
 
             //coloca o texto na mesma posição do personagem
-            dialogueTextMeshPro.transform.position = Camera.main.WorldToScreenPoint(transform.position);
+            //dialogueTextMeshPro.transform.position = Camera.main.WorldToScreenPoint(transform.position);
 
             //e então altera a posição do texto em + textPosition
-            dialogueTextMeshPro.transform.Translate(Camera.main.ViewportToScreenPoint(dialogueData.textPosition));
+            //dialogueTextMeshPro.transform.Translate(Camera.main.ViewportToScreenPoint(dialogueData.textPosition));
 
             //checagem se o texto está fora da tela, e correção de posição
-            TextBoxRearrange();
+            //TextBoxRearrange();
+
+            textBox.nome.text = dialogueData.characterName;
 
 
             if (dialogueTextMeshPro.text == dialogueData.sentences[currentSentence])
