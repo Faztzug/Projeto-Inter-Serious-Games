@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 465966177179946063}
   - component: {fileID: 1938422011}
   - component: {fileID: 375688009}
+  - component: {fileID: 375688006}
   - component: {fileID: 465966177179946060}
   - component: {fileID: 1938422012}
   - component: {fileID: 1603772664}
@@ -20,7 +21,6 @@ GameObject:
   - component: {fileID: 1603772663}
   - component: {fileID: 375687996}
   - component: {fileID: 375688004}
-  - component: {fileID: 375688006}
   - component: {fileID: 375688007}
   - component: {fileID: 375688008}
   - component: {fileID: 5491225684420223664}
@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    textColor: {r: 1, g: 0.910833, b: 0.42933106, a: 1}
+    characterColor: {r: 1, g: 1, b: 1, a: 1}
     characterName: Paulo Augusto
     textPosition: {x: 0, y: 0.3}
     sentences:
@@ -100,6 +100,27 @@ MonoBehaviour:
     - "Bom dia senhor, sim essa m\xE1quina \xE9 totalmente segura, "
     - "j\xE1 sobre o seu problema, irei estudar sobre as hip\xF3teses e te falarei
       amanh\xE3 de manh\xE3, tudo bem?\nFique bem e faremos nosso melhor."
+--- !u!114 &375688006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465966177179946061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1100d754345c5634ab1386a20e56c64b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textTypingSpeed: 10
+  textBoxBoundsY: 0.905
+  textBoxBoundsX: 0.79
+  turno: 1
+  ato: 1
+  conheceuGovernadorEEmpresario: 0
+  conheceuFazendeiro: 0
+  testeQuestBarrilVermelho: 0
+  testeBarrilVermelhoDestruido: 0
 --- !u!212 &465966177179946060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -284,27 +305,6 @@ MonoBehaviour:
   NPCCollisionName: 
   NPCFalandoDM: {fileID: 0}
   dialogueTrigger: {fileID: 0}
---- !u!114 &375688006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465966177179946061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1100d754345c5634ab1386a20e56c64b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textTypingSpeed: 10
-  textBoxBoundsY: 0.905
-  textBoxBoundsX: 0.79
-  turno: 1
-  ato: 1
-  conheceuGovernadorEEmpresario: 0
-  conheceuFazendeiro: 0
-  testeQuestBarrilVermelho: 0
-  testeBarrilVermelhoDestruido: 0
 --- !u!114 &375688007
 MonoBehaviour:
   m_ObjectHideFlags: 0

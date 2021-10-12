@@ -72,6 +72,10 @@ public class DialogueManager : MonoBehaviour
             textBox.nome.text = dialogueData.characterName;
 
 
+
+            textBox.Activate();
+
+
             if (dialogueTextMeshPro.text == dialogueData.sentences[currentSentence])
             {
                 currentSentence++;
@@ -88,6 +92,7 @@ public class DialogueManager : MonoBehaviour
                 dialogueTrigger.EndOfDialogue(currentSentence, dialogueData.characterName);
 
                 dialogueTextMeshPro.text = "";
+                textBox.Deactivate();
 
                 currentSentence = 0;
                 NextSentenceFirstCall = true;

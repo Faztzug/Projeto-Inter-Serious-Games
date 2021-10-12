@@ -8,6 +8,7 @@ public class TypingEffect : MonoBehaviour
     
     private float textTypingSpeed;
     private TextMeshProUGUI dialogueTextMeshPro;
+    private TextBoxDialogue textBox;
 
     
 
@@ -15,6 +16,7 @@ public class TypingEffect : MonoBehaviour
     {
         textTypingSpeed = FindObjectOfType<EstadoDeMundo>().textTypingSpeed;
         dialogueTextMeshPro = GetComponent<TextMeshProUGUI>();
+        textBox = gameObject.GetComponentInParent<TextBoxDialogue>();
     }
 
 
@@ -28,6 +30,9 @@ public class TypingEffect : MonoBehaviour
     IEnumerator TypingSentence(string sentence)
     {
         Debug.Log("Start Typing: "+sentence);
+
+        //textBox.Activate();
+
         dialogueTextMeshPro.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
