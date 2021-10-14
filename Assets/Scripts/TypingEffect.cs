@@ -31,12 +31,12 @@ public class TypingEffect : MonoBehaviour
     {
         Debug.Log("Start Typing: "+sentence);
 
-        //textBox.Activate();
+        
 
         dialogueTextMeshPro.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
-
+            textBox.Activate();
             yield return new WaitForSeconds(0.5f / (textTypingSpeed + 5));
             dialogueTextMeshPro.text += letter;
         }
