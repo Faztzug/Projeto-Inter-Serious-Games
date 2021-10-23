@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Walk
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 4
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Standalone
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 4
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: daa2f9c93ee965c48bbb9642d3b85741, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 83d2be5065c01e341b534b4c37a4c758, type: 3}
+  - {fileID: 21300000, guid: f75975f02e90bcb44a262059ae9ee47d, type: 3}
+  - {fileID: 21300000, guid: 9ecf9d412b642f644a2af0e58ba6c80b, type: 3}
+  - {fileID: 21300000, guid: c2c6d051be70a2249a0ffcf9bbe1681c, type: 3}
+  - {fileID: 21300000, guid: a2bc0d719981bf343b06fb42b858aa2f, type: 3}
+  - {fileID: 21300000, guid: 899c66f2f1e2e3842b4f6a1ef15abc6c, type: 3}
+  - {fileID: 21300000, guid: 03c34373f29f88c439b4f3632044dfb9, type: 3}
+  - {fileID: 21300000, guid: ed1dd52566a5d9440a11d5ed527212ed, type: 3}
+  - {fileID: 21300000, guid: 956405e7401eba64a8a91a587d7c2793, type: 3}
+  - {fileID: 21300000, guid: 86d3f118e240ce84e8d1e04436b6a19d, type: 3}
+  - {fileID: 21300000, guid: 9b511b88dd9e4ff46a39701330db8328, type: 3}
+  - {fileID: 21300000, guid: 5a65d639279058d44bdfeb1120463dbf, type: 3}
+  - {fileID: 21300000, guid: 77c7e0a92df6da045a032048c0870dfc, type: 3}
+  - {fileID: 21300000, guid: e9aceea97d3784242986e7fe97681cd0, type: 3}
+  - {fileID: 21300000, guid: aa21f5aa8a8bde24f9036889ba39d99f, type: 3}
+  - {fileID: 21300000, guid: 66aa352b14becf648a5a4a850849de97, type: 3}
+  - {fileID: 21300000, guid: 00f806db8739eb14d8a7b362509a3665, type: 3}
+  - {fileID: 21300000, guid: b2c95e2c3207257479d85b35aa693791, type: 3}
+  - {fileID: 21300000, guid: af01eb8c297e8bb48b487d20dbe0ac78, type: 3}
+  - {fileID: 21300000, guid: ffd6329c5d169b6419edfbad3bdd9663, type: 3}
+  - {fileID: 21300000, guid: 12351bbc167b1cb43b43b3b4d0e5ebc4, type: 3}
+  - {fileID: 21300000, guid: aedbbd8fb3934c14c825b825b2c09971, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Esq_8
+  - Dir_3
+  - Esq_3
+  - Frente_4
+  - Esq_4
+  - Dir_2
+  - Esq_1
+  - Dir_8
+  - Frente_2
+  - Esq_7
+  - Esq_2
+  - Frente_5
+  - Frente_3
+  - Esq_6
+  - Esq_5
+  - Dir_7
+  - Dir_1
+  - Dir_4
+  - Frente_1
+  - Dir_6
+  - Dir_5
+  - Frente_6
+  m_RenderDataMap: {}
+  m_Tag: Walk
+  m_IsVariant: 0
