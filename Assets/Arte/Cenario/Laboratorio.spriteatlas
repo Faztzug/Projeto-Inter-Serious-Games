@@ -23,7 +23,7 @@ SpriteAtlas:
     platformSettings:
     - serializedVersion: 3
       m_BuildTarget: DefaultTexturePlatform
-      m_MaxTextureSize: 1024
+      m_MaxTextureSize: 2048
       m_ResizeAlgorithm: 0
       m_TextureFormat: -1
       m_TextureCompression: 0
@@ -91,6 +91,12 @@ SpriteAtlas:
     - {fileID: 2800000, guid: e90c120f156367d4281d6b0f7dc09da8, type: 3}
     - {fileID: 2800000, guid: e27bdfea8db536b488b04ab1ef489dc2, type: 3}
     - {fileID: 2800000, guid: 3474907d075c5394db403a322ae337af, type: 3}
+    - {fileID: 2800000, guid: e2e4a151706de23468c51d3ecdee9e9c, type: 3}
+    - {fileID: 2800000, guid: 7664d2aecfc826d479706be233717673, type: 3}
+    - {fileID: 2800000, guid: 2ad0b1f2a0685e24c956f5b537127596, type: 3}
+    - {fileID: 2800000, guid: acc3e4a2e0560834e810b585b2b551f5, type: 3}
+    - {fileID: 2800000, guid: 2e94da61ef938f040ba035b5f33eb10b, type: 3}
+    - {fileID: 2800000, guid: f4691fe64b29a5c459d18aca20159327, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -102,10 +108,14 @@ SpriteAtlas:
   - {fileID: 21300000, guid: b0c766703611520478829ef28767357a, type: 3}
   - {fileID: 21300000, guid: ccc42ea0e2eaa2648a6e70d72847733b, type: 3}
   - {fileID: 21300000, guid: 0ad96cf0f8408c045bae50d0b49d0533, type: 3}
+  - {fileID: 21300000, guid: e2e4a151706de23468c51d3ecdee9e9c, type: 3}
   - {fileID: 21300000, guid: b943e6613d4a06c48a33dacba0ac4f04, type: 3}
+  - {fileID: 21300000, guid: 2e94da61ef938f040ba035b5f33eb10b, type: 3}
   - {fileID: 21300000, guid: 2d67bd2295018e64ba0ad6584a4a7da0, type: 3}
   - {fileID: 21300000, guid: a544d362ad9b7c94fb836fe020e5a1c1, type: 3}
+  - {fileID: 21300000, guid: acc3e4a2e0560834e810b585b2b551f5, type: 3}
   - {fileID: 21300000, guid: fb92d6c25c5e7a24396c3a34be74b950, type: 3}
+  - {fileID: 21300000, guid: 2ad0b1f2a0685e24c956f5b537127596, type: 3}
   - {fileID: 21300000, guid: 3e1b5013e6950384cb94e323936d0857, type: 3}
   - {fileID: 21300000, guid: 8641051313e87544c93ac84901ad4d7d, type: 3}
   - {fileID: 21300000, guid: eb66b233a7c789d4ca26423dcbed531d, type: 3}
@@ -120,6 +130,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: b4ec2984200d6fa40a6392a067922e3e, type: 3}
   - {fileID: 21300000, guid: 66f590b561203154f92915f8ae06fec4, type: 3}
   - {fileID: 21300000, guid: a962cca699e5e644c90b9381c5521e15, type: 3}
+  - {fileID: 21300000, guid: f4691fe64b29a5c459d18aca20159327, type: 3}
   - {fileID: 21300000, guid: c83be1f7ce2f3f0469a80044c6ca51ba, type: 3}
   - {fileID: 21300000, guid: 28b9f468fb692134194be28550448005, type: 3}
   - {fileID: 21300000, guid: 0d7a9978db942654fbfa5d306f3acd94, type: 3}
@@ -139,6 +150,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 959de8ad9db838d49906260485cf45fc, type: 3}
   - {fileID: 21300000, guid: 2088163eafda37743aadbbce8b60f4a6, type: 3}
   - {fileID: 21300000, guid: ea9bb15e1c1b6364e904aa541df2412b, type: 3}
+  - {fileID: 21300000, guid: 7664d2aecfc826d479706be233717673, type: 3}
   - {fileID: 21300000, guid: 7e9fd8be041eca041bb326ff2e34316f, type: 3}
   - {fileID: 21300000, guid: e90c120f156367d4281d6b0f7dc09da8, type: 3}
   - {fileID: 21300000, guid: 9950bd4ff23b24c4b952f7eed9054793, type: 3}
@@ -151,10 +163,14 @@ SpriteAtlas:
   - Fundo_SuperiorEsquerdo
   - LockLateral_Desativado
   - Becker_2
+  - Janela
   - Fundo_CentroEsquerda
+  - Pia_Aberta
   - Porta_1
   - Fundo_CentroSuperior
+  - Pia
   - "Arm\xE1rioLateral"
+  - Mesa_Lateral
   - Erlenmeyer_1
   - Lateral_Centro
   - Fundo_CentroDireita
@@ -169,6 +185,7 @@ SpriteAtlas:
   - Fundo_InferiorEsquerdo
   - Porta_6
   - Porta_3
+  - Torneira_Side
   - Lateral_CentroInferior
   - "Arm\xE1rioSideView"
   - Porta_4
@@ -188,6 +205,7 @@ SpriteAtlas:
   - Becker
   - Fundo_InferiorDireita
   - Erlenmeyer_2
+  - Mesa_Centro
   - LockLateral_Ativado
   - Porta_8
   - "Arm\xE1rioSuperior_Centro"
