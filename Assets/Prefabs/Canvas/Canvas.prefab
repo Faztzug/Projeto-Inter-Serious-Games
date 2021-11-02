@@ -942,6 +942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inventario
       objectReference: {fileID: 0}
+    - target: {fileID: 6049288019149602243, guid: de508157438aed44c82ced12537639a7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -9092095406749377480, guid: e686f6b30a9eddb42b3334e7f7848ba2, type: 3}
     - target: {fileID: 6049288019655510196, guid: de508157438aed44c82ced12537639a7, type: 3}
       propertyPath: m_Pivot.y
       value: 1
@@ -953,14 +957,6 @@ PrefabInstance:
     - target: {fileID: 6049288019655510196, guid: de508157438aed44c82ced12537639a7, type: 3}
       propertyPath: m_AnchorMin.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6049288019655510196, guid: de508157438aed44c82ced12537639a7, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -24.999939
-      objectReference: {fileID: 0}
-    - target: {fileID: 6049288019655510196, guid: de508157438aed44c82ced12537639a7, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de508157438aed44c82ced12537639a7, type: 3}
