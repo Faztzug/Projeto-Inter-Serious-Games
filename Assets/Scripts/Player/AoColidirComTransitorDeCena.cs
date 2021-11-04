@@ -4,14 +4,27 @@ using UnityEngine;
 
 public class AoColidirComTransitorDeCena : MonoBehaviour
 {
+    [SerializeField] float esperaChecarCamera = 1f;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Trancisao de Cena")) Debug.Log(this.gameObject + "Colidiu com o Troca Cena!");
 
         if (collision.CompareTag("Trancisao de Cena"))
+        {
             collision.GetComponent<TrocarCena>().CarregarCena();
+            StartCoroutine(ChecarCameraNovamente());
+        }
+            
 
         
 
     }
+
+    IEnumerator ChecarCameraNovamente()
+    {
+        yield return new WaitForSeconds(esperaChecarCamera);
+        GetComponent<PlayerControl>().ChecarCamera();
+    }
+
 }
