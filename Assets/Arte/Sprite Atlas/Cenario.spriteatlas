@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Laboratorio
+  m_Name: Cenario
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -97,6 +97,47 @@ SpriteAtlas:
     - {fileID: 2800000, guid: acc3e4a2e0560834e810b585b2b551f5, type: 3}
     - {fileID: 2800000, guid: 2e94da61ef938f040ba035b5f33eb10b, type: 3}
     - {fileID: 2800000, guid: f4691fe64b29a5c459d18aca20159327, type: 3}
+    - {fileID: 2800000, guid: f602d817c1235e44b9b24bfc6cd7753c, type: 3}
+    - {fileID: 2800000, guid: 49efa1096b90b43459ef6c7a2254c6d0, type: 3}
+    - {fileID: 2800000, guid: 805fd8236b2eafe41bbc194d3d8018e6, type: 3}
+    - {fileID: 2800000, guid: 6adcb59c62cb83e429ee783bcec68c43, type: 3}
+    - {fileID: 2800000, guid: 4e293f906a88c4d4abd43a14d8e95059, type: 3}
+    - {fileID: 2800000, guid: b9ec3d842d8134448b1c6b171fa7c0ce, type: 3}
+    - {fileID: 2800000, guid: 4a9bb8fe3215e114480e14205cc68378, type: 3}
+    - {fileID: 2800000, guid: d208e83478cdc9d459e43598c54d9e99, type: 3}
+    - {fileID: 2800000, guid: e3d2cfd2a15ba5e4b8de51beb32c903e, type: 3}
+    - {fileID: 2800000, guid: 1bc3d86518a149f46a4b0bf64f32a757, type: 3}
+    - {fileID: 2800000, guid: f5a02fb8c13f8224eb0bd7c00604303a, type: 3}
+    - {fileID: 2800000, guid: c1469fabcbbc0d9459202c6b9fa1ff2e, type: 3}
+    - {fileID: 2800000, guid: 997f4d5a294258d459e2c47cb79f5c3a, type: 3}
+    - {fileID: 2800000, guid: 35de2acb289b73f4dbdcccf1f4025a34, type: 3}
+    - {fileID: 2800000, guid: 8f5037fceb464a745a6b695f4667c997, type: 3}
+    - {fileID: 2800000, guid: ed0eb5fac03741640a4cf7a5e6e6a57f, type: 3}
+    - {fileID: 2800000, guid: 6b6c1d8a984f050469b011b9ca6f838c, type: 3}
+    - {fileID: 2800000, guid: d8bc604da4887044689573ac3916c699, type: 3}
+    - {fileID: 2800000, guid: 8aff360247a7cf04d960199c282c08cb, type: 3}
+    - {fileID: 2800000, guid: 68b390f4a831e8949a88b38d097ad8db, type: 3}
+    - {fileID: 2800000, guid: 0ead708bbb877524eb0d9a2ac629a168, type: 3}
+    - {fileID: 2800000, guid: 637a11ebc9096cf46ad549f47627b62b, type: 3}
+    - {fileID: 2800000, guid: 50b0e8f8ecb63e3418b9bf40ce473c85, type: 3}
+    - {fileID: 2800000, guid: a4c9225455d536947910da24d84164ef, type: 3}
+    - {fileID: 2800000, guid: 984a444db3bea7f4491e10ba5d27f1ec, type: 3}
+    - {fileID: 2800000, guid: 83dff4a9771685c4380907127afd8813, type: 3}
+    - {fileID: 2800000, guid: 57d5a3c3168fb33458d01276d844c07a, type: 3}
+    - {fileID: 2800000, guid: d528eb7c1100bf54b98439eadaa781ea, type: 3}
+    - {fileID: 2800000, guid: 4f38bd32d443382469fd31534900a35f, type: 3}
+    - {fileID: 2800000, guid: 8969a91a918a05c4ca3c17f444b1105e, type: 3}
+    - {fileID: 2800000, guid: ae4eeb4ccb0b40046a52c1a0fad55747, type: 3}
+    - {fileID: 2800000, guid: a910d8217b3fa084b9efec65f8ea3b88, type: 3}
+    - {fileID: 2800000, guid: 0aaa79c7f1b3f89479926bc89bfa0181, type: 3}
+    - {fileID: 2800000, guid: 60419eeb67584ef41a0d507919b3163f, type: 3}
+    - {fileID: 2800000, guid: 0ebfc061e9911194c9147962cda07fb4, type: 3}
+    - {fileID: 2800000, guid: 7fbedef9b40381a488d9a04b89ceb57d, type: 3}
+    - {fileID: 2800000, guid: bd75a2b82ce6a1045a91beaec271aa0b, type: 3}
+    - {fileID: 2800000, guid: 2f4fae2983a2f854ab064bbfde21ffe7, type: 3}
+    - {fileID: 2800000, guid: b529781d30b73cb49bf70fb4c3c78269, type: 3}
+    - {fileID: 2800000, guid: 949fb73d29963194e8972efdccf66d63, type: 3}
+    - {fileID: 2800000, guid: 2a0b4bc17c2ddb74f854f0131760d364, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -212,5 +253,5 @@ SpriteAtlas:
   - Lateral_SuperiorDireito
   - Erlenmeyer_4
   m_RenderDataMap: {}
-  m_Tag: Laboratorio
+  m_Tag: Cenario
   m_IsVariant: 0
