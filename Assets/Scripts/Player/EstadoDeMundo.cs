@@ -14,10 +14,21 @@ public class EstadoDeMundo : MonoBehaviour
     public bool conheceuFazendeiro = false;
 
      
-     public bool testeQuestBarrilVermelho = false;
-     public bool testeBarrilVermelhoDestruido = false;
+     public bool testeQuestBarrilVermelho = true;
+     public bool testeBarrilVermelhoDestruido = true;
 
+    //estrelas
+    [Range(0,10)] public int relacaoAssistente;
+    [Range(0, 10)] public int relacaoGovernador;
+    [Range(0, 10)] public int relacaoEmpresarioRuim;
+    [Range(0, 10)] public int relacaoEmpresarioBom;
+    [Range(0, 10)] public int relacaoFazendeiro;
+    [Range(0, 10)] public int relacaoVozDoPovo;
 
+}
 
+[SerializeField]
+public class Save
+{
 
 }

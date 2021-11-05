@@ -119,5 +119,5 @@ SpriteAtlas:
   - Dir_5
   - Frente_6
   m_RenderDataMap: {}
-  m_Tag: Walk
+  m_Tag: Personagem
   m_IsVariant: 0

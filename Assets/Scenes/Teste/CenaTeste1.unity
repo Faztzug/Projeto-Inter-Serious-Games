@@ -550,7 +550,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.55}
   serializedVersion: 2
-  m_Radius: 0.51
+  m_Radius: 0.42
 --- !u!212 &938338663
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -610,7 +610,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938338661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.83, y: -2.25, z: 0}
+  m_LocalPosition: {x: -5.97, y: -2.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -819,12 +819,20 @@ PrefabInstance:
       value: 191
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: relacaoAssistente
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: testeQuestBarrilVermelho
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: testeBarrilVermelhoDestruido
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: conheceuGovernadorEEmpresario
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1603772663, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: esperaChecarCamera
@@ -1502,11 +1510,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3042334439567489359, guid: 70d3087e9c8288446bf49ad2bbb6eda9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9914449
+      value: 0.92387956
       objectReference: {fileID: 0}
     - target: {fileID: 3042334439567489359, guid: 70d3087e9c8288446bf49ad2bbb6eda9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.13052616
+      value: 0.38268343
       objectReference: {fileID: 0}
     - target: {fileID: 3042334439567489359, guid: 70d3087e9c8288446bf49ad2bbb6eda9, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1518,7 +1526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3042334439567489359, guid: 70d3087e9c8288446bf49ad2bbb6eda9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 15
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 3042334439567489359, guid: 70d3087e9c8288446bf49ad2bbb6eda9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
