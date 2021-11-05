@@ -146,6 +146,12 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 99df1789798a68347ba4fe9a6a93ee42, type: 3}
     - {fileID: 2800000, guid: a67d5d51b22b3f64a96e1cb2d7bc40d9, type: 3}
     - {fileID: 2800000, guid: d0b3da1d1df877248b65f1ede2f24da2, type: 3}
+    - {fileID: 2800000, guid: 2f8435bc89ae26a4db3603c3072c0bf9, type: 3}
+    - {fileID: 2800000, guid: 280c482147efbee4b84c2117ec74e36d, type: 3}
+    - {fileID: 2800000, guid: fd0da2b1ce6a6b647bbc1d7e4ad018b3, type: 3}
+    - {fileID: 2800000, guid: a86f0c5ad726ce546908cb97097ee069, type: 3}
+    - {fileID: 2800000, guid: 37ecc8ae4e28cfa44a5fe9d30df838cc, type: 3}
+    - {fileID: 2800000, guid: 6e647bacc1e01b147ab5e1f6088acbc6, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -158,12 +164,14 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4e293f906a88c4d4abd43a14d8e95059, type: 3}
   - {fileID: 21300000, guid: ccc42ea0e2eaa2648a6e70d72847733b, type: 3}
   - {fileID: 21300000, guid: 0ad96cf0f8408c045bae50d0b49d0533, type: 3}
+  - {fileID: 21300000, guid: 280c482147efbee4b84c2117ec74e36d, type: 3}
   - {fileID: 21300000, guid: a910d8217b3fa084b9efec65f8ea3b88, type: 3}
   - {fileID: 21300000, guid: e2e4a151706de23468c51d3ecdee9e9c, type: 3}
   - {fileID: 21300000, guid: a67d5d51b22b3f64a96e1cb2d7bc40d9, type: 3}
   - {fileID: 21300000, guid: 0ebfc061e9911194c9147962cda07fb4, type: 3}
   - {fileID: 21300000, guid: b943e6613d4a06c48a33dacba0ac4f04, type: 3}
   - {fileID: 21300000, guid: 2e94da61ef938f040ba035b5f33eb10b, type: 3}
+  - {fileID: 21300000, guid: fd0da2b1ce6a6b647bbc1d7e4ad018b3, type: 3}
   - {fileID: 21300000, guid: 2a0b4bc17c2ddb74f854f0131760d364, type: 3}
   - {fileID: 21300000, guid: 8aff360247a7cf04d960199c282c08cb, type: 3}
   - {fileID: 21300000, guid: 2d67bd2295018e64ba0ad6584a4a7da0, type: 3}
@@ -217,6 +225,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c4e18ef90204eb84080ca07f680d3a49, type: 3}
   - {fileID: 21300000, guid: 7fbedef9b40381a488d9a04b89ceb57d, type: 3}
   - {fileID: 21300000, guid: 8969a91a918a05c4ca3c17f444b1105e, type: 3}
+  - {fileID: 21300000, guid: a86f0c5ad726ce546908cb97097ee069, type: 3}
   - {fileID: 21300000, guid: 997f4d5a294258d459e2c47cb79f5c3a, type: 3}
   - {fileID: 21300000, guid: 462e0a8a3f5a16d47ab9d70a1e934d07, type: 3}
   - {fileID: 21300000, guid: 6b6c1d8a984f050469b011b9ca6f838c, type: 3}
@@ -233,6 +242,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9070765cc80368248bc2dbe0810f995a, type: 3}
   - {fileID: 21300000, guid: d528eb7c1100bf54b98439eadaa781ea, type: 3}
   - {fileID: 21300000, guid: 6adcb59c62cb83e429ee783bcec68c43, type: 3}
+  - {fileID: 21300000, guid: 6e647bacc1e01b147ab5e1f6088acbc6, type: 3}
+  - {fileID: 21300000, guid: 2f8435bc89ae26a4db3603c3072c0bf9, type: 3}
   - {fileID: 21300000, guid: 493636ec5b54694439be664ee3895c02, type: 3}
   - {fileID: 21300000, guid: 787e08ecc43bf8840b8630534327bda9, type: 3}
   - {fileID: 21300000, guid: 8f5037fceb464a745a6b695f4667c997, type: 3}
@@ -249,6 +260,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 47d3eb3eaa21d95409749cd5b7ec5aa3, type: 3}
   - {fileID: 21300000, guid: ea9bb15e1c1b6364e904aa541df2412b, type: 3}
   - {fileID: 21300000, guid: 7664d2aecfc826d479706be233717673, type: 3}
+  - {fileID: 21300000, guid: 37ecc8ae4e28cfa44a5fe9d30df838cc, type: 3}
   - {fileID: 21300000, guid: 7e9fd8be041eca041bb326ff2e34316f, type: 3}
   - {fileID: 21300000, guid: 4a9bb8fe3215e114480e14205cc68378, type: 3}
   - {fileID: 21300000, guid: e90c120f156367d4281d6b0f7dc09da8, type: 3}
@@ -263,12 +275,14 @@ SpriteAtlas:
   - "C\xE9u"
   - LockLateral_Desativado
   - Becker_2
+  - Porta_2 1
   - "\xC1rvore_8"
   - Janela
   - "M\xE1quina_2"
   - "\xC1rvore_QuartoPlano_2"
   - Fundo_CentroEsquerda
   - Pia_Aberta
+  - Porta_3 1
   - "\xC1rvore_TerceiroPlano_4"
   - Pedra_3
   - Porta_1
@@ -322,6 +336,7 @@ SpriteAtlas:
   - Lock_Desativado
   - "\xC1rvore_QuartoPlano_3"
   - "\xC1rvore_6"
+  - Porta_4 1
   - gramado_1
   - Fundo_Centro
   - Pedra_1
@@ -338,6 +353,8 @@ SpriteAtlas:
   - Becker_4
   - "\xC1rvore_4"
   - "Ch\xE3o"
+  - Lock_Desativado_2
+  - Porta_1 1
   - Porta_7
   - Cano_4
   - gramado_3
@@ -354,6 +371,7 @@ SpriteAtlas:
   - Cano_3
   - Erlenmeyer_2
   - Mesa_Centro
+  - Lock_Ativado_2
   - LockLateral_Ativado
   - Grama
   - Porta_8
