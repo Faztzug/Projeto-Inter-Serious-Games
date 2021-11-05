@@ -138,6 +138,14 @@ SpriteAtlas:
     - {fileID: 2800000, guid: b529781d30b73cb49bf70fb4c3c78269, type: 3}
     - {fileID: 2800000, guid: 949fb73d29963194e8972efdccf66d63, type: 3}
     - {fileID: 2800000, guid: 2a0b4bc17c2ddb74f854f0131760d364, type: 3}
+    - {fileID: 2800000, guid: 6a46d1bd182781c489109a6db3df46f1, type: 3}
+    - {fileID: 2800000, guid: 6d6a29879f2de614aa22b04317237737, type: 3}
+    - {fileID: 2800000, guid: 47d3eb3eaa21d95409749cd5b7ec5aa3, type: 3}
+    - {fileID: 2800000, guid: 787e08ecc43bf8840b8630534327bda9, type: 3}
+    - {fileID: 2800000, guid: 4b93620e7ac19254fba359f713354f4c, type: 3}
+    - {fileID: 2800000, guid: 99df1789798a68347ba4fe9a6a93ee42, type: 3}
+    - {fileID: 2800000, guid: a67d5d51b22b3f64a96e1cb2d7bc40d9, type: 3}
+    - {fileID: 2800000, guid: d0b3da1d1df877248b65f1ede2f24da2, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -152,6 +160,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 0ad96cf0f8408c045bae50d0b49d0533, type: 3}
   - {fileID: 21300000, guid: a910d8217b3fa084b9efec65f8ea3b88, type: 3}
   - {fileID: 21300000, guid: e2e4a151706de23468c51d3ecdee9e9c, type: 3}
+  - {fileID: 21300000, guid: a67d5d51b22b3f64a96e1cb2d7bc40d9, type: 3}
   - {fileID: 21300000, guid: 0ebfc061e9911194c9147962cda07fb4, type: 3}
   - {fileID: 21300000, guid: b943e6613d4a06c48a33dacba0ac4f04, type: 3}
   - {fileID: 21300000, guid: 2e94da61ef938f040ba035b5f33eb10b, type: 3}
@@ -187,6 +196,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a962cca699e5e644c90b9381c5521e15, type: 3}
   - {fileID: 21300000, guid: f4691fe64b29a5c459d18aca20159327, type: 3}
   - {fileID: 21300000, guid: f602d817c1235e44b9b24bfc6cd7753c, type: 3}
+  - {fileID: 21300000, guid: 6d6a29879f2de614aa22b04317237737, type: 3}
   - {fileID: 21300000, guid: 0aaa79c7f1b3f89479926bc89bfa0181, type: 3}
   - {fileID: 21300000, guid: c83be1f7ce2f3f0469a80044c6ca51ba, type: 3}
   - {fileID: 21300000, guid: 28b9f468fb692134194be28550448005, type: 3}
@@ -201,6 +211,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 46bce5290f6e7a845962b35ccf19017b, type: 3}
   - {fileID: 21300000, guid: 4722862916113ad4cb7f31eaf1b5d72e, type: 3}
   - {fileID: 21300000, guid: 2f4fae2983a2f854ab064bbfde21ffe7, type: 3}
+  - {fileID: 21300000, guid: 99df1789798a68347ba4fe9a6a93ee42, type: 3}
   - {fileID: 21300000, guid: 83dff4a9771685c4380907127afd8813, type: 3}
   - {fileID: 21300000, guid: e330d0f93ad6aea4db763584997ab1f7, type: 3}
   - {fileID: 21300000, guid: c4e18ef90204eb84080ca07f680d3a49, type: 3}
@@ -223,14 +234,19 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d528eb7c1100bf54b98439eadaa781ea, type: 3}
   - {fileID: 21300000, guid: 6adcb59c62cb83e429ee783bcec68c43, type: 3}
   - {fileID: 21300000, guid: 493636ec5b54694439be664ee3895c02, type: 3}
+  - {fileID: 21300000, guid: 787e08ecc43bf8840b8630534327bda9, type: 3}
   - {fileID: 21300000, guid: 8f5037fceb464a745a6b695f4667c997, type: 3}
   - {fileID: 21300000, guid: b529781d30b73cb49bf70fb4c3c78269, type: 3}
+  - {fileID: 21300000, guid: d0b3da1d1df877248b65f1ede2f24da2, type: 3}
   - {fileID: 21300000, guid: 949fb73d29963194e8972efdccf66d63, type: 3}
   - {fileID: 21300000, guid: d8bc604da4887044689573ac3916c699, type: 3}
   - {fileID: 21300000, guid: 984a444db3bea7f4491e10ba5d27f1ec, type: 3}
   - {fileID: 21300000, guid: 3474907d075c5394db403a322ae337af, type: 3}
   - {fileID: 21300000, guid: 959de8ad9db838d49906260485cf45fc, type: 3}
+  - {fileID: 21300000, guid: 6a46d1bd182781c489109a6db3df46f1, type: 3}
+  - {fileID: 21300000, guid: 4b93620e7ac19254fba359f713354f4c, type: 3}
   - {fileID: 21300000, guid: 2088163eafda37743aadbbce8b60f4a6, type: 3}
+  - {fileID: 21300000, guid: 47d3eb3eaa21d95409749cd5b7ec5aa3, type: 3}
   - {fileID: 21300000, guid: ea9bb15e1c1b6364e904aa541df2412b, type: 3}
   - {fileID: 21300000, guid: 7664d2aecfc826d479706be233717673, type: 3}
   - {fileID: 21300000, guid: 7e9fd8be041eca041bb326ff2e34316f, type: 3}
@@ -249,6 +265,7 @@ SpriteAtlas:
   - Becker_2
   - "\xC1rvore_8"
   - Janela
+  - "M\xE1quina_2"
   - "\xC1rvore_QuartoPlano_2"
   - Fundo_CentroEsquerda
   - Pia_Aberta
@@ -284,6 +301,7 @@ SpriteAtlas:
   - Porta_3
   - Torneira_Side
   - Arbusto_1
+  - Cano_2
   - "\xC1rvore_PrimeiroPlano"
   - Lateral_CentroInferior
   - "Arm\xE1rioSideView"
@@ -298,6 +316,7 @@ SpriteAtlas:
   - Becker_3
   - Fundo_CentroInferior
   - "\xC1rvore_TerceiroPlano"
+  - "M\xE1quina"
   - "\xC1rvore_2"
   - Lock_Ativado
   - Lock_Desativado
@@ -320,14 +339,19 @@ SpriteAtlas:
   - "\xC1rvore_4"
   - "Ch\xE3o"
   - Porta_7
+  - Cano_4
   - gramado_3
   - "\xC1rvore_TerceiroPlano_2"
+  - "Sombra_Cal\xE7ada"
   - "\xC1rvore_TerceiroPlano_3"
   - Pedra_2
   - "\xC1rvore"
   - PoteVazio
   - Becker
+  - Cano_1
+  - Engrenagem
   - Fundo_InferiorDireita
+  - Cano_3
   - Erlenmeyer_2
   - Mesa_Centro
   - LockLateral_Ativado
