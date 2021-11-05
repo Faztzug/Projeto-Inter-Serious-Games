@@ -18,12 +18,12 @@ public class EstadoDeMundo : MonoBehaviour
      public bool testeBarrilVermelhoDestruido = true;
 
     //estrelas
-    [Range(0,10)] public int relacaoAssistente;
-    [Range(0, 10)] public int relacaoGovernador;
-    [Range(0, 10)] public int relacaoEmpresarioRuim;
-    [Range(0, 10)] public int relacaoEmpresarioBom;
-    [Range(0, 10)] public int relacaoFazendeiro;
-    [Range(0, 10)] public int relacaoVozDoPovo;
+    [Range(0, 5)] public int relacaoAssistente;
+    [Range(0, 5)] public int relacaoGovernador;
+    [Range(0, 5)] public int relacaoEmpresarioRuim;
+    [Range(0, 5)] public int relacaoEmpresarioBom;
+    [Range(0, 5)] public int relacaoFazendeiro;
+    [Range(0, 5)] public int relacaoVozDoPovo;
 
 }
 

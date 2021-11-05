@@ -169,6 +169,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a910d8217b3fa084b9efec65f8ea3b88, type: 3}
   - {fileID: 21300000, guid: e2e4a151706de23468c51d3ecdee9e9c, type: 3}
   - {fileID: 21300000, guid: a67d5d51b22b3f64a96e1cb2d7bc40d9, type: 3}
+  - {fileID: 21300000, guid: fca05e5173e100444b2b3ddfb7bf8a5e, type: 3}
   - {fileID: 21300000, guid: 0ebfc061e9911194c9147962cda07fb4, type: 3}
   - {fileID: 21300000, guid: b943e6613d4a06c48a33dacba0ac4f04, type: 3}
   - {fileID: 21300000, guid: 2e94da61ef938f040ba035b5f33eb10b, type: 3}
@@ -280,6 +281,7 @@ SpriteAtlas:
   - "\xC1rvore_8"
   - Janela
   - "M\xE1quina_2"
+  - "M\xE1quina fundo"
   - "\xC1rvore_QuartoPlano_2"
   - Fundo_CentroEsquerda
   - Pia_Aberta
@@ -341,7 +343,7 @@ SpriteAtlas:
   - gramado_1
   - Fundo_Centro
   - Pedra_1
-  - PoteCheio
+  - PoteCheio_Puzzle
   - gramado_4
   - Porta_5
   - Pedregulho_2
@@ -364,7 +366,7 @@ SpriteAtlas:
   - "\xC1rvore_TerceiroPlano_3"
   - Pedra_2
   - "\xC1rvore"
-  - PoteVazio
+  - PoteVazio_Puzzle
   - Becker
   - Cano_1
   - Engrenagem_Puzzle
