@@ -703,6 +703,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2048338608}
+        m_TargetAssemblyTypeName: MenuDeProgresso, Assembly-CSharp
+        m_MethodName: AtulizarProgreso
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &695082976
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +727,7 @@ GameObject:
   - component: {fileID: 695082979}
   - component: {fileID: 695082978}
   - component: {fileID: 1623366002590945120}
+  - component: {fileID: 2048338608}
   m_Layer: 5
   m_Name: Fundo
   m_TagString: Untagged
@@ -810,6 +823,24 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &2048338608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695082976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10033fce917aee846ad2f72b8ba22fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomes:
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!1 &1094657265
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,6 +851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1094657266}
   - component: {fileID: 2335641620603781348}
+  - component: {fileID: 2058170009}
   m_Layer: 5
   m_Name: Estrelas
   m_TagString: Untagged
@@ -877,6 +909,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &2058170009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094657265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e403cefb44fd8b0459a12a1f1db4f3c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: Empresario Ruim
 --- !u!1 &1331266768
 GameObject:
   m_ObjectHideFlags: 0
@@ -2820,6 +2865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469031640545352357}
   - component: {fileID: 7696193578669334204}
+  - component: {fileID: 1621240033}
   m_Layer: 5
   m_Name: Estrelas
   m_TagString: Untagged
@@ -2877,6 +2923,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1621240033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3487480977356761508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e403cefb44fd8b0459a12a1f1db4f3c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: Fazendeiro
 --- !u!1 &3564914198483237281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,6 +3453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8621698332346788630}
   - component: {fileID: 5352147556001681024}
+  - component: {fileID: 2052683304}
   m_Layer: 5
   m_Name: Estrelas
   m_TagString: Untagged
@@ -3451,6 +3511,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &2052683304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4070654604909338174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e403cefb44fd8b0459a12a1f1db4f3c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: Empresario Bom
 --- !u!1 &4185414408259151788
 GameObject:
   m_ObjectHideFlags: 0
@@ -5414,6 +5487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7684747192094264873}
   - component: {fileID: 8550870414906480842}
+  - component: {fileID: 1745522984}
   m_Layer: 5
   m_Name: Estrelas
   m_TagString: Untagged
@@ -5471,6 +5545,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1745522984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386239830746127485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e403cefb44fd8b0459a12a1f1db4f3c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: Governador
 --- !u!1 &8390848465400172575
 GameObject:
   m_ObjectHideFlags: 0
@@ -6084,6 +6171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8472365754779390267}
   - component: {fileID: 9125123805159610086}
+  - component: {fileID: 1226457905}
   m_Layer: 5
   m_Name: Estrelas
   m_TagString: Untagged
@@ -6141,6 +6229,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1226457905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9114884570223403010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e403cefb44fd8b0459a12a1f1db4f3c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: Voz Do Povo
 --- !u!1 &9131220306664717580
 GameObject:
   m_ObjectHideFlags: 0
