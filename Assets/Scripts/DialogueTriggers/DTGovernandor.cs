@@ -9,6 +9,6 @@ public class DTGovernandor : DialogueTrigger
         base.EndOfDialogue(lastSentence, NPCname);
         if (lastSentence == 4)
             FindObjectOfType<DTEmpresarioRuim>().GetComponentInParent<FazerAndar>()
-                .AndePara(new Vector2(-6.5f,-2));
+                .AndePara(new Vector2(-6.5f,-3));
     }
 }

@@ -25,6 +25,8 @@ public class EstadoDeMundo : MonoBehaviour
     [Range(0, 5)] public int relacaoEmpresarioBom;
     [Range(0, 5)] public int relacaoFazendeiro;
     [Range(0, 5)] public int relacaoVozDoPovo;
+
+    
 }
 
 [SerializeField]

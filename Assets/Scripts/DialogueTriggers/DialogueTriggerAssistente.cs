@@ -29,11 +29,11 @@ public class DialogueTriggerAssistente : DialogueTrigger
             DTplayer.StartDialogue(7, 7);
         else if (lastSentence == 9)
             FindObjectOfType<DTFazendeiro>().GetComponentInParent<FazerAndar>()
-                .AndePara(new Vector2(5.47f, 0.22f));
+                .AndePara(new Vector2(7.5f, -3.5f));
         else if (lastSentence == 10)
         {
             FindObjectOfType<DTFazendeiro>().GetComponentInParent<FazerAndar>()
-                .AndePara(new Vector2(7.47f, -7.22f));
+                .AndePara(new Vector2(8.47f, -9.22f));
             estadoDeMundo.conheceuFazendeiro = true;
             GetComponentInParent<FazerAndar>()
                 .AndePara(player.transform.position);
