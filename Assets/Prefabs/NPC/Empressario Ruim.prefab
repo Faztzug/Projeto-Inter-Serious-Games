@@ -61,7 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     characterColor: {r: 1, g: 0.5425386, b: 0.5425386, a: 1}
-    characterName: Empressario Ruim
+    characterName: 'Leandro '
     textPosition: {x: 0, y: 0.3}
     sentences:
     - "Bom dia, Senhor Paulo, meu querido. Como voc\xEA se encontra? "

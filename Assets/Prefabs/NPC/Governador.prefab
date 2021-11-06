@@ -61,7 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     characterColor: {r: 0.7082614, g: 0.990566, b: 0.64021486, a: 1}
-    characterName: Governador
+    characterName: 'Pedro '
     textPosition: {x: 0, y: 0.3}
     sentences:
     - "Bom dia, Paulo. Meus parab\xE9ns pela inaugura\xE7\xE3o e esperamos de voc\xEA

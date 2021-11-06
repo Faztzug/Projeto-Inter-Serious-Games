@@ -198,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     characterColor: {r: 0.9811321, g: 0.9653602, b: 0.5230461, a: 1}
-    characterName: Fazendeiro
+    characterName: "Jo\xE3o "
     textPosition: {x: 0, y: 0.3}
     sentences:
     - 'Bom dia senhor. '
