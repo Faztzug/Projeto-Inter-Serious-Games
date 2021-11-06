@@ -42,9 +42,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2994940251
+    locked: 0
+  - name: Cenario
+    uniqueID: 3638366267
+    locked: 0
   - name: Text
     uniqueID: 1793859183
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 1138750321
     locked: 0
