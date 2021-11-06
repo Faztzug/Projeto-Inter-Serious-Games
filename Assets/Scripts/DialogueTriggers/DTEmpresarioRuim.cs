@@ -22,9 +22,9 @@ public class DTEmpresarioRuim : DialogueTrigger
         else if(lastSentence == 7)
         {
             GetComponentInParent<FazerAndar>().
-                AndePara(new Vector2(transform.position.x + 1, transform.position.y - 5));
+                AndePara(new Vector2(transform.position.x + 1, transform.position.y - 7));
             FindObjectOfType<DTGovernandor>().GetComponentInParent<FazerAndar>().
-                AndePara(new Vector2(transform.position.x + 1, transform.position.y - 5));
+                AndePara(new Vector2(transform.position.x + 1, transform.position.y - 7));
             estadoDeMundo.conheceuGovernadorEEmpresario = true;
             FindObjectOfType<DialogueTriggerAssistente>().GetComponentInParent<FazerAndar>()
                 .AndePara(player.transform.position, 1);

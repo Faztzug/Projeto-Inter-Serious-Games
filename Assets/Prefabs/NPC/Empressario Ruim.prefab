@@ -60,8 +60,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    textColor: {r: 1, g: 0.33499146, b: 0.3673183, a: 1}
-    characterName: Empressario Ruim
+    characterColor: {r: 1, g: 0.5425386, b: 0.5425386, a: 1}
+    characterName: 'Leandro '
     textPosition: {x: 0, y: 0.3}
     sentences:
     - "Bom dia, Senhor Paulo, meu querido. Como voc\xEA se encontra? "
@@ -89,7 +89,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.24}
+  m_Offset: {x: 0, y: 0.25}
   serializedVersion: 2
   m_Radius: 1
 --- !u!114 &4589573990104400537
@@ -179,7 +179,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c63b19c2aa51da44a1fe0cdc7c94062, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -203,7 +203,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.54}
+  m_Offset: {x: 0, y: 0.25}
   serializedVersion: 2
   m_Radius: 0.45
 --- !u!114 &4589573990198492918

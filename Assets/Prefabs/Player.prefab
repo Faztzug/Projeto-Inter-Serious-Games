@@ -103,6 +103,17 @@ MonoBehaviour:
     - "Bom dia senhor, sim essa m\xE1quina \xE9 totalmente segura, "
     - "j\xE1 sobre o seu problema, irei estudar sobre as hip\xF3teses e te falarei
       amanh\xE3 de manh\xE3, tudo bem?\nFique bem e faremos nosso melhor."
+    - "Aqui est\xE1 a engrenagem solta, irei colocar ela no lugar!"
+    - ...
+    - Prontinho.
+    - "Est\xE1 \xE9 uma boa area para coletar uma amostragem do solo."
+    - ...
+    - Pronto, agora devo leva-la ao laboratorio para analise.
+    - O problema na maquinaria foi resolvido e a analise do solo foi concluida.
+    - "Por\xE9m ainda preciso dar uma resposta ao empresario e ao fazendeiro."
+    - Devo aceitar a verba do empresario em troca de compartilhar nossa pesquisa?
+    - Sobre a Represa, devo liberar para o Fazendeiro ou usa-la para a pesquisa?
+    - "Sendo assim, meu trabalho por hoje est\xE1 concluido."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,12 +135,14 @@ MonoBehaviour:
   conheceuFazendeiro: 0
   testeQuestBarrilVermelho: 0
   testeBarrilVermelhoDestruido: 0
-  relacaoAssistente: 0
-  relacaoGovernador: 0
-  relacaoEmpresarioRuim: 0
-  relacaoEmpresarioBom: 0
-  relacaoFazendeiro: 0
-  relacaoVozDoPovo: 0
+  testColetouTerra: 0
+  testColetouPecaMaquinaria: 0
+  relacaoAssistente: 2
+  relacaoGovernador: 2
+  relacaoEmpresarioRuim: 2
+  relacaoEmpresarioBom: 2
+  relacaoFazendeiro: 2
+  relacaoVozDoPovo: 2
 --- !u!212 &465966177179946060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -218,8 +231,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.875}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.1}
-    oldSize: {x: 3.4450002, y: 3.4450002}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 4.2400002, y: 4.2400002}
     newSize: {x: 1.78125, y: 1.75}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

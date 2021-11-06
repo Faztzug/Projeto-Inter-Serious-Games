@@ -57,6 +57,12 @@ public class FazerAndar : MonoBehaviour
         destinoPosition = position;
     }
 
+    public void PararAndar()
+    {
+        destinoPosition = transform.position;
+        andando = false;
+    }
+
     private void FixedUpdate()
     {
         if(andando == true)
@@ -73,4 +79,11 @@ public class FazerAndar : MonoBehaviour
         if (transform.position == destinoPosition)
             andando = false;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+            PararAndar();
+    }
+
 }
