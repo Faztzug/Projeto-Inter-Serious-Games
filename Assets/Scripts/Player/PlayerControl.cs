@@ -36,6 +36,9 @@ public class PlayerControl : MonoBehaviour
         contadorPararDeAndarAoColidir = segundosPararDeAndarAoColidir;
         rgbd = GetComponent<Rigidbody2D>();
 
+        touchPosition = transform.position;
+        touchPositionV3 = transform.position;
+
 
         ChecarCamera(); //checar se tem perspectiva ou não
         
