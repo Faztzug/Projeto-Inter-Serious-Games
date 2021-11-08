@@ -1,13 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CrossfadeLoadEffect : MonoBehaviour
 {
-    
-    
-    
     private Animator crossfadeTransition;
     [SerializeField] private float tempoDeCrossfade = 1f;
 
@@ -21,19 +17,22 @@ public class CrossfadeLoadEffect : MonoBehaviour
         StartCoroutine(IniciarCrossfade(cena, novaPosicao));
     }
 
-    IEnumerator IniciarCrossfade(string cena, Vector2 novaPosicao)
+    private IEnumerator IniciarCrossfade(string cena, Vector2 novaPosicao)
     {
         crossfadeTransition.SetTrigger("Start");
         yield return new WaitForSeconds(tempoDeCrossfade);
 
         SceneManager.LoadScene(cena);
 
-        if(GameObject.FindGameObjectWithTag("Player") != null)
+        if (GameObject.FindGameObjectWithTag("Player") != null)
         {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-        player.GetComponent<PlayerControl>().touchPosition = novaPosicao;
-        player.transform.position = novaPosicao;
+            player.GetComponent<PlayerControl>().touchPosition = novaPosicao;
+            player.transform.position = novaPosicao;
+
+            
+            player.GetComponent<PlayerControl>().ChecarCamera();
         }
 
         crossfadeTransition.SetTrigger("End");

@@ -16,7 +16,7 @@ public class UsarItem : MonoBehaviour
 
     public void Use()
     {
-        slot.active = false;
+        slot.SetActive(false);
         Vector2 maquinaPos = new Vector2(maquina.position.x, maquina.position.y);
         Instantiate(item, maquinaPos, Quaternion.identity);
         Destroy(gameObject);

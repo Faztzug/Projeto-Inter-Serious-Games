@@ -77,9 +77,9 @@ public class PlayerControl : MonoBehaviour
     {
         Debug.Log("Checando Camera...");
         if (FindObjectOfType<Camera>().orthographic == false)
-            perspectiva = true;
-        else 
             perspectiva = false;
+        else 
+            perspectiva = true;
     }
 
     public void CalcularDistancia()
