@@ -6,10 +6,20 @@ public class CrossfadeLoadEffect : MonoBehaviour
 {
     private Animator crossfadeTransition;
     [SerializeField] private float tempoDeCrossfade = 1f;
+    private GameObject player;
+    private PlayerControl playerControl;
 
     private void Start()
     {
         crossfadeTransition = GetComponent<Animator>();
+        AcharPlayer();
+    }
+
+    private void AcharPlayer()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        if(player != null)
+        playerControl = player.GetComponent<PlayerControl>();
     }
 
     public void ChamarCrossfade(string cena, Vector2 novaPosicao)
@@ -24,16 +34,24 @@ public class CrossfadeLoadEffect : MonoBehaviour
 
         SceneManager.LoadScene(cena);
 
-        if (GameObject.FindGameObjectWithTag("Player") != null)
+        if (player == null)
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            //yield return new WaitForEndOfFrame();
+            AcharPlayer();
+        }
 
-            player.GetComponent<PlayerControl>().touchPosition = novaPosicao;
+        if (player != null)
+        {
+            //GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+            playerControl.touchPosition = novaPosicao;
             player.transform.position = novaPosicao;
 
-            
-            player.GetComponent<PlayerControl>().ChecarCamera();
+
+            playerControl.ChecarCamera();
         }
+
+        
 
         crossfadeTransition.SetTrigger("End");
     }
