@@ -355,7 +355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2426558468473842447, guid: f2640df4cc8c06441b329c593471c729, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2426558468473842447, guid: f2640df4cc8c06441b329c593471c729, type: 3}
       propertyPath: m_AnchorMax.x
@@ -525,7 +525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3659959330554782079, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3659959330554782079, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -817,7 +817,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -1704,8 +1704,18 @@ Transform:
   m_LocalPosition: {x: 1.654, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< Updated upstream
   m_Father: {fileID: 1731006264}
   m_RootOrder: 1
+=======
+<<<<<<< HEAD
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+=======
+  m_Father: {fileID: 1731006264}
+  m_RootOrder: 1
+>>>>>>> 4f448231fea8a28329463b9fe98b6a0235cba694
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1167928801
 GameObject:
@@ -2285,8 +2295,18 @@ Transform:
   m_LocalPosition: {x: -10.21, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< Updated upstream
   m_Father: {fileID: 1731006264}
   m_RootOrder: 2
+=======
+<<<<<<< HEAD
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+=======
+  m_Father: {fileID: 1731006264}
+  m_RootOrder: 2
+>>>>>>> 4f448231fea8a28329463b9fe98b6a0235cba694
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1584916677
 GameObject:
@@ -2367,8 +2387,18 @@ Transform:
   m_LocalPosition: {x: -3.03, y: -2.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< Updated upstream
   m_Father: {fileID: 1731006264}
   m_RootOrder: 5
+=======
+<<<<<<< HEAD
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+=======
+  m_Father: {fileID: 1731006264}
+  m_RootOrder: 5
+>>>>>>> 4f448231fea8a28329463b9fe98b6a0235cba694
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1627140758
 GameObject:
@@ -2613,8 +2643,18 @@ Transform:
   m_LocalPosition: {x: 2.81, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< Updated upstream
   m_Father: {fileID: 1731006264}
   m_RootOrder: 0
+=======
+<<<<<<< HEAD
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+=======
+  m_Father: {fileID: 1731006264}
+  m_RootOrder: 0
+>>>>>>> 4f448231fea8a28329463b9fe98b6a0235cba694
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1705201305
 GameObject:
@@ -2978,8 +3018,18 @@ Transform:
   m_LocalPosition: {x: -9.72, y: -2.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< Updated upstream
   m_Father: {fileID: 1731006264}
   m_RootOrder: 4
+=======
+<<<<<<< HEAD
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+=======
+  m_Father: {fileID: 1731006264}
+  m_RootOrder: 4
+>>>>>>> 4f448231fea8a28329463b9fe98b6a0235cba694
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1779666499
 GameObject:
@@ -3301,8 +3351,18 @@ Transform:
   m_LocalPosition: {x: -2.72, y: -2.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< Updated upstream
   m_Father: {fileID: 1731006264}
   m_RootOrder: 6
+=======
+<<<<<<< HEAD
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+=======
+  m_Father: {fileID: 1731006264}
+  m_RootOrder: 6
+>>>>>>> 4f448231fea8a28329463b9fe98b6a0235cba694
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1943441326
 GameObject:
@@ -3465,8 +3525,18 @@ Transform:
   m_LocalPosition: {x: -5.95, y: -2.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< Updated upstream
   m_Father: {fileID: 1731006264}
   m_RootOrder: 3
+=======
+<<<<<<< HEAD
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+=======
+  m_Father: {fileID: 1731006264}
+  m_RootOrder: 3
+>>>>>>> 4f448231fea8a28329463b9fe98b6a0235cba694
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2075546115
 GameObject:
