@@ -66,9 +66,11 @@ MonoBehaviour:
     sentences:
     - "Bom dia, Paulo. Meus parab\xE9ns pela inaugura\xE7\xE3o e esperamos de voc\xEA
       um bom trabalho, hahaha"
-    - "Esse aqui \xE9, *nome*e ele \xE9 um homem incr\xEDvel e de imenso poder"
-    - " Inclusive, ele j\xE1 tinha uma proposta para voc\xEA"
-    - "*nome*, se voc\xEA puder dizer."
+    - "Esse aqui \xE9 o senhor Leadro, e ele \xE9 um homem incr\xEDvel e de imenso
+      poder"
+    - "Ele com certeza poder\xE1 te ajudar nessa empreitada. Inclusive, ele j\xE1
+      tinha uma proposta para voc\xEA"
+    - "Leandro, se voc\xEA puder dizer."
 --- !u!58 &2645994734902680494
 CircleCollider2D:
   m_ObjectHideFlags: 0

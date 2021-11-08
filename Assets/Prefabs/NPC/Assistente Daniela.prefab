@@ -209,27 +209,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    characterColor: {r: 1, g: 1, b: 1, a: 1}
+    characterColor: {r: 0.44819897, g: 0.7946249, b: 1, a: 1}
     characterName: Daniela
     textPosition: {x: 0, y: 0.3}
     sentences:
     - "Bom dia, Senhor Paulo. S\xE3o 9 da manh\xE3, \xE9 hora de come\xE7ar mais
       um dia de trabalho"
     - "N\xE3o esque\xE7a e se prepare pois temos visita."
-    - "Senhor Paulo, vejo que conheceu o, empres\xE1rio (nome do ER), "
+    - Senhor Paulo, vejo que conheceu aquele homem
     - "enquanto os senhores conversavam eu pesquisei sobre ele e bem eu s\xF3 estou
       aqui para te aconselhar e pelo que vi esse homem n\xE3o \xE9 de confian\xE7a, "
     - "nessa pesquisa que realizei ele nunca investiu em nada que era em prol da
-      natureza por isso caso queira fazer neg\xF3cios com ele, fique de olho nele."
+      natureza por isso caso queira fazer neg\xF3cios com ele,\n fique de olho nele."
     - 'Obrigada Paulo, '
-    - "al\xE9m disso tem algu\xE9m que quer falar com voc\xEA, o fazendeiro (nome
-      do fazendeiro) "
-    - "ele anda tendo v\xE1rios problemas em sua fazenda ele busca que o senhor libere
-      as \xE1guas da hidrel\xE9trica para ele poder plantar mais, "
-    - "mas acredito que \xE9 melhor ele falar disso com voc\xEA, senhor (nome do
-      Fazendeiro) pode vim."
-    - "Bom agrade\xE7o ao senhor (nome do fazendeiro), amanh\xE3 iremos te dar uma
-      resposta sobre seu problema"
+    - "al\xE9m disso tem algu\xE9m que quer falar com voc\xEA, o fazendeiro Jo\xE3o."
+    - "ele anda tendo v\xE1rios problemas em sua fazenda e ele busca que o senhor
+      libere as \xE1guas da hidrel\xE9trica para ele poder plantar mais, "
+    - "mas acredito que \xE9 melhor ele falar disso com voc\xEA, senhor Jo\xE3o,
+      pode vir."
+    - "Bem, agrade\xE7o ao senhor Jo\xE3o, amanh\xE3 iremos te dar uma resposta sobre
+      seu problema"
     - 'Agora que temos esse tempo livre, '
     - "queria passar para o senhor que seria bom o senhor dar uma passada na savana
       e coletar amostras do solo e traz\xEA los para o laborat\xF3rio "

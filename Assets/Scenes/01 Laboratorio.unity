@@ -1456,18 +1456,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fazendeiro
       objectReference: {fileID: 0}
-    - target: {fileID: 1623160345188279257, guid: cf57432b56b13e44b8d9b1cdd962d958, type: 3}
-      propertyPath: dialogue.characterColor.b
-      value: 0.5230461
-      objectReference: {fileID: 0}
-    - target: {fileID: 1623160345188279257, guid: cf57432b56b13e44b8d9b1cdd962d958, type: 3}
-      propertyPath: dialogue.characterColor.g
-      value: 0.9653602
-      objectReference: {fileID: 0}
-    - target: {fileID: 1623160345188279257, guid: cf57432b56b13e44b8d9b1cdd962d958, type: 3}
-      propertyPath: dialogue.characterColor.r
-      value: 0.9811321
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf57432b56b13e44b8d9b1cdd962d958, type: 3}
 --- !u!1001 &2645994734589025818
@@ -1477,18 +1465,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.characterColor.b
-      value: 0.64021486
-      objectReference: {fileID: 0}
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.characterColor.g
-      value: 0.990566
-      objectReference: {fileID: 0}
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.characterColor.r
-      value: 0.7082614
-      objectReference: {fileID: 0}
     - target: {fileID: 2645994735013250882, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1546,18 +1522,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4589573990104400538, guid: e671060e5895dbe4cba20c5dcc66528b, type: 3}
-      propertyPath: dialogue.characterColor.b
-      value: 0.5425386
-      objectReference: {fileID: 0}
-    - target: {fileID: 4589573990104400538, guid: e671060e5895dbe4cba20c5dcc66528b, type: 3}
-      propertyPath: dialogue.characterColor.g
-      value: 0.5425386
-      objectReference: {fileID: 0}
-    - target: {fileID: 4589573990104400538, guid: e671060e5895dbe4cba20c5dcc66528b, type: 3}
-      propertyPath: dialogue.characterColor.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4589573990198492920, guid: e671060e5895dbe4cba20c5dcc66528b, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1662,18 +1626,6 @@ PrefabInstance:
     - target: {fileID: 7849470484049677885, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.characterColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.characterColor.g
-      value: 0.7946249
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.characterColor.r
-      value: 0.44819897
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
