@@ -130,10 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 530366551355793590, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 530366552013389700, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -467,13 +463,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5491225684420223664, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: slots.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5491225684420223664, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: slots.Array.data[0]
       value: 
-      objectReference: {fileID: 1680673448}
+      objectReference: {fileID: 0}
     - target: {fileID: 5491225684420223664, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: slots.Array.data[1]
       value: 
@@ -928,11 +920,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1680673448 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 530366552013389701, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
-  m_PrefabInstance: {fileID: 825297976}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4704984977705927496
 PrefabInstance:
   m_ObjectHideFlags: 0

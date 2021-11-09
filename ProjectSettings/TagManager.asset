@@ -8,6 +8,7 @@ TagManager:
   - NPC
   - Resposta
   - Maquina
+  - Slot
   layers:
   - Default
   - TransparentFX
