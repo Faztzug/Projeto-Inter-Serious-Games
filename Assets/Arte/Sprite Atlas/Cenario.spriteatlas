@@ -154,6 +154,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 6e647bacc1e01b147ab5e1f6088acbc6, type: 3}
   - {fileID: 21300000, guid: 2f8435bc89ae26a4db3603c3072c0bf9, type: 3}
   - {fileID: 21300000, guid: 2c6ef5bc46ddcda4a8106b9c2a28ef69, type: 3}
+  - {fileID: -2413806693520163455, guid: a540ddbc7171240468daca6e4ab05f88, type: 3}
   - {fileID: 21300000, guid: 493636ec5b54694439be664ee3895c02, type: 3}
   - {fileID: 21300000, guid: 787e08ecc43bf8840b8630534327bda9, type: 3}
   - {fileID: 21300000, guid: 8f5037fceb464a745a6b695f4667c997, type: 3}
@@ -296,6 +297,7 @@ SpriteAtlas:
   - Lock_Desativado_2
   - Porta_1 1
   - "\xC1rvore_queimada_4"
+  - Circle
   - Porta_7
   - Cano_4
   - gramado_3

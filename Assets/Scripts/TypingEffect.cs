@@ -31,7 +31,7 @@ public class TypingEffect : MonoBehaviour
     {
         Debug.Log("Start Typing: "+sentence);
 
-        
+        textBox.AtualizarSprite();
 
         dialogueTextMeshPro.text = "";
         foreach (char letter in sentence.ToCharArray())

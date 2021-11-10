@@ -8,15 +8,19 @@ public class TextBoxDialogue : MonoBehaviour
 {
     [HideInInspector] public Image box;
     [HideInInspector] public TextMeshProUGUI nome;
-    private CanvasGroup group;
+    [SerializeField] private CanvasGroup group;
     public bool ativa;
+    private TextBoxPortraitsManager spritesManager;
 
 
     private void Start()
     {
         box = GetComponent<Image>();
         nome = transform.Find("Nome").GetComponent<TextMeshProUGUI>();
-        group = GetComponent<CanvasGroup>();
+        group = this.gameObject.GetComponentInParent<CanvasGroup>();
+        spritesManager = FindObjectOfType<TextBoxPortraitsManager>();
+        Debug.Log("Deactivated TextBox on Start");
+        Deactivate();
     }
 
     /*private void Update()
@@ -41,5 +45,11 @@ public class TextBoxDialogue : MonoBehaviour
         group.alpha = 0;
         //gameObject.SetActive(false);
         ativa = false;
+        //spritesManager.TirarImagem();
+    }
+
+    public void AtualizarSprite()
+    {
+        spritesManager.TrocarSprite(nome.text);
     }
 }

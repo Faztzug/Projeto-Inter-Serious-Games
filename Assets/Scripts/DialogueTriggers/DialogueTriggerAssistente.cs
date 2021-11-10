@@ -44,7 +44,7 @@ public class DialogueTriggerAssistente : DialogueTrigger
         {
             
             GetComponentInParent<FazerAndar>()
-                .AndePara(new Vector2(14, 0));
+                .AndePara(new Vector2(transform.position.x + 14, transform.position.y));
         }
 
 

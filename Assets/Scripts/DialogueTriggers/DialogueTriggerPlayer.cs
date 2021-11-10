@@ -27,7 +27,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
         
         if (lastSentence == 4)
         {
-            FindObjectOfType<DTGovernandor>().GetComponentInParent<FazerAndar>().AndePara(new Vector2(-7.2f, -2.3f));
+            FindObjectOfType<DTGovernandor>().GetComponentInParent<FazerAndar>().AndePara(new Vector2(-6.5f, -2.3f));
             Debug.Log("Last Sentence 4");
         }
         else if (lastSentence == 6)
