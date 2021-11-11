@@ -9,6 +9,9 @@ public class EstadoDeMundo : MonoBehaviour
     public int turno = 1;
     public int ato = 1;
 
+    public string cenaAtual;
+    public Vector2 novaPosicao;
+
     public bool conheceuGovernadorEEmpresario = false;
     public bool conheceuFazendeiro = false;
 

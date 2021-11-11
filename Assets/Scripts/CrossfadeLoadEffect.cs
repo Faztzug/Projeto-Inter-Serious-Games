@@ -8,6 +8,7 @@ public class CrossfadeLoadEffect : MonoBehaviour
     [SerializeField] private float tempoDeCrossfade = 1f;
     private GameObject player;
     private PlayerControl playerControl;
+    private EstadoDeMundo estado;
 
     private void Start()
     {
@@ -19,7 +20,11 @@ public class CrossfadeLoadEffect : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         if(player != null)
-        playerControl = player.GetComponent<PlayerControl>();
+        {
+            playerControl = player.GetComponent<PlayerControl>();
+            estado = player.GetComponent<EstadoDeMundo>();
+        }
+        
     }
 
     public void ChamarCrossfade(string cena, Vector2 novaPosicao)
@@ -47,6 +52,8 @@ public class CrossfadeLoadEffect : MonoBehaviour
             playerControl.touchPosition = novaPosicao;
             player.transform.position = novaPosicao;
 
+            estado.cenaAtual = cena;
+            estado.novaPosicao = novaPosicao;
 
             playerControl.ChecarCamera();
         }
