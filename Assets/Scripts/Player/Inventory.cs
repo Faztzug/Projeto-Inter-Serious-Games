@@ -8,7 +8,7 @@ public class Inventory : MonoBehaviour
     public GameObject[] slots;
     public int selectID;
     public Item selectedItem;
-    private SlotsManager slotsManager;
+    [HideInInspector] public SlotsManager slotsManager;
 
 
     private void Start()

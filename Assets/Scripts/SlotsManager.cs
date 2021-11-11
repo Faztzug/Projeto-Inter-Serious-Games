@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -45,6 +45,25 @@ public class SlotsManager : MonoBehaviour
         selected = null;
         Destroy(slots[selectID].transform.GetChild(0).gameObject);
         
+    }
+
+    public Item AcharItem(string acharItem)
+    {
+        Debug.Log("procurando Item: " + acharItem + " ...");
+
+        foreach (Item item in GetComponentsInChildren<Item>())
+        {
+            if (item.itemName == acharItem)
+            {
+                Debug.Log("Item: " + acharItem + " encontrado!");
+                return item;
+                
+            }
+                
+        }
+
+        Debug.Log("Item: " + acharItem + " NÃO foi encontrado!");
+        return null;
     }
 
 }
