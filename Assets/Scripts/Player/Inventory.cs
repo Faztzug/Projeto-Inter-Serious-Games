@@ -5,7 +5,8 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public bool[] isFull;
-    public GameObject[] slots;
+    public GameObject[] slotsGameObject;
+    
     public int selectID;
     public Item selectedItem;
     [HideInInspector] public SlotsManager slotsManager;
@@ -14,11 +15,11 @@ public class Inventory : MonoBehaviour
     private void Start()
     {
         slotsManager = FindObjectOfType<SlotsManager>();
-        slots = GameObject.FindGameObjectsWithTag("Slot");
-        int slotsLength = slots.Length;
+        slotsGameObject = GameObject.FindGameObjectsWithTag("Slot");
+        int slotsLength = slotsGameObject.Length;
 
-        if(slots[0] != null)
-        slots[0].transform.parent.gameObject.SetActive(false);
+        if(slotsGameObject[0] != null)
+        slotsGameObject[0].transform.parent.gameObject.SetActive(false);
     }
 
     public void EliminarItemSelecionado()

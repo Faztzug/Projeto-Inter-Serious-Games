@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 8.6347065, y: -2.7397265}
+  touchPosition: {x: 9.000003, y: -4.155252}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -130,10 +130,24 @@ MonoBehaviour:
     textTypingSpeed: 10
     textBoxBoundsY: 0.9
     textBoxBoundsX: 0.8
+    inventarioData:
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
     turno: 1
     ato: 1
     cenaAtual: Laboratorio_1
-    novaPosicao: {x: 5.73, y: -3.13}
+    _positionX: 0
+    _positionY: 0
     conheceuGovernadorEEmpresario: 0
     conheceuFazendeiro: 0
     testeQuestBarrilVermelho: 0
@@ -146,6 +160,11 @@ MonoBehaviour:
     relacaoEmpresarioBom: 2
     relacaoFazendeiro: 2
     relacaoVozDoPovo: 2
+  itemsDatabase:
+    database:
+    - {fileID: 1332506630945303748, guid: ca6d5e7e799d66749b0bb66494486f49, type: 3}
+    - {fileID: 2841271471603013712, guid: de5f2edaf72992e4eb69ab8c7f1e1433, type: 3}
+    - {fileID: 8178883786478874463, guid: c188f6216da778040a5e1a0de861204d, type: 3}
 --- !u!212 &465966177179946060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -373,7 +392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFull: 0000000000000000
-  slots: []
+  slotsGameObject: []
   selectID: 0
   selectedItem: {fileID: 0}
   slotsManager: {fileID: 0}

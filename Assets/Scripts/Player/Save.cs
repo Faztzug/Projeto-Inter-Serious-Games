@@ -8,6 +8,8 @@
     [Range(0, 1)] public float textBoxBoundsY = 0.9f;
     [Range(0, 1)] public float textBoxBoundsX = 0.8f;
 
+    public ItemSlotData[] inventarioData;
+
     public int turno = 1;
     public int ato = 1;
 
@@ -44,4 +46,6 @@
     [Range(0, 5)] public int relacaoEmpresarioBom = 2;
     [Range(0, 5)] public int relacaoFazendeiro = 2;
     [Range(0, 5)] public int relacaoVozDoPovo = 2;
+
+    
 }
