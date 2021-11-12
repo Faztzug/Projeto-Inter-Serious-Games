@@ -14,7 +14,7 @@ public class TypingEffect : MonoBehaviour
 
     private void Start()
     {
-        textTypingSpeed = FindObjectOfType<EstadoDeMundo>().textTypingSpeed;
+        textTypingSpeed = FindObjectOfType<EstadoDeMundo>().save.textTypingSpeed;
         dialogueTextMeshPro = GetComponent<TextMeshProUGUI>();
         textBox = gameObject.GetComponentInParent<TextBoxDialogue>();
     }

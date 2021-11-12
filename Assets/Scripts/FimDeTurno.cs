@@ -6,17 +6,34 @@ public class FimDeTurno : MonoBehaviour
 {
     private EstadoDeMundo estado;
     private DialogueTriggerPlayer dtPlayer;
+    [SerializeField] private Item[] itens;
+    Inventory inventario;
+
     private void Start()
     {
         estado = FindObjectOfType<EstadoDeMundo>();
         dtPlayer = estado.gameObject.GetComponent<DialogueTriggerPlayer>();
+        inventario = estado.gameObject.GetComponent<Inventory>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(estado.testColetouPecaMaquinaria == true && estado.testColetouTerra == true)
+        if (collision.CompareTag("Player"))
         {
-            dtPlayer.StartDialogue(16, 18);
+            
+
+            if (estado.save.testColetouPecaMaquinaria == true && estado.save.testColetouTerra == true)
+            {
+
+                Destroy(inventario.slotsManager.AcharItem(itens[0].itemName).gameObject);
+                Destroy(inventario.slotsManager.AcharItem(itens[1].itemName).gameObject);
+
+                dtPlayer.StartDialogue(16, 18);
+
+                
+
+            }
         }
+        
     }
 }

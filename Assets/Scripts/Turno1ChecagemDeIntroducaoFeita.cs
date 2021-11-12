@@ -7,7 +7,7 @@ public class Turno1ChecagemDeIntroducaoFeita : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (FindObjectOfType<EstadoDeMundo>().conheceuFazendeiro == true)
+        if (FindObjectOfType<EstadoDeMundo>().save.conheceuFazendeiro == true)
             FindObjectOfType<DialogueTriggerAssistente>().transform.parent.gameObject.SetActive(false);
     }
 

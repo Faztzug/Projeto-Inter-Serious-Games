@@ -12,9 +12,9 @@ public class TesteQuestBarrilVermelho : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             estadoDeMundo = collision.gameObject.GetComponent<EstadoDeMundo>();
-            if(estadoDeMundo.testeQuestBarrilVermelho == true)
+            if(estadoDeMundo.save.testeQuestBarrilVermelho == true)
             {
-                estadoDeMundo.testeBarrilVermelhoDestruido = true;
+                estadoDeMundo.save.testeBarrilVermelhoDestruido = true;
                 Destroy(gameObject);
             }
             

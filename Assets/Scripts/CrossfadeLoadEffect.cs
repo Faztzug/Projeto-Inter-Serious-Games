@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +8,7 @@ public class CrossfadeLoadEffect : MonoBehaviour
     [SerializeField] private float tempoDeCrossfade = 1f;
     private GameObject player;
     private PlayerControl playerControl;
+    private EstadoDeMundo estado;
 
     private void Start()
     {
@@ -19,7 +20,11 @@ public class CrossfadeLoadEffect : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         if(player != null)
-        playerControl = player.GetComponent<PlayerControl>();
+        {
+            playerControl = player.GetComponent<PlayerControl>();
+            estado = player.GetComponent<EstadoDeMundo>();
+        }
+        
     }
 
     public void ChamarCrossfade(string cena, Vector2 novaPosicao)
@@ -47,8 +52,20 @@ public class CrossfadeLoadEffect : MonoBehaviour
             playerControl.touchPosition = novaPosicao;
             player.transform.position = novaPosicao;
 
+            
 
             playerControl.ChecarCamera();
+
+            estado.save.cenaAtual = cena;
+            estado.save.novaPosicao = novaPosicao;
+            //estado.save.positionX = novaPosicao.x;
+            //estado.save.positionX = novaPosicao.y;
+
+            estado.SaveGame();
+
+            Debug.Log("Nova Posição: " + estado.save.novaPosicao);
+            //Debug.Log("Nova Posição: " + estado.save.positionX + ", " + estado.save.positionY);
+
         }
 
         

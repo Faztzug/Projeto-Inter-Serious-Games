@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 2.1863322, y: -1.5988117}
+  touchPosition: {x: 9.000003, y: -4.155252}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -126,23 +126,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1100d754345c5634ab1386a20e56c64b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textTypingSpeed: 10
-  textBoxBoundsY: 0.905
-  textBoxBoundsX: 0.79
-  turno: 1
-  ato: 1
-  conheceuGovernadorEEmpresario: 0
-  conheceuFazendeiro: 0
-  testeQuestBarrilVermelho: 0
-  testeBarrilVermelhoDestruido: 0
-  testColetouTerra: 0
-  testColetouPecaMaquinaria: 0
-  relacaoAssistente: 2
-  relacaoGovernador: 2
-  relacaoEmpresarioRuim: 2
-  relacaoEmpresarioBom: 2
-  relacaoFazendeiro: 2
-  relacaoVozDoPovo: 2
+  save:
+    textTypingSpeed: 10
+    textBoxBoundsY: 0.9
+    textBoxBoundsX: 0.8
+    inventarioData:
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
+    - SlotID: 0
+      childPrefabPath: {fileID: 0}
+    turno: 1
+    ato: 1
+    cenaAtual: Laboratorio_1
+    _positionX: 0
+    _positionY: 0
+    conheceuGovernadorEEmpresario: 0
+    conheceuFazendeiro: 0
+    testeQuestBarrilVermelho: 0
+    testeBarrilVermelhoDestruido: 0
+    testColetouTerra: 0
+    testColetouPecaMaquinaria: 0
+    relacaoAssistente: 2
+    relacaoGovernador: 2
+    relacaoEmpresarioRuim: 2
+    relacaoEmpresarioBom: 2
+    relacaoFazendeiro: 2
+    relacaoVozDoPovo: 2
+  itemsDatabase:
+    database:
+    - {fileID: 1332506630945303748, guid: ca6d5e7e799d66749b0bb66494486f49, type: 3}
+    - {fileID: 2841271471603013712, guid: de5f2edaf72992e4eb69ab8c7f1e1433, type: 3}
+    - {fileID: 8178883786478874463, guid: c188f6216da778040a5e1a0de861204d, type: 3}
 --- !u!212 &465966177179946060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -270,7 +292,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.56}
+  m_Offset: {x: 0, y: 0.65}
   serializedVersion: 2
   m_Radius: 0.3
 --- !u!114 &1603772659
@@ -313,6 +335,10 @@ MonoBehaviour:
   Responses:
   - Sim
   - "N\xE3o"
+  - "Aceitar e ceder acesso a tecnologia do laborat\xF3rio"
+  - Recusar o investimento
+  - "Liberar \xE1guas da hidrel\xE9trica ao fazendeiro"
+  - "Manter o uso da \xE1gua para as maquinas"
 --- !u!114 &375688004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,7 +392,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFull: 0000000000000000
-  slots: []
+  slotsGameObject: []
+  selectID: 0
+  selectedItem: {fileID: 0}
+  slotsManager: {fileID: 0}
 --- !u!95 &476339362
 Animator:
   serializedVersion: 3

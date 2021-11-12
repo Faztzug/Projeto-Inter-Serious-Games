@@ -1,35 +1,61 @@
 using UnityEngine;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
 
 public class EstadoDeMundo : MonoBehaviour
 {
-    public float textTypingSpeed = 1;
-    [Range(0, 1)] public float textBoxBoundsY;
-    [Range(0, 1)] public float textBoxBoundsX;
+    public Save save;
 
-    public int turno = 1;
-    public int ato = 1;
+    public ItemsDatabase itemsDatabase;
 
-    public bool conheceuGovernadorEEmpresario = false;
-    public bool conheceuFazendeiro = false;
+    private void Awake()
+    {
+        LoadGame();
+        //cenaAtual = this.gameObject.scene.name;
+        //novaPosicao = transform.position;
+    }
 
-    public bool testeQuestBarrilVermelho = true;
-    public bool testeBarrilVermelhoDestruido = true;
-    public bool testColetouTerra = false;
-    public bool testColetouPecaMaquinaria = false;
 
-    //estrelas
-    [Range(0, 5)] public int relacaoAssistente;
+    private void Start()
+    {
+        
+    }
 
-    [Range(0, 5)] public int relacaoGovernador;
-    [Range(0, 5)] public int relacaoEmpresarioRuim;
-    [Range(0, 5)] public int relacaoEmpresarioBom;
-    [Range(0, 5)] public int relacaoFazendeiro;
-    [Range(0, 5)] public int relacaoVozDoPovo;
+
+    public void SaveGame()
+    {
+        GetComponent<Inventory>().slotsManager.gameObject.SetActive(true);
+
+        Slot[] slots = FindObjectsOfType<Slot>();
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            save.inventarioData[i].SlotID = slots[i].i;
+
+            if (slots[i].transform.childCount > 0)
+                save.inventarioData[i].itemChildName = 
+                    slots[i].transform.GetChild(0).GetComponent<Item>().itemName;
+            else
+                save.inventarioData[i].itemChildName = null;
+        }
+
+        
+        
+
+
+        FileStream file = File.Create(Application.persistentDataPath + "/Save.sav");
+        BinaryFormatter bf = new BinaryFormatter();
+        bf.Serialize(file, save);
+        file.Close();
+    }
+
+    public void LoadGame()
+    {
+
+    }
+
+
 
     
-}
-
-[SerializeField]
-public class Save
-{
 }

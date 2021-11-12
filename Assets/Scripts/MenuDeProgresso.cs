@@ -26,15 +26,15 @@ public class MenuDeProgresso : MonoBehaviour
         foreach (OrganizarEstrelas npc in transform.GetComponentsInChildren<OrganizarEstrelas>())
         {
             if (npc.nome == nomes[0])
-                npc.Organizar(estado.relacaoGovernador);
+                npc.Organizar(estado.save.relacaoGovernador);
             else if (npc.nome == nomes[1])
-                npc.Organizar(estado.relacaoEmpresarioRuim);
+                npc.Organizar(estado.save.relacaoEmpresarioRuim);
             else if (npc.nome == nomes[2])
-                npc.Organizar(estado.relacaoEmpresarioBom);
+                npc.Organizar(estado.save.relacaoEmpresarioBom);
             else if (npc.nome == nomes[3])
-                npc.Organizar(estado.relacaoFazendeiro);
+                npc.Organizar(estado.save.relacaoFazendeiro);
             else if (npc.nome == nomes[4])
-                npc.Organizar(estado.relacaoVozDoPovo);
+                npc.Organizar(estado.save.relacaoVozDoPovo);
         }   
     }
 }

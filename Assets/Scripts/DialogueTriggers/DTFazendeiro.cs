@@ -6,7 +6,7 @@ public class DTFazendeiro : DialogueTrigger
 {
     public override void StartDialogue()
     {
-        if(estadoDeMundo.turno == 1)
+        if(estadoDeMundo.save.turno == 1)
             dialogueManager.StartingDialogue(0, 2);
     }
 

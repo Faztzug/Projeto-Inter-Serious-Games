@@ -7,6 +7,7 @@ public class Slot : MonoBehaviour
     private Inventory inventory;
     public int i;
     public SlotsManager slotsManager;
+    public GameObject itemChild;
 
     private void Start()
     {

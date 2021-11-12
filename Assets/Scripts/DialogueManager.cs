@@ -113,30 +113,30 @@ public class DialogueManager : MonoBehaviour
         Vector2 textViewPortPosition = Camera.main.ScreenToViewportPoint(dialogueTextMeshPro.transform.position);
         Debug.Log(textViewPortPosition);
 
-        if (textViewPortPosition.y > estadoDeMundo.textBoxBoundsY)
+        if (textViewPortPosition.y > estadoDeMundo.save.textBoxBoundsY)
         {
             
             dialogueTextMeshPro.transform.position = 
                 Camera.main.ViewportToScreenPoint
-                (new Vector2(textViewPortPosition.x, estadoDeMundo.textBoxBoundsY));
+                (new Vector2(textViewPortPosition.x, estadoDeMundo.save.textBoxBoundsY));
             Debug.Log(textViewPortPosition);
         }
 
-        if (textViewPortPosition.x > estadoDeMundo.textBoxBoundsX)
+        if (textViewPortPosition.x > estadoDeMundo.save.textBoxBoundsX)
         {
 
             dialogueTextMeshPro.transform.position =
                 Camera.main.ViewportToScreenPoint
-                (new Vector2(estadoDeMundo.textBoxBoundsX, textViewPortPosition.y));
+                (new Vector2(estadoDeMundo.save.textBoxBoundsX, textViewPortPosition.y));
             Debug.Log(textViewPortPosition);
         }
 
-        if (textViewPortPosition.x < 1-estadoDeMundo.textBoxBoundsX)
+        if (textViewPortPosition.x < 1-estadoDeMundo.save.textBoxBoundsX)
         {
 
             dialogueTextMeshPro.transform.position =
                 Camera.main.ViewportToScreenPoint
-                (new Vector2(1-estadoDeMundo.textBoxBoundsX, textViewPortPosition.y));
+                (new Vector2(1-estadoDeMundo.save.textBoxBoundsX, textViewPortPosition.y));
             Debug.Log(textViewPortPosition);
         }
 

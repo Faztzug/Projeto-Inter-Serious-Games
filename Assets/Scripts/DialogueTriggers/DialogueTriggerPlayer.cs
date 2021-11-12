@@ -41,14 +41,14 @@ public class DialogueTriggerPlayer : DialogueTrigger
         else if(lastSentence == 19)
         {
             MomentoDeResponder(lastSentence, dialogueData.name);
-            answerManager.GerarRespostas(responses[0]);
-            answerManager.GerarRespostas(responses[1]);
+            answerManager.GerarRespostas(responses[2]);
+            answerManager.GerarRespostas(responses[3]);
         }
         else if (lastSentence == 20)
         {
             MomentoDeResponder(lastSentence, dialogueData.name);
-            answerManager.GerarRespostas(responses[0]);
-            answerManager.GerarRespostas(responses[1]);
+            answerManager.GerarRespostas(responses[4]);
+            answerManager.GerarRespostas(responses[5]);
         }
 
     }
@@ -80,29 +80,29 @@ public class DialogueTriggerPlayer : DialogueTrigger
         }
 
         if (NPCPerguntando == dialogueData.name
-            && resposta == "Sim" && ultimaSentenca == 19)
+            && resposta == dialogueResponses.Responses[2] && ultimaSentenca == 19)
         {
-            estadoDeMundo.relacaoEmpresarioRuim++;
+            estadoDeMundo.save.relacaoEmpresarioRuim++;
             StartDialogue(19, 19);
         }
         else if (NPCPerguntando == dialogueData.name
-          && resposta == "Não" && ultimaSentenca == 19)
+          && resposta == dialogueResponses.Responses[3] && ultimaSentenca == 19)
         {
-            estadoDeMundo.relacaoEmpresarioRuim--;
+            estadoDeMundo.save.relacaoEmpresarioRuim--;
             StartDialogue(19, 19);
         }
 
 
         if (NPCPerguntando == dialogueData.name
-            && resposta == "Sim" && ultimaSentenca == 20)
+            && resposta == dialogueResponses.Responses[4] && ultimaSentenca == 20)
         {
-            estadoDeMundo.relacaoFazendeiro++;
+            estadoDeMundo.save.relacaoFazendeiro++;
             StartDialogue(20, 20);
         }
         else if (NPCPerguntando == dialogueData.name
-          && resposta == "Não" && ultimaSentenca == 20)
+          && resposta == dialogueResponses.Responses[5] && ultimaSentenca == 20)
         {
-            estadoDeMundo.relacaoFazendeiro--;
+            estadoDeMundo.save.relacaoFazendeiro--;
             StartDialogue(20, 20);
         }
     }

@@ -6,16 +6,16 @@ public class DialogueTriggerAssistente : DialogueTrigger
 {
     public override void StartDialogue()
     {
-        if(estadoDeMundo.turno == 1)
+        if(estadoDeMundo.save.turno == 1)
         {
-            if(estadoDeMundo.conheceuGovernadorEEmpresario == false)
+            if(estadoDeMundo.save.conheceuGovernadorEEmpresario == false)
             dialogueManager.StartingDialogue(0, 1);
 
-            else if (estadoDeMundo.conheceuGovernadorEEmpresario == true 
-                && estadoDeMundo.conheceuFazendeiro == false)
+            else if (estadoDeMundo.save.conheceuGovernadorEEmpresario == true 
+                && estadoDeMundo.save.conheceuFazendeiro == false)
                 dialogueManager.StartingDialogue(2, 4);
 
-            else if(estadoDeMundo.conheceuFazendeiro == true)
+            else if(estadoDeMundo.save.conheceuFazendeiro == true)
                 dialogueManager.StartingDialogue(10, 13);
         } 
     }
@@ -34,7 +34,7 @@ public class DialogueTriggerAssistente : DialogueTrigger
         {
             FindObjectOfType<DTFazendeiro>().GetComponentInParent<FazerAndar>()
                 .AndePara(new Vector2(8.47f, -9.22f));
-            estadoDeMundo.conheceuFazendeiro = true;
+            estadoDeMundo.save.conheceuFazendeiro = true;
             GetComponentInParent<FazerAndar>()
                 .AndePara(player.transform.position);
             

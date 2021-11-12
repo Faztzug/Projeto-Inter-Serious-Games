@@ -18,14 +18,20 @@ EditorBuildSettings:
     path: Assets/Scenes/01 Laboratorio.unity
     guid: 2a002264adfec3943b91944d833a71be
   - enabled: 1
-    path: Assets/Scenes/Floresta_1.unity
-    guid: a9368335301ce8a428785a04c0320c03
-  - enabled: 1
     path: Assets/Scenes/Laboratorio_1.unity
     guid: 9decfa072e468ac43a61462962bc5e6f
   - enabled: 1
     path: Assets/Scenes/Laboratorio_2.unity
     guid: ed81a161b65a84a408378661d763e59a
+  - enabled: 1
+    path: Assets/Scenes/Floresta_1.unity
+    guid: a9368335301ce8a428785a04c0320c03
+  - enabled: 1
+    path: Assets/Scenes/Floresta_2.unity
+    guid: 319565a1e6dc6c7418d2577afa0e27a9
+  - enabled: 1
+    path: Assets/Scenes/Floresta_3.unity
+    guid: bb89a2b938c0c794594486a7a9db69b4
   - enabled: 1
     path: Assets/Scenes/Maquinas.unity
     guid: ef4ef63ddc2793a468779103411b3a56
