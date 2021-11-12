@@ -6,7 +6,7 @@ public class DTEmpresarioRuim : DialogueTrigger
 {
     public override void StartDialogue()
     {
-        if(estadoDeMundo.turno == 1)
+        if(estadoDeMundo.save.turno == 1)
         {
             dialogueManager.StartingDialogue(0, 1);
         }
@@ -25,7 +25,7 @@ public class DTEmpresarioRuim : DialogueTrigger
                 AndePara(new Vector2(transform.position.x + 1, transform.position.y - 7));
             FindObjectOfType<DTGovernandor>().GetComponentInParent<FazerAndar>().
                 AndePara(new Vector2(transform.position.x + 1, transform.position.y - 7));
-            estadoDeMundo.conheceuGovernadorEEmpresario = true;
+            estadoDeMundo.save.conheceuGovernadorEEmpresario = true;
             FindObjectOfType<DialogueTriggerAssistente>().GetComponentInParent<FazerAndar>()
                 .AndePara(player.transform.position, 1);
         }

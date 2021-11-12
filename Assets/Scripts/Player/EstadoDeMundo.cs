@@ -1,38 +1,40 @@
 using UnityEngine;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
 
 public class EstadoDeMundo : MonoBehaviour
 {
-    public float textTypingSpeed = 1;
-    [Range(0, 1)] public float textBoxBoundsY;
-    [Range(0, 1)] public float textBoxBoundsX;
+    public Save save;
 
-    public int turno = 1;
-    public int ato = 1;
+    private void Awake()
+    {
+        LoadGame();
+        //cenaAtual = this.gameObject.scene.name;
+        //novaPosicao = transform.position;
+    }
 
-    public string cenaAtual;
-    public Vector2 novaPosicao;
 
-    public bool conheceuGovernadorEEmpresario = false;
-    public bool conheceuFazendeiro = false;
+    private void Start()
+    {
+        
+    }
 
-    public bool testeQuestBarrilVermelho = true;
-    public bool testeBarrilVermelhoDestruido = true;
-    public bool testColetouTerra = false;
-    public bool testColetouPecaMaquinaria = false;
 
-    //estrelas
-    [Range(0, 5)] public int relacaoAssistente;
+    public void SaveGame()
+    {
+        FileStream file = File.Create(Application.persistentDataPath + "/Save.sav");
+        BinaryFormatter bf = new BinaryFormatter();
+        bf.Serialize(file, save);
+        file.Close();
+    }
 
-    [Range(0, 5)] public int relacaoGovernador;
-    [Range(0, 5)] public int relacaoEmpresarioRuim;
-    [Range(0, 5)] public int relacaoEmpresarioBom;
-    [Range(0, 5)] public int relacaoFazendeiro;
-    [Range(0, 5)] public int relacaoVozDoPovo;
+    public void LoadGame()
+    {
+
+    }
+
+
 
     
-}
-
-[SerializeField]
-public class Save
-{
 }

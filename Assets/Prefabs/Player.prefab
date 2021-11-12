@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 6.170198, y: -2.2831056}
+  touchPosition: {x: 8.6347065, y: -2.7397265}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -126,23 +126,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1100d754345c5634ab1386a20e56c64b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textTypingSpeed: 10
-  textBoxBoundsY: 0.905
-  textBoxBoundsX: 0.79
-  turno: 1
-  ato: 1
-  conheceuGovernadorEEmpresario: 0
-  conheceuFazendeiro: 0
-  testeQuestBarrilVermelho: 0
-  testeBarrilVermelhoDestruido: 0
-  testColetouTerra: 0
-  testColetouPecaMaquinaria: 0
-  relacaoAssistente: 2
-  relacaoGovernador: 2
-  relacaoEmpresarioRuim: 2
-  relacaoEmpresarioBom: 2
-  relacaoFazendeiro: 2
-  relacaoVozDoPovo: 2
+  save:
+    textTypingSpeed: 10
+    textBoxBoundsY: 0.9
+    textBoxBoundsX: 0.8
+    turno: 1
+    ato: 1
+    cenaAtual: Laboratorio_1
+    novaPosicao: {x: 5.73, y: -3.13}
+    conheceuGovernadorEEmpresario: 0
+    conheceuFazendeiro: 0
+    testeQuestBarrilVermelho: 0
+    testeBarrilVermelhoDestruido: 0
+    testColetouTerra: 0
+    testColetouPecaMaquinaria: 0
+    relacaoAssistente: 2
+    relacaoGovernador: 2
+    relacaoEmpresarioRuim: 2
+    relacaoEmpresarioBom: 2
+    relacaoFazendeiro: 2
+    relacaoVozDoPovo: 2
 --- !u!212 &465966177179946060
 SpriteRenderer:
   m_ObjectHideFlags: 0

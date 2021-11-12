@@ -82,13 +82,13 @@ public class DialogueTriggerPlayer : DialogueTrigger
         if (NPCPerguntando == dialogueData.name
             && resposta == dialogueResponses.Responses[2] && ultimaSentenca == 19)
         {
-            estadoDeMundo.relacaoEmpresarioRuim++;
+            estadoDeMundo.save.relacaoEmpresarioRuim++;
             StartDialogue(19, 19);
         }
         else if (NPCPerguntando == dialogueData.name
           && resposta == dialogueResponses.Responses[3] && ultimaSentenca == 19)
         {
-            estadoDeMundo.relacaoEmpresarioRuim--;
+            estadoDeMundo.save.relacaoEmpresarioRuim--;
             StartDialogue(19, 19);
         }
 
@@ -96,13 +96,13 @@ public class DialogueTriggerPlayer : DialogueTrigger
         if (NPCPerguntando == dialogueData.name
             && resposta == dialogueResponses.Responses[4] && ultimaSentenca == 20)
         {
-            estadoDeMundo.relacaoFazendeiro++;
+            estadoDeMundo.save.relacaoFazendeiro++;
             StartDialogue(20, 20);
         }
         else if (NPCPerguntando == dialogueData.name
           && resposta == dialogueResponses.Responses[5] && ultimaSentenca == 20)
         {
-            estadoDeMundo.relacaoFazendeiro--;
+            estadoDeMundo.save.relacaoFazendeiro--;
             StartDialogue(20, 20);
         }
     }

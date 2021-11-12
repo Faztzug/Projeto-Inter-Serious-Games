@@ -22,7 +22,7 @@ public class FimDeTurno : MonoBehaviour
         {
             
 
-            if (estado.testColetouPecaMaquinaria == true && estado.testColetouTerra == true)
+            if (estado.save.testColetouPecaMaquinaria == true && estado.save.testColetouTerra == true)
             {
 
                 Destroy(inventario.slotsManager.AcharItem(itens[0].itemName).gameObject);
