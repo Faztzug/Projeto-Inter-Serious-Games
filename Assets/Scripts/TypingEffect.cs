@@ -6,7 +6,7 @@ using TMPro;
 public class TypingEffect : MonoBehaviour
 {
     
-    private float textTypingSpeed;
+    [HideInInspector] public float textTypingSpeed;
     private TextMeshProUGUI dialogueTextMeshPro;
     private TextBoxDialogue textBox;
 

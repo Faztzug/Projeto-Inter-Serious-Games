@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 9.000003, y: -4.155252}
+  touchPosition: {x: -2.3437216, y: -6.0852513}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -69,6 +69,7 @@ MonoBehaviour:
   segundosPararDeAndarAoColidir: 0.5
   emDialogo: 0
   emResposdendo: 0
+  emTransicaoDECena: 0
   NPCfalando: {fileID: 0}
   perspectiva: 0
 --- !u!114 &375688009
@@ -125,6 +126,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   save:
+    musicVolume: 1
+    SFXVolume: 1
+    frameRate: 30
     textTypingSpeed: 10
     textBoxBoundsY: 0.9
     textBoxBoundsX: 0.8

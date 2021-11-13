@@ -9,6 +9,10 @@ public class EstadoDeMundo : MonoBehaviour
 
     public ItemsDatabase itemsDatabase;
 
+    private MusicPlayer musicPlayer;
+
+    private TypingEffect typingEffect;
+
     private string savePath = "/Save.sav";
 
     private void Awake()
@@ -20,6 +24,23 @@ public class EstadoDeMundo : MonoBehaviour
 
     private void Start()
     {
+        if (FindObjectOfType<MusicPlayer>() != null)
+            musicPlayer = FindObjectOfType<MusicPlayer>();
+
+        if (FindObjectOfType<TypingEffect>() != null)
+            typingEffect = FindObjectOfType<TypingEffect>();
+
+        if (typingEffect != null && musicPlayer != null)
+            UpdateSettings();
+
+    }
+
+    public void UpdateSettings()
+    {
+        Application.targetFrameRate = save.frameRate;
+        musicPlayer.overallVolume = save.musicVolume;
+        musicPlayer.UpdateVolume();
+        typingEffect.textTypingSpeed = save.textTypingSpeed;
     }
 
     public void SaveGame()

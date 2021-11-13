@@ -3,6 +3,13 @@
 
 [System.Serializable] public class Save
 {
+    [Range(0,1)]
+    public float musicVolume = 1;
+    [Range(0, 1)]
+    public float SFXVolume = 1;
+    [Range(30, 60)]
+    public int frameRate = 30;
+    [Range(1,15)]
     public float textTypingSpeed = 10;
 
     [Range(0, 1)] public float textBoxBoundsY = 0.9f;

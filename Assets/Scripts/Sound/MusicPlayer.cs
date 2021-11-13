@@ -7,6 +7,9 @@ public class MusicPlayer : MonoBehaviour
     [SerializeField] private Sound[] sounds;
     [SerializeField] private string playThis;
     private string CurrentPlaying;
+    [Range(0,1)]
+    public float overallVolume = 1;
+    private AudioSource[] allAudioSources;
 
     private void Awake()
     {
@@ -33,7 +36,10 @@ public class MusicPlayer : MonoBehaviour
         }
 
         PlayAudio(playThis);
-        
+
+        allAudioSources = GetComponents<AudioSource>();
+
+        UpdateVolume();
     }
 
     public void ChangeMusic(string name)
@@ -62,6 +68,22 @@ public class MusicPlayer : MonoBehaviour
             }
                 
         }
+    }
+
+    public void UpdateVolume()
+    {
+        int length = allAudioSources.Length;
+        Debug.Log("Update Volume");
+
+        for (int i = 0; i < length; i++)
+        {
+            allAudioSources[i].volume = sounds[i].volume * overallVolume;
+        }
+
+        /*foreach (AudioSource music in GetComponents<AudioSource>())
+        {
+            music.volume = 1 * overallVolume;
+        }*/
     }
 
     private void DontDestroy()
