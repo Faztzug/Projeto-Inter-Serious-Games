@@ -54,7 +54,7 @@ public class EstadoDeMundo : MonoBehaviour
 
     public void LoadGame()
     {
-        if (File.Exists(Application.persistentDataPath + savePath))
+        if (ChecarSeSaveExiste())
         {
             DontDestroyOnLoad(this.gameObject);
 
@@ -73,6 +73,16 @@ public class EstadoDeMundo : MonoBehaviour
 
 
         }
+    }
+
+    public bool ChecarSeSaveExiste()
+    {
+
+        if (File.Exists(Application.persistentDataPath + savePath))
+            return true;
+        else
+            return false;
+
     }
 
     private void LoadGetPlayerAndDestroy()
