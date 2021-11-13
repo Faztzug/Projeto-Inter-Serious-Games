@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class AoColidirComTransitorDeCena : MonoBehaviour
 {
+    PlayerControl playerControl;
     [SerializeField] float esperaChecarCamera = 1f;
+
+    private void Start()
+    {
+        playerControl = GetComponent<PlayerControl>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,6 +18,8 @@ public class AoColidirComTransitorDeCena : MonoBehaviour
 
         if (collision.CompareTag("Trancisao de Cena"))
         {
+            playerControl.andando = false;
+            playerControl.emTransicaoDECena = true;
             collision.GetComponent<TrocarCena>().CarregarCena();
             StartCoroutine(ChecarCameraNovamente());
         }
@@ -25,6 +33,7 @@ public class AoColidirComTransitorDeCena : MonoBehaviour
     {
         yield return new WaitForSeconds(esperaChecarCamera);
         GetComponent<PlayerControl>().ChecarCamera();
+        playerControl.emTransicaoDECena = false;
     }
 
 }
