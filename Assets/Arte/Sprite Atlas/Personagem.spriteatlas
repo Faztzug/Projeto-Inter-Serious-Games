@@ -80,10 +80,15 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a2bc0d719981bf343b06fb42b858aa2f, type: 3}
   - {fileID: 21300000, guid: 899c66f2f1e2e3842b4f6a1ef15abc6c, type: 3}
   - {fileID: 21300000, guid: 03c34373f29f88c439b4f3632044dfb9, type: 3}
+  - {fileID: 21300000, guid: 4ec565a3a4ae2ed4ab1a292683bac1ca, type: 3}
   - {fileID: 21300000, guid: ed1dd52566a5d9440a11d5ed527212ed, type: 3}
+  - {fileID: 21300000, guid: 902058753dc110a4e873b5303aaee6f1, type: 3}
   - {fileID: 21300000, guid: 956405e7401eba64a8a91a587d7c2793, type: 3}
   - {fileID: 21300000, guid: 86d3f118e240ce84e8d1e04436b6a19d, type: 3}
+  - {fileID: 21300000, guid: 29dc1348c89c1624294b03e2e39298ce, type: 3}
   - {fileID: 21300000, guid: 9b511b88dd9e4ff46a39701330db8328, type: 3}
+  - {fileID: 21300000, guid: 4d5af6b8f8346b6478a578b238762bc0, type: 3}
+  - {fileID: 21300000, guid: 5c2fb3191f1ce2d45bd42fe2a19a9b1f, type: 3}
   - {fileID: 21300000, guid: 5a65d639279058d44bdfeb1120463dbf, type: 3}
   - {fileID: 21300000, guid: 77c7e0a92df6da045a032048c0870dfc, type: 3}
   - {fileID: 21300000, guid: e9aceea97d3784242986e7fe97681cd0, type: 3}
@@ -94,6 +99,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: af01eb8c297e8bb48b487d20dbe0ac78, type: 3}
   - {fileID: 21300000, guid: ffd6329c5d169b6419edfbad3bdd9663, type: 3}
   - {fileID: 21300000, guid: 12351bbc167b1cb43b43b3b4d0e5ebc4, type: 3}
+  - {fileID: 21300000, guid: f867823dcce2ba044a6f32d6e18a4da0, type: 3}
   - {fileID: 21300000, guid: aedbbd8fb3934c14c825b825b2c09971, type: 3}
   m_PackedSpriteNamesToIndex:
   - Esq_8
@@ -103,10 +109,15 @@ SpriteAtlas:
   - Esq_4
   - Dir_2
   - Esq_1
+  - 1m
   - Dir_8
+  - 3
   - Frente_2
   - Esq_7
+  - 6
   - Esq_2
+  - 2s
+  - 5
   - Frente_5
   - Frente_3
   - Esq_6
@@ -117,6 +128,7 @@ SpriteAtlas:
   - Frente_1
   - Dir_6
   - Dir_5
+  - 4
   - Frente_6
   m_RenderDataMap: {}
   m_Tag: Personagem

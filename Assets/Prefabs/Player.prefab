@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 375688006}
   - component: {fileID: 465966177179946060}
   - component: {fileID: 1938422012}
-  - component: {fileID: 1603772664}
-  - component: {fileID: 1603772665}
   - component: {fileID: 1603772666}
   - component: {fileID: 1603772659}
   - component: {fileID: 1603772663}
@@ -132,17 +130,17 @@ MonoBehaviour:
     textBoxBoundsX: 0.8
     inventarioData:
     - SlotID: 0
-      childPrefabPath: {fileID: 0}
+      itemChildName: 
     - SlotID: 0
-      childPrefabPath: {fileID: 0}
+      itemChildName: 
     - SlotID: 0
-      childPrefabPath: {fileID: 0}
+      itemChildName: 
     - SlotID: 0
-      childPrefabPath: {fileID: 0}
+      itemChildName: 
     - SlotID: 0
-      childPrefabPath: {fileID: 0}
+      itemChildName: 
     - SlotID: 0
-      childPrefabPath: {fileID: 0}
+      itemChildName: 
     turno: 1
     ato: 1
     cenaAtual: Laboratorio_1
@@ -237,48 +235,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1603772664
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465966177179946061}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.875}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 4.2400002, y: 4.2400002}
-    newSize: {x: 1.78125, y: 1.75}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.75}
-  m_EdgeRadius: 0
---- !u!70 &1603772665
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465966177179946061}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.875}
-  m_Size: {x: 0.8, y: 1.75}
-  m_Direction: 0
 --- !u!58 &1603772666
 CircleCollider2D:
   m_ObjectHideFlags: 0
