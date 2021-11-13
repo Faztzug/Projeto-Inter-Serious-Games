@@ -29,13 +29,14 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetBool("WalkFrente", false);
         anim.SetBool("WalkEsquerda", false);
         anim.SetBool("WalkDireita", false);
+        anim.SetBool("WalkCostas", false);
 
         if (playerControl.distanceY < -0.1 && 
             playerControl.distanceY < Mathf.Abs(playerControl.distanceX) * -1)
             anim.SetBool("WalkFrente", true);
         else if (playerControl.distanceY > 0.1 &&
             playerControl.distanceY > Mathf.Abs(playerControl.distanceX))
-            anim.SetBool("WalkFrente", true);
+            anim.SetBool("WalkCostas", true);
         else if (playerControl.distanceX < -0.1 &&
             playerControl.distanceX < Mathf.Abs(playerControl.distanceY) * -1)
             anim.SetBool("WalkEsquerda", true);

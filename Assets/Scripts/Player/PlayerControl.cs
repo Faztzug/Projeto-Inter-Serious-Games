@@ -20,6 +20,7 @@ public class PlayerControl : MonoBehaviour
 
     public bool emDialogo = false;
     public bool emResposdendo = false;
+    public bool emTransicaoDECena = false;
 
     private Ray ray;
     //private RaycastHit2D raycastHit2d;
@@ -159,7 +160,7 @@ public class PlayerControl : MonoBehaviour
 
     public void Andar()
     {
-        if (emDialogo == false)
+        if (emDialogo == false & emTransicaoDECena == false)
         {
             //Touch touch = Input.GetTouch(0);
             touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
