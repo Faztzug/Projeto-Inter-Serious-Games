@@ -1,7 +1,7 @@
-using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-
+using UnityEngine;
+using System.Collections;
 
 public class EstadoDeMundo : MonoBehaviour
 {
@@ -9,23 +9,23 @@ public class EstadoDeMundo : MonoBehaviour
 
     public ItemsDatabase itemsDatabase;
 
+    private string savePath = "/Save.sav";
+
     private void Awake()
     {
-        LoadGame();
+        //LoadGame();
         //cenaAtual = this.gameObject.scene.name;
         //novaPosicao = transform.position;
     }
 
-
     private void Start()
     {
-        
     }
-
 
     public void SaveGame()
     {
-        GetComponent<Inventory>().slotsManager.gameObject.SetActive(true);
+        GameObject slotsManagerGO = GetComponent<Inventory>().slotsManager.gameObject;
+        slotsManagerGO.SetActive(true);
 
         Slot[] slots = FindObjectsOfType<Slot>();
 
@@ -33,18 +33,20 @@ public class EstadoDeMundo : MonoBehaviour
         {
             save.inventarioData[i].SlotID = slots[i].i;
 
-            if (slots[i].transform.childCount > 0)
-                save.inventarioData[i].itemChildName = 
+            if (slots[i].gameObject.transform.childCount > 0)
+            {
+                save.inventarioData[i].itemChildName =
                     slots[i].transform.GetChild(0).GetComponent<Item>().itemName;
+            }
             else
+            {
                 save.inventarioData[i].itemChildName = null;
+            }
         }
 
-        
-        
+        slotsManagerGO.SetActive(false);
 
-
-        FileStream file = File.Create(Application.persistentDataPath + "/Save.sav");
+        FileStream file = File.Create(Application.persistentDataPath + savePath);
         BinaryFormatter bf = new BinaryFormatter();
         bf.Serialize(file, save);
         file.Close();
@@ -52,10 +54,92 @@ public class EstadoDeMundo : MonoBehaviour
 
     public void LoadGame()
     {
+        if (ChecarSeSaveExiste())
+        {
+            DontDestroyOnLoad(this.gameObject);
+
+            FileStream file = File.Open(Application.persistentDataPath + savePath, FileMode.Open);
+            BinaryFormatter bf = new BinaryFormatter();
+            Save loadedSave = (Save)bf.Deserialize(file);
+
+            save = loadedSave;
+
+            CrossfadeLoadEffect crossfade = FindObjectOfType<CrossfadeLoadEffect>();
+            crossfade.ChamarCrossfade(save.cenaAtual, save.novaPosicao);
+
+            file.Close();
+
+            LoadGetPlayerAndDestroy();
+
+
+        }
+    }
+
+    public bool ChecarSeSaveExiste()
+    {
+
+        if (File.Exists(Application.persistentDataPath + savePath))
+            return true;
+        else
+            return false;
 
     }
 
+    private void LoadGetPlayerAndDestroy()
+    {
+        //GameObject player = null;
+
+        
+
+        if (GameObject.FindGameObjectWithTag("Player") != null)
+        {
+            EstadoDeMundo playerEstado =
+                GameObject.FindGameObjectWithTag("Player").GetComponent<EstadoDeMundo>();
+
+            playerEstado.save = this.save;
+
+            playerEstado.AtualizarInventario();
+
+            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
+        }
+        else
+        {
+            StartCoroutine(LoadGetPlayerAndDestroyCourotine());
+            
+        }
+    }
+
+    IEnumerator LoadGetPlayerAndDestroyCourotine()
+    {
+        yield return new WaitForEndOfFrame();
+        LoadGetPlayerAndDestroy();
+    }
+
+    public void AtualizarInventario()
+    {
+        Inventory inventario = GetComponent<Inventory>();
+        
+
+        foreach (ItemSlotData item in save.inventarioData)
+        {
+            if(item.itemChildName != null)
+            {
+
+                
+                foreach (GameObject inDatabase in itemsDatabase.database)
+                {
+                    if (item.itemChildName == inDatabase.GetComponent<Item>().itemName)
+                    {
+                        Instantiate(inDatabase, inventario.slotsGameObject[item.SlotID].transform);
+                    }
+                    
+                }
+                
+                
+            }
+        }
+    }
 
 
-    
 }
