@@ -533,7 +533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2804501678240004515, guid: 62845dc2d1db0a642aa541d0a9d644a8, type: 3}
       propertyPath: carregarCena
-      value: Floresta_2
+      value: Floresta_3
       objectReference: {fileID: 0}
     - target: {fileID: 2804501678240004515, guid: 62845dc2d1db0a642aa541d0a9d644a8, type: 3}
       propertyPath: novaPosicao.x
