@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PortaAnimation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Animator anim;
+
+    private void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log("Abrir Porta");
+            anim.SetTrigger("Abrir");
+        }
     }
 }
