@@ -37,7 +37,8 @@
         }
     }
 
-    public bool conheceuGovernadorEEmpresario = false;
+    public bool conheceuGovernador = false;
+    public bool conheceuEmpresarioRuim = false;
     public bool conheceuFazendeiro = false;
 
     public bool testeQuestBarrilVermelho = false;

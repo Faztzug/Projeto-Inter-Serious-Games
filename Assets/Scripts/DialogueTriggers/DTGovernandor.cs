@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class DTGovernandor : DialogueTrigger
 {
+    public override void StartDialogue()
+    {
+        if(estadoDeMundo.save.turno == 1 && estadoDeMundo.save.conheceuGovernador == false)
+        {
+            dialogueManager.StartingDialogue(0, 3);
+            fazerAndar.pararDeAndarAoAtingirPlayer = false;
+        }
+            
+    }
     public override void EndOfDialogue(int lastSentence, string NPCname)
     {
         base.EndOfDialogue(lastSentence, NPCname);

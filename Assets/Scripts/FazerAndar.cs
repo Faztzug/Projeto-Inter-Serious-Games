@@ -12,6 +12,8 @@ public class FazerAndar : MonoBehaviour
     Ray ray;
     RaycastHit raycastHit;
 
+    public bool pararDeAndarAoAtingirPlayer = true;
+
     private void Start()
     {
         rgbd = GetComponent<Rigidbody2D>();
@@ -82,7 +84,7 @@ public class FazerAndar : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && pararDeAndarAoAtingirPlayer == true)
             PararAndar();
     }
 

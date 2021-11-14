@@ -25,7 +25,7 @@ public class DTEmpresarioRuim : DialogueTrigger
                 AndePara(new Vector2(transform.position.x + 1, transform.position.y - 7));
             FindObjectOfType<DTGovernandor>().GetComponentInParent<FazerAndar>().
                 AndePara(new Vector2(transform.position.x + 1, transform.position.y - 7));
-            estadoDeMundo.save.conheceuGovernadorEEmpresario = true;
+            estadoDeMundo.save.conheceuGovernador = true;
             FindObjectOfType<DialogueTriggerAssistente>().GetComponentInParent<FazerAndar>()
                 .AndePara(player.transform.position, 1);
         }

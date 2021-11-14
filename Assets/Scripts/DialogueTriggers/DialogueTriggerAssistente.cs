@@ -8,10 +8,10 @@ public class DialogueTriggerAssistente : DialogueTrigger
     {
         if(estadoDeMundo.save.turno == 1)
         {
-            if(estadoDeMundo.save.conheceuGovernadorEEmpresario == false)
+            if(estadoDeMundo.save.conheceuGovernador == false)
             dialogueManager.StartingDialogue(0, 1);
 
-            else if (estadoDeMundo.save.conheceuGovernadorEEmpresario == true 
+            else if (estadoDeMundo.save.conheceuGovernador == true 
                 && estadoDeMundo.save.conheceuFazendeiro == false)
                 dialogueManager.StartingDialogue(2, 4);
 
