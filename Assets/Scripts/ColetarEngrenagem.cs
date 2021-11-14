@@ -6,7 +6,7 @@ public class ColetarEngrenagem : MonoBehaviour
 {
     private void Start()
     {
-        if(FindObjectOfType<EstadoDeMundo>().save.testColetouPecaMaquinaria == true)
+        if(FindObjectOfType<EstadoDeMundo>().save.coletouFusivel == true)
         {
             this.gameObject.SetActive(false);
         }
@@ -15,8 +15,8 @@ public class ColetarEngrenagem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<EstadoDeMundo>().save.testColetouPecaMaquinaria = true;
-            collision.GetComponent<DialogueTrigger>().StartDialogue(10, 12);
+            collision.GetComponent<EstadoDeMundo>().save.coletouFusivel = true;
+            collision.GetComponent<DialogueTrigger>().StartDialogue(10, 11);
             this.gameObject.SetActive(false);
         }
     }

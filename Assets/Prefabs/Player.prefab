@@ -102,12 +102,11 @@ MonoBehaviour:
     - "Bom dia senhor, sim essa m\xE1quina \xE9 totalmente segura, "
     - "j\xE1 sobre o seu problema, irei estudar sobre as hip\xF3teses e te falarei
       amanh\xE3 de manh\xE3, tudo bem?\nFique bem e faremos nosso melhor."
-    - "Aqui est\xE1 a engrenagem solta, irei colocar ela no lugar!"
-    - ...
-    - Prontinho.
+    - "Como algu\xE9m pode ter deixado um fus\xEDvel para fora assim?"
+    - Terei que investigar sobre isso neste momento.
     - "Est\xE1 \xE9 uma boa area para coletar uma amostragem do solo."
-    - ...
-    - Pronto, agora devo leva-la ao laboratorio para analise.
+    - "Ap\xF3s estudar voc\xEA, poderemos ter uma no\xE7\xE3o melhor de onde direcionar
+      nossos esfor\xE7os."
     - O problema na maquinaria foi resolvido e a analise do solo foi concluida.
     - "Por\xE9m ainda preciso dar uma resposta ao empresario e ao fazendeiro."
     - Devo aceitar a verba do empresario em troca de compartilhar nossa pesquisa?
@@ -150,7 +149,8 @@ MonoBehaviour:
     cenaAtual: Laboratorio_1
     _positionX: 0
     _positionY: 0
-    conheceuGovernadorEEmpresario: 0
+    conheceuGovernador: 0
+    conheceuEmpresarioRuim: 0
     conheceuFazendeiro: 0
     testeQuestBarrilVermelho: 0
     testeBarrilVermelhoDestruido: 0

@@ -41,10 +41,11 @@
     public bool conheceuEmpresarioRuim = false;
     public bool conheceuFazendeiro = false;
 
-    public bool testeQuestBarrilVermelho = false;
-    public bool testeBarrilVermelhoDestruido = false;
-    public bool testColetouTerra = false;
-    public bool testColetouPecaMaquinaria = false;
+    public bool coletouTerra = false;
+    public bool coletouFusivel = false;
+
+    public bool AceitouAOfertaDoEmpresarioRuim = false;
+    public bool AceitouLiberarAguasParaFazendeiro = false;
 
     //estrelas
     [Range(0, 5)] public int relacaoAssistente = 2;
@@ -56,4 +57,6 @@
     [Range(0, 5)] public int relacaoVozDoPovo = 2;
 
     
+    public bool testeQuestBarrilVermelho = false;
+    public bool testeBarrilVermelhoDestruido = false;
 }

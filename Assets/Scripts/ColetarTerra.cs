@@ -6,7 +6,7 @@ public class ColetarTerra : MonoBehaviour
 {
     private void Start()
     {
-        if (FindObjectOfType<EstadoDeMundo>().save.testColetouTerra == true)
+        if (FindObjectOfType<EstadoDeMundo>().save.coletouTerra == true)
         {
             this.gameObject.SetActive(false);
         }
@@ -15,8 +15,8 @@ public class ColetarTerra : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<EstadoDeMundo>().save.testColetouTerra = true;
-            collision.GetComponent<DialogueTrigger>().StartDialogue(13, 15);
+            collision.GetComponent<EstadoDeMundo>().save.coletouTerra = true;
+            collision.GetComponent<DialogueTrigger>().StartDialogue(12, 13);
             this.gameObject.SetActive(false);
         }
     }
