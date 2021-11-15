@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: d8bc604da4887044689573ac3916c699
+guid: 7a5a5672e3d5c8d4083a332d3f1d2b16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6769277450311805917
-    second: Pedra_2_0
+      213: -5775862316415746712
+    second: Parede 1_0
   - first:
-      213: 195520077365189764
-    second: Pedra_2_1
+      213: 6651005797290837149
+    second: Parede 1_1
+  - first:
+      213: -8104673110012995676
+    second: Parede 1_2
+  - first:
+      213: 674360190100981713
+    second: Parede 1_3
+  - first:
+      213: 106706161774327528
+    second: Parede 1_4
+  - first:
+      213: -7964371224966061518
+    second: Parede 1_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -38,7 +50,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -50,9 +62,9 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.3832115, y: 0.43417317}
-  spritePixelsToUnits: 350
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,53 +117,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pedra_2_0
+      name: Parede 1_0
       rect:
         serializedVersion: 2
-        x: 675
-        y: 807
-        width: 276
-        height: 203
+        x: 772
+        y: 1080
+        width: 136
+        height: 287
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3245a1c2602be02a0800000000000000
-      internalID: -6769277450311805917
+      spriteID: 86d797633d308dfa0800000000000000
+      internalID: -5775862316415746712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pedra_2_1
+      name: Parede 1_1
       rect:
         serializedVersion: 2
-        x: 843
-        y: 1002
-        width: 8
-        height: 10
+        x: 981
+        y: 1291
+        width: 150
+        height: 297
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +156,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48c1fc57970a6b200800000000000000
-      internalID: 195520077365189764
+      spriteID: d94859ab88e1d4c50800000000000000
+      internalID: 6651005797290837149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parede 1_2
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 534
+        width: 149
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7d3013fba668f80800000000000000
+      internalID: -8104673110012995676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parede 1_3
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 757
+        width: 151
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d742ad150fcb5900800000000000000
+      internalID: 674360190100981713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parede 1_4
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 13
+        width: 149
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e677e350b81b7100800000000000000
+      internalID: 106706161774327528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parede 1_6
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 239
+        width: 148
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2322e84619ed87190800000000000000
+      internalID: -7964371224966061518
       vertices: []
       indices: 
       edges: []

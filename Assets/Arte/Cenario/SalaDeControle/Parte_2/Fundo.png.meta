@@ -1,31 +1,34 @@
 fileFormatVersion: 2
-guid: 7cb20ab6e60b83940a52d6f2769c513a
+guid: 5c2c3d8099b460844b5e26a11ab84223
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9209987827211465736
-    second: PortaLateral_1
+      213: -2019156463891135753
+    second: Fundo_0
   - first:
-      213: 1700196525819998508
-    second: PortaLateral_2
+      213: -3424223046930616449
+    second: Fundo_1
   - first:
-      213: -2552033257438309690
-    second: PortaLateral_3
+      213: -3731462611860913067
+    second: Fundo_2
   - first:
-      213: -4081918203293030280
-    second: PortaLateral_4
+      213: -8543907825330763846
+    second: Fundo_3
   - first:
-      213: -2013779169231345971
-    second: Porta_1
+      213: 8333792862093508821
+    second: Fundo_4
   - first:
-      213: -1538819307659462173
-    second: Porta_2
+      213: -928061597941299413
+    second: Fundo_5
   - first:
-      213: 1032620995670039169
-    second: Porta_3
+      213: 605227707999502206
+    second: Fundo_6
   - first:
-      213: -4977044575838711651
-    second: Porta_4
+      213: 2975316473039454447
+    second: Fundo_7
+  - first:
+      213: -6954161252258564392
+    second: Fundo_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -56,7 +59,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +73,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,53 +126,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PortaLateral_1
+      name: Fundo_0
       rect:
         serializedVersion: 2
-        x: 277
-        y: 964
-        width: 264
-        height: 863
+        x: 245
+        y: 889
+        width: 153
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fb83652edc8f2080800000000000000
-      internalID: -9209987827211465736
+      spriteID: 7f2c5dfd4e38af3e0800000000000000
+      internalID: -2019156463891135753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PortaLateral_2
+      name: Fundo_1
       rect:
         serializedVersion: 2
-        x: 713
-        y: 964
-        width: 264
-        height: 863
+        x: 473
+        y: 890
+        width: 150
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c21bad17bbf489710800000000000000
-      internalID: 1700196525819998508
+      spriteID: f7faef7f747ba70d0800000000000000
+      internalID: -3424223046930616449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PortaLateral_3
+      name: Fundo_2
       rect:
         serializedVersion: 2
-        x: 1167
-        y: 964
-        width: 264
-        height: 863
+        x: 700
+        y: 889
+        width: 151
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c2186b064b559cd0800000000000000
-      internalID: -2552033257438309690
+      spriteID: 554016f468e273cc0800000000000000
+      internalID: -3731462611860913067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PortaLateral_4
+      name: Fundo_3
       rect:
         serializedVersion: 2
-        x: 1617
-        y: 964
-        width: 264
-        height: 863
+        x: 244
+        y: 662
+        width: 154
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 878a482650d1a57c0800000000000000
-      internalID: -4081918203293030280
+      spriteID: ab7ca75b911fd6980800000000000000
+      internalID: -8543907825330763846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_1
+      name: Fundo_4
       rect:
         serializedVersion: 2
-        x: 204
-        y: 151
-        width: 388
-        height: 641
+        x: 473
+        y: 665
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc662e9d38e9d04e0800000000000000
-      internalID: -2013779169231345971
+      spriteID: 5d005c8247497a370800000000000000
+      internalID: 8333792862093508821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_2
+      name: Fundo_5
       rect:
         serializedVersion: 2
-        x: 651
-        y: 147
-        width: 388
-        height: 643
+        x: 700
+        y: 664
+        width: 151
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e9f1712ef305aae0800000000000000
-      internalID: -1538819307659462173
+      spriteID: b27070dc4ecde13f0800000000000000
+      internalID: -928061597941299413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_3
+      name: Fundo_6
       rect:
         serializedVersion: 2
-        x: 1107
-        y: 147
-        width: 388
-        height: 643
+        x: 245
+        y: 438
+        width: 154
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18ad582135b945e00800000000000000
-      internalID: 1032620995670039169
+      spriteID: e7fb88fc463366800800000000000000
+      internalID: 605227707999502206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_4
+      name: Fundo_7
       rect:
         serializedVersion: 2
-        x: 1556
-        y: 147
-        width: 388
-        height: 643
+        x: 473
+        y: 436
+        width: 150
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,8 +291,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9059d9e35cfdeab0800000000000000
-      internalID: -4977044575838711651
+      spriteID: fe082ed71927a4920800000000000000
+      internalID: 2975316473039454447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fundo_8
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 436
+        width: 150
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6b7509f2bdd7f90800000000000000
+      internalID: -6954161252258564392
       vertices: []
       indices: 
       edges: []
