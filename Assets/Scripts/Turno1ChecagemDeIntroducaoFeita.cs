@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class Turno1ChecagemDeIntroducaoFeita : MonoBehaviour
 {
+    private EstadoDeMundo estado;
     // Start is called before the first frame update
     void Start()
     {
-        if (FindObjectOfType<EstadoDeMundo>().save.conheceuFazendeiro == true)
-            FindObjectOfType<DialogueTriggerAssistente>().transform.parent.gameObject.SetActive(false);
+        estado = FindObjectOfType<EstadoDeMundo>();
+        if(estado.save.turno == 1)
+        {
+            if (estado.save.conheceuFazendeiro == true)
+                FindObjectOfType<DialogueTriggerAssistente>()
+                    .transform.parent.gameObject.SetActive(false);
+        }
+        
     }
 
     

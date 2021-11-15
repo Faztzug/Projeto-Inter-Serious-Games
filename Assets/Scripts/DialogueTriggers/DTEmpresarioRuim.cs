@@ -10,6 +10,11 @@ public class DTEmpresarioRuim : DialogueTrigger
         {
             dialogueManager.StartingDialogue(0, 1);
         }
+
+        if(estadoDeMundo.save.turno == 2)
+        {
+            dialogueManager.StartingDialogue(7, 7);
+        }
     }
 
     public override void EndOfDialogue(int lastSentence, string NPCname)
@@ -28,6 +33,27 @@ public class DTEmpresarioRuim : DialogueTrigger
             estadoDeMundo.save.conheceuGovernador = true;
             FindObjectOfType<DialogueTriggerAssistente>().GetComponentInParent<FazerAndar>()
                 .AndePara(player.transform.position, 1);
+        }
+
+        if(estadoDeMundo.save.turno == 2)
+        {
+            if (lastSentence == 8)
+                DTplayer.StartDialogue(20, 20);
+            else if (lastSentence == 10)
+                DTplayer.StartDialogue(21, 21);
+            else if (lastSentence == 11)
+                DTplayer.StartDialogue(22, 22);
+            else if (lastSentence == 12)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(30, 31);
+            else if (lastSentence == 16)
+                DTplayer.StartDialogue(24, 24);
+            else if (lastSentence == 17)
+            {
+                fazerAndar.AndePara(new Vector2(16, -3));
+                //FindObjectOfType<DTFazendeiro>().fazerAndar.AndePara(new Vector2(7.4f, -3.8f), 0.5f);
+                FindObjectOfType<DTFazendeiro>().fazerAndar.AndeParaOPlayer();
+            }
+                
         }
     }
 

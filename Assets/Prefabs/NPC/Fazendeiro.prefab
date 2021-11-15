@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   andando: 0
+  pararDeAndarAoAtingirPlayer: 1
 --- !u!50 &1623160344232233611
 Rigidbody2D:
   serializedVersion: 4
@@ -205,6 +206,16 @@ MonoBehaviour:
     - "Essa m\xE1quina a\xED \xE9 realmente segura n\xE9? \nEla gasta muita \xE1gua,
       senhor, mas eu preciso alimentar a popula\xE7\xE3o, voc\xEA entende? "
     - "N\xE3o teria como me ajudar um pouco com isso?"
+    - "Doutor Paulo, preciso falar de um problema com voc\xEA."
+    - "N\xE3o, isso n\xE3o, a gente conversa sobre isso l\xE1 na fazenda."
+    - "Muito bem, o trabalho de plantar \xE9 algo que eu estou j\xE1 acostumado, "
+    - "por\xE9m eu nunca tive que trabalhar em grande escala como esta sendo durante
+      esses dias, "
+    - "os meus equipamentos s\xE3o velhos e eu sou s\xF3 uma pessoa humilde, "
+    - "gostaria de pedir ao senhor de que eu possa pegar algumas m\xE1quinas para
+      me ajudarem nas planta\xE7\xF5es."
+    - "Sim n\xE3o me importo, contanto que seja r\xE1pido, agora preciso voltar para
+      a fazenda."
 --- !u!58 &1623160345188279258
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -233,3 +244,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902b3a325f10ada4ea73e768947426e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fazerAndar: {fileID: 0}

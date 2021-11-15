@@ -53,6 +53,32 @@ public class DialogueTriggerPlayer : DialogueTrigger
         else if (lastSentence == 19)
             FindObjectOfType<FimDeTurno>().EncerrarTurno();
 
+        if(estadoDeMundo.save.turno == 2)
+        {
+            if (lastSentence == 20)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(26, 26);
+            else if (lastSentence == 21)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(8, 9);
+            else if(lastSentence == 22)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(10, 10);
+            else if (lastSentence == 23)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(11, 11);
+            else if (lastSentence == 24)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(12, 15);
+            else if (lastSentence == 25)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(16, 16);
+            if (lastSentence == 26)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(32, 32);
+            if (lastSentence == 27)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(4, 4);
+            if (lastSentence == 28)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(5, 8);
+            if (lastSentence == 29)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(9, 9);
+            if (lastSentence == 30)
+                estadoDeMundo.save.fimIntroducaoTurno2 = true;
+        }
+
     }
 
     public void MomentoDeResponder(int sentence, string NPCname)

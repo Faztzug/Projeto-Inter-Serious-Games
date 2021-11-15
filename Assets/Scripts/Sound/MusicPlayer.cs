@@ -72,6 +72,13 @@ public class MusicPlayer : MonoBehaviour
 
     public void UpdateVolume()
     {
+        StartCoroutine(UpdateVolumeCourotine());
+    }
+
+    IEnumerator UpdateVolumeCourotine()
+    {
+        yield return new WaitForEndOfFrame();
+
         int length = allAudioSources.Length;
         Debug.Log("Update Volume");
 

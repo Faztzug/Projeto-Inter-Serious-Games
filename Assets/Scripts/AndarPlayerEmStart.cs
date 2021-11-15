@@ -19,7 +19,7 @@ public class AndarPlayerEmStart : MonoBehaviour
 
         for (int i = 0; i < length; i++)
         {
-            if (estado.save.turno == i && turnos[i] == true)
+            if (estado.save.turno - 1 == i && turnos[i] == true)
                 fazerAndar.AndeParaOPlayer();
 
         }

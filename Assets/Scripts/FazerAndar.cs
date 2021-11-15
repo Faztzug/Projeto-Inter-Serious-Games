@@ -63,6 +63,7 @@ public class FazerAndar : MonoBehaviour
 
     public void PararAndar()
     {
+        Debug.Log(gameObject.name + " mandei pra parar parou!");
         destinoPosition = transform.position;
         andando = false;
     }

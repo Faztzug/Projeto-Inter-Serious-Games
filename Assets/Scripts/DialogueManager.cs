@@ -7,7 +7,7 @@ public class DialogueManager : MonoBehaviour
     private int finalSentence;
     private DialogueTrigger dialogueTrigger;
 
-    [HideInInspector]
+    //[HideInInspector]
     public int numberSentences;
 
     private int currentSentence = 0;
@@ -40,17 +40,21 @@ public class DialogueManager : MonoBehaviour
 
     public void StartingDialogue(int startSentence, int finalSentence)
     {
+        Debug.Log("Starting Dialogue: " + startSentence + ", " + finalSentence);
         playerControl.emDialogo = true;
         playerControl.andando = false;
         playerControl.NPCfalando = this;
         this.startSentence = startSentence;
         this.finalSentence = finalSentence;
         currentSentence = startSentence;
+        NextSentenceFirstCall = true;
         NextSentence();
     }
 
     public void NextSentence()
     {
+        Debug.Log("Next Sentence, Current Sentence: " + currentSentence);
+
         typingEffect.StopAllCoroutines();
         
         if (NextSentenceFirstCall == true
@@ -89,20 +93,25 @@ public class DialogueManager : MonoBehaviour
             }
             else if (currentSentence >= numberSentences || currentSentence >= finalSentence)
             {
-                dialogueTrigger.EndOfDialogue(currentSentence, dialogueData.characterName);
+                Debug.Log("Fim das Sentenças desta fala, current sentence: " 
+                    + currentSentence + ", Final Sentence: " + finalSentence);
 
                 dialogueTextMeshPro.text = "";
                 textBox.Deactivate();
 
-                currentSentence = 0;
+                
                 NextSentenceFirstCall = true;
+
+                dialogueTrigger.EndOfDialogue(currentSentence, dialogueData.characterName);
+
+                //currentSentence = 0;
             }
             
         }
         else if (dialogueTextMeshPro.text != dialogueData.sentences[currentSentence] //-1
           && NextSentenceFirstCall == false)
         {
-            Debug.Log("SecondCall: " + currentSentence + dialogueData.sentences[currentSentence]);
+            Debug.Log("SecondCall, Terminando Sentença: " + currentSentence + dialogueData.sentences[currentSentence]);
             dialogueTextMeshPro.text = dialogueData.sentences[currentSentence]; //-1
             NextSentenceFirstCall = true;
         }

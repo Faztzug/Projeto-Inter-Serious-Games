@@ -38,8 +38,12 @@ public class EstadoDeMundo : MonoBehaviour
     public void UpdateSettings()
     {
         Application.targetFrameRate = save.frameRate;
-        musicPlayer.overallVolume = save.musicVolume;
-        musicPlayer.UpdateVolume();
+        if(musicPlayer != null)
+        {
+            musicPlayer.overallVolume = save.musicVolume;
+            musicPlayer.UpdateVolume();
+        }
+        if(typingEffect != null)
         typingEffect.textTypingSpeed = save.textTypingSpeed;
     }
 

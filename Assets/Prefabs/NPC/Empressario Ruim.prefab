@@ -76,6 +76,21 @@ MonoBehaviour:
       voc\xEA aceita ?"
     - Claro, claro. Leve seu tempo para pensar isso, estarei esperando uma resposta
       positiva, hahaha
+    - "Doutor Paulo espere um pouco a\xED."
+    - "Bom dia para o senhor tamb\xE9m, "
+    - "eu me desculpo por aparecer aqui do nada por\xE9m tem algo que eu descobri
+      que pode interessar a voc\xEA."
+    - "Ent\xE3o se trata de uma planta rara que pode ajudar a popula\xE7\xE3o com
+      rem\xE9dios, temperos, v\xE1rias coisas."
+    - "Ent\xE3o o lugar que eu plantaria seria na floresta\u2026"
+    - 'Bem o''que eu estava dizendo antes de ser interrompido, '
+    - "\xE9 de pedir para o senhor a permiss\xE3o de plantar-l\xE1, "
+    - "claro que utilizarei um pequeno espa\xE7o para plantar para n\xE3o atrapalhar
+      os seu trabalho, "
+    - "eu n\xE3o falaria dessa planta se ela n\xE3o ajudasse a popula\xE7\xE3o, por\xE9m
+      a escolha \xE9 sua."
+    - "Tenha o tempo que o senhor precisar, agora se me d\xE3o licen\xE7a eu preciso
+      ir para resolver outros problemas"
 --- !u!58 &4589573990104400539
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104,6 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378ea345d7d9b2745834af38c201c771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fazerAndar: {fileID: 0}
 --- !u!1 &4589573990198492923
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   andando: 0
+  pararDeAndarAoAtingirPlayer: 1
 --- !u!50 &4589573990198492919
 Rigidbody2D:
   serializedVersion: 4

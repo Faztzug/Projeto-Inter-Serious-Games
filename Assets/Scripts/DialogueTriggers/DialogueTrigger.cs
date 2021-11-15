@@ -9,10 +9,10 @@ public class DialogueTrigger : MonoBehaviour
     protected DialogueManager dialogueManager;
     protected PlayerControl player;
     protected DialogueTriggerPlayer DTplayer;
-    protected FazerAndar fazerAndar;
+    [HideInInspector] public FazerAndar fazerAndar;
     
 
-    private void Start()
+    public virtual void Start()
     {
         estadoDeMundo = FindObjectOfType<EstadoDeMundo>();
         dialogueManager = GetComponent<DialogueManager>();

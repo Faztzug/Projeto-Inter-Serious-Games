@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   andando: 0
+  pararDeAndarAoAtingirPlayer: 1
 --- !u!50 &7849470484049677883
 Rigidbody2D:
   serializedVersion: 4
@@ -196,6 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1f853e8f9444342b76b100787ef39f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fazerAndar: {fileID: 0}
 --- !u!114 &7849470484585874829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +237,38 @@ MonoBehaviour:
     - "e tamb\xE9m umas das pe\xE7as da m\xE1quina est\xE3o soltas seria bom o senhor
       ver isso na sala da maquinaria, "
     - enfim tenha um bom dia senhor Paulo
+    - "Bom dia doutor, tenho um relat\xF3rio para te mostrar"
+    - 'Como o senhor deve lembrar, Leandro nos ajudou com seu financiamento '
+    - "e conseguimos melhorar muito a maquina de carbono e avan\xE7ar muito na pesquisa
+      do solo da Savana,\n"
+    - "por\xE9m o representante do povo o Senhor Raul veio ontem a noite falar comigo
+      \n"
+    - " e disse que o Leandro andou utilizando a tecnologia da m\xE1quina para alguma
+      coisa\r\n"
+    - "Como o senhor deve lembrar, voc\xEA recusou a proposta de Leandro "
+    - 'e sem a sua ajuda no momento estamos conseguindo manter o projeto com a verba
+      do Governador '
+    - "por\xE9m n\xE3o conseguimos avan\xE7ar muito na pesquisa do solo da Savana
+      e  na Maquina de carbono."
+    - "Bem essa foi a primeira parte agora vamos para a segunda referente ao Jo\xE3o."
+    - "Bem com a nossa ajuda ao liberarmos a hidrel\xE9trica para ele poder plantar
+      teve um bom aumento para o Povo,"
+    - "inclusive o Senhor Jo\xE3o e o Raul gostariam de agradecer voc\xEA, "
+    - "por\xE9m, eles n\xE3o puderam comparecer aqui seria bom ir v\xEA-los depois."
+    - "N\xE3o, mas tivemos que reduzir a pot\xEAncia de trabalho dela para evitar
+      qualquer problema de n\xE3o suportar muito o trabalho."
+    - "Como o senhor recusou a libera\xE7\xE3o da \xE1gua na hidrel\xE9trica, "
+    - "a m\xE1quina de carbono n\xE3o teve que ser sobrecarregada e pode funcionar
+      normalmente, "
+    - "por\xE9m o povo e Jo\xE3o n\xE3o est\xE3o contentes com essa decis\xE3o seria
+      melhor o senhor quando tiver tempo ir conversar com eles."
+    - "O senhor ficou maluco, aquela floresta \xE9 umas das poucas que sobrou da
+      Amaz\xF4nia, "
+    - "n\xE3o podemos deixar algu\xE9m desmatar para plantar algo."
+    - "Sim, eu n\xE3o sabia dessa visita."
+    - "Doutor Paulo, \xE9 bom que o senhor saiba que caso n\xF3s dermos as maquinas
+      que ele est\xE1 pedindo, a Maquina de Carbono vai ter que utilizar mais energia
+      para continuar funcionando."
 --- !u!58 &7849470484585874826
 CircleCollider2D:
   m_ObjectHideFlags: 0

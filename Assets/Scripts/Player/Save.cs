@@ -17,6 +17,7 @@
 
     public ItemSlotData[] inventarioData;
 
+    [Range(1,10)]
     public int turno = 1;
     public int ato = 1;
 
@@ -46,6 +47,8 @@
 
     public bool AceitouAOfertaDoEmpresarioRuim = false;
     public bool AceitouLiberarAguasParaFazendeiro = false;
+
+    public bool fimIntroducaoTurno2 = false;
 
     //estrelas
     [Range(0, 5)] public int relacaoAssistente = 2;

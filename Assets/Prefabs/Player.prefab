@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: -2.3437216, y: -6.0852513}
+  touchPosition: {x: 0.9333516, y: -2.8781426}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -112,6 +112,20 @@ MonoBehaviour:
     - Devo aceitar a verba do empresario em troca de compartilhar nossa pesquisa?
     - Sobre a Represa, devo liberar para o Fazendeiro ou usa-la para a pesquisa?
     - "Sendo assim, meu trabalho por hoje est\xE1 concluido."
+    - "E a m\xE1quina teve algum dano ?"
+    - Bom dia senhor Leandro, o'que te traz aqui.
+    - Nossa, fiquei curioso, pode falar.
+    - "Uma planta mas onde voc\xEA pretende plant\xE1-la;"
+    - "Calma Daniela, ele n\xE3o acabou a proposta dele, senhor por favor pode continuar."
+    - "Agrade\xE7o a proposta e vou pensar nela at\xE9 o final do dia eu irei entregar
+      minha resposta."
+    - "Daniela, voc\xEA me disse que ele estava ocupado n\xE3o ?"
+    - "Sim pode falar, mas se for se tratar da \xFAltima vez que nos encontramos
+      \u2026."
+    - Pois bem pode falar.
+    - "Bem, isso \xE9 algo que no momento eu n\xE3o posso te dar uma resposta, agora
+      voc\xEA n\xE3o se importaria de eu dar essa resposta at\xE9 o final do dia."
+    - "Sim agrade\xE7o o aviso."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,16 +166,19 @@ MonoBehaviour:
     conheceuGovernador: 0
     conheceuEmpresarioRuim: 0
     conheceuFazendeiro: 0
-    testeQuestBarrilVermelho: 0
-    testeBarrilVermelhoDestruido: 0
-    testColetouTerra: 0
-    testColetouPecaMaquinaria: 0
+    coletouTerra: 0
+    coletouFusivel: 0
+    AceitouAOfertaDoEmpresarioRuim: 0
+    AceitouLiberarAguasParaFazendeiro: 0
+    fimIntroducaoTurno2: 0
     relacaoAssistente: 2
     relacaoGovernador: 2
     relacaoEmpresarioRuim: 2
     relacaoEmpresarioBom: 2
     relacaoFazendeiro: 2
     relacaoVozDoPovo: 2
+    testeQuestBarrilVermelho: 0
+    testeBarrilVermelhoDestruido: 0
   itemsDatabase:
     database:
     - {fileID: 1332506630945303748, guid: ca6d5e7e799d66749b0bb66494486f49, type: 3}
@@ -326,6 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34da50cd3cd8fc14493f87a023b15857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fazerAndar: {fileID: 0}
 --- !u!114 &375688008
 MonoBehaviour:
   m_ObjectHideFlags: 0
