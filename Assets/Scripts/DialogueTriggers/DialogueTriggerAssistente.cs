@@ -7,7 +7,10 @@ public class DialogueTriggerAssistente : DialogueTrigger
         base.Start();
         if (estadoDeMundo.save.turno == 2 && estadoDeMundo.save.fimIntroducaoTurno2 == true)
             fazerAndar.PararAndar();
+        else if(estadoDeMundo.save.turno == 3 && estadoDeMundo.save.fimIntroducaoTurno3 == true)
+            fazerAndar.PararAndar();
     }
+
     public override void StartDialogue()
     {
         Debug.Log("Começar StartDialogue() comum.");
@@ -22,12 +25,14 @@ public class DialogueTriggerAssistente : DialogueTrigger
             else if (estadoDeMundo.save.conheceuFazendeiro == true)
                 dialogueManager.StartingDialogue(10, 13);
         }
-
-        if (estadoDeMundo.save.turno == 2 && estadoDeMundo.save.fimIntroducaoTurno2 == false)
+        else if (estadoDeMundo.save.turno == 2 && estadoDeMundo.save.fimIntroducaoTurno2 == false)
         {
             dialogueManager.StartingDialogue(14, 14);
         }
-        
+        else if (estadoDeMundo.save.turno == 3 && estadoDeMundo.save.fimIntroducaoTurno3 == false)
+        {
+            dialogueManager.StartingDialogue(14, 14);
+        }
     }
 
     public override void EndOfDialogue(int lastSentence, string NPCname)
@@ -60,10 +65,8 @@ public class DialogueTriggerAssistente : DialogueTrigger
             {
                 if (estadoDeMundo.save.AceitouAOfertaDoEmpresarioRuim == true)
                 {
-
                     dialogueManager.StartingDialogue(15, 18);
                 }
-
                 else if (estadoDeMundo.save.AceitouAOfertaDoEmpresarioRuim == false)
                     dialogueManager.StartingDialogue(19, 21);
             }
@@ -88,6 +91,31 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 FindObjectOfType<DTFazendeiro>().StartDialogue(3, 3);
             else if (lastSentence == 34)
                 DTplayer.StartDialogue(29, 29);
+        }
+        else if (estadoDeMundo.save.turno == 3)
+        {
+            if (lastSentence == 15)
+            {
+                if (estadoDeMundo.save.aceitouPlantacaoDePlantaNaFloresta == true)
+                    StartDialogue(34, 35);
+                else if (estadoDeMundo.save.aceitouPlantacaoDePlantaNaFloresta == false)
+                    StartDialogue(36, 37);
+            }
+            else if (lastSentence == 36 || lastSentence == 38)
+            {
+                if (estadoDeMundo.save.aceitouCompartilharMaquinasFazendeiro == true)
+                    StartDialogue(38, 39);
+                else if (estadoDeMundo.save.aceitouCompartilharMaquinasFazendeiro == false)
+                    StartDialogue(40, 41);
+            }
+            else if (lastSentence == 40 || lastSentence == 42)
+                DTplayer.StartDialogue(30, 30);
+            else if (lastSentence == 43)
+                DTplayer.StartDialogue(32,32);
+            else if (lastSentence == 44)
+                DTplayer.StartDialogue(34, 34);
+            else if (lastSentence == 45)
+                DTplayer.StartDialogue(36, 36);
 
 
 

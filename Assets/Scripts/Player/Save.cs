@@ -50,6 +50,13 @@
 
     public bool fimIntroducaoTurno2 = false;
 
+    public bool aceitouPlantacaoDePlantaNaFloresta = false;
+    public bool aceitouCompartilharMaquinasFazendeiro = false;
+
+    public bool fimIntroducaoTurno3 = false;
+
+    public bool aceitouCompraERDoProjeto = false;
+
     //estrelas
     [Range(0, 5)] public int relacaoAssistente = 2;
 

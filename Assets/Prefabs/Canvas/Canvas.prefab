@@ -4446,7 +4446,7 @@ MonoBehaviour:
   Assistente: {fileID: 7849470484049677878, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
   Governador: {fileID: 2645994735013250889, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
   EmpresarioRuim: {fileID: 4589573990198492923, guid: e671060e5895dbe4cba20c5dcc66528b, type: 3}
-  EmpresarioBom: {fileID: 0}
+  EmpresarioBom: {fileID: 578460682951762735, guid: 32aec14ca12c50c459f663f88a9f6875, type: 3}
   Fazendeiro: {fileID: 1623160344232233612, guid: cf57432b56b13e44b8d9b1cdd962d958, type: 3}
   VozDoPovo: {fileID: 0}
   playerName: 
@@ -4631,6 +4631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558aa262df5255949af849837d3398f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textTypingSpeed: 0
 --- !u!1 &3659959330554782075
 GameObject:
   m_ObjectHideFlags: 0

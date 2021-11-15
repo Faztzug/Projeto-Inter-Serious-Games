@@ -79,6 +79,42 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 estadoDeMundo.save.fimIntroducaoTurno2 = true;
         }
 
+        else if(estadoDeMundo.save.turno == 3)
+        {
+            if (lastSentence == 31)
+            {
+                FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndeParaOPlayer();
+            }
+            else if (lastSentence == 32)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(42, 42);
+            else if (lastSentence == 33)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(0, 0);
+            else if (lastSentence == 34)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(1, 1);
+            else if (lastSentence == 35)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(2, 2);
+            else if (lastSentence == 36)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(3, 3);
+            else if (lastSentence == 37)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(4, 5);
+            else if (lastSentence == 38)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(6, 6);
+            else if (lastSentence == 39)
+                FindObjectOfType<DTGovernandor>().StartDialogue(4, 4);
+            else if (lastSentence == 40)
+                FindObjectOfType<DTGovernandor>().StartDialogue(5, 6);
+            else if (lastSentence == 41)
+                FindObjectOfType<DTGovernandor>().StartDialogue(7, 7);
+            else if (lastSentence == 42)
+                FindObjectOfType<DTGovernandor>().StartDialogue(8, 8);
+            else if (lastSentence == 44)
+                FindObjectOfType<DTGovernandor>().StartDialogue(12, 12);
+            else if (lastSentence == 45)
+                FindObjectOfType<DTGovernandor>().StartDialogue(13, 14);
+
+
+        }
+
     }
 
     public void MomentoDeResponder(int sentence, string NPCname)
