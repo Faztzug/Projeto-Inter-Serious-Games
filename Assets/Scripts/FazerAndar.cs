@@ -13,11 +13,13 @@ public class FazerAndar : MonoBehaviour
     RaycastHit raycastHit;
 
     public bool pararDeAndarAoAtingirPlayer = true;
+    
 
     private void Start()
     {
         rgbd = GetComponent<Rigidbody2D>();
         AtualizarPosicaoZ();
+        
     }
 
     private void AtualizarPosicaoZ()
