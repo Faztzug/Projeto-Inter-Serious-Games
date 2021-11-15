@@ -886,7 +886,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.58, y: -1.9}
+  m_Offset: {x: -4.58, y: -2.2573113}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -897,7 +897,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 34, y: 1}
+  m_Size: {x: 34, y: 1.7146237}
   m_EdgeRadius: 0
 --- !u!1 &342018666
 GameObject:
@@ -3054,6 +3054,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1172081271}
   - component: {fileID: 1172081270}
+  - component: {fileID: 1172081272}
+  - component: {fileID: 1172081273}
   m_Layer: 0
   m_Name: "M\xE1quina_1"
   m_TagString: Untagged
@@ -3126,6 +3128,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1172081272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172081269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f035866a8f8854ca1343a35ea662c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemObject: {fileID: 8178883786478874463, guid: c188f6216da778040a5e1a0de861204d, type: 3}
+--- !u!61 &1172081273
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172081269}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.27350068, y: -0.5058389}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.6, y: 5.4}
+    newSize: {x: 9.6, y: 5.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.506364, y: 3.4838443}
+  m_EdgeRadius: 0
 --- !u!1 &1235493506
 GameObject:
   m_ObjectHideFlags: 0
@@ -3378,8 +3419,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1328531089}
   - component: {fileID: 1328531090}
-  - component: {fileID: 1328531091}
-  - component: {fileID: 1328531092}
   m_Layer: 0
   m_Name: "M\xE1quina"
   m_TagString: Untagged
@@ -3452,35 +3491,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &1328531091
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328531088}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 2.8, y: -3.8}
-  serializedVersion: 2
-  m_Radius: 2
---- !u!114 &1328531092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328531088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56f035866a8f8854ca1343a35ea662c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemObject: {fileID: 8178883786478874463, guid: c188f6216da778040a5e1a0de861204d, type: 3}
 --- !u!1 &1345380755
 GameObject:
   m_ObjectHideFlags: 0
