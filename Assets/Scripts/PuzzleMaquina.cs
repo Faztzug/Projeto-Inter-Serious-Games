@@ -22,7 +22,7 @@ public class PuzzleMaquina : MonoBehaviour
             if (inventario.selectedItem != null && inventario.selectedItem.itemName == prefabName)
             {
                 Debug.Log("itens Iguais");
-                Instantiate(itemClass.worldItem, transform.position, transform.rotation);
+                gameObject.SetActive(false);
                 inventario.EliminarItemSelecionado();
             }
         }
