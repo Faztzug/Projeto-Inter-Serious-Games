@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: -0.60779786, y: -3.8302755}
+  touchPosition: {x: 0.58097947, y: -2.6560812}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -159,6 +159,8 @@ MonoBehaviour:
     - Nem me fale.
     - "Irei te dar uma resposta no final do dia pois agora eu n\xE3o estou conseguindo
       pensar em nada."
+    - "Ent\xE3o ele saiu do projeto ?"
+    - "Agrade\xE7o por me passar esse relat\xF3rio."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +214,10 @@ MonoBehaviour:
     investiuMaquinas: 0
     fimIntroducaoTurno4: 0
     fimDialogoGovernadorTurno4: 0
+    aceitouDoarDinheiroER: 0
+    aceitouEBComprarTerrenoFazendeiro: 0
+    aceitouEBParticiparProjetoRemedios: 0
+    fimIntroducaoTurno5: 0
     relacaoAssistente: 2
     relacaoGovernador: 2
     relacaoEmpresarioRuim: 2

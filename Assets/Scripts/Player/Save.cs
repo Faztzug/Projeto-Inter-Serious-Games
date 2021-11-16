@@ -62,6 +62,12 @@
     public bool fimIntroducaoTurno4 = false;
     public bool fimDialogoGovernadorTurno4 = false;
 
+    public bool aceitouDoarDinheiroER = false;
+    public bool aceitouEBComprarTerrenoFazendeiro = false;
+    public bool aceitouEBParticiparProjetoRemedios = false;
+
+    public bool fimIntroducaoTurno5 = false;
+
 
     //estrelas
     [Range(0, 5)] public int relacaoAssistente = 2;

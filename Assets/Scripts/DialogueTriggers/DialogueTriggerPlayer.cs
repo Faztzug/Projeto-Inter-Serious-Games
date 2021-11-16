@@ -151,6 +151,14 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
         }
 
+        else if (estadoDeMundo.save.turno == 5)
+        {
+            if (lastSentence == 60)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(71, 71);
+            else if (lastSentence == 61)
+                FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndeParaOPlayer();
+        }
+
     }
 
     public void MomentoDeResponder(int sentence, string NPCname)

@@ -313,6 +313,47 @@ MonoBehaviour:
     - Tudo bem Doutor ?
     - "Bem eu n\xE3o posso responder isso agora mas acredito que tudo vai ser resolvido,
       olha talvez isso melhore seu dia."
+    - "Bom dia Doutor Paulo, tenho um relat\xF3rio para te mostrar"
+    - "Como o senhor deve lembrar da sua conversa com o senhor Leandro, como o senhor
+      aceitou a doar, o senhor Raul me passou um relat\xF3rio "
+    - "falando que a doa\xE7\xE3o para arrecada\xE7\xE3o de alimentos n\xE3o teve
+      \xEAxito a popula\xE7\xE3o n\xE3o recebeu nada com isso a popula\xE7\xE3o e
+      o fazendeiro est\xE1 descontente com o senhor"
+    - "Como o senhor deve lembrar da sua conversa com o senhor Leandro, como o senhor
+      recusou a doar, o Senhor Leandro n\xE3o est\xE1 mais enviando o dinheiro para
+      o Projeto "
+    - "e o Senhor Pedro est\xE1 mais irritado com o projeto, seria bom o senhor conversar
+      com ele para melhorar essa situa\xE7\xE3o, se n\xE3o temos altos n\xEDveis
+      dele fechar o Projeto. "
+    - "Bem agora para o segundo t\xF3pico, a senhora Bianca estava interessada em
+      comprar mais terreno e m\xE1quinas melhores para o Senhor Jo\xE3o, "
+    - "como o Senhor aceitou a proposta dela, o Senhor Jo\xE3o est\xE1 conseguindo
+      produzir mais alimentos e tamb\xE9m em bastante quantidade, assim a popula\xE7\xE3o
+      est\xE1 muito contente."
+    - "Bem agora para o segundo t\xF3pico, a senhora Bianca estava interessada em
+      comprar mais terreno e m\xE1quinas melhores para o Senhor Jo\xE3o, "
+    - "como o Senhor recusou a proposta dela, o Senhor Jo\xE3o, n\xE3o est\xE1 conseguindo
+      produzir muitos alimentos para a popula\xE7\xE3o e com isso o Senhor Jo\xE3o
+      est\xE1 bem chateado com essa sua decis\xE3o."
+    - "como o Senhor recusou a proposta dela, o Senhor Jo\xE3o, n\xE3o est\xE1 conseguindo
+      produzir muitos alimentos para a popula\xE7\xE3o e com isso o Senhor Jo\xE3o
+      est\xE1 bem chateado com essa sua decis\xE3o."
+    - "Agora para o terceiro t\xF3pico, a senhora Bianca queria participar mais ativamente
+      do Projeto, como o Senhor aceitou sua proposta, "
+    - "estamos conseguindo ,muitos avan\xE7os em nossas pesquisas com a ajuda financeira
+      dela, por\xE9m o Senhor Leandro n\xE3o est\xE1 mais participando do projeto
+      como antes."
+    - "N\xE3o, ele est\xE1 financiando o projeto"
+    - "por\xE9m caso o Senhor n\xE3o lembre ele comprou uma parte do projeto, ent\xE3o
+      depois da entrada da Senhora Bianca ele saiu do projeto e \u2018devolveu\u2019
+      as a\xE7\xF5es que ele comprou"
+    - "Agora para o terceiro t\xF3pico, a senhora Bianca queria participar mais ativamente
+      do Projeto, como o Senhor recusou, a senhora Bianca est\xE1 bem chateada com
+      voc\xEA, "
+    - "ela anda muito tempo com o Senhor Raul dandos os rem\xE9dios que ela comprou
+      por\xE9m tanto ela quanto o senhor Raul "
+    - "n\xE3o est\xE3o contente com sua decis\xE3o de continuar com o projeto com
+      o Senhor Leandro, seria bom o senhor falar com eles."
 --- !u!58 &7849470484585874826
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -39,6 +39,10 @@ public class DialogueTriggerAssistente : DialogueTrigger
         {
             StartDialogue(45, 45);
         }
+        else if (estadoDeMundo.save.turno == 5 && estadoDeMundo.save.fimIntroducaoTurno5 == false)
+        {
+            StartDialogue(59, 59);
+        }
     }
 
     public override void EndOfDialogue(int lastSentence, string NPCname)
@@ -162,6 +166,45 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndeParaOPlayer();
             }
                 
+
+
+
+        }
+        else if (estadoDeMundo.save.turno == 5)
+        {
+            if (lastSentence == 60)
+            {
+                if (estadoDeMundo.save.aceitouDoarDinheiroER == true)
+                    StartDialogue(60, 61);
+                else if (estadoDeMundo.save.aceitouDoarDinheiroER == false)
+                    StartDialogue(62, 63);
+            }
+            else if (lastSentence == 62 || lastSentence == 64)
+            {
+                if (estadoDeMundo.save.aceitouEBComprarTerrenoFazendeiro == true)
+                    StartDialogue(64, 65);
+                else if (estadoDeMundo.save.aceitouEBComprarTerrenoFazendeiro == false)
+                    StartDialogue(66, 67);
+            }
+            else if (lastSentence == 66 || lastSentence == 68)
+            {
+                if (estadoDeMundo.save.aceitouEBParticiparProjetoRemedios == true)
+                    StartDialogue(69, 70);
+                else if (estadoDeMundo.save.aceitouEBParticiparProjetoRemedios == false)
+                    StartDialogue(73, 75);
+            }
+            else if (lastSentence == 71)
+                DTplayer.StartDialogue(59,59);
+            else if (lastSentence == 72)
+            {
+                if (estadoDeMundo.save.aceitouCompraERDoProjeto == true)
+                    StartDialogue(72, 72);
+                else
+                    DTplayer.StartDialogue(60, 60);
+
+            }
+            else if (lastSentence == 73 || lastSentence == 76)
+                DTplayer.StartDialogue(60, 60);
 
 
 
