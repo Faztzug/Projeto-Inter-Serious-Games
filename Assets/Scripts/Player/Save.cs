@@ -3,19 +3,6 @@
 
 [System.Serializable] public class Save
 {
-    [Range(0,1)]
-    public float musicVolume = 1;
-    [Range(0, 1)]
-    public float SFXVolume = 1;
-    [Range(30, 60)]
-    public int frameRate = 30;
-    [Range(1,15)]
-    public float textTypingSpeed = 10;
-
-    [Range(0, 1)] public float textBoxBoundsY = 0.9f;
-    [Range(0, 1)] public float textBoxBoundsX = 0.8f;
-
-    public ItemSlotData[] inventarioData;
 
     [Range(1,10)]
     public int turno = 1;
@@ -68,6 +55,15 @@
 
     public bool fimIntroducaoTurno5 = false;
 
+    public bool ONUInvestiuSalaContorle5 = false;
+    public bool ONUInvestiuMaquinaria5 = false;
+    public bool ONUInvestiuHidreletrica5 = false;
+    public bool ONUInvestiuExaustores5 = false;
+
+    public bool fimIntroducaoTurno6 = false;
+
+    [Range(0,100)]
+    public int avancoProjeto = 0;
 
     //estrelas
     [Range(0, 5)] public int relacaoAssistente = 2;
@@ -78,6 +74,19 @@
     [Range(0, 5)] public int relacaoFazendeiro = 2;
     [Range(0, 5)] public int relacaoVozDoPovo = 2;
 
+    [Range(0,1)]
+    public float musicVolume = 1;
+    [Range(0, 1)]
+    public float SFXVolume = 1;
+    [Range(30, 60)]
+    public int frameRate = 30;
+    [Range(1,15)]
+    public float textTypingSpeed = 10;
+
+    [Range(0, 1)] public float textBoxBoundsY = 0.9f;
+    [Range(0, 1)] public float textBoxBoundsX = 0.8f;
+
+    public ItemSlotData[] inventarioData;
     
     public bool testeQuestBarrilVermelho = false;
     public bool testeBarrilVermelhoDestruido = false;

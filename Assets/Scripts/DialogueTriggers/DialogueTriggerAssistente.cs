@@ -194,7 +194,7 @@ public class DialogueTriggerAssistente : DialogueTrigger
                     StartDialogue(73, 75);
             }
             else if (lastSentence == 71)
-                DTplayer.StartDialogue(59,59);
+                DTplayer.StartDialogue(59, 59);
             else if (lastSentence == 72)
             {
                 if (estadoDeMundo.save.aceitouCompraERDoProjeto == true)
@@ -205,6 +205,12 @@ public class DialogueTriggerAssistente : DialogueTrigger
             }
             else if (lastSentence == 73 || lastSentence == 76)
                 DTplayer.StartDialogue(60, 60);
+            else if (lastSentence == 77)
+                DTplayer.StartDialogue(66, 66);
+            else if (lastSentence == 79)
+                DTplayer.StartDialogue(67, 67);
+            else if (lastSentence == 80)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(27,27);
 
 
 

@@ -157,6 +157,31 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(71, 71);
             else if (lastSentence == 61)
                 FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndeParaOPlayer();
+            else if (lastSentence == 62)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(21,21);
+            else if (lastSentence == 63)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(22, 22);
+            else if (lastSentence == 64)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(23, 24);
+            else if (lastSentence == 65)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(25, 26);
+            else if (lastSentence == 66)
+            {
+                player.emDialogo = true;
+                FindObjectOfType<DialogueTriggerAssistente>().fazerAndar.AndeParaOPlayer();
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(76, 76, 0.5f);
+            }
+            else if (lastSentence == 67)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(77, 78);
+            else if (lastSentence == 68)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(79, 79);
+            else if (lastSentence == 69)
+            {
+                estadoDeMundo.save.fimIntroducaoTurno5 = true;
+                FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndePara(new Vector2(17f, -3f));
+                
+            }
+
         }
 
     }

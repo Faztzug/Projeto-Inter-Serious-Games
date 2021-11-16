@@ -157,6 +157,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: bd75a2b82ce6a1045a91beaec271aa0b, type: 3}
   - {fileID: 21300000, guid: ed7116b8e2170fb4e980a0cfaf26b266, type: 3}
   - {fileID: 21300000, guid: f5a02fb8c13f8224eb0bd7c00604303a, type: 3}
+  - {fileID: 21300000, guid: e9edacc8b9c5b41459323afdb5e7574d, type: 3}
   - {fileID: 21300000, guid: 50b0e8f8ecb63e3418b9bf40ce473c85, type: 3}
   - {fileID: 21300000, guid: 49efa1096b90b43459ef6c7a2254c6d0, type: 3}
   - {fileID: 2974121904050861087, guid: a62e5909ce934bf4cbf64ce7997b20f5, type: 3}
@@ -205,7 +206,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 493636ec5b54694439be664ee3895c02, type: 3}
   - {fileID: 21300000, guid: 787e08ecc43bf8840b8630534327bda9, type: 3}
   - {fileID: 21300000, guid: 8f5037fceb464a745a6b695f4667c997, type: 3}
+  - {fileID: 21300000, guid: 0330bcfc62b6ac140b5388f55dd67cc4, type: 3}
   - {fileID: 21300000, guid: 587f7efc2a98f4846b1ddffa65a9cfb9, type: 3}
+  - {fileID: 21300000, guid: 976cf70d65a7e7147a8ff71cc43f2ef3, type: 3}
   - {fileID: 21300000, guid: b529781d30b73cb49bf70fb4c3c78269, type: 3}
   - {fileID: 21300000, guid: d0b3da1d1df877248b65f1ede2f24da2, type: 3}
   - {fileID: 21300000, guid: c6f9cc1d78ef46a4187cdc8bf4576f54, type: 3}
@@ -215,6 +218,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 984a444db3bea7f4491e10ba5d27f1ec, type: 3}
   - {fileID: 21300000, guid: 3474907d075c5394db403a322ae337af, type: 3}
   - {fileID: 21300000, guid: 96cce67d3f78fb148bbb73a0879dc16e, type: 3}
+  - {fileID: 21300000, guid: 9273848d7687bac498a8d9892a3d24c0, type: 3}
   - {fileID: 21300000, guid: 959de8ad9db838d49906260485cf45fc, type: 3}
   - {fileID: 21300000, guid: 6a46d1bd182781c489109a6db3df46f1, type: 3}
   - {fileID: 21300000, guid: 0de10bfd9a2e0414fb2eaa877c657ebe, type: 3}
@@ -352,6 +356,7 @@ SpriteAtlas:
   - "\xC1rvore_QuartoPlano_4"
   - Erlenmeyer_3
   - Grama_5
+  - Exaustores_SegundoPlano
   - Pedregulho_4
   - Arbusto_2
   - "Ch\xE3o_0"
@@ -400,7 +405,9 @@ SpriteAtlas:
   - Porta_7
   - Cano_4
   - gramado_3
+  - Fios
   - Rachadura_2
+  - Exaustor
   - "\xC1rvore_TerceiroPlano_2"
   - "Sombra_Cal\xE7ada"
   - "\xC1rvore_queimada_2"
@@ -410,6 +417,7 @@ SpriteAtlas:
   - "\xC1rvore"
   - PoteVazio_Puzzle
   - Nuvem_6
+  - Exaustores_TerceiroPlano
   - Becker
   - Cano_1
   - Rachadura_4

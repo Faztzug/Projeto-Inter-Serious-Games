@@ -211,10 +211,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    characterColor: {r: 0.42395073, g: 0.3783294, b: 0.9433962, a: 1}
+    characterColor: {r: 0.5090558, g: 0.46971372, b: 0.94509804, a: 1}
     characterName: Bianca
     textPosition: {x: 0, y: 0.3}
-    sentences: []
+    sentences:
+    - "Bom dia senhores, acredito que voc\xEAs j\xE1 devem me conhecer."
+    - "Ent\xE3o Doutor Paulo eu estou aqui para fazer uma parceria para, eu poder
+      ajudar no seu projeto como eu puder "
+    - "Pelo que sei voc\xEAs j\xE1 possuem um investidor no Projeto seria o senhor
+      Leandro, estou certa."
+    - "Bem, eu trabalhei poucas vezes com ele, mas sei que ele \xE9 uma pessoa dif\xEDcil
+      de lidar, mas n\xE3o se preocupe que eu n\xE3o sou assim."
+    - "N\xE3o se preocupe, quase todo mundo que trabalhou com ele fala a mesma coisa, "
+    - "aproveitando queria entregar para voc\xEAs esse cheque para o senhor"
+    - "Bem, eu preciso resolver umas coisas, ent\xE3o eu vou indo."
+    - Bom dia doutor, vim aqui ver como anda o projeto.
+    - "A n\xE3o precisa ser t\xE3o modesto, inclusive queria fazer uma pro..."
+    - "Ola Leandro, j\xE1 faz um bom tempo que n\xE3o trabalhamos juntos."
+    - "Caramba realmente voc\xEA n\xE3o mudou nada "
+    - "Bem agora que o senhor j\xE1 deu sua proposta eu tamb\xE9m darei a minha, "
+    - "Doutor Paulo o que eu quero discutir com voc\xEA antes do Senhor Leandro aparecer
+      \xE9 de eu comprar mais lotes de terra para o fazendeiro "
+    - "e tamb\xE9m comprar m\xE1quinas melhores para ele assim ele pode devolver
+      as que ele est\xE1 usando para voc\xEA."
+    - Por mim tudo bem, estarei no aguardo.
+    - "Bem eu tenho coisas para fazer agora, mas depois eu tenho que tratar de uma
+      coisa com voc\xEA, bem eu estou indo."
+    - "Pelo visto a conversa foi feita para voc\xEA Doutor."
+    - "Bem eu tenho uma proposta para o senhor que pode te ajudar, eu estou indo
+      comprar rem\xE9dios para o povo doente "
+    - "por\xE9m s\xF3 vou poder distribuir para o povo se o senhor aceitar de eu
+      participar mais ativamente do projeto."
+    - Ficarei no aguardo.
+    - Bom dia, doutor
+    - "N\xE3o, cheguei faz alguns minutos."
+    - "O senhor est\xE1 se referindo ao Leandro, n\xE3o \xE9?"
+    - "Muito bem o que posso falar sobre ele, olha pelas minhas experi\xEAncias com
+      ele \xE9 que ele \xE9 um cara que nunca se importou com a natureza ou com a
+      popula\xE7\xE3o no geral, "
+    - "sempre querendo se sair por cima dos outros, ent\xE3o \xE9 bem capaz que sim
+      que ele seja o responsavel por tudo que anda acontecendo"
+    - "Sim, ele ainda \xE9 o aliado do Senhor Pedro melhor termos mais provas contra
+      ele e tamb\xE9m testemunhas,"
+    - "recomendo ao senhor ir conversar com os seus contatos para ver se eles v\xE3o
+      ajud\xE1-lo."
+    - "Bom estou indo ent\xE3o, lembre-se Paulo de ir atr\xE1s das testemunhas "
 --- !u!58 &578460683487209619
 CircleCollider2D:
   m_ObjectHideFlags: 0

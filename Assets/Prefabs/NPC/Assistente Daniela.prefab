@@ -354,6 +354,12 @@ MonoBehaviour:
       por\xE9m tanto ela quanto o senhor Raul "
     - "n\xE3o est\xE3o contente com sua decis\xE3o de continuar com o projeto com
       o Senhor Leandro, seria bom o senhor falar com eles."
+    - "Doutor, r\xE1pido o senhor precisa ver isso aqui"
+    - "Doutor, acabei de receber essa not\xEDcia de que a ONU vai nos dar um incentivo
+      financeiro para o projeto, "
+    - "quando receber mais not\xEDcias irei passar para o senhor o dinheiro e uma
+      lista para ver onde vamos depositar esse dinheiro."
+    - Sim, farei isso.
 --- !u!58 &7849470484585874826
 CircleCollider2D:
   m_ObjectHideFlags: 0
