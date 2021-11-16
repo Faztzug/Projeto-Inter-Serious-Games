@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 0.9333516, y: -2.8781426}
+  touchPosition: {x: -0.60779786, y: -3.8302755}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -126,6 +126,39 @@ MonoBehaviour:
     - "Bem, isso \xE9 algo que no momento eu n\xE3o posso te dar uma resposta, agora
       voc\xEA n\xE3o se importaria de eu dar essa resposta at\xE9 o final do dia."
     - "Sim agrade\xE7o o aviso."
+    - "Agrade\xE7o por me passar esses relat\xF3rios."
+    - "Daniela, voc\xEA conhece a senhora que acabou de entrar ? "
+    - Podemos fazer uma parceria com ela para ajudar no projeto
+    - sim
+    - "Claro senhora n\xF3s aceitamos"
+    - "Sim ele \xE9 amigo do Pedro"
+    - 'Daniela, por favor '
+    - Nossa muito obrigado
+    - "Bom dia senhores, no que posso ajud\xE1-los"
+    - 'Sim eu conversei com ela, o senhor conhece ela ? '
+    - Sim ela veio me perguntar se ela pudesse participar do Projeto
+    - Sim, eu aceitei
+    - 'Mas sem querer ofender '
+    - "o senhor Leandro n\xE3o possui toda a experi\xEAncia para poder comandar alguma
+      coisa aqui, porque ele ?"
+    - "mas eu tamb\xE9m n\xE3o sou?"
+    - "Bom dia Daniela, acredito que voc\xEA tenha um relat\xF3rio para me mostrar."
+    - Quais seriam essas atitudes?
+    - "Caramba, verei se consigo falar com ele sobre essa situa\xE7\xE3o."
+    - "Obrigado por me passar esse relat\xF3rio"
+    - Bom dia, senhora Bianca, o que te traz aqui.
+    - "Bom agrade\xE7o pela sua visita aqui"
+    - Opa bom dia para o senhor
+    - Pensarei nessa proposta.
+    - "Adeus Senhor Leandro, enquanto a sua proposta Senhora Bianca s\xF3 poderei
+      dar uma resposta no final do dia."
+    - "Bom dia\u2026"
+    - ......
+    - "Me responda Daniela o que ser\xE1 que estamos fazendo de errado, esses problemas
+      nunca tiveram antes, mas ainda sim eles aconteceram."
+    - Nem me fale.
+    - "Irei te dar uma resposta no final do dia pois agora eu n\xE3o estou conseguindo
+      pensar em nada."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +204,14 @@ MonoBehaviour:
     AceitouAOfertaDoEmpresarioRuim: 0
     AceitouLiberarAguasParaFazendeiro: 0
     fimIntroducaoTurno2: 0
+    aceitouPlantacaoDePlantaNaFloresta: 0
+    aceitouCompartilharMaquinasFazendeiro: 0
+    fimIntroducaoTurno3: 0
+    aceitouCompraERDoProjeto: 0
+    investiuHidreletrica: 0
+    investiuMaquinas: 0
+    fimIntroducaoTurno4: 0
+    fimDialogoGovernadorTurno4: 0
     relacaoAssistente: 2
     relacaoGovernador: 2
     relacaoEmpresarioRuim: 2

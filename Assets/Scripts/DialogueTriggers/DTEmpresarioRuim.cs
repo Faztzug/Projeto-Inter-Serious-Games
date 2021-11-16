@@ -19,6 +19,13 @@ public class DTEmpresarioRuim : DialogueTrigger
         {
             
         }
+        else if (estadoDeMundo.save.turno == 4)
+        {
+            if (estadoDeMundo.save.fimIntroducaoTurno4 == false)
+                StartDialogue(23, 23);
+            else
+                StartDialogue(30, 30);
+        }
 
 
     }
@@ -78,6 +85,31 @@ public class DTEmpresarioRuim : DialogueTrigger
                 estadoDeMundo.save.fimIntroducaoTurno3 = true;
             }
 
+        }
+        else if (estadoDeMundo.save.turno == 4)
+        {
+            if (lastSentence == 24)
+                DTplayer.StartDialogue(51, 51);
+            else if (lastSentence == 25)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(9, 9);
+            else if (lastSentence == 26)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(10, 10);
+            else if (lastSentence == 29)
+                DTplayer.StartDialogue(52, 52);
+            else if (lastSentence == 30)
+                DTplayer.StartDialogue(53, 53);
+            else if (lastSentence == 31)
+                FindObjectOfType<DTGovernandor>().StartDialogue(18,18);
+            else if (lastSentence == 32)
+            {
+                FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(18, -3));
+                fazerAndar.AndePara(new Vector2(18, -3));
+
+                player.emDialogo = true;
+                FindObjectOfType<DialogueTriggerAssistente>().fazerAndar.AndeParaOPlayer(3);
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(57,57, 5);
+            }
+                
         }
     }
 

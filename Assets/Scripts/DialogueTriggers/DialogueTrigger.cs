@@ -40,4 +40,16 @@ public class DialogueTrigger : MonoBehaviour
         Debug.Log("fim de dialogo com " + NPCname + "Ultima fala foi: " + lastSentence);
     }
 
+    public virtual void StartDialogue(int startSentence, int endSentence, float tempo)
+    {
+        StartCoroutine(EsperarStartDialogueCourotine(startSentence, endSentence, tempo));
+    }
+
+    protected IEnumerator EsperarStartDialogueCourotine(int startSentence, int endSentence, float tempo)
+    {
+        yield return new WaitForSeconds(tempo);
+
+        StartDialogue(startSentence, endSentence);
+    }
+
 }

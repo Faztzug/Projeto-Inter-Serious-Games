@@ -9,6 +9,8 @@ public class DialogueTriggerAssistente : DialogueTrigger
             fazerAndar.PararAndar();
         else if(estadoDeMundo.save.turno == 3 && estadoDeMundo.save.fimIntroducaoTurno3 == true)
             fazerAndar.PararAndar();
+        else if (estadoDeMundo.save.turno == 4 && estadoDeMundo.save.fimIntroducaoTurno4 == true)
+        { }
     }
 
     public override void StartDialogue()
@@ -32,6 +34,10 @@ public class DialogueTriggerAssistente : DialogueTrigger
         else if (estadoDeMundo.save.turno == 3 && estadoDeMundo.save.fimIntroducaoTurno3 == false)
         {
             dialogueManager.StartingDialogue(14, 14);
+        }
+        else if (estadoDeMundo.save.turno == 4 && estadoDeMundo.save.fimIntroducaoTurno4 == false)
+        {
+            StartDialogue(45, 45);
         }
     }
 
@@ -116,6 +122,46 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 DTplayer.StartDialogue(34, 34);
             else if (lastSentence == 45)
                 DTplayer.StartDialogue(36, 36);
+
+
+
+        }
+        else if (estadoDeMundo.save.turno == 4)
+        {
+            if (lastSentence == 46)
+                DTplayer.StartDialogue(45, 45);
+            else if (lastSentence == 47)
+            {
+                if (estadoDeMundo.save.investiuHidreletrica == true
+                    && estadoDeMundo.save.investiuMaquinas == true)
+                    StartDialogue(47, 50);
+                else if (estadoDeMundo.save.investiuHidreletrica == true
+                    || estadoDeMundo.save.investiuMaquinas == false)
+                    StartDialogue(47, 48);
+                else if (estadoDeMundo.save.investiuMaquinas == true)
+                    StartDialogue(49, 50);
+            }
+            else if (lastSentence == 49 || lastSentence == 51)
+            {
+                if (estadoDeMundo.save.aceitouCompraERDoProjeto == true)
+                    StartDialogue(51, 52);
+                else if (estadoDeMundo.save.aceitouCompraERDoProjeto == false)
+                    StartDialogue(55, 56);
+            }
+            else if (lastSentence == 53)
+                DTplayer.StartDialogue(46, 46);
+            else if (lastSentence == 55)
+                DTplayer.StartDialogue(47, 47);
+            else if (lastSentence == 57)
+                DTplayer.StartDialogue(48, 48);
+            else if (lastSentence == 58)
+                DTplayer.StartDialogue(56, 56);
+            else if (lastSentence == 59)
+            {
+                player.emDialogo = true;
+                FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndeParaOPlayer();
+            }
+                
 
 
 

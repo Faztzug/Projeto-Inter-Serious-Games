@@ -115,6 +115,42 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
         }
 
+        else if (estadoDeMundo.save.turno == 4)
+        {
+            if (lastSentence == 46)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(46, 46);
+            else if (lastSentence == 47)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(53, 54);
+            else if (lastSentence == 48 || lastSentence == 49)
+                FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndePara(new Vector2(-4.5f, -3.3f));
+            else if (lastSentence == 50)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(7, 7);
+            else if (lastSentence == 51)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(8, 8);
+
+            else if (lastSentence == 52)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(24, 24);
+            else if (lastSentence == 53)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(11, 13);
+            else if (lastSentence == 54)
+            {
+                FindObjectOfType<DTEmpresarioRuim>().fazerAndar.AndePara(new Vector2(17, -2));
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(14, 14, 1f);
+                //FindObjectOfType<DTEmpresarioBom>().StartDialogue(14, 14);
+            }
+            else if (lastSentence == 55)
+                FindObjectOfType<DTGovernandor>().StartDialogue(15, 17);
+            else if (lastSentence == 56)
+                FindObjectOfType<DTEmpresarioRuim>().fazerAndar.AndeParaOPlayer();
+            else if (lastSentence == 57)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(58,58);
+            else if (lastSentence == 58)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(17, 18);
+            else if (lastSentence == 59)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(19, 19);
+
+        }
+
     }
 
     public void MomentoDeResponder(int sentence, string NPCname)

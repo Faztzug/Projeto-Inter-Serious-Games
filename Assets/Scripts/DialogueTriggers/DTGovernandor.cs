@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class DTGovernandor : DialogueTrigger
 {
+    public override void Start()
+    {
+        base.Start();
+
+        if(estadoDeMundo.save.turno == 4)
+        {
+            if (estadoDeMundo.save.fimIntroducaoTurno4 == true
+                && estadoDeMundo.save.fimDialogoGovernadorTurno4 == false)
+                fazerAndar.AndeParaOPlayer();
+        }
+    }
+
     public override void StartDialogue()
     {
         if (estadoDeMundo.save.turno == 1 && estadoDeMundo.save.conheceuGovernador == false)
@@ -15,7 +27,11 @@ public class DTGovernandor : DialogueTrigger
         {
             DTplayer.StartDialogue(38, 38);
         }
-            
+        else if (estadoDeMundo.save.turno == 4)
+        {
+            DTplayer.StartDialogue(54, 54);
+        }
+
     }
     public override void EndOfDialogue(int lastSentence, string NPCname)
     {
@@ -40,6 +56,13 @@ public class DTGovernandor : DialogueTrigger
                 DTplayer.StartDialogue(44, 44);
             else if (lastSentence == 15)
                 FindObjectOfType<DTEmpresarioRuim>().StartDialogue(22, 22);
+        }
+        else if (estadoDeMundo.save.turno == 4)
+        {
+            if (lastSentence == 18)
+               DTplayer.StartDialogue(55,55);
+            else if (lastSentence == 19)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(31, 31);
         }
     }
 }

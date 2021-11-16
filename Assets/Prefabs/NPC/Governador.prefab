@@ -71,6 +71,34 @@ MonoBehaviour:
     - "Ele com certeza poder\xE1 te ajudar nessa empreitada. Inclusive, ele j\xE1
       tinha uma proposta para voc\xEA"
     - "Leandro, se voc\xEA puder dizer."
+    - "Bom dia, senhor Paulo, pelo visto voc\xEA deve ter conversado com a Senhora
+      Bianca, estou certo ? "
+    - "Claro que eu a conhe\xE7o Doutor meu amigo o senhor Leandro j\xE1 tinha comentado
+      sobre ela inclusive eu acho melhor ele explicar mais sobre ela, "
+    - 'Leandro pode vim aqui.  '
+    - E o senhor aceitou
+    - "E o senhor n\xE3o pensou em ir comunicar a gente primeiro, n\xE3o se esque\xE7a
+      que sou eu que mantenho esse projeto de p\xE9 aqui e tamb\xE9m como posso acabar
+      com ele tamb\xE9m."
+    - "Bem, Doutor Paulo diante dos acontecimentos de meses atr\xE1s sua m\xE1quina
+      anda apresentando diversos problemas, "
+    - "sendo alguns bem s\xE9rios, sinto que o senhor n\xE3o est\xE1 conseguindo
+      administrar o projeto como um todo "
+    - "por isso quero te dar essa proposta do Senhor Leandro comprar parte do projeto
+      para voc\xEA n\xE3o ficar sobrecarregado."
+    - "Por que ele \xE9 uma pessoa de minha confian\xE7a"
+    - "Paulo, diante dos recentes acidentes que tiveram fui obrigado a tomar essa
+      decis\xE3o, "
+    - "sim eu ainda confio no seu potencial e que suas a\xE7\xF5es aqui s\xE3o boas
+      mas  diante dos acontecimentos que tivemos me vi obrigado a isso, espero sua
+      resposta at\xE9 o final do dia, adeus Paulo."
+    - "Doutor, o senhor sabe o quanto custou de preju\xEDzo o problema das chamin\xE9s,
+      sabe , sabe , pelo que parece voc\xEA n\xE3o sabe, "
+    - "eu juro que estou no meu limite com voc\xEA e estou aqui para te avisar que
+      este \xE9 o meu \xFAltimo aviso "
+    - "se tiver outro problema eu serei obrigado a fechar o projeto, nem tenta discutir
+      agora comigo, esse \xE9 o meu \xFAltimo aviso."
+    - Leandro venha aqui temos assuntos a tratar
 --- !u!58 &2645994734902680494
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -99,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b74f3219d83a054e9ae63f50de03523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fazerAndar: {fileID: 0}
 --- !u!1 &2645994735013250889
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,6 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   andando: 0
+  pararDeAndarAoAtingirPlayer: 1
 --- !u!50 &2645994735013250894
 Rigidbody2D:
   serializedVersion: 4

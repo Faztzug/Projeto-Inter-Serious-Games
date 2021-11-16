@@ -42,6 +42,11 @@ public class FazerAndar : MonoBehaviour
         destinoPosition = FindObjectOfType<PlayerControl>().transform.position;
     }
 
+    public void AndeParaOPlayer(float tempo)
+    {
+        StartCoroutine(AndeParaOPlayerCouroutine(tempo));
+    }
+
     public void AndePara(Vector2 position)
     {
         andando = true;
@@ -54,11 +59,18 @@ public class FazerAndar : MonoBehaviour
         StartCoroutine(AndeParaCouroutine(position, tempoEspera));
     }
 
-    public IEnumerator AndeParaCouroutine(Vector2 position, float tempoEspera)
+    protected IEnumerator AndeParaCouroutine(Vector2 position, float tempoEspera)
     {
         yield return new WaitForSeconds(tempoEspera);
         andando = true;
         destinoPosition = position;
+    }
+
+    protected IEnumerator AndeParaOPlayerCouroutine(float tempoEspera)
+    {
+        yield return new WaitForSeconds(tempoEspera);
+        andando = true;
+        destinoPosition = FindObjectOfType<PlayerControl>().transform.position;
     }
 
     public void PararAndar()

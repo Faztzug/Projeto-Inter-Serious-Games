@@ -91,6 +91,28 @@ MonoBehaviour:
       a escolha \xE9 sua."
     - "Tenha o tempo que o senhor precisar, agora se me d\xE3o licen\xE7a eu preciso
       ir para resolver outros problemas"
+    - 'Bom Senhor Paulo, acredito que ela tenha pedido para financiar esse Projeto. '
+    - "Calma Pedro, n\xE3o precisa ficar assim, eu j\xE1 trabalhei com a Bianca algumas
+      vezes. "
+    - "Ela tem um ar de confian\xE7a para com quem ele fecha contratos, por\xE9m
+      Doutor lembre-se que ela n\xE3o \xE9 t\xE3o boazinha assim "
+    - "se o senhor n\xE3o tiver o dinheiro que ela deseja ela sempre abandona os
+      projetos que participa,"
+    - " bem mais eu e o Pedro viemos aqui tratar de outro assunto, Pedro melhor voc\xEA
+      falar."
+    - Adeus, Paulo.
+    - "Doutor Paulo, preciso falar com voc\xEA"
+    - "Desculpe meus modos, mas tenho uma \xF3tima proposta para voc\xEA"
+    - "Sim e gostaria de continuar assim, por\xE9m voc\xEA est\xE1 aqui"
+    - "Bem temos muitas coisas a discutir mas n\xE3o aqui, "
+    - "ent\xE3o Paulo eu quero fazer uma proposta para o senhor, como voc\xEA deve
+      saber eu me preocupo muito com a popula\xE7\xE3o que est\xE1 passando fome "
+    - "eu gostaria do senhor pudesse doar uma quantia de dinheiro para eu poder comprar
+      alimento para eles espero uma resposta sua at\xE9 o final do dia."
+    - "Bem senhores, se podem me dar licen\xE7a tenho que resolver outros assuntos,
+      adeus."
+    - "Doutor Paulo eu preciso de sua ajuda\u2026."
+    - Discutimos depois, Doutor.
 --- !u!58 &4589573990104400539
 CircleCollider2D:
   m_ObjectHideFlags: 0

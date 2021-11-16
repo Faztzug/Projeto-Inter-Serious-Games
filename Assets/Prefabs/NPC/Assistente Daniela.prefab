@@ -269,6 +269,50 @@ MonoBehaviour:
     - "Doutor Paulo, \xE9 bom que o senhor saiba que caso n\xF3s dermos as maquinas
       que ele est\xE1 pedindo, a Maquina de Carbono vai ter que utilizar mais energia
       para continuar funcionando."
+    - 'Bem Doutor, ontem eu recebi o resultado de pesquisa realizada pelo senhor
+      Raul '
+    - "pelo resultado a popula\xE7\xE3o n\xE3o est\xE1 contente com a planta\xE7\xE3o
+      do Sr Leandro."
+    - "Bem Doutor, depois do encontro com o senhor Leandro, sobre voc\xEA ter recusado
+      a popula\xE7\xE3o est\xE1 mais confiante com o projeto, "
+    - "por\xE9m os Senhores Pedro e Leandro est\xE3o mais rigorosos com o projeto"
+    - "Bem Doutor Paulo com o fazendeiro tendo mais recursos para a fazenda ele consegue
+      produzir mais alimento para a popula\xE7\xE3o "
+    - "por\xE9m a popula\xE7\xE3o est\xE1 preocupada com o aumento de pre\xE7o dos
+      alimentos"
+    - "Bem Doutor Paulo como o senhor recusou de permitir que o senhor Jo\xE3o utilizasse
+      a nossa tecnologia, "
+    - "ele est\xE1 muito irritado com o senhor a popula\xE7\xE3o est\xE1 passando
+      por falta de alimento por\xE9m eles n\xE3o est\xE3o irritados com o senhor"
+    - "Sim, essa \xE9 a senhora Bianca, uma empres\xE1ria muito rica e conhecida
+      pelas suas participa\xE7\xF5es em outros projetos ao redor do mundo."
+    - "Claro que n\xF3s aceitamos"
+    - "Uma pessoa dif\xEDcil \xE9 pouco para ele."
+    - Bom dia Doutor Paulo, espero que o senhor tenha dormido bem
+    - "Sim eu j\xE1 irei te mostrar"
+    - "Com o financiamento da Senhora Bianca, conseguimos resultados satisfat\xF3rios
+      na hidrel\xE9trica, "
+    - "melhorando a qualidade dos rios e assim o senhor Jo\xE3o consegue produzir
+      alimentos em maior quantidade para a popula\xE7\xE3o."
+    - "Com o financiamento da Senhora Bianca, conseguimos resultados satisfat\xF3rios
+      na Maquinaria, "
+    - "melhorando a qualidade do ar e aumentando as emiss\xF5es de carbono na terra "
+    - "Agora o segundo t\xF3pico, como o senhor aceitou a proposta do senhor Pedro,
+      ele est\xE1 atuando mais ativamente no projetos financiando com mais frequ\xEAncia
+      o projeto, "
+    - "por\xE9m ele anda tomando algumas atitudes que n\xE3o est\xE3o agradando o
+      Fazendeiro e o Povo."
+    - "Ele est\xE1 cobrando do fazendeiro um aluguel pelo uso da \xE1gua do rio, "
+    - "eu tentei falar para ele por\xE9m n\xE3o tem muita coisa que eu possa fazer
+      como ele faz parte do projeto se eu for contra ele posso perder o meu emprego"
+    - "Agora o segundo t\xF3pico, como o senhor recusou a proposta do Senhor Pedro,
+      o senhor Leandro ele ainda est\xE1 financiando o Projeto "
+    - "por\xE9m ele n\xE3o est\xE1 depositando tanto dinheiro assim, n\xE3o conseguimos
+      avan\xE7ar muitos em nossas pesquisa, mas o Povo e o fazendeiro est\xE3o contentes
+      com o andamento do Projeto"
+    - Tudo bem Doutor ?
+    - "Bem eu n\xE3o posso responder isso agora mas acredito que tudo vai ser resolvido,
+      olha talvez isso melhore seu dia."
 --- !u!58 &7849470484585874826
 CircleCollider2D:
   m_ObjectHideFlags: 0

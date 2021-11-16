@@ -56,6 +56,12 @@
     public bool fimIntroducaoTurno3 = false;
 
     public bool aceitouCompraERDoProjeto = false;
+    public bool investiuHidreletrica = false;
+    public bool investiuMaquinas = false;
+
+    public bool fimIntroducaoTurno4 = false;
+    public bool fimDialogoGovernadorTurno4 = false;
+
 
     //estrelas
     [Range(0, 5)] public int relacaoAssistente = 2;
