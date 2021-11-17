@@ -14,6 +14,10 @@ public class DTGovernandor : DialogueTrigger
                 && estadoDeMundo.save.fimDialogoGovernadorTurno4 == false)
                 fazerAndar.AndeParaOPlayer();
         }
+        else if (estadoDeMundo.save.turno == 6)
+        {
+            StartDialogue(19, 19);
+        }
     }
 
     public override void StartDialogue()
@@ -30,6 +34,14 @@ public class DTGovernandor : DialogueTrigger
         else if (estadoDeMundo.save.turno == 4)
         {
             DTplayer.StartDialogue(54, 54);
+        }
+        else if (estadoDeMundo.save.turno == 5)
+        {
+
+        }
+        else if (estadoDeMundo.save.turno == 6)
+        {
+            StartDialogue(19, 19);
         }
 
     }
@@ -57,6 +69,7 @@ public class DTGovernandor : DialogueTrigger
             else if (lastSentence == 15)
                 FindObjectOfType<DTEmpresarioRuim>().StartDialogue(22, 22);
         }
+
         else if (estadoDeMundo.save.turno == 4)
         {
             if (lastSentence == 18)
@@ -64,5 +77,28 @@ public class DTGovernandor : DialogueTrigger
             else if (lastSentence == 19)
                 FindObjectOfType<DTEmpresarioRuim>().StartDialogue(31, 31);
         }
+
+        else if (estadoDeMundo.save.turno == 5)
+        {
+
+
+        }
+
+        else if (estadoDeMundo.save.turno == 6)
+        {
+            if (lastSentence == 20)
+                DTplayer.StartDialogue(70, 70);
+            else if (lastSentence == 23)
+                DTplayer.StartDialogue(71, 71);
+            else if (lastSentence == 25)
+                DTplayer.StartDialogue(72, 72);
+            else if (lastSentence == 26)
+                DTplayer.StartDialogue(73, 73);
+            else if (lastSentence == 27)
+                DTplayer.StartDialogue(74, 74);
+        }
+
+
+
     }
 }

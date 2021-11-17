@@ -184,6 +184,40 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
         }
 
+        else if (estadoDeMundo.save.turno == 6)
+        {
+            if (lastSentence == 70)
+            {
+                player.emDialogo = true;
+                FindObjectOfType<DTGovernandor>().fazerAndar.AndeParaOPlayer();
+            }
+            else if (lastSentence == 71)
+                FindObjectOfType<DTGovernandor>().StartDialogue(20, 22);
+            else if (lastSentence == 72)
+                FindObjectOfType<DTGovernandor>().StartDialogue(23, 24);
+            else if (lastSentence == 73)
+                FindObjectOfType<DTGovernandor>().StartDialogue(25, 25);
+            else if (lastSentence == 74)
+                FindObjectOfType<DTGovernandor>().StartDialogue(26, 26);
+            else if (lastSentence == 75)
+            {
+                FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(17, -10f));
+                player.emDialogo = true;
+                StartDialogue(75,75,2f);
+            }
+            else if (lastSentence == 76)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(86, 86);
+            else if (lastSentence == 77)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(87, 87);
+            else if (lastSentence == 79)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(88, 89);
+            else if (lastSentence == 80)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(90, 90);
+
+
+
+        }
+
     }
 
     public void MomentoDeResponder(int sentence, string NPCname)

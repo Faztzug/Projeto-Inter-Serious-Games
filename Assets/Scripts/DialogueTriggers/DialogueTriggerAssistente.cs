@@ -43,6 +43,10 @@ public class DialogueTriggerAssistente : DialogueTrigger
         {
             StartDialogue(59, 59);
         }
+        else if (estadoDeMundo.save.turno == 6 && estadoDeMundo.save.fimIntroducaoTurno6 == false)
+        {
+            StartDialogue(80, 80);
+        }
     }
 
     public override void EndOfDialogue(int lastSentence, string NPCname)
@@ -212,6 +216,36 @@ public class DialogueTriggerAssistente : DialogueTrigger
             else if (lastSentence == 80)
                 FindObjectOfType<DTEmpresarioBom>().StartDialogue(27,27);
 
+
+
+        }
+
+        else if (estadoDeMundo.save.turno == 6)
+        {
+            if (lastSentence == 81)
+            {
+                if (estadoDeMundo.save.ONUInvestiuSalaContorle5 == true)
+                    StartDialogue(81, 81);
+                else if (estadoDeMundo.save.ONUInvestiuMaquinaria5 == true)
+                    StartDialogue(82, 82);
+                else if (estadoDeMundo.save.ONUInvestiuHidreletrica5 == true)
+                    StartDialogue(83, 83);
+                else if (estadoDeMundo.save.ONUInvestiuExaustores5 == true)
+                    StartDialogue(84, 84);
+
+            }
+            else if (lastSentence > 81 && lastSentence < 86)
+                StartDialogue(85, 85);
+            else if (lastSentence == 86)
+                DTplayer.StartDialogue(69, 69);
+            else if (lastSentence == 87)
+                DTplayer.StartDialogue(76, 76);
+            else if (lastSentence == 88)
+                DTplayer.StartDialogue(77, 78);
+            else if (lastSentence == 90)
+                DTplayer.StartDialogue(79, 79);
+            else if (lastSentence == 91)
+                estadoDeMundo.save.fimIntroducaoTurno6 = true;
 
 
         }
