@@ -28,8 +28,8 @@ public class FimDeTurno : MonoBehaviour
                 && estado.save.coletouTerra == true)
             {
 
-                Destroy(inventario.slotsManager.AcharItem(itens[0].itemName).gameObject);
-                Destroy(inventario.slotsManager.AcharItem(itens[1].itemName).gameObject);
+                //Destroy(inventario.slotsManager.AcharItem(itens[0].itemName).gameObject);
+                //Destroy(inventario.slotsManager.AcharItem(itens[1].itemName).gameObject);
 
                 dtPlayer.StartDialogue(14, 16);
 
