@@ -374,6 +374,36 @@ MonoBehaviour:
     - "quando receber mais not\xEDcias irei passar para o senhor o dinheiro e uma
       lista para ver onde vamos depositar esse dinheiro."
     - Sim, farei isso.
+    - "Bom dia Doutor tenho um relat\xF3rio para te mostrar"
+    - "As novas c\xE2meras trazem seguran\xE7a de poder ver qualquer problema cedo
+      e isso nos traz tranquilidade, Bianca veio aqui ontem e ao ver a melhoria,
+      elogiou"
+    - "A melhora nas m\xE1quinas aceleram o trabalho e garantem menos chances de
+      riscos. Raul veio aqui ontem e ao ver a melhoria, elogiou."
+    - "A melhoria na Hidrel\xE9trica nos trouxe uma maior capacidade el\xE9trica
+      e um gasto menor. Jo\xE3o veio aqui ontem e ao ver a melhoria, elogiou."
+    - "A melhoria nos exaustores trouxe uma menor emiss\xE3o, fazendo nosso trabalho
+      ainda mais tranquilo. Pedro veio aqui ontem e ao ver a melhoria, elogiou."
+    - "Com a melhora no nosso laborat\xF3rio, o trabalho ficou bem mais f\xE1cil,
+      trazendo um bom avan\xE7o em nosso objetivo."
+    - Sim, mas como vamos conseguir alguma prova agora.
+    - "Mas o senhor acha que ele vai vir aqui depois daquela confus\xE3o dele com
+      o senhor ?"
+    - "Sim, uma confiss\xE3o gravada, acredito que deva ter algum gravador na sala
+      de controle, ent\xE3o seria bom o senhor ver aonde vai deixar esse gravador
+      na sala "
+    - "para n\xE3o levantar suspeitas para ele e de o senhor ir conversar com nossos
+      aliados para ver se eles tamb\xE9m podem participar."
+    - "\xD3timo ent\xE3o em quanto o senhor faz suas tarefas eu irei entrar em contato
+      com o Leandro para poder convid\xE1-lo a vim aqui."
+    - "Ent\xE3o seria melhor ir levar a Pedro, para acabarmos com isso de uma vez,
+      doutor."
+    - "Bom dia, Doutor, hoje recebemos um incentivo de Bianca para continuar nosso
+      trabalho e um bilhete avisando que estaria l\xE1 quando fosse a hora."
+    - "Sim, doutor, ela falou que espera uma melhoria na maquinaria ou hidrel\xE9trica,
+      para acelerar os trabalhos."
+    - De nada, doutor, e boa sorte.
+    - "Bom dia Doutor tenho um relat\xF3rio para te mostrar"
 --- !u!58 &7849470484585874826
 CircleCollider2D:
   m_ObjectHideFlags: 0

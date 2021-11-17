@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempoDeCrossfade: 1
+  tittleScreenCena: TittleScreen
 --- !u!1 &2426558469378638456
 GameObject:
   m_ObjectHideFlags: 0

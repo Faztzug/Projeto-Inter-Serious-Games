@@ -194,7 +194,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &13366451
 GameObject:
@@ -1998,7 +1998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3659959330554782079, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3659959330554782079, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2320,7 +2320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7849470484049677885, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7849470484049677885, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2361,66 +2361,6 @@ PrefabInstance:
     - target: {fileID: 7849470484049677885, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 91
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[80]
-      value: "Bom dia Doutor tenho um relat\xF3rio para te mostrar"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[81]
-      value: "As novas c\xE2meras trazem seguran\xE7a de poder ver qualquer problema
-        cedo e isso nos traz tranquilidade, Bianca veio aqui ontem e ao ver a melhoria,
-        elogiou"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[82]
-      value: "A melhora nas m\xE1quinas aceleram o trabalho e garantem menos chances
-        de riscos. Raul veio aqui ontem e ao ver a melhoria, elogiou."
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[83]
-      value: "A melhoria na Hidrel\xE9trica nos trouxe uma maior capacidade el\xE9trica
-        e um gasto menor. Jo\xE3o veio aqui ontem e ao ver a melhoria, elogiou."
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[84]
-      value: "A melhoria nos exaustores trouxe uma menor emiss\xE3o, fazendo nosso
-        trabalho ainda mais tranquilo. Pedro veio aqui ontem e ao ver a melhoria,
-        elogiou."
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[85]
-      value: "Com a melhora no nosso laborat\xF3rio, o trabalho ficou bem mais f\xE1cil,
-        trazendo um bom avan\xE7o em nosso objetivo."
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[86]
-      value: Sim, mas como vamos conseguir alguma prova agora.
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[87]
-      value: "Mas o senhor acha que ele vai vir aqui depois daquela confus\xE3o dele
-        com o senhor ?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[88]
-      value: "Sim, uma confiss\xE3o gravada, acredito que deva ter algum gravador
-        na sala de controle, ent\xE3o seria bom o senhor ver aonde vai deixar esse
-        gravador na sala "
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[89]
-      value: "para n\xE3o levantar suspeitas para ele e de o senhor ir conversar
-        com nossos aliados para ver se eles tamb\xE9m podem participar."
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[90]
-      value: "\xD3timo ent\xE3o em quanto o senhor faz suas tarefas eu irei entrar
-        em contato com o Leandro para poder convid\xE1-lo a vim aqui."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
@@ -3098,7 +3038,7 @@ Transform:
   - {fileID: 202718623}
   - {fileID: 605308570}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1475209188
 GameObject:
@@ -3212,7 +3152,7 @@ Transform:
   - {fileID: 2052323254}
   - {fileID: 226698917}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1497174119
 PrefabInstance:
@@ -3223,7 +3163,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.coletouTerra
@@ -3258,8 +3198,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.fimIntroducaoTurno6
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.aceitouDoarDinheiroER
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.ONUInvestiuMaquinaria5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.coletouProvasContraER7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuEmpresarioRuim
@@ -3267,7 +3219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.ONUInvestiuSalaContorle5
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.aceitouCompraERDoProjeto
@@ -3300,58 +3252,6 @@ PrefabInstance:
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.aceitouCompartilharMaquinasFazendeiro
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[69]
-      value: "Obrigado, Daniela. Vamos ao trabalho ent\xE3o."
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[70]
-      value: "Pois n\xE3o senhor Pedro, o que o senhor quer falar comigo."
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[71]
-      value: "N\xE3o senhor Pedro e a nossa \xFAltima conversa eu disse que ia levar
-        provas e testemunhas para o senhor."
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[72]
-      value: "Por Favor senhor me d\xEA mais tempo e te prometo que irei conseguir
-        alguma prova."
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[73]
-      value: "Obrigado senhor prometo que o senhor n\xE3o vai se arrepender."
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[74]
-      value: Adeus senhor Pedro
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[75]
-      value: "Daniela, voc\xEA ouviu tudo isso n\xE9."
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[76]
-      value: "Eu tenho uma ideia, vamos marcar uma reuni\xE3o com Leandro."
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[77]
-      value: "N\xE3o, acredito que ele vem sim porque ele sabe que eu sei das suas
-        verdadeiras inten\xE7\xF5es aqui "
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[78]
-      value: "e acredito que ele venha aqui tentar dar alguma proposta que deixe
-        escapar suas verdadeiras inten\xE7\xF5es e assim conseguimos uma prova"
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[79]
-      value: Irei fazer isso.
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946061, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_Name
@@ -3997,7 +3897,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4589573990198492920, guid: e671060e5895dbe4cba20c5dcc66528b, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4589573990198492920, guid: e671060e5895dbe4cba20c5dcc66528b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4247,7 +4147,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2052323254 stripped
 Transform:
@@ -4425,51 +4325,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.sentences.Array.data[19]
-      value: Doutor Paulo, preciso falar com o senhor
-      objectReference: {fileID: 0}
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.sentences.Array.data[20]
-      value: "Meu caro Doutor como o Senhor deve saber \xE9 gra\xE7as a mim que seu
-        projeto est\xE1 aqui todos estes anos "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.sentences.Array.data[21]
-      value: "e o senhor e seu projeto est\xE3o mostrando que ao inv\xE9s de consertar
-        os problemas est\xE3o criando muitos "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.sentences.Array.data[22]
-      value: "e com isso tenho que dizer que n\xE3o posso mais financiar seu projeto,
-        com isso estou fechando ele."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.sentences.Array.data[23]
-      value: "Sim, o senhor disse, por\xE9m at\xE9 agora eu n\xE3o vi nada de prova
-        ou testemunhas, ent\xE3o s\xF3 me restou tomar essa atitude "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.sentences.Array.data[24]
-      value: "a n\xE3o ser que o senhor tenha algo a me dizer que possa mudar a minha
-        ideia."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.sentences.Array.data[25]
-      value: "T\xE1 bom, te dou somente hoje para conseguir alguma coisa. Se n\xE3o
-        conseguir, ir\xE1 fechar tudo at\xE9 o fim do ano."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2645994734902680495, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
-      propertyPath: dialogue.sentences.Array.data[26]
-      value: "Sim espero mesmo, agora se me d\xE3o licen\xE7a tenho assuntos a resolver."
-      objectReference: {fileID: 0}
     - target: {fileID: 2645994735013250882, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2645994735013250882, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4588,8 +4446,122 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &824387483398077942
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3229071668714731696, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_Name
+      value: Narrador
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+--- !u!1001 &1226240382523152183
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3834709143261782070, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_Name
+      value: Voz Do Povo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 09ab13964927551428ac0608dd023316, type: 3}
 --- !u!1001 &1417245175719854683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4599,7 +4571,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 578460682951762724, guid: 32aec14ca12c50c459f663f88a9f6875, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 578460682951762724, guid: 32aec14ca12c50c459f663f88a9f6875, type: 3}
       propertyPath: m_LocalPosition.x

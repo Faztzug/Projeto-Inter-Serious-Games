@@ -113,6 +113,7 @@ MonoBehaviour:
       adeus."
     - "Doutor Paulo eu preciso de sua ajuda\u2026."
     - Discutimos depois, Doutor.
+    - "Bom dia, Paulo. Chegou o dia. Pegue sua fam\xEDlia e me acompanhe"
 --- !u!58 &4589573990104400539
 CircleCollider2D:
   m_ObjectHideFlags: 0

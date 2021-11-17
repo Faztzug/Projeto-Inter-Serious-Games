@@ -62,6 +62,15 @@
 
     public bool fimIntroducaoTurno6 = false;
 
+    public bool coletouProvasContraER7 = false;
+
+    public bool fimIntroducaoTurno7 = false;
+
+
+
+
+    public bool fimIntroducaoTurno8 = false;
+
     [Range(0,100)]
     public int avancoProjeto = 0;
 

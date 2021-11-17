@@ -10,7 +10,13 @@ public class DialogueTriggerAssistente : DialogueTrigger
         else if(estadoDeMundo.save.turno == 3 && estadoDeMundo.save.fimIntroducaoTurno3 == true)
             fazerAndar.PararAndar();
         else if (estadoDeMundo.save.turno == 4 && estadoDeMundo.save.fimIntroducaoTurno4 == true)
-        { }
+            fazerAndar.PararAndar();
+        else if (estadoDeMundo.save.turno == 5 && estadoDeMundo.save.fimIntroducaoTurno5 == true)
+            fazerAndar.PararAndar();
+        else if (estadoDeMundo.save.turno == 6 && estadoDeMundo.save.fimIntroducaoTurno6 == true)
+            fazerAndar.PararAndar();
+        else if (estadoDeMundo.save.turno == 7 && estadoDeMundo.save.fimIntroducaoTurno7 == true)
+            fazerAndar.PararAndar();
     }
 
     public override void StartDialogue()
@@ -46,6 +52,14 @@ public class DialogueTriggerAssistente : DialogueTrigger
         else if (estadoDeMundo.save.turno == 6 && estadoDeMundo.save.fimIntroducaoTurno6 == false)
         {
             StartDialogue(80, 80);
+        }
+        else if (estadoDeMundo.save.turno == 7 && estadoDeMundo.save.fimIntroducaoTurno7 == false)
+        {
+            DTplayer.StartDialogue(81,81);
+        }
+        else if (estadoDeMundo.save.turno == 8 && estadoDeMundo.save.fimIntroducaoTurno8 == false)
+        {
+            StartDialogue(95, 95);
         }
     }
 
@@ -248,6 +262,37 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 estadoDeMundo.save.fimIntroducaoTurno6 = true;
 
 
+        }
+
+        else if (estadoDeMundo.save.turno == 7)
+        {
+            if (lastSentence == 92)
+                DTplayer.StartDialogue(82, 82);
+            else if (lastSentence == 93)
+                DTplayer.StartDialogue(88, 88);
+            else if (lastSentence == 94)
+                DTplayer.StartDialogue(89, 89);
+            else if (lastSentence == 95)
+            {
+                estadoDeMundo.save.fimIntroducaoTurno7 = true;
+            }
+        }
+
+        else if (estadoDeMundo.save.turno == 8)
+        {
+            if (lastSentence == 96)
+            {
+                //exmplos do turno anterior
+                if (estadoDeMundo.save.ONUInvestiuSalaContorle5 == true)
+                    StartDialogue(81, 81);
+                else if (estadoDeMundo.save.ONUInvestiuMaquinaria5 == true)
+                    StartDialogue(82, 82);
+                else if (estadoDeMundo.save.ONUInvestiuHidreletrica5 == true)
+                    StartDialogue(83, 83);
+                else if (estadoDeMundo.save.ONUInvestiuExaustores5 == true)
+                    StartDialogue(84, 84);
+
+            }
         }
     }
 }

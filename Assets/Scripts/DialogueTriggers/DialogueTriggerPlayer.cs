@@ -218,6 +218,38 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
         }
 
+        else if (estadoDeMundo.save.turno == 7)
+        {
+            if (lastSentence == 81)
+                FindObjectOfType<DTNarrador>().StartDialogue(0, 0);
+            else if (lastSentence == 82)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(91, 91);
+            else if (lastSentence == 83)
+            {
+                player.emDialogo = true;
+                FindObjectOfType<DTFazendeiro>().fazerAndar.AndeParaOPlayer();
+                FindObjectOfType<DTVozDoPovo>().fazerAndar.AndeParaOPlayer();
+            }
+            else if (lastSentence == 84)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(11, 11);
+            else if (lastSentence == 86)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(12, 12);
+            else if (lastSentence == 87)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(13, 13);
+            else if (lastSentence == 88)
+            {
+                player.emDialogo = true;
+                FindObjectOfType<DTFazendeiro>().fazerAndar.AndePara(new Vector2(17, -17));
+                FindObjectOfType<DTVozDoPovo>().fazerAndar.AndePara(new Vector2(17, -17));
+                FindObjectOfType<DialogueTriggerAssistente>().fazerAndar.AndeParaOPlayer(1);
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(92, 92, 1.3f);
+            }
+            else if (lastSentence == 89)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(93, 93);
+            else if (lastSentence == 90)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(94, 94);
+        }
+
     }
 
     public void MomentoDeResponder(int sentence, string NPCname)
