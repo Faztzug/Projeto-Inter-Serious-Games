@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class ColetarEngrenagem : MonoBehaviour
 {
+    [SerializeField] Item fusivelUIPrefab;
+
     private void Start()
     {
-        if(FindObjectOfType<EstadoDeMundo>().save.coletouFusivel == true)
+        Inventory inventario = FindObjectOfType<Inventory>();
+        if(FindObjectOfType<EstadoDeMundo>().save.coletouFusivel == true 
+            || inventario.slotsManager.AcharItem(fusivelUIPrefab.itemName))
         {
             this.gameObject.SetActive(false);
         }
@@ -15,7 +19,7 @@ public class ColetarEngrenagem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<EstadoDeMundo>().save.coletouFusivel = true;
+            //collision.GetComponent<EstadoDeMundo>().save.coletouFusivel = true;
             collision.GetComponent<DialogueTrigger>().StartDialogue(10, 11);
             this.gameObject.SetActive(false);
         }

@@ -24,6 +24,7 @@ public class PuzzleMaquina : MonoBehaviour
                 Debug.Log("itens Iguais");
                 gameObject.SetActive(false);
                 inventario.EliminarItemSelecionado();
+                FindObjectOfType<EstadoDeMundo>().save.coletouFusivel = true;
             }
         }
     }
