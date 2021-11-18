@@ -216,6 +216,11 @@ MonoBehaviour:
       me ajudarem nas planta\xE7\xF5es."
     - "Sim n\xE3o me importo, contanto que seja r\xE1pido, agora preciso voltar para
       a fazenda."
+    - "Voc\xEA que n\xE3o est\xE1 entendendo, se n\xE3o fizermos isso, iremos perder
+      produ\xE7\xE3o e faltar alimento."
+    - Bom dia, doutor Paulo.
+    - "Com toda certeza, doutor. Estarei l\xE1."
+    - "Ah, doutor, \xE9 que XXXXX"
 --- !u!58 &1623160345188279258
 CircleCollider2D:
   m_ObjectHideFlags: 0

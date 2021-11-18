@@ -17,6 +17,10 @@ public class DTEmpresarioBom : DialogueTrigger
             else
                 StartDialogue(16,16);
         }
+        else if (estadoDeMundo.save.turno == 5)
+        {
+            StartDialogue(20, 20);
+        }
     }
 
     public override void EndOfDialogue(int lastSentence, string NPCname)
@@ -74,6 +78,22 @@ public class DTEmpresarioBom : DialogueTrigger
                 fazerAndar.AndePara(new Vector2(17, -5));
 
 
+        }
+
+        else if (estadoDeMundo.save.turno == 5)
+        {
+            if (lastSentence == 21)
+                DTplayer.StartDialogue(61, 61);
+            else if (lastSentence == 22)
+                DTplayer.StartDialogue(62, 62);
+            else if (lastSentence == 23)
+                DTplayer.StartDialogue(63, 63);
+            else if (lastSentence == 25)
+                DTplayer.StartDialogue(64, 64);
+            else if (lastSentence == 27)
+                DTplayer.StartDialogue(65, 65);
+            else if (lastSentence == 28)
+                DTplayer.StartDialogue(68, 68);
         }
     }
 }

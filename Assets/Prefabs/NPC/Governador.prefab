@@ -99,6 +99,19 @@ MonoBehaviour:
     - "se tiver outro problema eu serei obrigado a fechar o projeto, nem tenta discutir
       agora comigo, esse \xE9 o meu \xFAltimo aviso."
     - Leandro venha aqui temos assuntos a tratar
+    - Doutor Paulo, preciso falar com o senhor
+    - "Meu caro Doutor como o Senhor deve saber \xE9 gra\xE7as a mim que seu projeto
+      est\xE1 aqui todos estes anos "
+    - "e o senhor e seu projeto est\xE3o mostrando que ao inv\xE9s de consertar os
+      problemas est\xE3o criando muitos "
+    - "e com isso tenho que dizer que n\xE3o posso mais financiar seu projeto, com
+      isso estou fechando ele."
+    - "Sim, o senhor disse, por\xE9m at\xE9 agora eu n\xE3o vi nada de prova ou testemunhas,
+      ent\xE3o s\xF3 me restou tomar essa atitude "
+    - "a n\xE3o ser que o senhor tenha algo a me dizer que possa mudar a minha ideia."
+    - "T\xE1 bom, te dou somente hoje para conseguir alguma coisa. Se n\xE3o conseguir,
+      ir\xE1 fechar tudo at\xE9 o fim do ano."
+    - "Sim espero mesmo, agora se me d\xE3o licen\xE7a tenho assuntos a resolver."
 --- !u!58 &2645994734902680494
 CircleCollider2D:
   m_ObjectHideFlags: 0

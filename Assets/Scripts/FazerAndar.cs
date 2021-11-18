@@ -75,9 +75,16 @@ public class FazerAndar : MonoBehaviour
 
     public void PararAndar()
     {
+        StartCoroutine(PararAndarCourotine());
+    }
+
+    private IEnumerator PararAndarCourotine()
+    {
+        yield return new WaitForEndOfFrame();
         Debug.Log(gameObject.name + " mandei pra parar parou!");
         destinoPosition = transform.position;
         andando = false;
+
     }
 
     private void FixedUpdate()

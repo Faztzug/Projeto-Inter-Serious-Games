@@ -9,6 +9,7 @@ public class CrossfadeLoadEffect : MonoBehaviour
     private GameObject player;
     private PlayerControl playerControl;
     private EstadoDeMundo estado;
+    [SerializeField] private string tittleScreenCena;
 
     private void Start()
     {
@@ -56,8 +57,12 @@ public class CrossfadeLoadEffect : MonoBehaviour
 
             playerControl.ChecarCamera();
 
-            estado.save.cenaAtual = cena;
-            estado.save.novaPosicao = novaPosicao;
+            if(cena != tittleScreenCena)
+            {
+                estado.save.cenaAtual = cena;
+                estado.save.novaPosicao = novaPosicao;
+            }
+            
             //estado.save.positionX = novaPosicao.x;
             //estado.save.positionX = novaPosicao.y;
 

@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 0.58097947, y: -2.6560812}
+  touchPosition: {x: -0.06834984, y: 0.02583921}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -161,6 +161,47 @@ MonoBehaviour:
       pensar em nada."
     - "Ent\xE3o ele saiu do projeto ?"
     - "Agrade\xE7o por me passar esse relat\xF3rio."
+    - "Opa, bom dia Bianca, est\xE1 esperando aqui a muito tempo?"
+    - "\xD3timo, aproveitando queria falar com voc\xEA sobre os \xFAltimos acidentes
+      que ocorreram na m\xE1quina."
+    - "Sim, eu queria ver com voc\xEA sobre ele j\xE1 que a senhora o conhece a mais
+      tempo, voc\xEA acha que ele \xE9 o respons\xE1vel por isso tudo que anda acontecendo"
+    - "Ent\xE3o minhas suspeitas sobre ele s\xE3o verdadeiras, mas ainda preciso
+      de mais provas contra ele."
+    - Sim eu irei fazer isso
+    - 'Fale Daniela '
+    - "Que \xF3tima not\xEDcia, quando estiver tudo pronto voc\xEA pode me passar."
+    - Claro irei fazer isso
+    - "Obrigado, Daniela. Vamos ao trabalho ent\xE3o."
+    - "Pois n\xE3o senhor Pedro, o que o senhor quer falar comigo."
+    - "N\xE3o senhor Pedro e a nossa \xFAltima conversa eu disse que ia levar provas
+      e testemunhas para o senhor."
+    - "Por Favor senhor me d\xEA mais tempo e te prometo que irei conseguir alguma
+      prova."
+    - "Obrigado senhor prometo que o senhor n\xE3o vai se arrepender."
+    - Adeus senhor Pedro
+    - "Daniela, voc\xEA ouviu tudo isso n\xE9."
+    - "Eu tenho uma ideia, vamos marcar uma reuni\xE3o com Leandro."
+    - "N\xE3o, acredito que ele vem sim porque ele sabe que eu sei das suas verdadeiras
+      inten\xE7\xF5es aqui "
+    - "e acredito que ele venha aqui tentar dar alguma proposta que deixe escapar
+      suas verdadeiras inten\xE7\xF5es e assim conseguimos uma prova"
+    - Irei fazer isso.
+    - Okay. Espere um momento.
+    - "Com essas Provas que conseguimos acredito que j\xE1 \xE9 o bastante para mostrarmos
+      ao senhor Pedro"
+    - Sim, farei isso imediatamente.
+    - Senhores, bom dia.
+    - "Voc\xEA quer dizer sobre o Leandro? Ontem eu consegui gravar o pr\xF3prio
+      me oferecendo coisas, "
+    - "mostrando toda sua corrup\xE7\xE3o e irei mostrar ao Pedro hoje mesmo. Posso
+      contar com a participa\xE7\xE3o de voc\xEAs?"
+    - "Excelente, senhores. Agora voc\xEAs poderiam me explicar melhor sobre o que
+      era a discuss\xE3o que estavam tendo?"
+    - "Entendo, irei pensar isso at\xE9 o fim do dia, depois de resolver o problema
+      com Leandro, voc\xEAs podem esperar, sim?"
+    - "Excelente not\xEDcias, Daniela, ela falou alguma coisa a mais?"
+    - "Okay. Irei ver isso ap\xF3s o fim dos problemas tamb\xE9m, obrigado, Daniela."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,25 +215,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   save:
-    musicVolume: 1
-    SFXVolume: 1
-    frameRate: 30
-    textTypingSpeed: 10
-    textBoxBoundsY: 0.9
-    textBoxBoundsX: 0.8
-    inventarioData:
-    - SlotID: 0
-      itemChildName: 
-    - SlotID: 0
-      itemChildName: 
-    - SlotID: 0
-      itemChildName: 
-    - SlotID: 0
-      itemChildName: 
-    - SlotID: 0
-      itemChildName: 
-    - SlotID: 0
-      itemChildName: 
     turno: 1
     ato: 1
     cenaAtual: Laboratorio_1
@@ -218,12 +240,40 @@ MonoBehaviour:
     aceitouEBComprarTerrenoFazendeiro: 0
     aceitouEBParticiparProjetoRemedios: 0
     fimIntroducaoTurno5: 0
+    ONUInvestiuSalaContorle5: 0
+    ONUInvestiuMaquinaria5: 0
+    ONUInvestiuHidreletrica5: 0
+    ONUInvestiuExaustores5: 0
+    fimIntroducaoTurno6: 0
+    coletouProvasContraER7: 0
+    fimIntroducaoTurno7: 0
+    fimIntroducaoTurno8: 0
+    avancoProjeto: 0
     relacaoAssistente: 2
     relacaoGovernador: 2
     relacaoEmpresarioRuim: 2
     relacaoEmpresarioBom: 2
     relacaoFazendeiro: 2
     relacaoVozDoPovo: 2
+    musicVolume: 1
+    SFXVolume: 1
+    frameRate: 30
+    textTypingSpeed: 10
+    textBoxBoundsY: 0.9
+    textBoxBoundsX: 0.8
+    inventarioData:
+    - SlotID: 0
+      itemChildName: 
+    - SlotID: 0
+      itemChildName: 
+    - SlotID: 0
+      itemChildName: 
+    - SlotID: 0
+      itemChildName: 
+    - SlotID: 0
+      itemChildName: 
+    - SlotID: 0
+      itemChildName: 
     testeQuestBarrilVermelho: 0
     testeBarrilVermelhoDestruido: 0
   itemsDatabase:

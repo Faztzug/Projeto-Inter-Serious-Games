@@ -157,6 +157,97 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(71, 71);
             else if (lastSentence == 61)
                 FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndeParaOPlayer();
+            else if (lastSentence == 62)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(21,21);
+            else if (lastSentence == 63)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(22, 22);
+            else if (lastSentence == 64)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(23, 24);
+            else if (lastSentence == 65)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(25, 26);
+            else if (lastSentence == 66)
+            {
+                player.emDialogo = true;
+                FindObjectOfType<DialogueTriggerAssistente>().fazerAndar.AndeParaOPlayer();
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(76, 76, 0.5f);
+            }
+            else if (lastSentence == 67)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(77, 78);
+            else if (lastSentence == 68)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(79, 79);
+            else if (lastSentence == 69)
+            {
+                estadoDeMundo.save.fimIntroducaoTurno5 = true;
+                FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndePara(new Vector2(17f, -3f));
+                
+            }
+
+        }
+
+        else if (estadoDeMundo.save.turno == 6)
+        {
+            if (lastSentence == 70)
+            {
+                player.emDialogo = true;
+                FindObjectOfType<DTGovernandor>().fazerAndar.AndeParaOPlayer();
+            }
+            else if (lastSentence == 71)
+                FindObjectOfType<DTGovernandor>().StartDialogue(20, 22);
+            else if (lastSentence == 72)
+                FindObjectOfType<DTGovernandor>().StartDialogue(23, 24);
+            else if (lastSentence == 73)
+                FindObjectOfType<DTGovernandor>().StartDialogue(25, 25);
+            else if (lastSentence == 74)
+                FindObjectOfType<DTGovernandor>().StartDialogue(26, 26);
+            else if (lastSentence == 75)
+            {
+                FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(17, -10f));
+                player.emDialogo = true;
+                StartDialogue(75,75,2f);
+            }
+            else if (lastSentence == 76)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(86, 86);
+            else if (lastSentence == 77)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(87, 87);
+            else if (lastSentence == 79)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(88, 89);
+            else if (lastSentence == 80)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(90, 90);
+
+
+
+        }
+
+        else if (estadoDeMundo.save.turno == 7)
+        {
+            if (lastSentence == 81)
+                FindObjectOfType<DTNarrador>().StartDialogue(0, 0);
+            else if (lastSentence == 82)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(91, 91);
+            else if (lastSentence == 83)
+            {
+                player.emDialogo = true;
+                FindObjectOfType<DTFazendeiro>().fazerAndar.AndeParaOPlayer();
+                FindObjectOfType<DTVozDoPovo>().fazerAndar.AndeParaOPlayer();
+            }
+            else if (lastSentence == 84)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(11, 11);
+            else if (lastSentence == 86)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(12, 12);
+            else if (lastSentence == 87)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(13, 16);
+            else if (lastSentence == 88)
+            {
+                player.emDialogo = true;
+                FindObjectOfType<DTFazendeiro>().fazerAndar.AndePara(new Vector2(17, -17));
+                FindObjectOfType<DTVozDoPovo>().fazerAndar.AndePara(new Vector2(17, -17));
+                FindObjectOfType<DialogueTriggerAssistente>().fazerAndar.AndeParaOPlayer(1);
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(92, 92, 1.3f);
+            }
+            else if (lastSentence == 89)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(93, 93);
+            else if (lastSentence == 90)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(94, 94);
         }
 
     }
