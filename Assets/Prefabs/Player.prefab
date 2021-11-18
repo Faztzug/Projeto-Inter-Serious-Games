@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 3.2313466, y: -4.019371}
+  touchPosition: {x: 4.5951233, y: -2.2580647}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -229,6 +229,8 @@ MonoBehaviour:
     - Onde que erramos, Daniela?
     - "E os outros? Como est\xE3o os outros?"
     - Me desculpem...
+    - "Como que tem uma pe\xE7a solta novamente aqui? Estranho isso. Irei pedir para
+      algu\xE9m consertar j\xE1."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0

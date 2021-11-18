@@ -5,6 +5,16 @@ using UnityEngine;
 public class DTNarrador : DialogueTrigger
 {
     [SerializeField] private string titleScreenCena;
+    [SerializeField] private string maquinasCena;
+
+    public override void StartDialogue()
+    {
+        if (estadoDeMundo.save.turno == 2)
+        {
+            if(gameObject.scene.name == maquinasCena)
+                DTplayer.StartDialogue(112, 112);
+        }
+    }
     public override void EndOfDialogue(int lastSentence, string NPCname)
     {
         base.EndOfDialogue(lastSentence, NPCname);
@@ -13,5 +23,7 @@ public class DTNarrador : DialogueTrigger
         {
             FindObjectOfType<CrossfadeLoadEffect>().ChamarCrossfade(titleScreenCena, player.transform.position);
         }
+
+        
     }
 }

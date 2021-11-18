@@ -5,12 +5,37 @@ using UnityEngine;
 public class ColetarEngrenagem : MonoBehaviour
 {
     [SerializeField] Item fusivelUIPrefab;
+    EstadoDeMundo estado;
+    [SerializeField] int turnoAparecer = 1;
+    private Inventory inventario;
 
     private void Start()
     {
-        Inventory inventario = FindObjectOfType<Inventory>();
-        if(FindObjectOfType<EstadoDeMundo>().save.coletouFusivel == true 
-            || inventario.slotsManager.AcharItem(fusivelUIPrefab.itemName))
+        inventario = FindObjectOfType<Inventory>();
+        estado = inventario.gameObject.GetComponent<EstadoDeMundo>();
+        if(estado != null)
+        {
+            if (estado.save.coletouFusivel == true
+            || inventario.slotsManager.AcharItem(fusivelUIPrefab.itemName).name == fusivelUIPrefab.itemName
+            || estado.save.turno != turnoAparecer)
+            {
+                this.gameObject.SetActive(false);
+            }
+        } else if (FindObjectOfType<EstadoDeMundo>().save.coletouFusivel == true
+            || inventario.slotsManager.AcharItem(fusivelUIPrefab.itemName)
+            || FindObjectOfType<EstadoDeMundo>().save.turno != turnoAparecer)
+        {
+            this.gameObject.SetActive(false);
+        }
+
+    }
+
+    IEnumerator EsperarFrameStart()
+    {
+        yield return new WaitForEndOfFrame();
+        if (FindObjectOfType<EstadoDeMundo>().save.coletouFusivel == true
+            || inventario.slotsManager.AcharItem(fusivelUIPrefab.itemName)
+            || FindObjectOfType<EstadoDeMundo>().save.turno != turnoAparecer)
         {
             this.gameObject.SetActive(false);
         }

@@ -35,6 +35,9 @@
     public bool AceitouAOfertaDoEmpresarioRuim = false;
     public bool AceitouLiberarAguasParaFazendeiro = false;
 
+    public bool alarmeIncendio2 = false;
+    public bool apagouIncendio2 = false;
+
     public bool fimIntroducaoTurno2 = false;
 
     public bool aceitouPlantacaoDePlantaNaFloresta = false;
