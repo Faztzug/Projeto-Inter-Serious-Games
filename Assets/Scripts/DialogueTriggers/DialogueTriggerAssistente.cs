@@ -282,17 +282,46 @@ public class DialogueTriggerAssistente : DialogueTrigger
         {
             if (lastSentence == 96)
             {
-                //exmplos do turno anterior
-                if (estadoDeMundo.save.ONUInvestiuSalaContorle5 == true)
-                    StartDialogue(81, 81);
-                else if (estadoDeMundo.save.ONUInvestiuMaquinaria5 == true)
-                    StartDialogue(82, 82);
-                else if (estadoDeMundo.save.ONUInvestiuHidreletrica5 == true)
-                    StartDialogue(83, 83);
-                else if (estadoDeMundo.save.ONUInvestiuExaustores5 == true)
-                    StartDialogue(84, 84);
+                
+                if (estadoDeMundo.save.aceitouDarAguaFazendeiro7 == false)
+                    StartDialogue(96, 97);
+                else if (estadoDeMundo.save.aceitouDarAguaFazendeiro7 == true)
+                    StartDialogue(100, 101);
+
 
             }
+            else if (lastSentence == 98)
+                DTplayer.StartDialogue(90,90);
+            else if (lastSentence == 100)
+                DTplayer.StartDialogue(91, 91);
+            else if (lastSentence == 102)
+                DTplayer.StartDialogue(92, 92);
+            else if (lastSentence == 104)
+                DTplayer.StartDialogue(91, 91);
+            else if (lastSentence == 105)
+            {
+                
+                if (estadoDeMundo.save.biancaInvestiuMaquinas7 == true)
+                    StartDialogue(105, 105);
+                else if (estadoDeMundo.save.biancaInvestiuHidreletrica7 == true)
+                    StartDialogue(106, 106);
+                else
+                {
+                    estadoDeMundo.save.biancaInvestiuHidreletrica7 = true;
+                    StartDialogue(106, 106);
+                }
+
+            }
+            else if (lastSentence == 106 || lastSentence == 107)
+                DTplayer.StartDialogue(93, 93);
+            else if (lastSentence == 108)
+                DTplayer.StartDialogue(94, 94);
+            else if (lastSentence == 109)
+                DTplayer.StartDialogue(95, 95);
+            else if (lastSentence == 110)
+                DTplayer.StartDialogue(96, 96);
+            else if (lastSentence == 111)
+                DTplayer.StartDialogue(97, 97);
         }
     }
 }

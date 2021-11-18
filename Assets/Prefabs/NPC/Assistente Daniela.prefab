@@ -404,6 +404,29 @@ MonoBehaviour:
       para acelerar os trabalhos."
     - De nada, doutor, e boa sorte.
     - "Bom dia Doutor tenho um relat\xF3rio para te mostrar"
+    - "Ao ter aceito o pedido de Raul e distribu\xEDdo a \xE1gua com o povo, o medo
+      de morrerem de sede ou serem incapazes de terem higiene desapareceu"
+    - e ele mandou uma mensagem agradecendo, bem contente.
+    - "Entretanto, Jo\xE3o mandou uma mensagem reclamando "
+    - "e falando que diversas plantas j\xE1 morreram agora por causa disso e sua
+      capacidade de gerar comida diminuiu, ele parecia bem estressado."
+    - "Ao ter aceito o pedido de Jo\xE3o e distribu\xEDdo a \xE1gua com ele, sua
+      fazenda nunca esteve t\xE3o grande e ele disse que esse ano vai bater recordes. "
+    - Ele mandou mensagem agradecendo seu suporte.
+    - "Entretanto, Raul tamb\xE9m mandou mensagem, falando que sua escolha foi inconsequente
+      e que as pessoas n\xE3o sabem mais de seu futuro pr\xF3ximo, "
+    - "gra\xE7as a isso, ele parecia bem estressado."
+    - "E tamb\xE9m teve isso aqui"
+    - Com a melhora na maquinaria, estamos mais seguros de nossos processos e podemos
+      aplicar um empenho maior.
+    - "Com a melhora na hidrel\xE9trica, estamos cuidando melhor da \xE1gua e podemos
+      ajudar um pouco mais quem precisava."
+    - "Bom Doutor ap\xF3s algumas avalia\xE7\xF5es notamos que temos dinheiro suficiente
+      comprar alguma melhoria para a m\xE1quina"
+    - "\xD3timo ent\xE3o farei isso senhor"
+    - "Ent\xE3o ele n\xE3o me passou nada sobre o Leandro, mas ele me passou que
+      queria falar com voc\xEA quando o senhor tiver tempo."
+    - "n\xE3o, mas disse que \xE9 importante"
 --- !u!58 &7849470484585874826
 CircleCollider2D:
   m_ObjectHideFlags: 0
