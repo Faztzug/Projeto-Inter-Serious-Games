@@ -2564,6 +2564,13 @@ MonoBehaviour:
   width: 13
   height: {x: 1, y: 5}
   randomWidth: {x: -4, y: 0}
+  nuvems:
+  - {fileID: 1733957397}
+  - {fileID: 1526815671}
+  - {fileID: 1814285269}
+  - {fileID: 1926493872}
+  - {fileID: 1751119792}
+  - {fileID: 1892429609}
 --- !u!1 &559495208
 GameObject:
   m_ObjectHideFlags: 0
