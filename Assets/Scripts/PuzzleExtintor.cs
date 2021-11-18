@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class PuzzleExtintor : MonoBehaviour
 {
+    private VerificarTurnoAtual verificarTurno;
+
+    private void Start()
+    {
+        verificarTurno = GetComponent<VerificarTurnoAtual>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Player entrou no trigger");
+            if (verificarTurno.Verificar())
+            {
+                Debug.Log("Player entrou no trigger");
+            }
+            
         }
     }
 }

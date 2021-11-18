@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 6.2282267, y: -1.4870387}
+  touchPosition: {x: 0.52755255, y: -3.8983057}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -363,7 +363,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.78125, y: 1.75}
+  m_Size: {x: 4.2400002, y: 4.2400002}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
