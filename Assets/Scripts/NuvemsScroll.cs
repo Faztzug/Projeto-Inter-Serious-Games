@@ -12,6 +12,7 @@ public class NuvemsScroll : MonoBehaviour
     private Vector2 height = new Vector2(1,5);
     [SerializeField]
     private Vector2 randomWidth = new Vector2(-4,0);
+    [SerializeField]
     private Transform[] nuvems;
     private int childCount;
 
