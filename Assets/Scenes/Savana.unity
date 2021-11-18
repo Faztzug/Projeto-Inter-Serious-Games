@@ -2732,8 +2732,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -656601029
-  m_SortingLayer: -2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f5a02fb8c13f8224eb0bd7c00604303a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2745,7 +2745,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &417195178
 Transform:
   m_ObjectHideFlags: 0
@@ -2754,7 +2754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417195176}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.13436592, y: -1.2030377, z: 0}
+  m_LocalPosition: {x: 0.13436592, y: -2.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 864588901}
@@ -5782,6 +5782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1010510913}
   - component: {fileID: 1010510912}
+  - component: {fileID: 1010510914}
   m_Layer: 0
   m_Name: Pedra_3
   m_TagString: Untagged
@@ -5826,8 +5827,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -656601029
-  m_SortingLayer: -2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8aff360247a7cf04d960199c282c08cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5839,7 +5840,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &1010510913
 Transform:
   m_ObjectHideFlags: 0
@@ -5854,6 +5855,22 @@ Transform:
   m_Father: {fileID: 864588901}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1010510914
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010510911}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.69}
+  m_Size: {x: 1, y: 0.3}
+  m_Direction: 1
 --- !u!1 &1032731057
 GameObject:
   m_ObjectHideFlags: 0
