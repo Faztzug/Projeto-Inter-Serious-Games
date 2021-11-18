@@ -224,6 +224,7 @@ SpriteAtlas:
   - {fileID: 195520077365189764, guid: d8bc604da4887044689573ac3916c699, type: 3}
   - {fileID: -6769277450311805917, guid: d8bc604da4887044689573ac3916c699, type: 3}
   - {fileID: 21300000, guid: 984a444db3bea7f4491e10ba5d27f1ec, type: 3}
+  - {fileID: 21300000, guid: 201b394de75de5d4ba2dc7edd61009a6, type: 3}
   - {fileID: 21300000, guid: 3474907d075c5394db403a322ae337af, type: 3}
   - {fileID: 21300000, guid: 96cce67d3f78fb148bbb73a0879dc16e, type: 3}
   - {fileID: 21300000, guid: 9273848d7687bac498a8d9892a3d24c0, type: 3}
@@ -431,6 +432,7 @@ SpriteAtlas:
   - Pedra_2_1
   - Pedra_2_0
   - "\xC1rvore"
+  - placa
   - PoteVazio_Puzzle
   - Nuvem_6
   - Exaustores_TerceiroPlano
