@@ -108,6 +108,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: eb66b233a7c789d4ca26423dcbed531d, type: 3}
   - {fileID: 21300000, guid: 7978a633407088d4eb13130a16fe3eda, type: 3}
   - {fileID: 21300000, guid: 2f717c439dc43e3479cfa55e29bc1a02, type: 3}
+  - {fileID: 21300000, guid: 8839896310ba8374691b5f718ef384a5, type: 3}
   - {fileID: 21300000, guid: cff8189331dbdb64fa99339b0d73404e, type: 3}
   - {fileID: 21300000, guid: 57d5a3c3168fb33458d01276d844c07a, type: 3}
   - {fileID: 21300000, guid: 4e49c9d36982b734e86c391af79445f9, type: 3}
@@ -127,6 +128,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 365b3f253d33c0a4a802d0bf6dff5212, type: 3}
   - {fileID: 21300000, guid: 425697654c42fe64c85ab0fa640c14f9, type: 3}
   - {fileID: 21300000, guid: 1bc3d86518a149f46a4b0bf64f32a757, type: 3}
+  - {fileID: 21300000, guid: 13c410955ccd2364dabd94de752d68c4, type: 3}
   - {fileID: 21300000, guid: 474984a5dd4d47647ad49725ebeaf02b, type: 3}
   - {fileID: 21300000, guid: 66f590b561203154f92915f8ae06fec4, type: 3}
   - {fileID: 21300000, guid: 4a891fb5506c0b74e9ca1aa12c15c401, type: 3}
@@ -167,6 +169,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 19bb2729c055db3439e059b66752fdbf, type: 3}
   - {fileID: 21300000, guid: 2f4fae2983a2f854ab064bbfde21ffe7, type: 3}
   - {fileID: 21300000, guid: 3944fb397e93b964ab1e70d44a86fb54, type: 3}
+  - {fileID: 21300000, guid: e90ea3498606f174d900f7b0104a8919, type: 3}
   - {fileID: 21300000, guid: 99df1789798a68347ba4fe9a6a93ee42, type: 3}
   - {fileID: 21300000, guid: 83dff4a9771685c4380907127afd8813, type: 3}
   - {fileID: 21300000, guid: 805871b90ab5cf74c8e8f5a3fbf18024, type: 3}
@@ -184,6 +187,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8b8e69eabaeadd24f86706a88125cc61, type: 3}
   - {fileID: 21300000, guid: e27bdfea8db536b488b04ab1ef489dc2, type: 3}
   - {fileID: 21300000, guid: ed0eb5fac03741640a4cf7a5e6e6a57f, type: 3}
+  - {fileID: 21300000, guid: 00e2d6fa8e4922e4a990af4b15329341, type: 3}
   - {fileID: 21300000, guid: b88b9f0b1a9639f489a14ad07b66df47, type: 3}
   - {fileID: 21300000, guid: 8c84017b659143145ab6a2ef5a857a8a, type: 3}
   - {fileID: 21300000, guid: 0ead708bbb877524eb0d9a2ac629a168, type: 3}
@@ -192,6 +196,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3d0720eb71f728645b279a7075eda553, type: 3}
   - {fileID: 21300000, guid: 637a11ebc9096cf46ad549f47627b62b, type: 3}
   - {fileID: 21300000, guid: 60419eeb67584ef41a0d507919b3163f, type: 3}
+  - {fileID: 21300000, guid: 28c1320c6ff98ee4bb6353f8136c4d11, type: 3}
+  - {fileID: -8070686850402279387, guid: a44bc21cb949a234dbbdb545912cbeb8, type: 3}
+  - {fileID: 3700292194808277242, guid: a44bc21cb949a234dbbdb545912cbeb8, type: 3}
   - {fileID: 21300000, guid: 11cdb43c10dd1ae4cb8849b423a513d0, type: 3}
   - {fileID: 21300000, guid: ae4eeb4ccb0b40046a52c1a0fad55747, type: 3}
   - {fileID: 21300000, guid: 9070765cc80368248bc2dbe0810f995a, type: 3}
@@ -212,6 +219,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: b529781d30b73cb49bf70fb4c3c78269, type: 3}
   - {fileID: 21300000, guid: d0b3da1d1df877248b65f1ede2f24da2, type: 3}
   - {fileID: 21300000, guid: c6f9cc1d78ef46a4187cdc8bf4576f54, type: 3}
+  - {fileID: 21300000, guid: 42e6dd2db4ce19143a5de4ae39448f6b, type: 3}
   - {fileID: 21300000, guid: 949fb73d29963194e8972efdccf66d63, type: 3}
   - {fileID: 195520077365189764, guid: d8bc604da4887044689573ac3916c699, type: 3}
   - {fileID: -6769277450311805917, guid: d8bc604da4887044689573ac3916c699, type: 3}
@@ -307,6 +315,7 @@ SpriteAtlas:
   - Fundo_CentroDireita
   - Lateral_CentroSuperior
   - "Arm\xE1rioAberto"
+  - Moldura
   - Fundo_SuperiorDireito
   - "\xC1rvore_3"
   - ArmarioSuperiorAberto
@@ -326,6 +335,7 @@ SpriteAtlas:
   - Nuvem_5
   - "\xC1rvore_cortada_7"
   - Grama_4
+  - Locker
   - Fundo_3
   - Porta_6
   - gramado_Savana_3
@@ -366,6 +376,7 @@ SpriteAtlas:
   - gramado_Savana
   - "\xC1rvore_TerceiroPlano"
   - Monitor
+  - Mesa_2
   - Armazenamento
   - "\xC1rvore_2"
   - gramado_Savana_2
@@ -383,6 +394,7 @@ SpriteAtlas:
   - Monitor_Grande
   - PoteCheio_Puzzle
   - gramado_4
+  - mesa
   - Cadeira
   - Porta_5
   - Pedregulho_2
@@ -391,6 +403,9 @@ SpriteAtlas:
   - "Microsc\xF3pio"
   - Pedregulho_3
   - "\xC1rvore_QuartoPlano"
+  - Mesa_1
+  - Radio_On
+  - Radio_Off
   - Pc
   - "\xC1rvore_7"
   - Becker_4
@@ -411,6 +426,7 @@ SpriteAtlas:
   - "\xC1rvore_TerceiroPlano_2"
   - "Sombra_Cal\xE7ada"
   - "\xC1rvore_queimada_2"
+  - Cadeira
   - "\xC1rvore_TerceiroPlano_3"
   - Pedra_2_1
   - Pedra_2_0
