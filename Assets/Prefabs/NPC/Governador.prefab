@@ -112,6 +112,10 @@ MonoBehaviour:
     - "T\xE1 bom, te dou somente hoje para conseguir alguma coisa. Se n\xE3o conseguir,
       ir\xE1 fechar tudo at\xE9 o fim do ano."
     - "Sim espero mesmo, agora se me d\xE3o licen\xE7a tenho assuntos a resolver."
+    - Bom dia, Paulo
+    - "\xC9 chegado a hora, adquirimos a localiza\xE7\xE3o de Leandro. J\xE1 desligamos
+      as obras de seu \xF4nibus espacial, ele n\xE3o tem para onde fugir, venha me
+      encontrar na \xE1rea governamental."
 --- !u!58 &2645994734902680494
 CircleCollider2D:
   m_ObjectHideFlags: 0

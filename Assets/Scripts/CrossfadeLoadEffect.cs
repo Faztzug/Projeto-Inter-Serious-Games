@@ -9,7 +9,7 @@ public class CrossfadeLoadEffect : MonoBehaviour
     private GameObject player;
     private PlayerControl playerControl;
     private EstadoDeMundo estado;
-    [SerializeField] private string tittleScreenCena;
+    public string tittleScreenCena;
 
     private void Start()
     {

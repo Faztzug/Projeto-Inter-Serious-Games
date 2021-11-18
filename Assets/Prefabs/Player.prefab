@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: -1.7487696, y: -2.6560812}
+  touchPosition: {x: 6.2282267, y: -1.4870387}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -212,6 +212,23 @@ MonoBehaviour:
       te falou se descobriu alguma coisa do Leandro
     - Ele falou o'que exatamente ele queria falar comigo
     - Entendo, vou ver ele quando tiver tempo
+    - "Obrigado, Daniela. Vamos ao trabalho ent\xE3o."
+    - "Que \xF3tima not\xEDcia essa, falaremos melhor no fim do dia"
+    - "N\xE3o, ele sumiu na floresta depois n\xE3o ouvi falar dele."
+    - Conseguimos, Daniela. Finalmente podemos dizer que o mundo tem uma nova chance.
+    - "Nada disso, eu n\xE3o teria chegado aqui sem voc\xEA ou os outros."
+    - "Vou, elas tiveram muita paci\xEAncia comigo e agora quero poder somente descansar
+      junto com elas, quando eu voltar, podemos trabalhar junto, mas voc\xEA n\xE3o
+      como uma assistente, mas uma parceira."
+    - Agora irei falar com Pedro, temos um assunto pendente a resolver
+    - Finalmente...
+    - Bom dia, senhor Pedro
+    - Tudo bem, senhor Pedro.
+    - "Bem, agora eu irei dar uma visitada aos outros, antes de ir falar com Pedro
+      novamente para terminarmos a situa\xE7\xE3o com Leandro."
+    - Onde que erramos, Daniela?
+    - "E os outros? Como est\xE3o os outros?"
+    - Me desculpem...
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,6 +278,13 @@ MonoBehaviour:
     biancaInvestiuHidreletrica7: 0
     biancaInvestiuMaquinas7: 0
     fimIntroducaoTurno8: 0
+    InvestiuSalaContorle8: 0
+    InvestiuMaquinaria8: 0
+    InvestiuHidreletrica8: 0
+    InvestiuExaustores8: 0
+    fimIntroducaoTurno9: 0
+    projetoSucesso: 0
+    fimIntroducaoTurno10: 0
     avancoProjeto: 0
     relacaoAssistente: 2
     relacaoGovernador: 2

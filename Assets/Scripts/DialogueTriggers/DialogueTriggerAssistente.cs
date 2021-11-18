@@ -17,6 +17,12 @@ public class DialogueTriggerAssistente : DialogueTrigger
             fazerAndar.PararAndar();
         else if (estadoDeMundo.save.turno == 7 && estadoDeMundo.save.fimIntroducaoTurno7 == true)
             fazerAndar.PararAndar();
+        else if (estadoDeMundo.save.turno == 8 && estadoDeMundo.save.fimIntroducaoTurno8 == true)
+            fazerAndar.PararAndar();
+        else if (estadoDeMundo.save.turno == 9 && estadoDeMundo.save.fimIntroducaoTurno9 == true)
+            fazerAndar.PararAndar();
+        else if (estadoDeMundo.save.turno == 10 && estadoDeMundo.save.fimIntroducaoTurno10 == true)
+            fazerAndar.PararAndar();
     }
 
     public override void StartDialogue()
@@ -60,6 +66,14 @@ public class DialogueTriggerAssistente : DialogueTrigger
         else if (estadoDeMundo.save.turno == 8 && estadoDeMundo.save.fimIntroducaoTurno8 == false)
         {
             StartDialogue(95, 95);
+        }
+        else if (estadoDeMundo.save.turno == 9 && estadoDeMundo.save.fimIntroducaoTurno9 == false)
+        {
+            StartDialogue(111, 111);
+        }
+        else if (estadoDeMundo.save.turno == 10 && estadoDeMundo.save.fimIntroducaoTurno10 == false)
+        {
+            StartDialogue(121, 121);
         }
     }
 
@@ -322,6 +336,80 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 DTplayer.StartDialogue(96, 96);
             else if (lastSentence == 111)
                 DTplayer.StartDialogue(97, 97);
+        }
+
+        else if (estadoDeMundo.save.turno == 9)
+        {
+            if (lastSentence == 112)
+            {
+                if (estadoDeMundo.save.InvestiuSalaContorle8 == true)
+                    StartDialogue(112, 112);
+                else if (estadoDeMundo.save.InvestiuMaquinaria8 == true)
+                    StartDialogue(113, 113);
+                else if (estadoDeMundo.save.InvestiuHidreletrica8 == true)
+                    StartDialogue(114, 114);
+                else if (estadoDeMundo.save.InvestiuExaustores8 == true)
+                    StartDialogue(115, 115);
+                else
+                {
+                    estadoDeMundo.save.InvestiuExaustores8 = true;
+                    estadoDeMundo.save.avancoProjeto++;
+                    estadoDeMundo.save.relacaoGovernador++;
+                    StartDialogue(115, 115);
+                }
+
+            }
+            else if (lastSentence > 112 && lastSentence < 116)
+            {
+                estadoDeMundo.save.avancoProjeto += 2;
+                StartDialogue(116, 116);
+            }
+                
+            else if (lastSentence == 117)
+                DTplayer.StartDialogue(98, 98);
+            else if (lastSentence == 119)
+                DTplayer.StartDialogue(99, 99);
+            else if (lastSentence == 120)
+                DTplayer.StartDialogue(100, 100);
+            else if (lastSentence == 121)
+                estadoDeMundo.save.fimIntroducaoTurno9 = true;
+
+
+        }
+
+        else if (estadoDeMundo.save.turno == 10)
+        {
+            if (lastSentence == 122)
+            {
+                if (estadoDeMundo.save.projetoSucesso == true)
+                    StartDialogue(122, 122);
+                else
+                    StartDialogue(127,127);
+            }
+            //sucesso
+            else if (lastSentence == 123)
+                DTplayer.StartDialogue(101, 101);
+            else if (lastSentence == 124)
+                DTplayer.StartDialogue(102, 102);
+            else if (lastSentence == 125)
+                DTplayer.StartDialogue(103, 103);
+
+            else if (lastSentence == 126)
+            {
+                player.emDialogo = true;
+                DTplayer.StartDialogue(104, 104, 2f);
+            }
+                
+            else if (lastSentence == 127)
+                DTplayer.StartDialogue(105, 105);
+
+            //fracasso
+            else if (lastSentence == 128)
+                DTplayer.StartDialogue(109, 109);
+            else if (lastSentence == 129)
+                DTplayer.StartDialogue(110, 110);
+            else if (lastSentence == 130)
+                DTplayer.StartDialogue(111, 111);
         }
     }
 }

@@ -427,6 +427,44 @@ MonoBehaviour:
     - "Ent\xE3o ele n\xE3o me passou nada sobre o Leandro, mas ele me passou que
       queria falar com voc\xEA quando o senhor tiver tempo."
     - "n\xE3o, mas disse que \xE9 importante"
+    - "Bom dia Doutor tenho um relat\xF3rio para te mostrar"
+    - "As novas c\xE2meras trazem seguran\xE7a de poder ver qualquer problema cedo
+      e isso nos traz tranquilidade, Bianca veio aqui ontem e ao ver a melhoria,
+      elogiou"
+    - "A melhora nas m\xE1quinas aceleram o trabalho e garantem menos chances de
+      riscos. Raul veio aqui ontem e ao ver a melhoria, elogiou."
+    - "A melhoria na Hidrel\xE9trica nos trouxe uma maior capacidade el\xE9trica
+      e um gasto menor. Jo\xE3o veio aqui ontem e ao ver a melhoria, elogiou."
+    - "A melhoria nos exaustores trouxe uma menor emiss\xE3o, fazendo nosso trabalho
+      ainda mais tranquilo. Pedro veio aqui ontem e ao ver a melhoria, elogiou."
+    - "Com a melhora no nosso laborat\xF3rio, o trabalho ficou bem mais f\xE1cil,
+      trazendo um bom avan\xE7o em nosso objetivo."
+    - "Gostaria de falar do desempenho que estamos tendo com a m\xE1quinas est\xE3o
+      saindo muito satisfat\xF3rios "
+    - "e com isso estamos quase chegando no nosso objetivo final que \xE9 a restaura\xE7\xE3o,
+      a ONU viu esse nosso avan\xE7o e nos deu um pequeno incentivo, para melhorarmos
+      alguma das m\xE1quinas."
+    - "E sobre o Leandro alguma not\xEDcia dele ?"
+    - "humm\u2026 bem o importante \xE9 que ele n\xE3o est\xE1 mais fazendo parte
+      do projeto, bem vou deixar o senhor aproveitar o dia e caso alguma coisa aconte\xE7a
+      aqui eu te chamo."
+    - "Bom dia Doutor tenho um relat\xF3rio para te mostrar"
+    - "Parabens, Doutor. Ap\xF3s todos esses anos e todas as lutas e sacrificios,
+      finalmente conseguimos."
+    - "Tudo gra\xE7as ao senhor, doutor."
+    - "N\xE3o foi nada, doutor, foi um prazer trabalhar com voc\xEA e espero n\xE3o
+      perdermos contato depois disso. Imagino que v\xE1 tirar um tempo de descanso
+      com sua fam\xEDlia, sim?"
+    - "Obrigada, doutor, eu espero n\xE3o te desapontar."
+    - "Sim, finalmente terminar a ca\xE7a a Leandro"
+    - "Doutor, infelizmente n\xE3o conseguimos\u2026 O projeto est\xE1 sendo encerrado
+      e planos para sair da Terra come\xE7ado a serem pensados"
+    - "N\xE3o sei se foi os problemas com Leandro ou uma falta de foco, doutor, mas
+      infelizmente n\xE3o conseguimos realizar o m\xEDnimo necess\xE1rio para ser
+      considerado um sucesso."
+    - "Infelizmente eu n\xE3o tive muitas not\xEDcias sobre eles, todos pareciam
+      desapontados e tentando sobreviver, n\xE3o temos ideia de como ser\xE3o as
+      coisas agora."
 --- !u!58 &7849470484585874826
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -73,6 +73,17 @@
 
     public bool fimIntroducaoTurno8 = false;
 
+    public bool InvestiuSalaContorle8 = false;
+    public bool InvestiuMaquinaria8 = false;
+    public bool InvestiuHidreletrica8 = false;
+    public bool InvestiuExaustores8 = false;
+
+    public bool fimIntroducaoTurno9 = false;
+
+    public bool projetoSucesso = false;
+
+    public bool fimIntroducaoTurno10 = false;
+
     [Range(0,100)]
     public int avancoProjeto = 0;
 

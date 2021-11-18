@@ -275,6 +275,70 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
         }
 
+        else if (estadoDeMundo.save.turno == 9)
+        {
+             if (lastSentence == 99)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(117, 118);
+             else if (lastSentence == 100)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(119, 119);
+            else if (lastSentence == 101)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(120, 120);
+        }
+
+        else if (estadoDeMundo.save.turno == 10)
+        {
+            //sucesso
+            if (lastSentence == 102)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(123, 123);
+            else if (lastSentence == 103)
+            {
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(124, 124);
+                //player.emDialogo = true;
+                //StartDialogue(104, 104, 4f);
+            }
+            else if (lastSentence == 104)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(125, 125);
+            else if (lastSentence == 105)
+            {
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(126, 126);
+                
+            }
+            else if (lastSentence == 106)
+            {
+                player.emDialogo = true;
+                FindObjectOfType<DTGovernandor>().fazerAndar.AndeParaOPlayer(3f);
+            }
+                
+            else if (lastSentence == 107)
+            {
+                FindObjectOfType<DTGovernandor>().StartDialogue(28, 28);
+                
+            }
+            else if (lastSentence == 108)
+            {
+                
+                FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(17, -3));
+                player.emDialogo = true;
+                StartDialogue(108, 108, 3f);
+                estadoDeMundo.save.fimIntroducaoTurno10 = true;
+            }
+
+            //fracasso
+            else if (lastSentence == 110)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(128, 128);
+            else if (lastSentence == 111)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(129, 129);
+            else if (lastSentence == 112)
+            {
+                CrossfadeLoadEffect crossfade = FindObjectOfType<CrossfadeLoadEffect>();
+
+                crossfade.ChamarCrossfade(crossfade.tittleScreenCena, player.transform.position);
+            }
+
+
+
+        }
+
     }
 
     public void MomentoDeResponder(int sentence, string NPCname)

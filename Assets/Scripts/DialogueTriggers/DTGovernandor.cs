@@ -18,6 +18,13 @@ public class DTGovernandor : DialogueTrigger
         {
             StartDialogue(19, 19);
         }
+
+
+
+        else if (estadoDeMundo.save.turno == 10)
+        {
+            StartDialogue(27, 27);
+        }
     }
 
     public override void StartDialogue()
@@ -42,6 +49,13 @@ public class DTGovernandor : DialogueTrigger
         else if (estadoDeMundo.save.turno == 6)
         {
             StartDialogue(19, 19);
+        }
+
+
+        else if (estadoDeMundo.save.turno == 10)
+        {
+
+            StartDialogue(27, 27);
         }
 
     }
@@ -96,6 +110,20 @@ public class DTGovernandor : DialogueTrigger
                 DTplayer.StartDialogue(73, 73);
             else if (lastSentence == 27)
                 DTplayer.StartDialogue(74, 74);
+        }
+
+
+
+
+
+
+
+        else if (estadoDeMundo.save.turno == 10)
+        {
+            if (lastSentence == 28)
+                DTplayer.StartDialogue(106, 106);
+            else if (lastSentence == 29)
+                DTplayer.StartDialogue(107, 107);
         }
 
 
