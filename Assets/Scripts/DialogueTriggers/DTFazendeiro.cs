@@ -66,8 +66,8 @@ public class DTFazendeiro : DialogueTrigger
                 FindObjectOfType<DTVozDoPovo>().StartDialogue(1, 1);
             else if (lastSentence == 13)
                 FindObjectOfType<DTVozDoPovo>().StartDialogue(2, 2);
-            else if (lastSentence == 14)
-                FindObjectOfType<DTVozDoPovo>().StartDialogue(3, 3);
+            else if (lastSentence == 17)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(3, 4);
         }
     }
 }

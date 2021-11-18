@@ -235,7 +235,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 86)
                 FindObjectOfType<DTFazendeiro>().StartDialogue(12, 12);
             else if (lastSentence == 87)
-                FindObjectOfType<DTFazendeiro>().StartDialogue(13, 13);
+                FindObjectOfType<DTFazendeiro>().StartDialogue(13, 16);
             else if (lastSentence == 88)
             {
                 player.emDialogo = true;

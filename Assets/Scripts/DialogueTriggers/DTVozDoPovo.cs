@@ -73,7 +73,7 @@ public class DTVozDoPovo : DialogueTrigger
                 DTplayer.StartDialogue(84, 85);
             else if (lastSentence == 3)
                 DTplayer.StartDialogue(86, 86);
-            else if (lastSentence == 4)
+            else if (lastSentence == 5)
                 DTplayer.StartDialogue(87, 87);
         }
     }
