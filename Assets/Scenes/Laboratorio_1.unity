@@ -3446,7 +3446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.coletouTerra
@@ -4987,6 +4987,20 @@ PrefabInstance:
     - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709144419141987, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709144419141987, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "Entretanto, o povo precisa urgente dessa \xE1gua, n\xE3o d\xE1 para
+        se viver sem. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834709144419141987, guid: 09ab13964927551428ac0608dd023316, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: "Dando a \xE1gua para as fazendas far\xE1 o povo passar por ainda mais
+        necessidades e n\xE3o podemos deixar isso acontecer, Paulo."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09ab13964927551428ac0608dd023316, type: 3}

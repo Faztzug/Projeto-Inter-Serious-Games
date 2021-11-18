@@ -66,7 +66,9 @@
 
     public bool fimIntroducaoTurno7 = false;
 
-
+    public bool aceitouDarAguaFazendeiro7 = false;
+    public bool biancaInvestiuHidreletrica7 = false;
+    public bool biancaInvestiuMaquinas7 = false;
 
 
     public bool fimIntroducaoTurno8 = false;
