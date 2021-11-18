@@ -250,6 +250,31 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(94, 94);
         }
 
+        else if (estadoDeMundo.save.turno == 8)
+        {
+            if (lastSentence == 91)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(98, 99);
+
+            else if (lastSentence == 93)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(102, 103);
+
+            else if (lastSentence == 92)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(104, 104);
+
+            else if (lastSentence == 94)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(107, 107);
+            else if (lastSentence == 95)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(108, 108);
+            else if (lastSentence == 96)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(109, 109);
+            else if (lastSentence == 97)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(110, 110);
+            else if (lastSentence == 98)
+                estadoDeMundo.save.fimIntroducaoTurno8 = true;
+
+
+        }
+
     }
 
     public void MomentoDeResponder(int sentence, string NPCname)

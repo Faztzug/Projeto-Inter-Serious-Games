@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: -0.06834984, y: 0.02583921}
+  touchPosition: {x: -1.7487696, y: -2.6560812}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -202,6 +202,16 @@ MonoBehaviour:
       com Leandro, voc\xEAs podem esperar, sim?"
     - "Excelente not\xEDcias, Daniela, ela falou alguma coisa a mais?"
     - "Okay. Irei ver isso ap\xF3s o fim dos problemas tamb\xE9m, obrigado, Daniela."
+    - Fico feliz por isso
+    - "Isso \xE9 triste, mas eu espero que ele entenda."
+    - Fico feliz por isso
+    - "Obrigado por me passar esse relat\xF3rio."
+    - "Que \xF3tima not\xEDcia, sim gostaria de que voc\xEA me passasse esse dinheiro
+      hoje no final do dia"
+    - Daniela, aproveitando esse momento queria te perguntar sobre o Pedro se ele
+      te falou se descobriu alguma coisa do Leandro
+    - Ele falou o'que exatamente ele queria falar comigo
+    - Entendo, vou ver ele quando tiver tempo
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +257,9 @@ MonoBehaviour:
     fimIntroducaoTurno6: 0
     coletouProvasContraER7: 0
     fimIntroducaoTurno7: 0
+    aceitouDarAguaFazendeiro7: 0
+    biancaInvestiuHidreletrica7: 0
+    biancaInvestiuMaquinas7: 0
     fimIntroducaoTurno8: 0
     avancoProjeto: 0
     relacaoAssistente: 2
