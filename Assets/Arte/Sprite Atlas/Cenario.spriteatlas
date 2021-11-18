@@ -155,6 +155,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c87d7d28ed2a64f4b988078755d2a9c7, type: 3}
   - {fileID: 21300000, guid: 8a4b6e387d8c40f43ae85aa5c2f4460c, type: 3}
   - {fileID: 21300000, guid: 28b9f468fb692134194be28550448005, type: 3}
+  - {fileID: 9021240260021790412, guid: 4af1ad688a9adc2429f40aaf595ad8d4, type: 3}
+  - {fileID: 2592767869273018475, guid: 4af1ad688a9adc2429f40aaf595ad8d4, type: 3}
   - {fileID: 21300000, guid: 0d7a9978db942654fbfa5d306f3acd94, type: 3}
   - {fileID: 21300000, guid: bd75a2b82ce6a1045a91beaec271aa0b, type: 3}
   - {fileID: 21300000, guid: ed7116b8e2170fb4e980a0cfaf26b266, type: 3}
@@ -220,6 +222,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d0b3da1d1df877248b65f1ede2f24da2, type: 3}
   - {fileID: 21300000, guid: c6f9cc1d78ef46a4187cdc8bf4576f54, type: 3}
   - {fileID: 21300000, guid: 42e6dd2db4ce19143a5de4ae39448f6b, type: 3}
+  - {fileID: 21300000, guid: ee11363d0bb392741b5b51a88751bbc4, type: 3}
   - {fileID: 21300000, guid: 949fb73d29963194e8972efdccf66d63, type: 3}
   - {fileID: 195520077365189764, guid: d8bc604da4887044689573ac3916c699, type: 3}
   - {fileID: -6769277450311805917, guid: d8bc604da4887044689573ac3916c699, type: 3}
@@ -363,6 +366,8 @@ SpriteAtlas:
   - "\xC1rvore_queimada_6"
   - "\xC1rvore_cortada_6"
   - "Arm\xE1rioSideView"
+  - Galhos e pedaco de metal_1
+  - Galhos e pedaco de metal_0
   - Porta_4
   - "\xC1rvore_QuartoPlano_4"
   - Erlenmeyer_3
@@ -428,6 +433,7 @@ SpriteAtlas:
   - "Sombra_Cal\xE7ada"
   - "\xC1rvore_queimada_2"
   - Cadeira
+  - Pegadas
   - "\xC1rvore_TerceiroPlano_3"
   - Pedra_2_1
   - Pedra_2_0
