@@ -21,7 +21,7 @@ public class AlarmeAnimation : MonoBehaviour
             music.ChangeMusic(alarmeSom);
         }
         else if (estado.save.turno == 3 && estado.save.fimIntroducaoTurno3 == true
-           && estado.save.InvestiuExaustores8 == false)
+           && estado.save.puzzleExaustores3Resolvido == false)
         {
             GetComponent<Animator>().SetTrigger("Incendio");
             music.ChangeMusic(alarmeSom);

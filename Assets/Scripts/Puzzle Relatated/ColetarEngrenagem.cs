@@ -12,7 +12,10 @@ public class ColetarEngrenagem : MonoBehaviour
     private void Start()
     {
         inventario = FindObjectOfType<Inventory>();
-        //estado = inventario.gameObject.GetComponent<EstadoDeMundo>();
+        estado = inventario.gameObject.GetComponent<EstadoDeMundo>();
+
+        //if (estado.save.coletouFusivel == true)
+            //this.gameObject.SetActive(false);
         /*if(estado != null)
         {
             if (estado.save.coletouFusivel == true

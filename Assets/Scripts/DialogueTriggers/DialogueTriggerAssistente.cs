@@ -19,6 +19,7 @@ public class DialogueTriggerAssistente : DialogueTrigger
         else if(estadoDeMundo.save.turno == 3 && estadoDeMundo.save.fimIntroducaoTurno3 == true)
         {
             fazerAndar.PararAndar();
+            if(estadoDeMundo.save.puzzleExaustores3Resolvido == false)
             DTplayer.StartDialogue(123, 123, 1f);
         }
             

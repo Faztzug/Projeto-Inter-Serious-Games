@@ -18,7 +18,8 @@ public class DTNarrador : DialogueTrigger
         else if(estadoDeMundo.save.turno == 3)
         {
             if (gameObject.scene.name == salaControleMeioCena 
-                && estadoDeMundo.save.fimIntroducaoTurno3 == true)
+                && estadoDeMundo.save.fimIntroducaoTurno3 == true 
+                && estadoDeMundo.save.puzzleExaustores3Resolvido == false)
                 DTplayer.StartDialogue(125, 125);
         }
     }

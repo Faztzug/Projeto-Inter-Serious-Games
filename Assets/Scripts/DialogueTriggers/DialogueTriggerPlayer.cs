@@ -145,6 +145,21 @@ public class DialogueTriggerPlayer : DialogueTrigger
             //puzzle
             else if (lastSentence == 124)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(131,131);
+            else if (lastSentence == 130)
+            {
+                MomentoDeResponder(lastSentence, dialogueData.name);
+                answerManager.GerarRespostas(responses[10]);
+                answerManager.GerarRespostas(responses[11]);
+            }
+            else if (lastSentence == 131)
+            {
+                MomentoDeResponder(lastSentence, dialogueData.name);
+                answerManager.GerarRespostas(responses[12]);
+                answerManager.GerarRespostas(responses[13]);
+            }
+            else if (lastSentence == 123)
+                FindObjectOfType<FimDeTurno>().EncerrarTurno();
+
 
         }
 
@@ -463,6 +478,47 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 estadoDeMundo.save.aceitouCompartilharMaquinasFazendeiro = false;
                 StartDialogue(122, 122);
             }
+
+
+        }
+
+
+        if (estadoDeMundo.save.turno == 3)
+        {
+            if (NPCPerguntando == dialogueData.name
+            && resposta == dialogueResponses.Responses[10])
+            {
+                
+                estadoDeMundo.save.investiuHidreletrica = true;
+                estadoDeMundo.save.investiuMaquinas = false;
+                StartDialogue(130, 130);
+            }
+            else if (NPCPerguntando == dialogueData.name
+              && resposta == dialogueResponses.Responses[11])
+            {
+                
+                estadoDeMundo.save.investiuMaquinas = true;
+                estadoDeMundo.save.investiuHidreletrica = false;
+                StartDialogue(130, 130);
+            }
+
+
+            if (NPCPerguntando == dialogueData.name
+                && resposta == dialogueResponses.Responses[12])
+            {
+                estadoDeMundo.save.relacaoEmpresarioRuim++;
+                estadoDeMundo.save.aceitouCompraERDoProjeto = true;
+                StartDialogue(122, 122);
+            }
+            else if (NPCPerguntando == dialogueData.name
+              && resposta == dialogueResponses.Responses[13])
+            {
+                estadoDeMundo.save.relacaoEmpresarioRuim--;
+                estadoDeMundo.save.aceitouCompraERDoProjeto = false;
+                StartDialogue(122, 122);
+            }
+
+
         }
     }
 }
