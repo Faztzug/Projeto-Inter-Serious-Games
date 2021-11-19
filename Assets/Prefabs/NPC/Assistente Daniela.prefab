@@ -502,6 +502,9 @@ MonoBehaviour:
       coisas agora."
     - "Senhor, aparentemente um inc\xEAndio come\xE7ou na floresta."
     - Senhor, tem um alerta na sala de controle, por favor, veja imediatamente
+    - "Doutor, preciso falar com voc\xEA"
+    - "Ocorreu um vazamento da m\xE1quina no rio e est\xE1 contaminando a \xE1gua"
+    - Antes do Senhor ir tome esse frasco para poder coletar uma amostra
 --- !u!58 &7849470484585874826
 CircleCollider2D:
   m_ObjectHideFlags: 0

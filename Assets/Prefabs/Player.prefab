@@ -252,6 +252,33 @@ MonoBehaviour:
     - "Problema nos exaustores\u2026 Vou ter que ir l\xE1 resolver agora."
     - "Aparentemente uma engrenagem essencial est\xE1 faltando..."
     - "Vou tentar encaixar est\xE1 aqui."
+    - Agora preciso dar uma resposta a Pedro e Leandro...
+    - Mas antes vou decidir onde investir o cheque recebido por Bianca.
+    - Agora sobre a compra de parte do projeto por Leandro...
+    - Pode falar Daniela
+    - "Droga estou indo para o rio ent\xE3o"
+    - "Primeiro vou ter que pegar uma amostra dessa subst\xE2ncia e levar para o
+      Laborat\xF3rio para poder criar uma subst\xE2ncia para purificar o rio"
+    - "Pronto agora preciso criar uma subst\xE2ncia purificante"
+    - "Pronto agora s\xF3 tenho que despej\xE1 la no rio"
+    - Pronto consegui purificar o rio
+    - "Estranho parece que eu j\xE1 vi essa subst\xE2ncia antes, onde foi mesmo..hum..hum
+      ... a lembrei o Senhor Leandro estava com uma mancha no terno parecido com
+      essa, ser\xE1 que ele fez isso? "
+    - "N\xE3o pode ser, mas melhor checar as c\xE2meras de seguran\xE7a"
+    - hum, encontrei ele vamos ver aonde ele vai
+    - "Ele foi para a Maquinaria, ser\xE1 que \xE9 aquele c\xF4modo secreto?"
+    - "Meu deus, o que tem dentro desses barris, ... .argh que fedor, sim \xE9 a
+      mesma subst\xE2ncia que estava no rio "
+    - "e que equipamento \xE9 esse parece ser uma bomba por\xE9m est\xE1 desativada,
+      melhor guarda isso, n\xE3o acredito que o Senhor Leandro \xE9 capaz de uma
+      coisa dessas."
+    - Agora preciso dar uma resposta a Leandro e Bianca.
+    - "Talvez eu devesse ajudar Leandro com as doa\xE7\xF5es para o povo?"
+    - "A Bianca deseja comprar novas m\xE1quinas e terreno para seu Jo\xE3o, devo
+      aceitar esta proposta?\r"
+    - "Ela tamb\xE9m deseja distribuir rem\xE9dios para a popula\xE7\xE3o, mas precisa
+      estar mais envolvida com o projeto para isso, devo aceitar?\r"
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,6 +317,10 @@ MonoBehaviour:
     investiuMaquinas: 0
     fimIntroducaoTurno4: 0
     fimDialogoGovernadorTurno4: 0
+    alarmePoluicaoRio4: 0
+    rioPurificado4: 0
+    olhouCamerasSeguranca4: 0
+    puzzleTurno4Concluido: 0
     aceitouDoarDinheiroER: 0
     aceitouEBComprarTerrenoFazendeiro: 0
     aceitouEBParticiparProjetoRemedios: 0
@@ -482,6 +513,10 @@ MonoBehaviour:
   - "Recusar o uso de terreno florestal para mais planta\xE7\xF5es"
   - "Compartilhar algumas maquinas com Jo\xE3o"
   - Manter o uso das maquinas restrito ao Projeto
+  - "Investir o dinheiro em melhorias na Hidrel\xE9trica"
+  - Investir o dinheiro em melhorias nas Maquinas
+  - Aceitar a compra de parte do projeto por Leandro
+  - Recusar a proposta e se opor a compra
 --- !u!114 &375688004
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -197,6 +197,11 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 59)
                 FindObjectOfType<DTEmpresarioBom>().StartDialogue(19, 19);
 
+            //resto
+            else if (lastSentence == 132)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(133, 133);
+            else if (lastSentence == 133)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(134, 134);
         }
 
         else if (estadoDeMundo.save.turno == 5)

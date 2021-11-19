@@ -55,6 +55,11 @@
     public bool fimIntroducaoTurno4 = false;
     public bool fimDialogoGovernadorTurno4 = false;
 
+    public bool alarmePoluicaoRio4 = false;
+    public bool rioPurificado4 = false;
+    public bool olhouCamerasSeguranca4 = false;
+    public bool puzzleTurno4Concluido = false;
+
     public bool aceitouDoarDinheiroER = false;
     public bool aceitouEBComprarTerrenoFazendeiro = false;
     public bool aceitouEBParticiparProjetoRemedios = false;

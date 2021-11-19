@@ -45,6 +45,11 @@ public class FimDeTurno : MonoBehaviour
             {
                 dtPlayer.StartDialogue(128, 129);
             }
+
+            else if (estado.save.turno == 4 && estado.save.puzzleTurno4Concluido == true)
+            {
+                dtPlayer.StartDialogue(143, 144);
+            }
         }
         
     }

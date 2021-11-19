@@ -24,7 +24,12 @@ public class DialogueTriggerAssistente : DialogueTrigger
         }
             
         else if (estadoDeMundo.save.turno == 4 && estadoDeMundo.save.fimIntroducaoTurno4 == true)
+        {
             fazerAndar.PararAndar();
+            if (estadoDeMundo.save.rioPurificado4 == false)
+                StartDialogue(132, 132, 1f);
+        }
+            
         else if (estadoDeMundo.save.turno == 5 && estadoDeMundo.save.fimIntroducaoTurno5 == true)
             fazerAndar.PararAndar();
         else if (estadoDeMundo.save.turno == 6 && estadoDeMundo.save.fimIntroducaoTurno6 == true)
@@ -219,9 +224,17 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 player.emDialogo = true;
                 FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndeParaOPlayer();
             }
+
+            //resto
+            else if (lastSentence == 133)
+                DTplayer.StartDialogue(131, 131);
+            else if (lastSentence == 134)
+                DTplayer.StartDialogue(132, 132);
+            else if (lastSentence == 135)
+            {
+                //dar frasco vazio ao player?
+            }
                 
-
-
 
         }
         else if (estadoDeMundo.save.turno == 5)
