@@ -62,10 +62,23 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     audioSource: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 69edf847693bf9b40b8ecd101fbbf033, type: 3}
+  - clip: {fileID: 8300000, guid: 98460a1f1c7234f43b741bcc840af889, type: 3}
     name: A Floresta
     volume: 1
     pitch: 1
     loop: 1
     audioSource: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 4373dc1135c7d694ead2a9d3506332c4, type: 3}
+    name: The Lab
+    volume: 1
+    pitch: 1
+    loop: 1
+    audioSource: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 9bfdcd7e9f9355b45bab77143fe5ffff, type: 3}
+    name: Incendio
+    volume: 1
+    pitch: 1
+    loop: 1
+    audioSource: {fileID: 0}
   playThis: Akuanduba
+  overallVolume: 1
