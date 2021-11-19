@@ -8,6 +8,7 @@ public class FogoOverlay : MonoBehaviour
     [SerializeField] private float tempo;
     [SerializeField] int turnoAtivar;
     [SerializeField] Item extintor;
+    [SerializeField] string somIncendio;
 
     // Start is called before the first frame update
     void Start()
@@ -20,21 +21,28 @@ public class FogoOverlay : MonoBehaviour
             this.transform.parent.gameObject.SetActive(false);
             Destroy(this.transform.parent.gameObject);
         }
+        else
+        {
+            anim = GetComponent<Animator>();
+
+
+            if (FindObjectOfType<Inventory>().slotsManager.AcharItem(extintor.itemName))
+            {
+                StartCoroutine(ApagarFogo());
+                Destroy(FindObjectOfType<Inventory>().slotsManager.AcharItem(extintor.itemName).gameObject);
+            }
+
+            FindObjectOfType<MusicPlayer>().ChangeMusic(somIncendio);
+        }
 
         
-        anim = GetComponent<Animator>();
-
-
-        if (FindObjectOfType<Inventory>().slotsManager.AcharItem(extintor.itemName))
-        {
-            StartCoroutine(ApagarFogo());
-            Destroy(FindObjectOfType<Inventory>().slotsManager.AcharItem(extintor.itemName).gameObject);
-        }
+        
         
     }
 
     IEnumerator ApagarFogo()
     {
+        
         FindObjectOfType<PlayerControl>().emDialogo = true;
         yield return new WaitForSeconds(tempo);
         anim.SetTrigger("Apagou");
