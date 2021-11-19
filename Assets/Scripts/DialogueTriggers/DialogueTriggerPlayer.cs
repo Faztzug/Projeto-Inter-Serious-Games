@@ -202,6 +202,28 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(133, 133);
             else if (lastSentence == 133)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(134, 134);
+
+            else if (lastSentence == 145)
+            {
+                MomentoDeResponder(lastSentence, dialogueData.name);
+                answerManager.GerarRespostas(responses[14]);
+                answerManager.GerarRespostas(responses[15]);
+            }
+            else if (lastSentence == 146)
+            {
+                MomentoDeResponder(lastSentence, dialogueData.name);
+                answerManager.GerarRespostas(responses[16]);
+                answerManager.GerarRespostas(responses[17]);
+            }
+            else if (lastSentence == 147)
+            {
+                MomentoDeResponder(lastSentence, dialogueData.name);
+                answerManager.GerarRespostas(responses[18]);
+                answerManager.GerarRespostas(responses[19]);
+            }
+            else if (lastSentence == 123)
+                FindObjectOfType<FimDeTurno>().EncerrarTurno();
+
         }
 
         else if (estadoDeMundo.save.turno == 5)
@@ -520,6 +542,60 @@ public class DialogueTriggerPlayer : DialogueTrigger
             {
                 estadoDeMundo.save.relacaoEmpresarioRuim--;
                 estadoDeMundo.save.aceitouCompraERDoProjeto = false;
+                StartDialogue(122, 122);
+            }
+
+
+        }
+
+        if (estadoDeMundo.save.turno == 4)
+        {
+            if (NPCPerguntando == dialogueData.name
+            && resposta == dialogueResponses.Responses[14])
+            {
+                estadoDeMundo.save.relacaoEmpresarioRuim++;
+                estadoDeMundo.save.aceitouDoarDinheiroER = true;
+                
+                StartDialogue(145, 145);
+            }
+            else if (NPCPerguntando == dialogueData.name
+              && resposta == dialogueResponses.Responses[15])
+            {
+
+                estadoDeMundo.save.relacaoEmpresarioRuim--;
+                estadoDeMundo.save.aceitouDoarDinheiroER = false;
+                StartDialogue(145, 145);
+            }
+
+
+            if (NPCPerguntando == dialogueData.name
+                && resposta == dialogueResponses.Responses[16])
+            {
+                estadoDeMundo.save.relacaoEmpresarioBom++;
+                estadoDeMundo.save.aceitouEBComprarTerrenoFazendeiro = true;
+                StartDialogue(146, 146);
+            }
+            else if (NPCPerguntando == dialogueData.name
+              && resposta == dialogueResponses.Responses[17])
+            {
+                estadoDeMundo.save.relacaoEmpresarioBom--;
+                estadoDeMundo.save.aceitouEBComprarTerrenoFazendeiro = false;
+                StartDialogue(146, 146);
+            }
+
+
+            if (NPCPerguntando == dialogueData.name
+                && resposta == dialogueResponses.Responses[18])
+            {
+                estadoDeMundo.save.relacaoEmpresarioBom++;
+                estadoDeMundo.save.aceitouEBParticiparProjetoRemedios = true;
+                StartDialogue(122, 122);
+            }
+            else if (NPCPerguntando == dialogueData.name
+              && resposta == dialogueResponses.Responses[19])
+            {
+                estadoDeMundo.save.relacaoEmpresarioBom--;
+                estadoDeMundo.save.aceitouEBParticiparProjetoRemedios = false;
                 StartDialogue(122, 122);
             }
 

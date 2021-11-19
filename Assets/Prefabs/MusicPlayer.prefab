@@ -80,7 +80,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     audioSource: {fileID: 0}
-  - clip: {fileID: 8300000, guid: cefb4d69cd5ce4249a08698bc66eddcf, type: 3}
+  - clip: {fileID: 8300000, guid: 0515b78f7b8733a41b731dd8201ad2d8, type: 3}
     name: Alarme
     volume: 1
     pitch: 1

@@ -517,6 +517,12 @@ MonoBehaviour:
   - Investir o dinheiro em melhorias nas Maquinas
   - Aceitar a compra de parte do projeto por Leandro
   - Recusar a proposta e se opor a compra
+  - "Contribuir com a doa\xE7\xE3o"
+  - Negar e manter o dinheiro para gastos no Projeto
+  - Aceitar a proposta de ajuda ao Fazendeiro
+  - Recusar e mater as terras para fins do Projeto
+  - Aceitar e permitir que Bianca distribua os remedios
+  - "N\xE3o permitir que Bianca se envolva mais fortemente no Projeto"
 --- !u!114 &375688004
 MonoBehaviour:
   m_ObjectHideFlags: 0

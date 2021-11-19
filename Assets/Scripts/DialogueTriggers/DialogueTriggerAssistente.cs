@@ -23,7 +23,8 @@ public class DialogueTriggerAssistente : DialogueTrigger
             DTplayer.StartDialogue(123, 123, 1f);
         }
             
-        else if (estadoDeMundo.save.turno == 4 && estadoDeMundo.save.fimIntroducaoTurno4 == true)
+        else if (estadoDeMundo.save.turno == 4 && estadoDeMundo.save.fimIntroducaoTurno4 == true
+            && estadoDeMundo.save.fimDialogoGovernadorTurno4 == true)
         {
             fazerAndar.PararAndar();
             if (estadoDeMundo.save.rioPurificado4 == false)
