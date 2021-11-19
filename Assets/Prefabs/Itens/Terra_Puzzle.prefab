@@ -135,4 +135,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008fc91b43fbec49a8bb9cae0fef068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 2841271471603013712, guid: de5f2edaf72992e4eb69ab8c7f1e1433, type: 3}
+  itemButton: {fileID: 2841271471603013712, guid: 987fd6521e039ae42a25826b991bab92, type: 3}
+  apagarDuplicata: 1

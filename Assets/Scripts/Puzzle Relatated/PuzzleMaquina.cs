@@ -10,6 +10,9 @@ public class PuzzleMaquina : MonoBehaviour
     {
         itemClass = itemObject.GetComponent<Item>();
         prefabName = itemClass.itemName;
+
+        if (FindObjectOfType<EstadoDeMundo>().save.turno != 1)
+            gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

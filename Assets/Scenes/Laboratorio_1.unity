@@ -4860,7 +4860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itens:
   - {fileID: 4619736365714407081, guid: c188f6216da778040a5e1a0de861204d, type: 3}
-  - {fileID: 1653836592915368358, guid: de5f2edaf72992e4eb69ab8c7f1e1433, type: 3}
+  - {fileID: 1653836592915368358, guid: 987fd6521e039ae42a25826b991bab92, type: 3}
 --- !u!4 &2133590970
 Transform:
   m_ObjectHideFlags: 0
