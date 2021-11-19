@@ -234,7 +234,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 959de8ad9db838d49906260485cf45fc, type: 3}
   - {fileID: 21300000, guid: 6a46d1bd182781c489109a6db3df46f1, type: 3}
   - {fileID: 21300000, guid: 0de10bfd9a2e0414fb2eaa877c657ebe, type: 3}
-  - {fileID: 21300000, guid: 4b93620e7ac19254fba359f713354f4c, type: 3}
+  - {fileID: 4537243059172679543, guid: 4b93620e7ac19254fba359f713354f4c, type: 3}
   - {fileID: 21300000, guid: 2088163eafda37743aadbbce8b60f4a6, type: 3}
   - {fileID: 21300000, guid: 47d3eb3eaa21d95409749cd5b7ec5aa3, type: 3}
   - {fileID: 21300000, guid: ea9bb15e1c1b6364e904aa541df2412b, type: 3}
@@ -445,7 +445,7 @@ SpriteAtlas:
   - Becker
   - Cano_1
   - Rachadura_4
-  - Engrenagem_Puzzle
+  - Engrenagem_Puzzle_0
   - Fundo_InferiorDireita
   - Cano_3
   - Erlenmeyer_2

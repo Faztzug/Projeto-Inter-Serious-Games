@@ -12,8 +12,8 @@ public class ColetarEngrenagem : MonoBehaviour
     private void Start()
     {
         inventario = FindObjectOfType<Inventory>();
-        estado = inventario.gameObject.GetComponent<EstadoDeMundo>();
-        if(estado != null)
+        //estado = inventario.gameObject.GetComponent<EstadoDeMundo>();
+        /*if(estado != null)
         {
             if (estado.save.coletouFusivel == true
             || inventario.slotsManager.AcharItem(fusivelUIPrefab.itemName).name == fusivelUIPrefab.itemName
@@ -26,7 +26,7 @@ public class ColetarEngrenagem : MonoBehaviour
             || FindObjectOfType<EstadoDeMundo>().save.turno != turnoAparecer)
         {
             this.gameObject.SetActive(false);
-        }
+        }*/
 
     }
 

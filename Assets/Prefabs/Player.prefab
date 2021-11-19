@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 2.3233564, y: -4.3623896}
+  touchPosition: {x: 4.5270944, y: -4.324183}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -250,6 +250,8 @@ MonoBehaviour:
     - O que foi dessa vez?
     - Indo nesse momento.
     - "Problema nos exaustores\u2026 Vou ter que ir l\xE1 resolver agora."
+    - "Aparentemente uma engrenagem essencial est\xE1 faltando..."
+    - "Vou tentar encaixar est\xE1 aqui."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
