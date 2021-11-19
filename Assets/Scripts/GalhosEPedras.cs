@@ -15,12 +15,13 @@ public class GalhosEPedras : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && FindObjectOfType<EstadoDeMundo>().save.apagouIncendio2 == true)
         {
             spriteR.sprite = spriteRevelar;
             spriteR.sortingLayerName = "Cenario";
-            collision.gameObject.GetComponent<EstadoDeMundo>().save.apagouIncendio2 = true;
-            collision.gameObject.GetComponent<EstadoDeMundo>().save.alarmeIncendio2 = false;
+            //collision.gameObject.GetComponent<EstadoDeMundo>().save.apagouIncendio2 = true;
+            //collision.gameObject.GetComponent<EstadoDeMundo>().save.alarmeIncendio2 = false;
+            collision.gameObject.GetComponent<EstadoDeMundo>().save.turno2Concluido = true;
         }
     }
 }

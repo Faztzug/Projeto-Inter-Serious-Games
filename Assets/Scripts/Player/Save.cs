@@ -37,6 +37,7 @@
 
     public bool alarmeIncendio2 = false;
     public bool apagouIncendio2 = false;
+    public bool turno2Concluido = false;
 
     public bool fimIntroducaoTurno2 = false;
 
