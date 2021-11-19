@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1623160344232233609}
   - component: {fileID: 1623160344232233610}
   - component: {fileID: 1623160344232233611}
+  - component: {fileID: 6070508350476007897}
+  - component: {fileID: 5932432415987830977}
   m_Layer: 0
   m_Name: Fazendeiro
   m_TagString: NPC
@@ -116,6 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   andando: 0
+  distanceX: 0
+  distanceY: 0
   pararDeAndarAoAtingirPlayer: 1
 --- !u!50 &1623160344232233611
 Rigidbody2D:
@@ -138,6 +142,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &6070508350476007897
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623160344232233612}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c8f41dece5a9ffc4c80024e4e8933259, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5932432415987830977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623160344232233612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f8cc1e810e460418d8b71304e7ffa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1623160345188279261
 GameObject:
   m_ObjectHideFlags: 0
