@@ -3581,62 +3581,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.turno
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.coletouTerra
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.coletouFusivel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.apagouIncendio2
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.turno2Concluido
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.conheceuFazendeiro
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.conheceuGovernador
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno2
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.conheceuEmpresarioRuim
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.AceitouAOfertaDoEmpresarioRuim
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.AceitouLiberarAguasParaFazendeiro
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.aceitouPlantacaoDePlantaNaFloresta
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.aceitouCompartilharMaquinasFazendeiro
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 465966177179946061, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3647,7 +3591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.07
+      value: 4.84
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_LocalPosition.y
