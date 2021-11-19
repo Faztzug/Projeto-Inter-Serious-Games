@@ -6,7 +6,16 @@ public class DialogueTriggerAssistente : DialogueTrigger
     {
         base.Start();
         if (estadoDeMundo.save.turno == 2 && estadoDeMundo.save.fimIntroducaoTurno2 == true)
+        {
             fazerAndar.PararAndar();
+            if(estadoDeMundo.save.apagouIncendio2 == false)
+            {
+                player.emDialogo = true;
+                DTplayer.StartDialogue(113, 113, 1f);
+            }
+            
+        }
+            
         else if(estadoDeMundo.save.turno == 3 && estadoDeMundo.save.fimIntroducaoTurno3 == true)
             fazerAndar.PararAndar();
         else if (estadoDeMundo.save.turno == 4 && estadoDeMundo.save.fimIntroducaoTurno4 == true)
@@ -103,6 +112,7 @@ public class DialogueTriggerAssistente : DialogueTrigger
 
         if (estadoDeMundo.save.turno == 2)
         {
+            //introdução
             if (lastSentence == 15)
             {
                 if (estadoDeMundo.save.AceitouAOfertaDoEmpresarioRuim == true)
@@ -133,6 +143,10 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 FindObjectOfType<DTFazendeiro>().StartDialogue(3, 3);
             else if (lastSentence == 34)
                 DTplayer.StartDialogue(29, 29);
+
+            //resto
+            else if (lastSentence == 131)
+                DTplayer.StartDialogue(114, 114);
         }
         else if (estadoDeMundo.save.turno == 3)
         {

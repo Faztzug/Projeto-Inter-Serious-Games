@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 5654511949045924154, guid: d638da67e81a6b546991b202bd9db0f4, type: 3}
+  apagarDuplicata: 1
 --- !u!114 &6604984837191836343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,4 +150,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6e0a4790282e8448176afd41b67964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnos: 00000000000000000000
+  turnos: 01010101010101010101

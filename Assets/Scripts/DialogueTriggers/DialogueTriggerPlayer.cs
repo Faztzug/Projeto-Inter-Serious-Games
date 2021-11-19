@@ -55,11 +55,12 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
         if(estadoDeMundo.save.turno == 2)
         {
+            //introdução
             if (lastSentence == 20)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(26, 26);
             else if (lastSentence == 21)
                 FindObjectOfType<DTEmpresarioRuim>().StartDialogue(8, 9);
-            else if(lastSentence == 22)
+            else if (lastSentence == 22)
                 FindObjectOfType<DTEmpresarioRuim>().StartDialogue(10, 10);
             else if (lastSentence == 23)
                 FindObjectOfType<DTEmpresarioRuim>().StartDialogue(11, 11);
@@ -67,16 +68,44 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DTEmpresarioRuim>().StartDialogue(12, 15);
             else if (lastSentence == 25)
                 FindObjectOfType<DTEmpresarioRuim>().StartDialogue(16, 16);
-            if (lastSentence == 26)
+            else if (lastSentence == 26)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(32, 32);
-            if (lastSentence == 27)
+            else if (lastSentence == 27)
                 FindObjectOfType<DTFazendeiro>().StartDialogue(4, 4);
-            if (lastSentence == 28)
+            else if (lastSentence == 28)
                 FindObjectOfType<DTFazendeiro>().StartDialogue(5, 8);
-            if (lastSentence == 29)
+            else if (lastSentence == 29)
                 FindObjectOfType<DTFazendeiro>().StartDialogue(9, 9);
-            if (lastSentence == 30)
+            else if (lastSentence == 30)
                 estadoDeMundo.save.fimIntroducaoTurno2 = true;
+
+
+            //Resto
+            else if (lastSentence == 114)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(130, 130);
+            else if (lastSentence == 117 || lastSentence == 118)
+            {
+                CrossfadeLoadEffect crossfade = FindObjectOfType<CrossfadeLoadEffect>();
+                crossfade.ChamarCrossfade(crossfade.MaquinasCena, new Vector2(0, -4));
+                player.emDialogo = true;
+                StartDialogue(118, 118, 2f);
+            }
+            else if (lastSentence == 121)
+            {
+                MomentoDeResponder(lastSentence, dialogueData.name);
+                answerManager.GerarRespostas(responses[6]);
+                answerManager.GerarRespostas(responses[7]);
+            }
+            else if (lastSentence == 122)
+            {
+                MomentoDeResponder(lastSentence, dialogueData.name);
+                answerManager.GerarRespostas(responses[8]);
+                answerManager.GerarRespostas(responses[9]);
+            }
+            else if (lastSentence == 123)
+                FindObjectOfType<FimDeTurno>().EncerrarTurno();
+
+
         }
 
         else if(estadoDeMundo.save.turno == 3)
@@ -396,6 +425,40 @@ public class DialogueTriggerPlayer : DialogueTrigger
             estadoDeMundo.save.relacaoFazendeiro--;
             estadoDeMundo.save.AceitouLiberarAguasParaFazendeiro = false; 
             StartDialogue(18, 18);
+        }
+
+        if(estadoDeMundo.save.turno == 2)
+        {
+            if (NPCPerguntando == dialogueData.name
+            && resposta == dialogueResponses.Responses[6])
+            {
+                estadoDeMundo.save.relacaoEmpresarioRuim++;
+                estadoDeMundo.save.aceitouPlantacaoDePlantaNaFloresta = true;
+                StartDialogue(121, 121);
+            }
+            else if (NPCPerguntando == dialogueData.name
+              && resposta == dialogueResponses.Responses[7])
+            {
+                estadoDeMundo.save.relacaoEmpresarioRuim--;
+                estadoDeMundo.save.aceitouPlantacaoDePlantaNaFloresta = false;
+                StartDialogue(121, 121);
+            }
+
+
+            if (NPCPerguntando == dialogueData.name
+                && resposta == dialogueResponses.Responses[8])
+            {
+                estadoDeMundo.save.relacaoFazendeiro++;
+                estadoDeMundo.save.aceitouCompartilharMaquinasFazendeiro = true;
+                StartDialogue(122, 122);
+            }
+            else if (NPCPerguntando == dialogueData.name
+              && resposta == dialogueResponses.Responses[9])
+            {
+                estadoDeMundo.save.relacaoFazendeiro--;
+                estadoDeMundo.save.aceitouCompartilharMaquinasFazendeiro = false;
+                StartDialogue(122, 122);
+            }
         }
     }
 }

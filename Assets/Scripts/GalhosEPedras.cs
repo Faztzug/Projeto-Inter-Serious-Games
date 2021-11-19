@@ -22,6 +22,7 @@ public class GalhosEPedras : MonoBehaviour
             //collision.gameObject.GetComponent<EstadoDeMundo>().save.apagouIncendio2 = true;
             //collision.gameObject.GetComponent<EstadoDeMundo>().save.alarmeIncendio2 = false;
             collision.gameObject.GetComponent<EstadoDeMundo>().save.turno2Concluido = true;
+            collision.gameObject.GetComponent<DialogueTriggerPlayer>().StartDialogue(115, 117);
         }
     }
 }

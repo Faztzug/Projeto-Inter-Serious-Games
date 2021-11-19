@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempoDeCrossfade: 1
   tittleScreenCena: TittleScreen
+  MaquinasCena: Maquinas
 --- !u!1 &2426558469378638456
 GameObject:
   m_ObjectHideFlags: 0

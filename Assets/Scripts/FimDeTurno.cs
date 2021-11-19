@@ -37,6 +37,10 @@ public class FimDeTurno : MonoBehaviour
                 
 
             }
+            else if(estado.save.turno == 2 && estado.save.turno2Concluido == true)
+            {
+                dtPlayer.StartDialogue(119,120);
+            }
         }
         
     }

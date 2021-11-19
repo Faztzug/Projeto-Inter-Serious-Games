@@ -10,6 +10,7 @@ public class CrossfadeLoadEffect : MonoBehaviour
     private PlayerControl playerControl;
     private EstadoDeMundo estado;
     public string tittleScreenCena;
+    public string MaquinasCena;
 
     private void Start()
     {

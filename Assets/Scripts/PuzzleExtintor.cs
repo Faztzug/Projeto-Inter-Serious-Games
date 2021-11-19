@@ -1,14 +1,22 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PuzzleExtintor : MonoBehaviour
 {
     private VerificarTurnoAtual verificarTurno;
+    private EstadoDeMundo estado;
 
     private void Start()
     {
+        estado = FindObjectOfType<EstadoDeMundo>();
         verificarTurno = GetComponent<VerificarTurnoAtual>();
+        if (estado.save.turno != 2)
+        {
+            Debug.Log("Extintor deveria não ser pegavel");
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        }
+            
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

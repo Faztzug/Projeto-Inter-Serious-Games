@@ -7,6 +7,7 @@ public class PickUp : MonoBehaviour
     private Inventory inventory;
     public GameObject itemButton;
     private VerificarTurnoAtual verificarTurno;
+    [SerializeField] private bool apagarDuplicata = true;
 
 
     private void Start()
@@ -14,7 +15,18 @@ public class PickUp : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
 
         if(GetComponent<VerificarTurnoAtual>() != null)
-        verificarTurno = GetComponent<VerificarTurnoAtual>();
+        {
+            verificarTurno = GetComponent<VerificarTurnoAtual>();
+            if (verificarTurno.Verificar() == false)
+                Destroy(this.gameObject);
+        }
+        
+
+        if(apagarDuplicata == true)
+        {
+            if (inventory.slotsManager.AcharItem(itemButton.GetComponent<Item>().itemName))
+                Destroy(this.gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)

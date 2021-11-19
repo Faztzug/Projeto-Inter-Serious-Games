@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 4.5951233, y: -2.2580647}
+  touchPosition: {x: 8.716109, y: -3.968605}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -231,6 +231,15 @@ MonoBehaviour:
     - Me desculpem...
     - "Como que tem uma pe\xE7a solta novamente aqui? Estranho isso. Irei pedir para
       algu\xE9m consertar j\xE1."
+    - "O que \xE9 isso? O que est\xE1 acontecendo?"
+    - "Como assim? Precisamos resolver rapidamente. Prepare os extintores e os libere
+      l\xE1 na floresta."
+    - Tem algum objeto ali, o que seria isso?
+    - "Parece ser um rel\xF3gio, mas como isso foi parar aqui? Suspeito que o inc\xEAndio
+      foi feito por algu\xE9m\u2026 Mas porque?"
+    - Irei seguir essas pegadas.
+    - "Que local \xE9 esse? Eu n\xE3o lembro disso est\xE1 na planta, quem poderia
+      ter feito isso? Irei investigar imediatamente"
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +265,9 @@ MonoBehaviour:
     coletouFusivel: 0
     AceitouAOfertaDoEmpresarioRuim: 0
     AceitouLiberarAguasParaFazendeiro: 0
+    alarmeIncendio2: 0
+    apagouIncendio2: 0
+    turno2Concluido: 0
     fimIntroducaoTurno2: 0
     aceitouPlantacaoDePlantaNaFloresta: 0
     aceitouCompartilharMaquinasFazendeiro: 0
@@ -320,6 +332,7 @@ MonoBehaviour:
     - {fileID: 1332506630945303748, guid: ca6d5e7e799d66749b0bb66494486f49, type: 3}
     - {fileID: 2841271471603013712, guid: de5f2edaf72992e4eb69ab8c7f1e1433, type: 3}
     - {fileID: 8178883786478874463, guid: c188f6216da778040a5e1a0de861204d, type: 3}
+    - {fileID: 5654511949045924154, guid: d638da67e81a6b546991b202bd9db0f4, type: 3}
 --- !u!212 &465966177179946060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -452,6 +465,10 @@ MonoBehaviour:
   - Recusar o investimento
   - "Liberar \xE1guas da hidrel\xE9trica ao fazendeiro"
   - "Manter o uso da \xE1gua para as maquinas"
+  - Aceitar o plantio dessas plantas na Floresta.
+  - "Recusar o uso de terreno florestal para mais planta\xE7\xF5es"
+  - "Compartilhar algumas maquinas com Jo\xE3o"
+  - Manter o uso das maquinas restrito ao Projeto
 --- !u!114 &375688004
 MonoBehaviour:
   m_ObjectHideFlags: 0
