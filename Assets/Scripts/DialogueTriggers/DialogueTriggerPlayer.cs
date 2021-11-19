@@ -110,6 +110,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
         else if(estadoDeMundo.save.turno == 3)
         {
+            //introdução
             if (lastSentence == 31)
             {
                 FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndeParaOPlayer();
@@ -141,6 +142,9 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 45)
                 FindObjectOfType<DTGovernandor>().StartDialogue(13, 14);
 
+            //puzzle
+            else if (lastSentence == 124)
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(131,131);
 
         }
 

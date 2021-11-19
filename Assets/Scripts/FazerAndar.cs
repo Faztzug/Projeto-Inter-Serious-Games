@@ -8,6 +8,11 @@ public class FazerAndar : MonoBehaviour
     public float velocidade = 5;
     [HideInInspector] public bool andando = false;
     private Vector3 destinoPosition;
+    private Vector2 currentPosition;
+    [HideInInspector]
+    public float distanceX;
+    [HideInInspector]
+    public float distanceY;
 
     Ray ray;
     RaycastHit raycastHit;
@@ -22,6 +27,35 @@ public class FazerAndar : MonoBehaviour
         
     }
 
+    public void CalcularDistancia()
+    {
+        currentPosition = transform.position;
+
+        
+
+        if (destinoPosition.x - currentPosition.x > 0)
+        {
+            distanceX = destinoPosition.x - currentPosition.x;
+        }
+        else
+        {
+            distanceX = destinoPosition.x * -1 + currentPosition.x;
+            distanceX = distanceX * -1;
+        }
+
+        if (destinoPosition.y - currentPosition.y > 0)
+        {
+            distanceY = destinoPosition.y - currentPosition.y;
+        }
+        else
+        {
+            distanceY = destinoPosition.y * -1 + currentPosition.y;
+            distanceY = distanceY * -1;
+        }
+
+        //Debug.Log("distanceX: " + distanceX);
+        //Debug.Log("distanceY: " + distanceY);
+    }
     private void AtualizarPosicaoZ()
     {
         //ray = Camera.main.ScreenPointToRay(transform.position);
@@ -94,6 +128,7 @@ public class FazerAndar : MonoBehaviour
             //rgbd.MovePosition(Vector2.MoveTowards(transform.position, destinoPosition, velocidade * Time.fixedDeltaTime));
             transform.position = (Vector3.MoveTowards(transform.position, destinoPosition, velocidade * Time.fixedDeltaTime));
             AtualizarPosicaoZ();
+            CalcularDistancia();
         }
     }
 

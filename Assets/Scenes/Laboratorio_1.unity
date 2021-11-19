@@ -1836,7 +1836,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1623160344232233607, guid: cf57432b56b13e44b8d9b1cdd962d958, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1623160344232233607, guid: cf57432b56b13e44b8d9b1cdd962d958, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2617,13 +2617,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7055965171828720993, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4b440516a2cabf44092ae672a4b34e41, type: 2}
     - target: {fileID: 7849470484049677878, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
       propertyPath: m_Name
       value: Assistente Daniela
       objectReference: {fileID: 0}
     - target: {fileID: 7849470484049677885, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7849470484049677885, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2664,14 +2668,6 @@ PrefabInstance:
     - target: {fileID: 7849470484049677885, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 131
-      objectReference: {fileID: 0}
-    - target: {fileID: 7849470484585874829, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: dialogue.sentences.Array.data[130]
-      value: "Senhor, aparentemente um inc\xEAndio come\xE7ou na floresta."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
@@ -3587,7 +3583,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.coletouTerra
@@ -3599,11 +3595,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.apagouIncendio2
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno2Concluido
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuFazendeiro
@@ -3615,6 +3611,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.fimIntroducaoTurno2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.fimIntroducaoTurno3
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
@@ -3629,28 +3629,13 @@ PrefabInstance:
       propertyPath: save.AceitouLiberarAguasParaFazendeiro
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 123
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.aceitouPlantacaoDePlantaNaFloresta
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[119]
-      value: "Com este incendio apagado, por hoje s\xF3 falta dar as respostas ao
-        senhor Leandro e o Senhor Jo\xE3o."
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[120]
-      value: "Sobre o pedido de Leandro para abrir uma planta\xE7\xE3o na floresta,
-        devo aceitar?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[121]
-      value: "Sobre o pedido deSeu Jo\xE3o, devo compartilhar nossas maquinas com
-        ele para auxiliar em seu trabalho?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: dialogue.sentences.Array.data[122]
-      value: Pronto...
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.aceitouCompartilharMaquinasFazendeiro
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946061, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_Name
@@ -3662,7 +3647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.73
+      value: -5.07
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4213,7 +4198,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4589573990198492920, guid: e671060e5895dbe4cba20c5dcc66528b, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4589573990198492920, guid: e671060e5895dbe4cba20c5dcc66528b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4706,7 +4691,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2645994735013250882, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2645994735013250882, guid: 2fec92e4d38cbe6459285bd24b18e3e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4979,7 +4964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3834709143261782077, guid: 09ab13964927551428ac0608dd023316, type: 3}
       propertyPath: m_LocalPosition.x

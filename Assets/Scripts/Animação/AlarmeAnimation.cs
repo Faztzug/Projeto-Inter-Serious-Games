@@ -15,6 +15,12 @@ public class AlarmeAnimation : MonoBehaviour
             GetComponent<Animator>().SetTrigger("Incendio");
             estado.save.alarmeIncendio2 = true;
         }
+        else if (estado.save.turno == 3 && estado.save.fimIntroducaoTurno3 == true
+           && estado.save.InvestiuExaustores8 == false)
+        {
+            GetComponent<Animator>().SetTrigger("Incendio");
+            
+        }
     }
 
     

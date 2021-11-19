@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 8.716109, y: -3.968605}
+  touchPosition: {x: 2.3233564, y: -4.3623896}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -240,6 +240,16 @@ MonoBehaviour:
     - Irei seguir essas pegadas.
     - "Que local \xE9 esse? Eu n\xE3o lembro disso est\xE1 na planta, quem poderia
       ter feito isso? Irei investigar imediatamente"
+    - "Com este incendio apagado, por hoje s\xF3 falta dar as respostas ao senhor
+      Leandro e o Senhor Jo\xE3o."
+    - "Sobre o pedido de Leandro para abrir uma planta\xE7\xE3o na floresta, devo
+      aceitar?"
+    - "Sobre o pedido deSeu Jo\xE3o, devo compartilhar nossas maquinas com ele para
+      auxiliar em seu trabalho?"
+    - Pronto...
+    - O que foi dessa vez?
+    - Indo nesse momento.
+    - "Problema nos exaustores\u2026 Vou ter que ir l\xE1 resolver agora."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,6 +282,7 @@ MonoBehaviour:
     aceitouPlantacaoDePlantaNaFloresta: 0
     aceitouCompartilharMaquinasFazendeiro: 0
     fimIntroducaoTurno3: 0
+    puzzleExaustores3Resolvido: 0
     aceitouCompraERDoProjeto: 0
     investiuHidreletrica: 0
     investiuMaquinas: 0

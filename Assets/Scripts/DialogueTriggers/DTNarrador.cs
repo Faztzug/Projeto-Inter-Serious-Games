@@ -6,6 +6,7 @@ public class DTNarrador : DialogueTrigger
 {
     [SerializeField] private string titleScreenCena;
     [SerializeField] private string maquinasCena;
+    [SerializeField] private string salaControleMeioCena;
 
     public override void StartDialogue()
     {
@@ -13,6 +14,12 @@ public class DTNarrador : DialogueTrigger
         {
             if(gameObject.scene.name == maquinasCena)
                 DTplayer.StartDialogue(112, 112);
+        }
+        else if(estadoDeMundo.save.turno == 3)
+        {
+            if (gameObject.scene.name == salaControleMeioCena 
+                && estadoDeMundo.save.fimIntroducaoTurno3 == true)
+                DTplayer.StartDialogue(125, 125);
         }
     }
     public override void EndOfDialogue(int lastSentence, string NPCname)

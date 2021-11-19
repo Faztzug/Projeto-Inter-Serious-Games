@@ -46,6 +46,8 @@
 
     public bool fimIntroducaoTurno3 = false;
 
+    public bool puzzleExaustores3Resolvido = false;
+
     public bool aceitouCompraERDoProjeto = false;
     public bool investiuHidreletrica = false;
     public bool investiuMaquinas = false;

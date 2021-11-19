@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 7849470484049677880}
   - component: {fileID: 7849470484049677883}
   - component: {fileID: 1726579897157960195}
+  - component: {fileID: 7055965171828720993}
+  - component: {fileID: 4178850669148618856}
   m_Layer: 0
   m_Name: Assistente Daniela
   m_TagString: NPC
@@ -117,6 +119,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   andando: 0
+  distanceX: 0
+  distanceY: 0
   pararDeAndarAoAtingirPlayer: 1
 --- !u!50 &7849470484049677883
 Rigidbody2D:
@@ -152,6 +156,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnos: 01010101010101010101
+--- !u!95 &7055965171828720993
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7849470484049677878}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4178850669148618856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7849470484049677878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f8cc1e810e460418d8b71304e7ffa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7849470484585874824
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +500,8 @@ MonoBehaviour:
     - "Infelizmente eu n\xE3o tive muitas not\xEDcias sobre eles, todos pareciam
       desapontados e tentando sobreviver, n\xE3o temos ideia de como ser\xE3o as
       coisas agora."
+    - "Senhor, aparentemente um inc\xEAndio come\xE7ou na floresta."
+    - Senhor, tem um alerta na sala de controle, por favor, veja imediatamente
 --- !u!58 &7849470484585874826
 CircleCollider2D:
   m_ObjectHideFlags: 0

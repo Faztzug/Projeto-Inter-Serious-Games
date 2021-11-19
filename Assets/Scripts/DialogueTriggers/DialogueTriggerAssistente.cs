@@ -17,7 +17,11 @@ public class DialogueTriggerAssistente : DialogueTrigger
         }
             
         else if(estadoDeMundo.save.turno == 3 && estadoDeMundo.save.fimIntroducaoTurno3 == true)
+        {
             fazerAndar.PararAndar();
+            DTplayer.StartDialogue(123, 123, 1f);
+        }
+            
         else if (estadoDeMundo.save.turno == 4 && estadoDeMundo.save.fimIntroducaoTurno4 == true)
             fazerAndar.PararAndar();
         else if (estadoDeMundo.save.turno == 5 && estadoDeMundo.save.fimIntroducaoTurno5 == true)
@@ -150,6 +154,7 @@ public class DialogueTriggerAssistente : DialogueTrigger
         }
         else if (estadoDeMundo.save.turno == 3)
         {
+            //introdução
             if (lastSentence == 15)
             {
                 if (estadoDeMundo.save.aceitouPlantacaoDePlantaNaFloresta == true)
@@ -173,7 +178,9 @@ public class DialogueTriggerAssistente : DialogueTrigger
             else if (lastSentence == 45)
                 DTplayer.StartDialogue(36, 36);
 
-
+            //puzzle
+            else if (lastSentence == 132)
+                DTplayer.StartDialogue(124, 124);
 
         }
         else if (estadoDeMundo.save.turno == 4)

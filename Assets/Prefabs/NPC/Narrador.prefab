@@ -200,6 +200,7 @@ MonoBehaviour:
   fazerAndar: {fileID: 0}
   titleScreenCena: TittleScreen
   maquinasCena: Maquinas
+  salaControleMeioCena: Sala_de_Controle_2
 --- !u!114 &3229071670326244107
 MonoBehaviour:
   m_ObjectHideFlags: 0
