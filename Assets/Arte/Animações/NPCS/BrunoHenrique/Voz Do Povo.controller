@@ -41,10 +41,10 @@ AnimatorStateMachine:
     m_Position: {x: 240, y: 80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8694828890104484614}
-    m_Position: {x: 240, y: -40, z: 0}
+    m_Position: {x: 240, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -916431066276661634}
-    m_Position: {x: 240, y: 190, z: 0}
+    m_Position: {x: 240, y: -50, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 8487934881725516336}
@@ -53,7 +53,7 @@ AnimatorStateMachine:
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: -40, y: 190, z: 0}
   m_EntryPosition: {x: -60, y: 90, z: 0}
-  m_ExitPosition: {x: 320, y: 270, z: 0}
+  m_ExitPosition: {x: 600, y: 210, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 3804446220592719218}
 --- !u!1101 &-2093882489065609952
@@ -68,7 +68,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Andando
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: WalkCostas
+    m_ConditionEvent: WalkFrente
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8694828890104484614}
@@ -220,7 +220,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: WalkFrente
+    m_ConditionEvent: WalkCostas
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3804446220592719218}
@@ -299,7 +299,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: WalkCostas
+    m_ConditionEvent: WalkFrente
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3804446220592719218}
@@ -352,7 +352,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Andando
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: WalkFrente
+    m_ConditionEvent: WalkCostas
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -916431066276661634}
