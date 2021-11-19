@@ -11,7 +11,7 @@ public class PuzzleExtintor : MonoBehaviour
     {
         estado = FindObjectOfType<EstadoDeMundo>();
         verificarTurno = GetComponent<VerificarTurnoAtual>();
-        if (estado.save.turno != 2)
+        if (estado.save.turno != 2 || (estado.save.turno == 2 && estado.save.apagouIncendio2 == true))
         {
             Debug.Log("Extintor deveria não ser pegavel");
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
