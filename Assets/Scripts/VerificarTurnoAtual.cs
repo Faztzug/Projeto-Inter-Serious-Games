@@ -16,7 +16,15 @@ public class VerificarTurnoAtual : MonoBehaviour
 
     public bool Verificar()
     {
-        if (turnos[estado.save.turno - 1] == true)
+        if(estado == null)
+        {
+            estado = FindObjectOfType<EstadoDeMundo>();
+        }
+
+        int turnoIndex;
+           turnoIndex = estado.save.turno - 1;
+
+        if (turnos[turnoIndex] == true)
             return true;
         else
             return false;
