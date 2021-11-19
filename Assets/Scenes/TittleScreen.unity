@@ -3636,10 +3636,14 @@ MonoBehaviour:
     coletouFusivel: 0
     AceitouAOfertaDoEmpresarioRuim: 0
     AceitouLiberarAguasParaFazendeiro: 0
+    alarmeIncendio2: 0
+    apagouIncendio2: 0
+    turno2Concluido: 0
     fimIntroducaoTurno2: 0
     aceitouPlantacaoDePlantaNaFloresta: 0
     aceitouCompartilharMaquinasFazendeiro: 0
     fimIntroducaoTurno3: 0
+    puzzleExaustores3Resolvido: 0
     aceitouCompraERDoProjeto: 0
     investiuHidreletrica: 0
     investiuMaquinas: 0
