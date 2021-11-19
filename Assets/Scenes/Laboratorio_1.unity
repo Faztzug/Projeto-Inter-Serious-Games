@@ -3584,7 +3584,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.coletouTerra
@@ -3596,11 +3596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuFazendeiro
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuGovernador
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.fimIntroducaoTurno2
@@ -3608,7 +3608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuEmpresarioRuim
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.AceitouAOfertaDoEmpresarioRuim
@@ -3628,11 +3628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.84
+      value: 4.7
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.13
+      value: -3.04
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_LocalPosition.z
