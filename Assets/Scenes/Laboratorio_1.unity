@@ -2617,10 +2617,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7055965171828720993, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 4b440516a2cabf44092ae672a4b34e41, type: 2}
     - target: {fileID: 7849470484049677878, guid: 90f67c5fe627eb04882e62e5bb332d93, type: 3}
       propertyPath: m_Name
       value: Assistente Daniela

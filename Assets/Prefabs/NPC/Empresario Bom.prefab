@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 578460682951762720}
   - component: {fileID: 578460682951762721}
   - component: {fileID: 578460682951762722}
+  - component: {fileID: 2908228712551825386}
+  - component: {fileID: 3091310217969977671}
   m_Layer: 0
   m_Name: Empresario Bom
   m_TagString: NPC
@@ -116,6 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   andando: 0
+  distanceX: 0
+  distanceY: 0
   pararDeAndarAoAtingirPlayer: 1
 --- !u!50 &578460682951762722
 Rigidbody2D:
@@ -138,6 +142,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &2908228712551825386
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578460682951762735}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 71cd66db05ac05e4ea5e6457eac6344b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3091310217969977671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578460682951762735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f8cc1e810e460418d8b71304e7ffa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &578460683487209617
 GameObject:
   m_ObjectHideFlags: 0
