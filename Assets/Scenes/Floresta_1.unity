@@ -7004,6 +7004,7 @@ MonoBehaviour:
   tempo: 5
   turnoAtivar: 2
   extintor: {fileID: 4828768379465530466, guid: d638da67e81a6b546991b202bd9db0f4, type: 3}
+  somIncendio: Incendio
 --- !u!1 &1201216856
 GameObject:
   m_ObjectHideFlags: 0
@@ -11508,7 +11509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.alarmeIncendio2
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946061, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_Name
