@@ -6,7 +6,7 @@ public class DTEmpresarioRuim : DialogueTrigger
     {
         base.Start();
 
-        if (estadoDeMundo.save.turno == 7 && estadoDeMundo.save.coletouProvasContraER7 == false)
+        if (estado.save.turno == 7 && estado.save.coletouProvasContraER7 == false)
         {
             FindObjectOfType<DialogueTriggerAssistente>().transform.parent.position = new Vector2(40, -20);
             fazerAndar.AndeParaOPlayer();
@@ -17,33 +17,33 @@ public class DTEmpresarioRuim : DialogueTrigger
 
     public override void StartDialogue()
     {
-        if (estadoDeMundo.save.turno == 1)
+        if (estado.save.turno == 1)
         {
             dialogueManager.StartingDialogue(0, 1);
         }
-        else if (estadoDeMundo.save.turno == 2)
+        else if (estado.save.turno == 2)
         {
             dialogueManager.StartingDialogue(7, 7);
         }
-        else if (estadoDeMundo.save.turno == 3)
+        else if (estado.save.turno == 3)
         {
         }
-        else if (estadoDeMundo.save.turno == 4)
+        else if (estado.save.turno == 4)
         {
-            if (estadoDeMundo.save.fimIntroducaoTurno4 == false)
+            if (estado.save.fimIntroducaoTurno4 == false)
                 StartDialogue(23, 23);
             else
                 StartDialogue(30, 30);
         }
-        else if (estadoDeMundo.save.turno == 5)
+        else if (estado.save.turno == 5)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 6)
+        else if (estado.save.turno == 6)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 7)
+        else if (estado.save.turno == 7)
         {
             
             FindObjectOfType<DialogueTriggerAssistente>().fazerAndar.PararAndar();
@@ -54,7 +54,7 @@ public class DTEmpresarioRuim : DialogueTrigger
     public override void EndOfDialogue(int lastSentence, string NPCname)
     {
         base.EndOfDialogue(lastSentence, NPCname);
-        if (estadoDeMundo.save.turno == 1)
+        if (estado.save.turno == 1)
         {
             if (lastSentence == 2)
                 DTplayer.StartDialogue(4, 5);
@@ -66,12 +66,12 @@ public class DTEmpresarioRuim : DialogueTrigger
                     AndePara(new Vector2(transform.position.x + 1, transform.position.y - 7));
                 FindObjectOfType<DTGovernandor>().GetComponentInParent<FazerAndar>().
                     AndePara(new Vector2(transform.position.x + 1, transform.position.y - 7));
-                estadoDeMundo.save.conheceuGovernador = true;
+                estado.save.conheceuGovernador = true;
                 FindObjectOfType<DialogueTriggerAssistente>().GetComponentInParent<FazerAndar>()
                     .AndePara(player.transform.position, 1);
             }
         }
-        else if (estadoDeMundo.save.turno == 2)
+        else if (estado.save.turno == 2)
         {
             if (lastSentence == 8)
                 DTplayer.StartDialogue(20, 20);
@@ -90,7 +90,7 @@ public class DTEmpresarioRuim : DialogueTrigger
                 FindObjectOfType<DTFazendeiro>().fazerAndar.AndeParaOPlayer();
             }
         }
-        else if (estadoDeMundo.save.turno == 3)
+        else if (estado.save.turno == 3)
         {
             if (lastSentence == 18)
                 DTplayer.StartDialogue(40, 40);
@@ -100,10 +100,10 @@ public class DTEmpresarioRuim : DialogueTrigger
             {
                 FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(16f, -1f));
                 fazerAndar.AndePara(new Vector2(16f, -2f));
-                estadoDeMundo.save.fimIntroducaoTurno3 = true;
+                estado.save.fimIntroducaoTurno3 = true;
             }
         }
-        else if (estadoDeMundo.save.turno == 4)
+        else if (estado.save.turno == 4)
         {
             if (lastSentence == 24)
                 DTplayer.StartDialogue(51, 51);
@@ -127,15 +127,15 @@ public class DTEmpresarioRuim : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(57, 57, 5);
             }
         }
-        else if (estadoDeMundo.save.turno == 5)
+        else if (estado.save.turno == 5)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 6)
+        else if (estado.save.turno == 6)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 7)
+        else if (estado.save.turno == 7)
         {
             if (lastSentence == 33)
                 DTplayer.StartDialogue(80,80);

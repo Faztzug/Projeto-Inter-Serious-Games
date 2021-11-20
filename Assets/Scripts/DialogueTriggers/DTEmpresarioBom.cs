@@ -6,18 +6,18 @@ public class DTEmpresarioBom : DialogueTrigger
 {
     public override void StartDialogue()
     {
-        if(estadoDeMundo.save.turno == 3)
+        if(estado.save.turno == 3)
         {
             DTplayer.StartDialogue(31,31);
         }
-        else if (estadoDeMundo.save.turno == 4)
+        else if (estado.save.turno == 4)
         {
-            if (estadoDeMundo.save.fimIntroducaoTurno4 == false)
+            if (estado.save.fimIntroducaoTurno4 == false)
                 DTplayer.StartDialogue(49, 49);
             else
                 StartDialogue(16,16);
         }
-        else if (estadoDeMundo.save.turno == 5)
+        else if (estado.save.turno == 5)
         {
             StartDialogue(20, 20);
         }
@@ -27,7 +27,7 @@ public class DTEmpresarioBom : DialogueTrigger
     {
         base.EndOfDialogue(lastSentence, NPCname);
         
-        if(estadoDeMundo.save.turno == 3)
+        if(estado.save.turno == 3)
         {
             if (lastSentence == 1)
                 DTplayer.StartDialogue(33, 33);
@@ -49,7 +49,7 @@ public class DTEmpresarioBom : DialogueTrigger
             }
                 
         }
-        else if (estadoDeMundo.save.turno == 4)
+        else if (estado.save.turno == 4)
         {
             if (lastSentence == 8)
                 DTplayer.StartDialogue(50, 50);
@@ -66,7 +66,7 @@ public class DTEmpresarioBom : DialogueTrigger
                 FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(5.5f, -3.2f));
                 StartDialogue(15, 15, 2);
                 //StartDialogue(15, 15);
-                estadoDeMundo.save.fimIntroducaoTurno4 = true;
+                estado.save.fimIntroducaoTurno4 = true;
             }
             else if (lastSentence == 16)
                 fazerAndar.AndePara(new Vector2(17, -5));
@@ -80,7 +80,7 @@ public class DTEmpresarioBom : DialogueTrigger
 
         }
 
-        else if (estadoDeMundo.save.turno == 5)
+        else if (estado.save.turno == 5)
         {
             if (lastSentence == 21)
                 DTplayer.StartDialogue(61, 61);

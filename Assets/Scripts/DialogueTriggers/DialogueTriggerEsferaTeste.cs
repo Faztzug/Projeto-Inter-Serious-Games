@@ -3,12 +3,12 @@ public class DialogueTriggerEsferaTeste : DialogueTrigger
 
     public override void StartDialogue()
     {
-        if (estadoDeMundo.save.testeQuestBarrilVermelho == false)
+        if (estado.save.testeQuestBarrilVermelho == false)
             dialogueManager.StartingDialogue(0, 3);
-        else if (estadoDeMundo.save.testeQuestBarrilVermelho == true 
-            && estadoDeMundo.save.testeBarrilVermelhoDestruido == false)
+        else if (estado.save.testeQuestBarrilVermelho == true 
+            && estado.save.testeBarrilVermelhoDestruido == false)
             dialogueManager.StartingDialogue(4, 4);
-        else if (estadoDeMundo.save.testeBarrilVermelhoDestruido == true)
+        else if (estado.save.testeBarrilVermelhoDestruido == true)
             dialogueManager.StartingDialogue(5, 6);
         else
             base.StartDialogue();
@@ -21,7 +21,7 @@ public class DialogueTriggerEsferaTeste : DialogueTrigger
         base.EndOfDialogue(lastSentence, NPCname);
         if (lastSentence == 4)
         {
-            estadoDeMundo.save.testeQuestBarrilVermelho = true;
+            estado.save.testeQuestBarrilVermelho = true;
         }
         else if (lastSentence == 7)
         {

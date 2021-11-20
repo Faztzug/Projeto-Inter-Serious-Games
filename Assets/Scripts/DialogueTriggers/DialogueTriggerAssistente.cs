@@ -9,10 +9,10 @@ public class DialogueTriggerAssistente : DialogueTrigger
     public override void Start()
     {
         base.Start();
-        if (estadoDeMundo.save.turno == 2 && estadoDeMundo.save.fimIntroducaoTurno2 == true)
+        if (estado.save.turno == 2 && estado.save.fimIntroducaoTurno2 == true)
         {
             fazerAndar.PararAndar();
-            if(estadoDeMundo.save.apagouIncendio2 == false)
+            if(estado.save.apagouIncendio2 == false)
             {
                 player.emDialogo = true;
                 DTplayer.StartDialogue(113, 113, 1f);
@@ -20,32 +20,32 @@ public class DialogueTriggerAssistente : DialogueTrigger
             
         }
             
-        else if(estadoDeMundo.save.turno == 3 && estadoDeMundo.save.fimIntroducaoTurno3 == true)
+        else if(estado.save.turno == 3 && estado.save.fimIntroducaoTurno3 == true)
         {
             fazerAndar.PararAndar();
-            if(estadoDeMundo.save.puzzleExaustores3Resolvido == false)
+            if(estado.save.puzzleExaustores3Resolvido == false)
             DTplayer.StartDialogue(123, 123, 1f);
         }
             
-        else if (estadoDeMundo.save.turno == 4 && estadoDeMundo.save.fimIntroducaoTurno4 == true
-            && estadoDeMundo.save.fimDialogoGovernadorTurno4 == true)
+        else if (estado.save.turno == 4 && estado.save.fimIntroducaoTurno4 == true
+            && estado.save.fimDialogoGovernadorTurno4 == true)
         {
             fazerAndar.PararAndar();
-            if (estadoDeMundo.save.rioPurificado4 == false)
+            if (estado.save.rioPurificado4 == false)
                 StartDialogue(132, 132, 1f);
         }
             
-        else if (estadoDeMundo.save.turno == 5 && estadoDeMundo.save.fimIntroducaoTurno5 == true)
+        else if (estado.save.turno == 5 && estado.save.fimIntroducaoTurno5 == true)
             fazerAndar.PararAndar();
-        else if (estadoDeMundo.save.turno == 6 && estadoDeMundo.save.fimIntroducaoTurno6 == true)
+        else if (estado.save.turno == 6 && estado.save.fimIntroducaoTurno6 == true)
             fazerAndar.PararAndar();
-        else if (estadoDeMundo.save.turno == 7 && estadoDeMundo.save.fimIntroducaoTurno7 == true)
+        else if (estado.save.turno == 7 && estado.save.fimIntroducaoTurno7 == true)
             fazerAndar.PararAndar();
-        else if (estadoDeMundo.save.turno == 8 && estadoDeMundo.save.fimIntroducaoTurno8 == true)
+        else if (estado.save.turno == 8 && estado.save.fimIntroducaoTurno8 == true)
             fazerAndar.PararAndar();
-        else if (estadoDeMundo.save.turno == 9 && estadoDeMundo.save.fimIntroducaoTurno9 == true)
+        else if (estado.save.turno == 9 && estado.save.fimIntroducaoTurno9 == true)
             fazerAndar.PararAndar();
-        else if (estadoDeMundo.save.turno == 10 && estadoDeMundo.save.fimIntroducaoTurno10 == true)
+        else if (estado.save.turno == 10 && estado.save.fimIntroducaoTurno10 == true)
             fazerAndar.PararAndar();
     }
 
@@ -53,49 +53,49 @@ public class DialogueTriggerAssistente : DialogueTrigger
     {
         Debug.Log("Começar StartDialogue() comum.");
 
-        if (estadoDeMundo.save.turno == 1)
+        if (estado.save.turno == 1)
         {
-            if (estadoDeMundo.save.conheceuGovernador == false)
+            if (estado.save.conheceuGovernador == false)
                 dialogueManager.StartingDialogue(0, 1);
-            else if (estadoDeMundo.save.conheceuGovernador == true
-                && estadoDeMundo.save.conheceuFazendeiro == false)
+            else if (estado.save.conheceuGovernador == true
+                && estado.save.conheceuFazendeiro == false)
                 dialogueManager.StartingDialogue(2, 4);
-            else if (estadoDeMundo.save.conheceuFazendeiro == true)
+            else if (estado.save.conheceuFazendeiro == true)
                 dialogueManager.StartingDialogue(10, 13);
         }
-        else if (estadoDeMundo.save.turno == 2 && estadoDeMundo.save.fimIntroducaoTurno2 == false)
+        else if (estado.save.turno == 2 && estado.save.fimIntroducaoTurno2 == false)
         {
             dialogueManager.StartingDialogue(14, 14);
         }
-        else if (estadoDeMundo.save.turno == 3 && estadoDeMundo.save.fimIntroducaoTurno3 == false)
+        else if (estado.save.turno == 3 && estado.save.fimIntroducaoTurno3 == false)
         {
             dialogueManager.StartingDialogue(14, 14);
         }
-        else if (estadoDeMundo.save.turno == 4 && estadoDeMundo.save.fimIntroducaoTurno4 == false)
+        else if (estado.save.turno == 4 && estado.save.fimIntroducaoTurno4 == false)
         {
             StartDialogue(45, 45);
         }
-        else if (estadoDeMundo.save.turno == 5 && estadoDeMundo.save.fimIntroducaoTurno5 == false)
+        else if (estado.save.turno == 5 && estado.save.fimIntroducaoTurno5 == false)
         {
             StartDialogue(59, 59);
         }
-        else if (estadoDeMundo.save.turno == 6 && estadoDeMundo.save.fimIntroducaoTurno6 == false)
+        else if (estado.save.turno == 6 && estado.save.fimIntroducaoTurno6 == false)
         {
             StartDialogue(80, 80);
         }
-        else if (estadoDeMundo.save.turno == 7 && estadoDeMundo.save.fimIntroducaoTurno7 == false)
+        else if (estado.save.turno == 7 && estado.save.fimIntroducaoTurno7 == false)
         {
             DTplayer.StartDialogue(81,81);
         }
-        else if (estadoDeMundo.save.turno == 8 && estadoDeMundo.save.fimIntroducaoTurno8 == false)
+        else if (estado.save.turno == 8 && estado.save.fimIntroducaoTurno8 == false)
         {
             StartDialogue(95, 95);
         }
-        else if (estadoDeMundo.save.turno == 9 && estadoDeMundo.save.fimIntroducaoTurno9 == false)
+        else if (estado.save.turno == 9 && estado.save.fimIntroducaoTurno9 == false)
         {
             StartDialogue(111, 111);
         }
-        else if (estadoDeMundo.save.turno == 10 && estadoDeMundo.save.fimIntroducaoTurno10 == false)
+        else if (estado.save.turno == 10 && estado.save.fimIntroducaoTurno10 == false)
         {
             StartDialogue(121, 121);
         }
@@ -115,7 +115,7 @@ public class DialogueTriggerAssistente : DialogueTrigger
         {
             FindObjectOfType<DTFazendeiro>().GetComponentInParent<FazerAndar>()
                 .AndePara(new Vector2(8.47f, -9.22f));
-            estadoDeMundo.save.conheceuFazendeiro = true;
+            estado.save.conheceuFazendeiro = true;
             GetComponentInParent<FazerAndar>()
                 .AndePara(player.transform.position);
         }
@@ -125,16 +125,16 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 .AndePara(new Vector2(transform.position.x + 14, transform.position.y));
         }
 
-        if (estadoDeMundo.save.turno == 2)
+        if (estado.save.turno == 2)
         {
             //introdução
             if (lastSentence == 15)
             {
-                if (estadoDeMundo.save.AceitouAOfertaDoEmpresarioRuim == true)
+                if (estado.save.AceitouAOfertaDoEmpresarioRuim == true)
                 {
                     dialogueManager.StartingDialogue(15, 18);
                 }
-                else if (estadoDeMundo.save.AceitouAOfertaDoEmpresarioRuim == false)
+                else if (estado.save.AceitouAOfertaDoEmpresarioRuim == false)
                     dialogueManager.StartingDialogue(19, 21);
             }
             else if (lastSentence == 19 || lastSentence == 22)
@@ -143,9 +143,9 @@ public class DialogueTriggerAssistente : DialogueTrigger
             }
             else if (lastSentence == 23)
             {
-                if (estadoDeMundo.save.AceitouLiberarAguasParaFazendeiro == true)
+                if (estado.save.AceitouLiberarAguasParaFazendeiro == true)
                     dialogueManager.StartingDialogue(23, 25);
-                else if (estadoDeMundo.save.AceitouLiberarAguasParaFazendeiro == false)
+                else if (estado.save.AceitouLiberarAguasParaFazendeiro == false)
                     dialogueManager.StartingDialogue(27, 29);
             }
             else if (lastSentence == 26)
@@ -163,21 +163,21 @@ public class DialogueTriggerAssistente : DialogueTrigger
             else if (lastSentence == 131)
                 DTplayer.StartDialogue(114, 114);
         }
-        else if (estadoDeMundo.save.turno == 3)
+        else if (estado.save.turno == 3)
         {
             //introdução
             if (lastSentence == 15)
             {
-                if (estadoDeMundo.save.aceitouPlantacaoDePlantaNaFloresta == true)
+                if (estado.save.aceitouPlantacaoDePlantaNaFloresta == true)
                     StartDialogue(34, 35);
-                else if (estadoDeMundo.save.aceitouPlantacaoDePlantaNaFloresta == false)
+                else if (estado.save.aceitouPlantacaoDePlantaNaFloresta == false)
                     StartDialogue(36, 37);
             }
             else if (lastSentence == 36 || lastSentence == 38)
             {
-                if (estadoDeMundo.save.aceitouCompartilharMaquinasFazendeiro == true)
+                if (estado.save.aceitouCompartilharMaquinasFazendeiro == true)
                     StartDialogue(38, 39);
-                else if (estadoDeMundo.save.aceitouCompartilharMaquinasFazendeiro == false)
+                else if (estado.save.aceitouCompartilharMaquinasFazendeiro == false)
                     StartDialogue(40, 41);
             }
             else if (lastSentence == 40 || lastSentence == 42)
@@ -194,26 +194,26 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 DTplayer.StartDialogue(124, 124);
 
         }
-        else if (estadoDeMundo.save.turno == 4)
+        else if (estado.save.turno == 4)
         {
             if (lastSentence == 46)
                 DTplayer.StartDialogue(45, 45);
             else if (lastSentence == 47)
             {
-                if (estadoDeMundo.save.investiuHidreletrica == true
-                    && estadoDeMundo.save.investiuMaquinas == true)
+                if (estado.save.investiuHidreletrica == true
+                    && estado.save.investiuMaquinas == true)
                     StartDialogue(47, 50);
-                else if (estadoDeMundo.save.investiuHidreletrica == true
-                    || estadoDeMundo.save.investiuMaquinas == false)
+                else if (estado.save.investiuHidreletrica == true
+                    || estado.save.investiuMaquinas == false)
                     StartDialogue(47, 48);
-                else if (estadoDeMundo.save.investiuMaquinas == true)
+                else if (estado.save.investiuMaquinas == true)
                     StartDialogue(49, 50);
             }
             else if (lastSentence == 49 || lastSentence == 51)
             {
-                if (estadoDeMundo.save.aceitouCompraERDoProjeto == true)
+                if (estado.save.aceitouCompraERDoProjeto == true)
                     StartDialogue(51, 52);
-                else if (estadoDeMundo.save.aceitouCompraERDoProjeto == false)
+                else if (estado.save.aceitouCompraERDoProjeto == false)
                     StartDialogue(55, 56);
             }
             else if (lastSentence == 53)
@@ -238,41 +238,41 @@ public class DialogueTriggerAssistente : DialogueTrigger
             else if (lastSentence == 135)
             {
                 //dar frasco vazio ao player?
-                if (estadoDeMundo.save.playerGanhouFrasco4 == false)
+                if (estado.save.playerGanhouFrasco4 == false)
                 Instantiate(frascoVazio, player.transform.position, player.transform.rotation);
-                estadoDeMundo.save.playerGanhouFrasco4 = true;
+                estado.save.playerGanhouFrasco4 = true;
             }
                 
 
         }
-        else if (estadoDeMundo.save.turno == 5)
+        else if (estado.save.turno == 5)
         {
             if (lastSentence == 60)
             {
-                if (estadoDeMundo.save.aceitouDoarDinheiroER == true)
+                if (estado.save.aceitouDoarDinheiroER == true)
                     StartDialogue(60, 61);
-                else if (estadoDeMundo.save.aceitouDoarDinheiroER == false)
+                else if (estado.save.aceitouDoarDinheiroER == false)
                     StartDialogue(62, 63);
             }
             else if (lastSentence == 62 || lastSentence == 64)
             {
-                if (estadoDeMundo.save.aceitouEBComprarTerrenoFazendeiro == true)
+                if (estado.save.aceitouEBComprarTerrenoFazendeiro == true)
                     StartDialogue(64, 65);
-                else if (estadoDeMundo.save.aceitouEBComprarTerrenoFazendeiro == false)
+                else if (estado.save.aceitouEBComprarTerrenoFazendeiro == false)
                     StartDialogue(66, 67);
             }
             else if (lastSentence == 66 || lastSentence == 68)
             {
-                if (estadoDeMundo.save.aceitouEBParticiparProjetoRemedios == true)
+                if (estado.save.aceitouEBParticiparProjetoRemedios == true)
                     StartDialogue(69, 70);
-                else if (estadoDeMundo.save.aceitouEBParticiparProjetoRemedios == false)
+                else if (estado.save.aceitouEBParticiparProjetoRemedios == false)
                     StartDialogue(73, 75);
             }
             else if (lastSentence == 71)
                 DTplayer.StartDialogue(59, 59);
             else if (lastSentence == 72)
             {
-                if (estadoDeMundo.save.aceitouCompraERDoProjeto == true)
+                if (estado.save.aceitouCompraERDoProjeto == true)
                     StartDialogue(72, 72);
                 else
                     DTplayer.StartDialogue(60, 60);
@@ -291,17 +291,17 @@ public class DialogueTriggerAssistente : DialogueTrigger
 
         }
 
-        else if (estadoDeMundo.save.turno == 6)
+        else if (estado.save.turno == 6)
         {
             if (lastSentence == 81)
             {
-                if (estadoDeMundo.save.ONUInvestiuSalaContorle5 == true)
+                if (estado.save.ONUInvestiuSalaContorle5 == true)
                     StartDialogue(81, 81);
-                else if (estadoDeMundo.save.ONUInvestiuMaquinaria5 == true)
+                else if (estado.save.ONUInvestiuMaquinaria5 == true)
                     StartDialogue(82, 82);
-                else if (estadoDeMundo.save.ONUInvestiuHidreletrica5 == true)
+                else if (estado.save.ONUInvestiuHidreletrica5 == true)
                     StartDialogue(83, 83);
-                else if (estadoDeMundo.save.ONUInvestiuExaustores5 == true)
+                else if (estado.save.ONUInvestiuExaustores5 == true)
                     StartDialogue(84, 84);
 
             }
@@ -316,12 +316,12 @@ public class DialogueTriggerAssistente : DialogueTrigger
             else if (lastSentence == 90)
                 DTplayer.StartDialogue(79, 79);
             else if (lastSentence == 91)
-                estadoDeMundo.save.fimIntroducaoTurno6 = true;
+                estado.save.fimIntroducaoTurno6 = true;
 
 
         }
 
-        else if (estadoDeMundo.save.turno == 7)
+        else if (estado.save.turno == 7)
         {
             if (lastSentence == 92)
                 DTplayer.StartDialogue(82, 82);
@@ -331,18 +331,18 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 DTplayer.StartDialogue(89, 89);
             else if (lastSentence == 95)
             {
-                estadoDeMundo.save.fimIntroducaoTurno7 = true;
+                estado.save.fimIntroducaoTurno7 = true;
             }
         }
 
-        else if (estadoDeMundo.save.turno == 8)
+        else if (estado.save.turno == 8)
         {
             if (lastSentence == 96)
             {
                 
-                if (estadoDeMundo.save.aceitouDarAguaFazendeiro7 == false)
+                if (estado.save.aceitouDarAguaFazendeiro7 == false)
                     StartDialogue(96, 97);
-                else if (estadoDeMundo.save.aceitouDarAguaFazendeiro7 == true)
+                else if (estado.save.aceitouDarAguaFazendeiro7 == true)
                     StartDialogue(100, 101);
 
 
@@ -358,13 +358,13 @@ public class DialogueTriggerAssistente : DialogueTrigger
             else if (lastSentence == 105)
             {
                 
-                if (estadoDeMundo.save.biancaInvestiuMaquinas7 == true)
+                if (estado.save.biancaInvestiuMaquinas7 == true)
                     StartDialogue(105, 105);
-                else if (estadoDeMundo.save.biancaInvestiuHidreletrica7 == true)
+                else if (estado.save.biancaInvestiuHidreletrica7 == true)
                     StartDialogue(106, 106);
                 else
                 {
-                    estadoDeMundo.save.biancaInvestiuHidreletrica7 = true;
+                    estado.save.biancaInvestiuHidreletrica7 = true;
                     StartDialogue(106, 106);
                 }
 
@@ -381,30 +381,30 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 DTplayer.StartDialogue(97, 97);
         }
 
-        else if (estadoDeMundo.save.turno == 9)
+        else if (estado.save.turno == 9)
         {
             if (lastSentence == 112)
             {
-                if (estadoDeMundo.save.InvestiuSalaContorle8 == true)
+                if (estado.save.InvestiuSalaContorle8 == true)
                     StartDialogue(112, 112);
-                else if (estadoDeMundo.save.InvestiuMaquinaria8 == true)
+                else if (estado.save.InvestiuMaquinaria8 == true)
                     StartDialogue(113, 113);
-                else if (estadoDeMundo.save.InvestiuHidreletrica8 == true)
+                else if (estado.save.InvestiuHidreletrica8 == true)
                     StartDialogue(114, 114);
-                else if (estadoDeMundo.save.InvestiuExaustores8 == true)
+                else if (estado.save.InvestiuExaustores8 == true)
                     StartDialogue(115, 115);
                 else
                 {
-                    estadoDeMundo.save.InvestiuExaustores8 = true;
-                    estadoDeMundo.save.avancoProjeto++;
-                    estadoDeMundo.save.relacaoGovernador++;
+                    estado.save.InvestiuExaustores8 = true;
+                    estado.save.avancoProjeto++;
+                    estado.save.relacaoGovernador++;
                     StartDialogue(115, 115);
                 }
 
             }
             else if (lastSentence > 112 && lastSentence < 116)
             {
-                estadoDeMundo.save.avancoProjeto += 2;
+                estado.save.avancoProjeto += 2;
                 StartDialogue(116, 116);
             }
                 
@@ -415,16 +415,16 @@ public class DialogueTriggerAssistente : DialogueTrigger
             else if (lastSentence == 120)
                 DTplayer.StartDialogue(100, 100);
             else if (lastSentence == 121)
-                estadoDeMundo.save.fimIntroducaoTurno9 = true;
+                estado.save.fimIntroducaoTurno9 = true;
 
 
         }
 
-        else if (estadoDeMundo.save.turno == 10)
+        else if (estado.save.turno == 10)
         {
             if (lastSentence == 122)
             {
-                if (estadoDeMundo.save.projetoSucesso == true)
+                if (estado.save.projetoSucesso == true)
                     StartDialogue(122, 122);
                 else
                     StartDialogue(127,127);

@@ -53,7 +53,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
         else if (lastSentence == 19)
             FindObjectOfType<FimDeTurno>().EncerrarTurno();
 
-        if(estadoDeMundo.save.turno == 2)
+        if(estado.save.turno == 2)
         {
             //introdução
             if (lastSentence == 20)
@@ -77,7 +77,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 29)
                 FindObjectOfType<DTFazendeiro>().StartDialogue(9, 9);
             else if (lastSentence == 30)
-                estadoDeMundo.save.fimIntroducaoTurno2 = true;
+                estado.save.fimIntroducaoTurno2 = true;
 
 
             //Resto
@@ -108,7 +108,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
         }
 
-        else if(estadoDeMundo.save.turno == 3)
+        else if(estado.save.turno == 3)
         {
             //introdução
             if (lastSentence == 31)
@@ -163,7 +163,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
         }
 
-        else if (estadoDeMundo.save.turno == 4)
+        else if (estado.save.turno == 4)
         {
             if (lastSentence == 46)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(46, 46);
@@ -226,7 +226,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
         }
 
-        else if (estadoDeMundo.save.turno == 5)
+        else if (estado.save.turno == 5)
         {
             if (lastSentence == 60)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(71, 71);
@@ -252,14 +252,14 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(79, 79);
             else if (lastSentence == 69)
             {
-                estadoDeMundo.save.fimIntroducaoTurno5 = true;
+                estado.save.fimIntroducaoTurno5 = true;
                 FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndePara(new Vector2(17f, -3f));
                 
             }
 
         }
 
-        else if (estadoDeMundo.save.turno == 6)
+        else if (estado.save.turno == 6)
         {
             if (lastSentence == 70)
             {
@@ -293,7 +293,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
         }
 
-        else if (estadoDeMundo.save.turno == 7)
+        else if (estado.save.turno == 7)
         {
             if (lastSentence == 81)
                 FindObjectOfType<DTNarrador>().StartDialogue(0, 0);
@@ -325,7 +325,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(94, 94);
         }
 
-        else if (estadoDeMundo.save.turno == 8)
+        else if (estado.save.turno == 8)
         {
             if (lastSentence == 91)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(98, 99);
@@ -345,12 +345,12 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 97)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(110, 110);
             else if (lastSentence == 98)
-                estadoDeMundo.save.fimIntroducaoTurno8 = true;
+                estado.save.fimIntroducaoTurno8 = true;
 
 
         }
 
-        else if (estadoDeMundo.save.turno == 9)
+        else if (estado.save.turno == 9)
         {
              if (lastSentence == 99)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(117, 118);
@@ -360,7 +360,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(120, 120);
         }
 
-        else if (estadoDeMundo.save.turno == 10)
+        else if (estado.save.turno == 10)
         {
             //sucesso
             if (lastSentence == 102)
@@ -395,7 +395,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(17, -3));
                 player.emDialogo = true;
                 StartDialogue(108, 108, 3f);
-                estadoDeMundo.save.fimIntroducaoTurno10 = true;
+                estado.save.fimIntroducaoTurno10 = true;
             }
 
             //fracasso
@@ -445,15 +445,15 @@ public class DialogueTriggerPlayer : DialogueTrigger
         if (NPCPerguntando == dialogueData.name
             && resposta == dialogueResponses.Responses[2] && ultimaSentenca == 17)
         {
-            estadoDeMundo.save.relacaoEmpresarioRuim++;
-            estadoDeMundo.save.AceitouAOfertaDoEmpresarioRuim = true;
+            estado.save.relacaoEmpresarioRuim++;
+            estado.save.AceitouAOfertaDoEmpresarioRuim = true;
             StartDialogue(17, 17);
         }
         else if (NPCPerguntando == dialogueData.name
           && resposta == dialogueResponses.Responses[3] && ultimaSentenca == 17)
         {
-            estadoDeMundo.save.relacaoEmpresarioRuim--;
-            estadoDeMundo.save.AceitouAOfertaDoEmpresarioRuim = false;
+            estado.save.relacaoEmpresarioRuim--;
+            estado.save.AceitouAOfertaDoEmpresarioRuim = false;
             StartDialogue(17, 17);
         }
 
@@ -461,32 +461,32 @@ public class DialogueTriggerPlayer : DialogueTrigger
         if (NPCPerguntando == dialogueData.name
             && resposta == dialogueResponses.Responses[4] && ultimaSentenca == 18)
         {
-            estadoDeMundo.save.relacaoFazendeiro++;
-            estadoDeMundo.save.AceitouLiberarAguasParaFazendeiro = true;
+            estado.save.relacaoFazendeiro++;
+            estado.save.AceitouLiberarAguasParaFazendeiro = true;
             StartDialogue(18, 18);
         }
         else if (NPCPerguntando == dialogueData.name
           && resposta == dialogueResponses.Responses[5] && ultimaSentenca == 18)
         {
-            estadoDeMundo.save.relacaoFazendeiro--;
-            estadoDeMundo.save.AceitouLiberarAguasParaFazendeiro = false; 
+            estado.save.relacaoFazendeiro--;
+            estado.save.AceitouLiberarAguasParaFazendeiro = false; 
             StartDialogue(18, 18);
         }
 
-        if(estadoDeMundo.save.turno == 2)
+        if(estado.save.turno == 2)
         {
             if (NPCPerguntando == dialogueData.name
             && resposta == dialogueResponses.Responses[6])
             {
-                estadoDeMundo.save.relacaoEmpresarioRuim++;
-                estadoDeMundo.save.aceitouPlantacaoDePlantaNaFloresta = true;
+                estado.save.relacaoEmpresarioRuim++;
+                estado.save.aceitouPlantacaoDePlantaNaFloresta = true;
                 StartDialogue(121, 121);
             }
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[7])
             {
-                estadoDeMundo.save.relacaoEmpresarioRuim--;
-                estadoDeMundo.save.aceitouPlantacaoDePlantaNaFloresta = false;
+                estado.save.relacaoEmpresarioRuim--;
+                estado.save.aceitouPlantacaoDePlantaNaFloresta = false;
                 StartDialogue(121, 121);
             }
 
@@ -494,15 +494,15 @@ public class DialogueTriggerPlayer : DialogueTrigger
             if (NPCPerguntando == dialogueData.name
                 && resposta == dialogueResponses.Responses[8])
             {
-                estadoDeMundo.save.relacaoFazendeiro++;
-                estadoDeMundo.save.aceitouCompartilharMaquinasFazendeiro = true;
+                estado.save.relacaoFazendeiro++;
+                estado.save.aceitouCompartilharMaquinasFazendeiro = true;
                 StartDialogue(122, 122);
             }
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[9])
             {
-                estadoDeMundo.save.relacaoFazendeiro--;
-                estadoDeMundo.save.aceitouCompartilharMaquinasFazendeiro = false;
+                estado.save.relacaoFazendeiro--;
+                estado.save.aceitouCompartilharMaquinasFazendeiro = false;
                 StartDialogue(122, 122);
             }
 
@@ -510,22 +510,22 @@ public class DialogueTriggerPlayer : DialogueTrigger
         }
 
 
-        if (estadoDeMundo.save.turno == 3)
+        if (estado.save.turno == 3)
         {
             if (NPCPerguntando == dialogueData.name
             && resposta == dialogueResponses.Responses[10])
             {
                 
-                estadoDeMundo.save.investiuHidreletrica = true;
-                estadoDeMundo.save.investiuMaquinas = false;
+                estado.save.investiuHidreletrica = true;
+                estado.save.investiuMaquinas = false;
                 StartDialogue(130, 130);
             }
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[11])
             {
                 
-                estadoDeMundo.save.investiuMaquinas = true;
-                estadoDeMundo.save.investiuHidreletrica = false;
+                estado.save.investiuMaquinas = true;
+                estado.save.investiuHidreletrica = false;
                 StartDialogue(130, 130);
             }
 
@@ -533,28 +533,28 @@ public class DialogueTriggerPlayer : DialogueTrigger
             if (NPCPerguntando == dialogueData.name
                 && resposta == dialogueResponses.Responses[12])
             {
-                estadoDeMundo.save.relacaoEmpresarioRuim++;
-                estadoDeMundo.save.aceitouCompraERDoProjeto = true;
+                estado.save.relacaoEmpresarioRuim++;
+                estado.save.aceitouCompraERDoProjeto = true;
                 StartDialogue(122, 122);
             }
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[13])
             {
-                estadoDeMundo.save.relacaoEmpresarioRuim--;
-                estadoDeMundo.save.aceitouCompraERDoProjeto = false;
+                estado.save.relacaoEmpresarioRuim--;
+                estado.save.aceitouCompraERDoProjeto = false;
                 StartDialogue(122, 122);
             }
 
 
         }
 
-        if (estadoDeMundo.save.turno == 4)
+        if (estado.save.turno == 4)
         {
             if (NPCPerguntando == dialogueData.name
             && resposta == dialogueResponses.Responses[14])
             {
-                estadoDeMundo.save.relacaoEmpresarioRuim++;
-                estadoDeMundo.save.aceitouDoarDinheiroER = true;
+                estado.save.relacaoEmpresarioRuim++;
+                estado.save.aceitouDoarDinheiroER = true;
                 
                 StartDialogue(145, 145);
             }
@@ -562,8 +562,8 @@ public class DialogueTriggerPlayer : DialogueTrigger
               && resposta == dialogueResponses.Responses[15])
             {
 
-                estadoDeMundo.save.relacaoEmpresarioRuim--;
-                estadoDeMundo.save.aceitouDoarDinheiroER = false;
+                estado.save.relacaoEmpresarioRuim--;
+                estado.save.aceitouDoarDinheiroER = false;
                 StartDialogue(145, 145);
             }
 
@@ -571,15 +571,15 @@ public class DialogueTriggerPlayer : DialogueTrigger
             if (NPCPerguntando == dialogueData.name
                 && resposta == dialogueResponses.Responses[16])
             {
-                estadoDeMundo.save.relacaoEmpresarioBom++;
-                estadoDeMundo.save.aceitouEBComprarTerrenoFazendeiro = true;
+                estado.save.relacaoEmpresarioBom++;
+                estado.save.aceitouEBComprarTerrenoFazendeiro = true;
                 StartDialogue(146, 146);
             }
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[17])
             {
-                estadoDeMundo.save.relacaoEmpresarioBom--;
-                estadoDeMundo.save.aceitouEBComprarTerrenoFazendeiro = false;
+                estado.save.relacaoEmpresarioBom--;
+                estado.save.aceitouEBComprarTerrenoFazendeiro = false;
                 StartDialogue(146, 146);
             }
 
@@ -587,15 +587,15 @@ public class DialogueTriggerPlayer : DialogueTrigger
             if (NPCPerguntando == dialogueData.name
                 && resposta == dialogueResponses.Responses[18])
             {
-                estadoDeMundo.save.relacaoEmpresarioBom++;
-                estadoDeMundo.save.aceitouEBParticiparProjetoRemedios = true;
+                estado.save.relacaoEmpresarioBom++;
+                estado.save.aceitouEBParticiparProjetoRemedios = true;
                 StartDialogue(122, 122);
             }
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[19])
             {
-                estadoDeMundo.save.relacaoEmpresarioBom--;
-                estadoDeMundo.save.aceitouEBParticiparProjetoRemedios = false;
+                estado.save.relacaoEmpresarioBom--;
+                estado.save.aceitouEBParticiparProjetoRemedios = false;
                 StartDialogue(122, 122);
             }
 

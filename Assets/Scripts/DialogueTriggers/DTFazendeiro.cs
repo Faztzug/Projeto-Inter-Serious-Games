@@ -6,10 +6,10 @@ public class DTFazendeiro : DialogueTrigger
 {
     public override void StartDialogue()
     {
-        if(estadoDeMundo.save.turno == 1)
+        if(estado.save.turno == 1)
             dialogueManager.StartingDialogue(0, 2);
 
-        if(estadoDeMundo.save.turno == 2)
+        if(estado.save.turno == 2)
         {
             DTplayer.StartDialogue(25,25);
         }
@@ -19,13 +19,13 @@ public class DTFazendeiro : DialogueTrigger
     {
         base.EndOfDialogue(lastSentence, NPCname);
 
-        if(estadoDeMundo.save.turno == 1)
+        if(estado.save.turno == 1)
         {
             if (lastSentence == 3)
                 DTplayer.StartDialogue(8, 9);
         }
 
-        else if(estadoDeMundo.save.turno == 2)
+        else if(estado.save.turno == 2)
         {
             if (lastSentence == 4)
                 DTplayer.StartDialogue(26,26);
@@ -42,23 +42,23 @@ public class DTFazendeiro : DialogueTrigger
                 
 
         }
-        else if (estadoDeMundo.save.turno == 3)
+        else if (estado.save.turno == 3)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 4)
+        else if (estado.save.turno == 4)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 5)
+        else if (estado.save.turno == 5)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 6)
+        else if (estado.save.turno == 6)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 7)
+        else if (estado.save.turno == 7)
         {
             if (lastSentence == 11)
                 DTplayer.StartDialogue(83, 83);

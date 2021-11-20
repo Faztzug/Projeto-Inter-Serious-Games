@@ -6,31 +6,31 @@ public class DTVozDoPovo : DialogueTrigger
 {
     public override void StartDialogue()
     {
-        if(estadoDeMundo.save.turno == 1)
+        if(estado.save.turno == 1)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 2)
+        else if (estado.save.turno == 2)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 3)
+        else if (estado.save.turno == 3)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 4)
+        else if (estado.save.turno == 4)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 5)
+        else if (estado.save.turno == 5)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 6)
+        else if (estado.save.turno == 6)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 7)
+        else if (estado.save.turno == 7)
         {
             StartDialogue(0, 0);
         }
@@ -41,31 +41,31 @@ public class DTVozDoPovo : DialogueTrigger
         base.EndOfDialogue(lastSentence, NPCname);
 
 
-        if (estadoDeMundo.save.turno == 1)
+        if (estado.save.turno == 1)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 2)
+        else if (estado.save.turno == 2)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 3)
+        else if (estado.save.turno == 3)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 4)
+        else if (estado.save.turno == 4)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 5)
+        else if (estado.save.turno == 5)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 6)
+        else if (estado.save.turno == 6)
         {
 
         }
-        else if (estadoDeMundo.save.turno == 7)
+        else if (estado.save.turno == 7)
         {
             if (lastSentence == 1)
                 FindObjectOfType<DTFazendeiro>().StartDialogue(10,10);

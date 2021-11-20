@@ -10,17 +10,36 @@ public class DTNarrador : DialogueTrigger
 
     public override void StartDialogue()
     {
-        if (estadoDeMundo.save.turno == 2)
+        if (estado.save.turno == 2)
         {
             if(gameObject.scene.name == maquinasCena)
                 DTplayer.StartDialogue(112, 112);
         }
-        else if(estadoDeMundo.save.turno == 3)
+        else if(estado.save.turno == 3)
         {
             if (gameObject.scene.name == salaControleMeioCena 
-                && estadoDeMundo.save.fimIntroducaoTurno3 == true 
-                && estadoDeMundo.save.puzzleExaustores3Resolvido == false)
+                && estado.save.fimIntroducaoTurno3 == true 
+                && estado.save.puzzleExaustores3Resolvido == false)
                 DTplayer.StartDialogue(125, 125);
+        }
+        else if (estado.save.turno == 4)
+        {
+            if (gameObject.scene.name == salaControleMeioCena
+                && estado.save.rioPurificado4 == true
+                && estado.save.puzzleTurno4Concluido == false)
+            {
+                DTplayer.StartDialogue(139, 140);
+                estado.save.olhouCamerasSeguranca4 = true;
+            }
+                
+            else if (gameObject.scene.name == maquinasCena
+                && estado.save.olhouCamerasSeguranca4 == true
+                && estado.save.puzzleTurno4Concluido == false)
+            {
+                DTplayer.StartDialogue(141, 142);
+                estado.save.puzzleTurno4Concluido = true;
+            }
+                
         }
     }
     public override void EndOfDialogue(int lastSentence, string NPCname)

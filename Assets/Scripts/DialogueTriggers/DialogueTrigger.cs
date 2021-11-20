@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
 
-    protected EstadoDeMundo estadoDeMundo;
+    protected EstadoDeMundo estado;
     protected DialogueManager dialogueManager;
     protected PlayerControl player;
     protected DialogueTriggerPlayer DTplayer;
@@ -14,10 +14,10 @@ public class DialogueTrigger : MonoBehaviour
 
     public virtual void Start()
     {
-        estadoDeMundo = FindObjectOfType<EstadoDeMundo>();
+        estado = FindObjectOfType<EstadoDeMundo>();
         dialogueManager = GetComponent<DialogueManager>();
-        player = estadoDeMundo.gameObject.GetComponent<PlayerControl>();
-        DTplayer = estadoDeMundo.gameObject.GetComponent<DialogueTriggerPlayer>();
+        player = estado.gameObject.GetComponent<PlayerControl>();
+        DTplayer = estado.gameObject.GetComponent<DialogueTriggerPlayer>();
 
         if (gameObject.GetComponentInParent<FazerAndar>() != null)
             fazerAndar = gameObject.GetComponentInParent<FazerAndar>();

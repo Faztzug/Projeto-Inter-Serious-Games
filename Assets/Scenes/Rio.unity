@@ -336,7 +336,7 @@ Transform:
   - {fileID: 1082023823}
   - {fileID: 1239678171}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &45342935
 GameObject:
@@ -1176,7 +1176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1326848764686334633, guid: 8ec192bfc3fedab489a906805086e115, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1326848764686334633, guid: 8ec192bfc3fedab489a906805086e115, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1339,7 +1339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3645,6 +3645,7 @@ MonoBehaviour:
   itemObject: {fileID: 2841271471603013712, guid: 77ee72731a289154cb056aec99bd5d90, type: 3}
   turnoAtivar: 4
   spawnItem: {fileID: 4037058780140311495, guid: 9632da229eb675446a2cd950ffa07171, type: 3}
+  agentePurificador: {fileID: 1653836592915368358, guid: b6afee44e67c3c248be405a276ca72cd, type: 3}
 --- !u!61 &716547511
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8283,7 +8284,7 @@ Transform:
   - {fileID: 915622238}
   - {fileID: 976415366}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1862186794
 GameObject:

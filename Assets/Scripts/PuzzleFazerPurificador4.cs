@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class puzzleColetarAgua : MonoBehaviour
+public class PuzzleFazerPurificador4 : MonoBehaviour
 {
     public GameObject itemObject;
     private Item itemClass;
@@ -12,8 +12,6 @@ public class puzzleColetarAgua : MonoBehaviour
     private EstadoDeMundo estado;
     [SerializeField]
     private GameObject spawnItem;
-    [SerializeField]
-    private Item agentePurificador;
 
     private void Start()
     {
@@ -34,24 +32,10 @@ public class puzzleColetarAgua : MonoBehaviour
             Inventory inventario = collision.GetComponent<Inventory>();
             DialogueTriggerPlayer DTPlayer = collision.GetComponent<DialogueTriggerPlayer>();
 
-            if (inventario.selectedItem != null && inventario.selectedItem.itemName == agentePurificador.itemName)
-            {
-                Debug.Log("itens Iguais");
-                gameObject.SetActive(false);
-                inventario.EliminarItemSelecionado();
-                
-                DTPlayer.StartDialogue(136, 138);
-                estado.save.rioPurificado4 = true;
-                estado.save.alarmePoluicaoRio4 = false;
-                
-            }
-            else if (inventario.selectedItem == null || inventario.selectedItem.itemName != prefabName)
+            if (inventario.selectedItem == null || inventario.selectedItem.itemName != prefabName)
             {
                 Debug.Log("Player sem item selecionado");
-                if(inventario.slotsManager.AcharItem(spawnItem.name))
-                    DTPlayer.StartDialogue(134, 134);
-                else
-                    DTPlayer.StartDialogue(133, 133);
+                //DTPlayer.StartDialogue(133, 133);
             }
             else if (inventario.selectedItem != null && inventario.selectedItem.itemName == prefabName)
             {
@@ -59,8 +43,9 @@ public class puzzleColetarAgua : MonoBehaviour
                 gameObject.SetActive(false);
                 inventario.EliminarItemSelecionado();
                 Instantiate(spawnItem, inventario.transform.position, inventario.transform.rotation);
-                DTPlayer.StartDialogue(133, 134);
+                DTPlayer.StartDialogue(135, 135);
             }
         }
     }
+
 }
