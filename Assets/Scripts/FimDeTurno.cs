@@ -50,6 +50,11 @@ public class FimDeTurno : MonoBehaviour
             {
                 dtPlayer.StartDialogue(143, 144);
             }
+
+            else if (estado.save.turno == 5 && estado.save.conversouComGovernador5 == true)
+            {
+                dtPlayer.StartDialogue(163, 163);
+            }
         }
         
     }
