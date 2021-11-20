@@ -56,6 +56,7 @@
     public bool fimDialogoGovernadorTurno4 = false;
 
     public bool alarmePoluicaoRio4 = false;
+    public bool playerGanhouFrasco4 = false;
     public bool rioPurificado4 = false;
     public bool olhouCamerasSeguranca4 = false;
     public bool puzzleTurno4Concluido = false;

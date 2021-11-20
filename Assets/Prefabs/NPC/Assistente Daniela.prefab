@@ -247,6 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fazerAndar: {fileID: 0}
+  frascoVazio: {fileID: 4037058780140311495, guid: 5af656d21ea43034fa7fe23a74e0f640, type: 3}
 --- !u!114 &7849470484585874829
 MonoBehaviour:
   m_ObjectHideFlags: 0

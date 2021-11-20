@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Slot : MonoBehaviour
 {
@@ -8,10 +9,13 @@ public class Slot : MonoBehaviour
     public int i;
     public SlotsManager slotsManager;
     public GameObject itemChild;
+    [HideInInspector]
+    public Image image;
 
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        image = GetComponent<Image>();
     }
 
     public void Selecionar()

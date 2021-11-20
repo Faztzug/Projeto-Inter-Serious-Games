@@ -2,6 +2,10 @@
 
 public class DialogueTriggerAssistente : DialogueTrigger
 {
+    [SerializeField]
+    private GameObject frascoVazio;
+    
+
     public override void Start()
     {
         base.Start();
@@ -234,6 +238,9 @@ public class DialogueTriggerAssistente : DialogueTrigger
             else if (lastSentence == 135)
             {
                 //dar frasco vazio ao player?
+                if (estadoDeMundo.save.playerGanhouFrasco4 == false)
+                Instantiate(frascoVazio, player.transform.position, player.transform.rotation);
+                estadoDeMundo.save.playerGanhouFrasco4 = true;
             }
                 
 

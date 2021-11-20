@@ -8,6 +8,8 @@ public class SlotsManager : MonoBehaviour
     public int selectID;
     public GameObject selected;
     private Inventory inventario;
+    [SerializeField] Color corDeselecionado;
+    [SerializeField] Color corSelecionado;
 
     void Start()
     {
@@ -36,8 +38,24 @@ public class SlotsManager : MonoBehaviour
         {
             inventario.selectedItem = null;
         }
+
+        AplicarCorSelecao(selectID);
         
         
+    }
+
+    public void AplicarCorSelecao(int selecionadoID)
+    {
+        Debug.Log("Aplicando cores nos slots");
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if(slots[i].i == selecionadoID)
+            {
+                slots[i].image.color = corSelecionado;
+            }
+            else
+                slots[i].image.color = corDeselecionado;
+        }
     }
 
     public void EliminarItemSelecionado()
