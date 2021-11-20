@@ -2,11 +2,25 @@ using UnityEngine;
 
 public class DTEmpresarioRuim : DialogueTrigger
 {
+    public string areaGovernamentalForaCena;
+    
+
     public override void Start()
     {
         base.Start();
 
-        if (estado.save.turno == 7 && estado.save.coletouProvasContraER7 == false)
+        if (estado.save.turno == 5 && estado.save.conversouComGovernador5 == true)
+        {
+            //FindObjectOfType<DialogueTriggerAssistente>().transform.parent.position = new Vector2(40, -20);
+            if(gameObject.scene.name == areaGovernamentalForaCena)
+            {
+                fazerAndar.AndeParaOPlayer();
+            }
+            
+
+        }
+
+        else if (estado.save.turno == 7 && estado.save.coletouProvasContraER7 == false)
         {
             FindObjectOfType<DialogueTriggerAssistente>().transform.parent.position = new Vector2(40, -20);
             fazerAndar.AndeParaOPlayer();
@@ -37,7 +51,10 @@ public class DTEmpresarioRuim : DialogueTrigger
         }
         else if (estado.save.turno == 5)
         {
-
+            if(estado.save.conversouComGovernador5 == true)
+            {
+                StartDialogue(37,37);
+            }
         }
         else if (estado.save.turno == 6)
         {
@@ -129,7 +146,32 @@ public class DTEmpresarioRuim : DialogueTrigger
         }
         else if (estado.save.turno == 5)
         {
+            if(estado.save.fimIntroducaoTurno5 == true)
+            {
+                if (lastSentence == 34)
+                    DTplayer.StartDialogue(155, 155);
+                else if (lastSentence == 35)
+                    DTplayer.StartDialogue(157, 157);
+                else if (lastSentence == 36)
+                    FindObjectOfType<DTGovernandor>().StartDialogue(35, 36);
+                else if (lastSentence == 37)
+                {
+                    player.emDialogo = true;
+                    estado.save.conversouComGovernador5 = true;
+                    CrossfadeLoadEffect crossfade = FindObjectOfType<CrossfadeLoadEffect>();
+                    crossfade.ChamarCrossfade(crossfade.areaGovernamentalForaCena, new Vector2(0, -3.5f));
+                }
 
+                else if (lastSentence == 38)
+                    DTplayer.StartDialogue(161, 161);
+                else if (lastSentence == 39)
+                {
+                    fazerAndar.AndePara(new Vector2(0, 10));
+                    player.emDialogo = true;
+                    DTplayer.StartDialogue(162, 162, 1f);
+                }
+                    
+            }
         }
         else if (estado.save.turno == 6)
         {

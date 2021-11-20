@@ -116,6 +116,22 @@ MonoBehaviour:
     - "\xC9 chegado a hora, adquirimos a localiza\xE7\xE3o de Leandro. J\xE1 desligamos
       as obras de seu \xF4nibus espacial, ele n\xE3o tem para onde fugir, venha me
       encontrar na \xE1rea governamental."
+    - "O que voc\xEA est\xE1 fazendo aqui?\r\n"
+    - "Voc\xEAs por favor, vamos Paulo fale oque voc\xEA quer."
+    - "Prov\u2026."
+    - "N\xE3o, eu n\xE3o preciso, Leandro me disse tudo a respeito de voc\xEA, n\xE3o
+      me restando outra op\xE7\xE3o a n\xE3o ser fechar seu projeto."
+    - "Voc\xEA e mais quem, ningu\xE9m n\xE9, me desculpe doutor mas suas palavras
+      j\xE1 se mostraram n\xE3o ser de confian\xE7a."
+    - "Posso pensar, irei dar essa possibilidade para voc\xEA trazer testemunhas
+      que comprovem alguma coisa a respeito do senhor se n\xE3o o projeto Akuanduba
+      estar\xE1 oficialmente acabado."
+    - "Sim nele eu n\xE3o confio por\xE9m ainda sou o Governador desta cidade e tenho
+      normas a comprir "
+    - "e uma delas \xE9 dar a chance das testemunhas mostrarem algum outro lado da
+      narrativa que eu n\xE3o conhe\xE7o, para eu poder analisar antes de dar alguma
+      senten\xE7a final a ele."
+    - "Lembre-se at\xE9 o meio dia"
 --- !u!58 &2645994734902680494
 CircleCollider2D:
   m_ObjectHideFlags: 0

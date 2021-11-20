@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 0.023696689, y: -4.785226}
+  touchPosition: {x: 4.50477, y: 1.2209958}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -292,6 +292,15 @@ MonoBehaviour:
     - Depois tenho que ver o que aconteceu com a antena
     - "Tudo parece normal. Qualquer problema aqui causaria problemas em larga escala
       para toda a regi\xE3o."
+    - "O senhor Leandro j\xE1 deveria saber que voc\xEA estaria aqui.\r\n"
+    - "eu tenho provas sobre quem andou fraudando a m\xE1quina e causou todos os
+      incidentes nos \xFAltimos meses.\r"
+    - "Pedro...  por favor\u2026 voc\xEA... precisa\u2026. me\u2026..escutar\u2026.\r"
+    - "Ele est\xE1 mentindo tudo desde o come\xE7o eu consigo provar"
+    - "E se eu conseguir trazer testemunhas voc\xEA iria ouvir oque tenho para falar."
+    - Obrigado Governador, irei trazer as testemunhas.
+    - "Voc\xEA n\xE3o vai se safar dessa."
+    - "Eu irei mostrar a verdade para o Pedro contra voc\xEA."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +348,7 @@ MonoBehaviour:
     aceitouEBComprarTerrenoFazendeiro: 0
     aceitouEBParticiparProjetoRemedios: 0
     fimIntroducaoTurno5: 0
+    conversouComGovernador5: 0
     ONUInvestiuSalaContorle5: 0
     ONUInvestiuMaquinaria5: 0
     ONUInvestiuHidreletrica5: 0

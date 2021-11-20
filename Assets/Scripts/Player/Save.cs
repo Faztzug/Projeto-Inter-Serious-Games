@@ -67,6 +67,8 @@
 
     public bool fimIntroducaoTurno5 = false;
 
+    public bool conversouComGovernador5 = false;
+
     public bool ONUInvestiuSalaContorle5 = false;
     public bool ONUInvestiuMaquinaria5 = false;
     public bool ONUInvestiuHidreletrica5 = false;

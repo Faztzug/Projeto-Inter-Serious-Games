@@ -114,6 +114,18 @@ MonoBehaviour:
     - "Doutor Paulo eu preciso de sua ajuda\u2026."
     - Discutimos depois, Doutor.
     - "Bom dia, Paulo. Chegou o dia. Pegue sua fam\xEDlia e me acompanhe"
+    - "Como voc\xEA entrou aqui?\r\n"
+    - "Cansei de ficar ouvindo essa baboseira, seguran\xE7a leve esse Doutor para
+      fora.\r"
+    - "Mas senhor voc\xEA disse que n\xE3o confia nele como poderemos confiar nessas
+      \u201Ctestemunhas\u201D."
+    - "Voc\xEAs dois j\xE1 acabaram, bom ent\xE3o seguran\xE7a tirem o Doutor daqui."
+    - "Boa sorte Doutor Paulo, em trazer suas \"testemunhas\" para c\xE1 farei quest\xE3o
+      de deixar meus seguran\xE7as na porta para proteger o Governador de suas mentiras
+      e das testemunhas."
+    - "Paulo eu j\xE1 ganhei, seu projeto ser\xE1 fechado e o Governador n\xE3o acredita
+      mais em voc\xEA, bem acredito que este \xE9 o nosso \xFAltimo encontro, adeus
+      senhor Paulo."
 --- !u!58 &4589573990104400539
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -143,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fazerAndar: {fileID: 0}
+  areaGovernamentalForaCena: AreaGovernamental_Frente
 --- !u!1 &4589573990198492923
 GameObject:
   m_ObjectHideFlags: 0

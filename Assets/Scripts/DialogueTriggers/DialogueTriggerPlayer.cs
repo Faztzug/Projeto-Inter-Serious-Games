@@ -233,7 +233,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 61)
                 FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndeParaOPlayer();
             else if (lastSentence == 62)
-                FindObjectOfType<DTEmpresarioBom>().StartDialogue(21,21);
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(21, 21);
             else if (lastSentence == 63)
                 FindObjectOfType<DTEmpresarioBom>().StartDialogue(22, 22);
             else if (lastSentence == 64)
@@ -257,9 +257,40 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
                 //puzzle
                 player.emDialogo = true;
-                DTplayer.StartDialogue(148,149,2.5f);
-                
+                DTplayer.StartDialogue(148, 149, 2.5f);
+
             }
+
+            if (estado.save.fimIntroducaoTurno5)
+            {
+               if (lastSentence == 153)
+                    FindObjectOfType<DTGovernandor>().StartDialogue(29, 29);
+                else if (lastSentence == 156)
+                {
+                    player.emDialogo = true;
+                    FindObjectOfType<DTGovernandor>().StartDialogue(30, 30, 3f);
+                }
+                else if (lastSentence == 157)
+                    FindObjectOfType<DTGovernandor>().StartDialogue(31, 31);
+                else if (lastSentence == 158)
+                    FindObjectOfType<DTGovernandor>().StartDialogue(32, 32);
+                else if (lastSentence == 159)
+                    FindObjectOfType<DTGovernandor>().StartDialogue(33, 33);
+                else if (lastSentence == 160)
+                    FindObjectOfType<DTGovernandor>().StartDialogue(34, 34);
+                else if (lastSentence == 161)
+                    FindObjectOfType<DTGovernandor>().StartDialogue(37, 37);
+                else if (lastSentence == 162)
+                    FindObjectOfType<DTEmpresarioRuim>().StartDialogue(38, 38);
+                else if (lastSentence == 163)
+                {
+                    //fim do puzzle
+                }
+                    
+
+            }
+
+            
 
         }
 

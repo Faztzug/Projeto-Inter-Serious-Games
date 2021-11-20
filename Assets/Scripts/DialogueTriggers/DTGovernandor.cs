@@ -44,7 +44,10 @@ public class DTGovernandor : DialogueTrigger
         }
         else if (estado.save.turno == 5)
         {
-
+            if(estado.save.fimIntroducaoTurno5 == true)
+            {
+                DTplayer.StartDialogue(152,152);
+            }
         }
         else if (estado.save.turno == 6)
         {
@@ -94,7 +97,25 @@ public class DTGovernandor : DialogueTrigger
 
         else if (estado.save.turno == 5)
         {
-
+            if (estado.save.fimIntroducaoTurno5)
+            {
+                if(lastSentence == 30)
+                    FindObjectOfType<DTEmpresarioRuim>().StartDialogue(33, 33);
+                else if (lastSentence == 31)
+                    DTplayer.StartDialogue(156, 156);
+                else if (lastSentence == 32)
+                    FindObjectOfType<DTEmpresarioRuim>().StartDialogue(34, 34);
+                else if (lastSentence == 33)
+                    DTplayer.StartDialogue(158, 158);
+                else if (lastSentence == 34)
+                    DTplayer.StartDialogue(159, 159);
+                else if (lastSentence == 35)
+                    FindObjectOfType<DTEmpresarioRuim>().StartDialogue(35, 35);
+                else if (lastSentence == 37)
+                    DTplayer.StartDialogue(160, 160);
+                else if (lastSentence == 38)
+                    FindObjectOfType<DTEmpresarioRuim>().StartDialogue(36, 36);
+            }
 
         }
 
