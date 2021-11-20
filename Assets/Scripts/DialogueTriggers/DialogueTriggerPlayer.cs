@@ -263,7 +263,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
             if (estado.save.fimIntroducaoTurno5)
             {
-               if (lastSentence == 153)
+                if (lastSentence == 153)
                     FindObjectOfType<DTGovernandor>().StartDialogue(29, 29);
                 else if (lastSentence == 156)
                 {
@@ -286,7 +286,18 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 {
                     //fim do puzzle
                 }
-                    
+                else if (lastSentence == 164)
+                {
+                    MomentoDeResponder(lastSentence, dialogueData.name);
+                    answerManager.GerarRespostas(responses[20]);
+                    answerManager.GerarRespostas(responses[21]);
+                    answerManager.GerarRespostas(responses[22]);
+                    answerManager.GerarRespostas(responses[23]);
+                }
+                else if (lastSentence == 123)
+                    FindObjectOfType<FimDeTurno>().EncerrarTurno();
+
+
 
             }
 
@@ -631,6 +642,49 @@ public class DialogueTriggerPlayer : DialogueTrigger
             {
                 estado.save.relacaoEmpresarioBom--;
                 estado.save.aceitouEBParticiparProjetoRemedios = false;
+                StartDialogue(122, 122);
+            }
+
+
+        }
+
+        if (estado.save.turno == 5)
+        {
+            
+
+
+            if (NPCPerguntando == dialogueData.name
+                && resposta == dialogueResponses.Responses[20])
+            {
+                estado.save.relacaoEmpresarioBom++;
+
+                estado.save.avancoProjeto++;
+                estado.save.ONUInvestiuSalaContorle5 = true;
+                StartDialogue(122, 122);
+            }
+            else if (NPCPerguntando == dialogueData.name
+              && resposta == dialogueResponses.Responses[21])
+            {
+                estado.save.relacaoVozDoPovo++;
+                estado.save.avancoProjeto++;
+                estado.save.ONUInvestiuMaquinaria5 = true;
+                StartDialogue(122, 122);
+            }
+            else if (NPCPerguntando == dialogueData.name
+                && resposta == dialogueResponses.Responses[22])
+            {
+                estado.save.relacaoFazendeiro++;
+                estado.save.avancoProjeto++;
+                estado.save.ONUInvestiuHidreletrica5 = true;
+                StartDialogue(122, 122);
+            }
+            else if (NPCPerguntando == dialogueData.name
+              && resposta == dialogueResponses.Responses[23])
+            {
+                estado.save.relacaoGovernador++;
+                estado.save.avancoProjeto++;
+                
+                estado.save.ONUInvestiuExaustores5 = true;
                 StartDialogue(122, 122);
             }
 

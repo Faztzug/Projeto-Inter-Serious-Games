@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 4.50477, y: 1.2209958}
+  touchPosition: {x: 2.4603908, y: -3.6937757}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -301,6 +301,9 @@ MonoBehaviour:
     - Obrigado Governador, irei trazer as testemunhas.
     - "Voc\xEA n\xE3o vai se safar dessa."
     - "Eu irei mostrar a verdade para o Pedro contra voc\xEA."
+    - Agora preciso decidir onde investir a verba recebida pela ONU.
+    - "Irei precisar esconder uma c\xE2mera e um microfone pr\xF3ximos para conseguir
+      gravar tudo que Leandro falar."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +357,10 @@ MonoBehaviour:
     ONUInvestiuHidreletrica5: 0
     ONUInvestiuExaustores5: 0
     fimIntroducaoTurno6: 0
-    coletouProvasContraER7: 0
+    conversouEB6: 0
+    conversouFazendeiro6: 0
+    conversouVozDoPovo6: 0
+    coletouProvasContraER6: 0
     fimIntroducaoTurno7: 0
     aceitouDarAguaFazendeiro7: 0
     biancaInvestiuHidreletrica7: 0
@@ -547,6 +553,10 @@ MonoBehaviour:
   - Recusar e mater as terras para fins do Projeto
   - Aceitar e permitir que Bianca distribua os remedios
   - "N\xE3o permitir que Bianca se envolva mais fortemente no Projeto"
+  - Investir na Sala de Controle
+  - Investir nas Maquinas
+  - "Investir na Hidrel\xE9trica"
+  - Investir nos Exaustores
 --- !u!114 &375688004
 MonoBehaviour:
   m_ObjectHideFlags: 0

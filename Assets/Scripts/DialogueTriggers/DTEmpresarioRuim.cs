@@ -20,7 +20,7 @@ public class DTEmpresarioRuim : DialogueTrigger
 
         }
 
-        else if (estado.save.turno == 7 && estado.save.coletouProvasContraER7 == false)
+        else if (estado.save.turno == 7 && estado.save.coletouProvasContraER6 == false)
         {
             FindObjectOfType<DialogueTriggerAssistente>().transform.parent.position = new Vector2(40, -20);
             fazerAndar.AndeParaOPlayer();

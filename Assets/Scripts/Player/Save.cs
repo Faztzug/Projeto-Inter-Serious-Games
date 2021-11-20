@@ -76,7 +76,12 @@
 
     public bool fimIntroducaoTurno6 = false;
 
-    public bool coletouProvasContraER7 = false;
+    public bool conversouEB6 = false;
+    public bool conversouFazendeiro6 = false;
+    public bool conversouVozDoPovo6 = false;
+    public bool coletouCamera6 = false;
+    public bool coletouMicrofone6 = false;
+    public bool coletouProvasContraER6 = false;
 
     public bool fimIntroducaoTurno7 = false;
 

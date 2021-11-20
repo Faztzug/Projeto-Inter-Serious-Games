@@ -9,6 +9,7 @@ public class DTNarrador : DialogueTrigger
     [SerializeField] private string salaControleMeioCena;
     [SerializeField] private string salaControleDireitaCena;
     [SerializeField] private string hidreletricaCena;
+    [SerializeField] private string lab1Cena;
 
     public override void StartDialogue()
     {
@@ -51,6 +52,22 @@ public class DTNarrador : DialogueTrigger
                 estado.save.puzzleTurno4Concluido = true;
             }
                 
+        }
+        else if (estado.save.turno == 5)
+        {
+
+        }
+        else if (estado.save.turno == 6)
+        {
+            if(gameObject.scene.name == lab1Cena)
+            {
+                if(estado.save.conversouFazendeiro6 == true
+                    && estado.save.conversouEB6 == true
+                    && estado.save.conversouVozDoPovo6 == true)
+                {
+                    DTplayer.StartDialogue(164,164);
+                }
+            }
         }
     }
     public override void EndOfDialogue(int lastSentence, string NPCname)
