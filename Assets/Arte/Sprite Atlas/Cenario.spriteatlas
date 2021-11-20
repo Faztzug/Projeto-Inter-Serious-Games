@@ -51,6 +51,7 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: 202fb0001b8756f40bd20e32ab24a052, type: 3}
   - {fileID: 21300000, guid: de9ce410794911f4b9adaecaacbf0d39, type: 3}
+  - {fileID: -8887364692430681888, guid: d811de3034cdc194684f8c709bfd04e6, type: 3}
   - {fileID: 21300000, guid: 467dbf30807d7484599a9256a18c36c9, type: 3}
   - {fileID: 21300000, guid: 7ac52d50a94910948b32b373f151d0bb, type: 3}
   - {fileID: 21300000, guid: a116066087ffb69418b6b199dee69baf, type: 3}
@@ -163,6 +164,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 7db57a08173f02f4e85a0d5ba31ec4f0, type: 3}
   - {fileID: 21300000, guid: c87d7d28ed2a64f4b988078755d2a9c7, type: 3}
   - {fileID: 21300000, guid: 8a4b6e387d8c40f43ae85aa5c2f4460c, type: 3}
+  - {fileID: -8060854983358967397, guid: 7efdf248d9b6139448b656c858c2fd3d, type: 3}
+  - {fileID: -4662585570535470772, guid: 7efdf248d9b6139448b656c858c2fd3d, type: 3}
+  - {fileID: -1669150855575640509, guid: 7efdf248d9b6139448b656c858c2fd3d, type: 3}
   - {fileID: 21300000, guid: 28b9f468fb692134194be28550448005, type: 3}
   - {fileID: 9021240260021790412, guid: 4af1ad688a9adc2429f40aaf595ad8d4, type: 3}
   - {fileID: 2592767869273018475, guid: 4af1ad688a9adc2429f40aaf595ad8d4, type: 3}
@@ -281,6 +285,7 @@ SpriteAtlas:
   m_PackedSpriteNamesToIndex:
   - "M\xE1quina_de_controle"
   - Porta_2
+  - Barril_0
   - "\xC1rvore_queimada_3"
   - "Arm\xE1rioCentro"
   - Arbusto_Savana
@@ -393,6 +398,9 @@ SpriteAtlas:
   - "\xC1rvore_Savana"
   - "\xC1rvore_queimada_6"
   - "\xC1rvore_cortada_6"
+  - Frascos_1
+  - Frascos_0
+  - Frascos_2
   - "Arm\xE1rioSideView"
   - Galhos e pedaco de metal_1
   - Galhos e pedaco de metal_0
