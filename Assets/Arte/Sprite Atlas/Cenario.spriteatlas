@@ -190,6 +190,7 @@ SpriteAtlas:
   - {fileID: 7482667652216324306, guid: 969cee89f648db54b9b9b4da3524ad59, type: 3}
   - {fileID: 21300000, guid: 83dff4a9771685c4380907127afd8813, type: 3}
   - {fileID: 21300000, guid: 805871b90ab5cf74c8e8f5a3fbf18024, type: 3}
+  - {fileID: 7482667652216324306, guid: 798bb1b9c9a708349824da3dc2a16957, type: 3}
   - {fileID: 21300000, guid: e330d0f93ad6aea4db763584997ab1f7, type: 3}
   - {fileID: 21300000, guid: c4e18ef90204eb84080ca07f680d3a49, type: 3}
   - {fileID: 21300000, guid: 7fbedef9b40381a488d9a04b89ceb57d, type: 3}
@@ -424,6 +425,7 @@ SpriteAtlas:
   - Square
   - "\xC1rvore_2"
   - gramado_Savana_2
+  - Square
   - Lock_Ativado
   - Lock_Desativado
   - "\xC1rvore_QuartoPlano_3"

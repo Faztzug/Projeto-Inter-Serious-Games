@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 4.5270944, y: -4.324183}
+  touchPosition: {x: 0.023696689, y: -4.785226}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -279,6 +279,19 @@ MonoBehaviour:
       aceitar esta proposta?\r"
     - "Ela tamb\xE9m deseja distribuir rem\xE9dios para a popula\xE7\xE3o, mas precisa
       estar mais envolvida com o projeto para isso, devo aceitar?\r"
+    - O fusivel desta maquina sumiu, eu preciso encontra-lo, pega-lo, e coloca-lo
+      nela devolta corretamente.
+    - "Acho que chegou a hora de se mover. Tudo analisado e n\xE3o tenho d\xFAvida
+      alguma do culpado disso tudo. "
+    - "Deveria entregar isso ao Pedro, mas acho melhor falar com pessoas para testemunhar
+      antes, como suporte\u2026"
+    - "Hum\u2026 est\xE3o protegendo a entrada, n\xE3o vai ser algo f\xE1cil de passar,
+      vou precisar criar alguma distra\xE7\xE3o para eles."
+    - "Espero que ningu\xE9m se machuque com isso, mas \xE9 algo necess\xE1rio."
+    - "Senhor Pedro, preciso falar com voc\xEA.\r\n"
+    - Depois tenho que ver o que aconteceu com a antena
+    - "Tudo parece normal. Qualquer problema aqui causaria problemas em larga escala
+      para toda a regi\xE3o."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +331,7 @@ MonoBehaviour:
     fimIntroducaoTurno4: 0
     fimDialogoGovernadorTurno4: 0
     alarmePoluicaoRio4: 0
+    playerGanhouFrasco4: 0
     rioPurificado4: 0
     olhouCamerasSeguranca4: 0
     puzzleTurno4Concluido: 0

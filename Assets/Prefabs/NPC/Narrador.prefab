@@ -116,6 +116,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   andando: 0
+  distanceX: 0
+  distanceY: 0
   pararDeAndarAoAtingirPlayer: 1
 --- !u!50 &3229071668714731709
 Rigidbody2D:
@@ -201,6 +203,8 @@ MonoBehaviour:
   titleScreenCena: TittleScreen
   maquinasCena: Maquinas
   salaControleMeioCena: Sala_de_Controle_2
+  salaControleDireitaCena: Sala_de_Controle
+  hidreletricaCena: Hidreletrica
 --- !u!114 &3229071670326244107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +231,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3229071670326244110}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1

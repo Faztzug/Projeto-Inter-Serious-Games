@@ -7,10 +7,21 @@ public class DTNarrador : DialogueTrigger
     [SerializeField] private string titleScreenCena;
     [SerializeField] private string maquinasCena;
     [SerializeField] private string salaControleMeioCena;
+    [SerializeField] private string salaControleDireitaCena;
+    [SerializeField] private string hidreletricaCena;
 
     public override void StartDialogue()
     {
-        if (estado.save.turno == 2)
+        if (estado.save.turno == 1)
+        {
+            if (gameObject.scene.name == maquinasCena && estado.save.coletouFusivel == false)
+                DTplayer.StartDialogue(147, 147);
+            else if (gameObject.scene.name == salaControleDireitaCena)
+                DTplayer.StartDialogue(153, 153);
+            else if (gameObject.scene.name == hidreletricaCena)
+                DTplayer.StartDialogue(154, 154);
+        }
+        else if (estado.save.turno == 2)
         {
             if(gameObject.scene.name == maquinasCena)
                 DTplayer.StartDialogue(112, 112);

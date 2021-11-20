@@ -254,6 +254,10 @@ public class DialogueTriggerPlayer : DialogueTrigger
             {
                 estado.save.fimIntroducaoTurno5 = true;
                 FindObjectOfType<DTEmpresarioBom>().fazerAndar.AndePara(new Vector2(17f, -3f));
+
+                //puzzle
+                player.emDialogo = true;
+                DTplayer.StartDialogue(148,149,2.5f);
                 
             }
 
