@@ -13,8 +13,11 @@ public class NuvemsScroll : MonoBehaviour
     [SerializeField]
     private Vector2 randomWidth = new Vector2(-4,0);
     [SerializeField]
-    private Transform[] nuvems;
+    private Transform[] nuvems = new Transform[10];
     private int childCount;
+
+    [SerializeField]
+    private bool paraADireita = true;
 
     private void Start()
     {
@@ -32,11 +35,24 @@ public class NuvemsScroll : MonoBehaviour
             if(nuvem != null)
             {
                 nuvem.Translate(speed * Time.deltaTime);
-                if (nuvem.position.x > width)
+                if(paraADireita == true)
                 {
-                    nuvem.position = new Vector2(-width + Random.Range(randomWidth.x, randomWidth.y), 
-                        Random.Range(height.x, height.y));
+                    if (nuvem.position.x > width)
+                    {
+                        nuvem.position = new Vector2(-width + Random.Range(randomWidth.x, randomWidth.y),
+                            Random.Range(height.x, height.y));
+                    }
                 }
+                else if(paraADireita == false)
+                {
+                    if (nuvem.position.x < -width)
+                    {
+                        nuvem.position = new Vector2(+width + Random.Range(randomWidth.x, randomWidth.y),
+                            Random.Range(height.x, height.y));
+                    }
+                }
+                    
+
             }
             
         }
