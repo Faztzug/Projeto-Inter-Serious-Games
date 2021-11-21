@@ -3590,6 +3590,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6963542123830095882, guid: 8ec192bfc3fedab489a906805086e115, type: 3}
+      propertyPath: playThis
+      value: A Floresta
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ec192bfc3fedab489a906805086e115, type: 3}
 --- !u!1 &612936163
@@ -10366,6 +10370,7 @@ MonoBehaviour:
   - {fileID: 1926493872}
   - {fileID: 1751119792}
   - {fileID: 1892429609}
+  paraADireita: 1
 --- !u!1 &1776999605
 GameObject:
   m_ObjectHideFlags: 0
