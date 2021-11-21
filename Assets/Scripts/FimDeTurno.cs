@@ -59,6 +59,10 @@ public class FimDeTurno : MonoBehaviour
             {
                 EncerrarTurno();
             }
+            else if (estado.save.turno == 7 && estado.save.mostrouProvasGovernador7 == true)
+            {
+                dtPlayer.StartDialogue(187, 188);
+            }
         }
         
     }

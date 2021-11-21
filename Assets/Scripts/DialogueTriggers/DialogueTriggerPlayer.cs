@@ -422,6 +422,27 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(93, 93);
             else if (lastSentence == 90)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(94, 94);
+
+            //pos introdução
+
+            //fim de turno
+            else if (lastSentence == 189)
+            {
+                MomentoDeResponder(lastSentence, dialogueData.name);
+                answerManager.GerarRespostas(responses[26]);
+                answerManager.GerarRespostas(responses[27]);
+
+            }
+            else if (lastSentence == 190)
+            {
+                MomentoDeResponder(lastSentence, dialogueData.name);
+                answerManager.GerarRespostas(responses[21]); //maquinas
+                answerManager.GerarRespostas(responses[22]); //hidreletrica
+
+            }
+            else if (lastSentence == 123)
+                FindObjectOfType<FimDeTurno>().EncerrarTurno();
+
         }
 
         else if (estado.save.turno == 8)
@@ -762,6 +783,48 @@ public class DialogueTriggerPlayer : DialogueTrigger
             }
 
 
+        }
+
+        if (estado.save.turno == 7)
+        {
+
+            if (resposta == dialogueResponses.Responses[26])
+            {
+
+                estado.save.relacaoFazendeiro++;
+                estado.save.relacaoVozDoPovo--;
+                estado.save.aceitouDarAguaFazendeiro7 = true;
+                StartDialogue(189, 189);
+            }
+            else if (resposta == dialogueResponses.Responses[27])
+            {
+                estado.save.relacaoVozDoPovo++;
+                estado.save.relacaoFazendeiro--;
+                estado.save.aceitouDarAguaFazendeiro7 = false;
+                StartDialogue(189, 189);
+            }
+
+            if (resposta == dialogueResponses.Responses[21])
+            {
+
+                estado.save.avancoProjeto++;
+                estado.save.biancaInvestiuMaquinas7 = true;
+                StartDialogue(122, 122);
+            }
+            else if (resposta == dialogueResponses.Responses[22])
+            {
+                if(estado.save.aceitouDarAguaFazendeiro7 == true)
+                {
+                    estado.save.relacaoFazendeiro++;
+                }
+                else
+                {
+                    estado.save.relacaoVozDoPovo++;
+                }
+                
+                estado.save.biancaInvestiuHidreletrica7 = false;
+                StartDialogue(122, 122);
+            }
         }
     }
 }

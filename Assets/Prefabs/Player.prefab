@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: -2.7714007, y: -6.520278}
+  touchPosition: {x: 3.7613585, y: -3.7763765}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -347,6 +347,9 @@ MonoBehaviour:
       coisas e daqui alguns meses eu irei fechar o projeto
     - "Claro que n\xE3o, mas o mais importante \xE9 que agora temos a prova para
       mostrar para o senhor Pedro."
+    - "Agora devo dar uma resposta para Raul e Jo\xE3o"
+    - "A \xE1gua deve ser distribu\xEDda para a popula\xE7\xE3o ou para a fazenda?\r"
+    - Onde devo investir o incentivo de Bianca?
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,6 +416,7 @@ MonoBehaviour:
     coletouProvasContraER6: 0
     fimDialogoAssistente6: 0
     fimIntroducaoTurno7: 0
+    mostrouProvasGovernador7: 0
     aceitouDarAguaFazendeiro7: 0
     biancaInvestiuHidreletrica7: 0
     biancaInvestiuMaquinas7: 0
@@ -610,6 +614,8 @@ MonoBehaviour:
   - Investir nos Exaustores
   - Aceitar a Proposta
   - Fingir que Aceita
+  - "Apoiar Jo\xE3o na distribui\xE7\xE3o de \xE1gua para a fazenda"
+  - "Apoiar Raul na distribui\xE7\xE3o de \xE1gua para a popula\xE7\xE3o"
 --- !u!114 &375688004
 MonoBehaviour:
   m_ObjectHideFlags: 0
