@@ -3655,9 +3655,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 375687996, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: Responses.Array.size
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 375687996, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: Responses.Array.data[26]
+      value: "Apoiar Jo\xE3o na distribui\xE7\xE3o de \xE1gua para a fazenda"
+      objectReference: {fileID: 0}
+    - target: {fileID: 375687996, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: Responses.Array.data[27]
+      value: "Apoiar Raul na distribui\xE7\xE3o de \xE1gua para a popula\xE7\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 375687996, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: Responses.Array.data[28]
+      value: Investir nas Maquinas
+      objectReference: {fileID: 0}
+    - target: {fileID: 375687996, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: Responses.Array.data[29]
+      value: Investir nas Maquinas
+      objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.coletouTerra
@@ -3665,6 +3685,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conversouEB6
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.fimDialogoER6
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.coletouCamera6
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
@@ -3685,6 +3713,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno2Concluido
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.coletouMicrofone6
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
@@ -3720,6 +3752,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.fimIntroducaoTurno7
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.playerGanhouFrasco4
       value: 1
       objectReference: {fileID: 0}
@@ -3732,7 +3768,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.posicionouMicrofone6
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.fimDialogoAssistente6
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.posicionouCameraMeio6
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.puzzleTurno4Concluido
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.coletouProvasContraER6
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
@@ -3753,6 +3805,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.aceitouCompraERDoProjeto
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.mostrouProvasGovernador7
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.posicionouCameraDireita6
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.posicionouCameraEsquerda6
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
@@ -3778,6 +3842,23 @@ PrefabInstance:
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.aceitouCompartilharMaquinasFazendeiro
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 190
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: dialogue.sentences.Array.data[187]
+      value: "Agora devo dar uma resposta para Raul e Jo\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: dialogue.sentences.Array.data[188]
+      value: "A \xE1gua deve ser distribu\xEDda para a popula\xE7\xE3o ou para a
+        fazenda?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: dialogue.sentences.Array.data[189]
+      value: Onde devo investir o incentivo de Bianca?
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946061, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_Name
