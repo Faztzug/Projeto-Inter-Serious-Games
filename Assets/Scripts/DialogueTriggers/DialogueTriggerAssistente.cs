@@ -4,11 +4,16 @@ public class DialogueTriggerAssistente : DialogueTrigger
 {
     [SerializeField]
     private GameObject frascoVazio;
-    
+    [SerializeField]
+    private string lab1Cena;
 
     public override void Start()
     {
         base.Start();
+
+        if(gameObject.scene.name != lab1Cena)
+            fazerAndar.PararAndar();
+
         if (estado.save.turno == 2 && estado.save.fimIntroducaoTurno2 == true)
         {
             fazerAndar.PararAndar();

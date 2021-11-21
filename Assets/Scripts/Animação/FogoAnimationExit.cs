@@ -19,7 +19,7 @@ public class FogoAnimationExit : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        FindObjectOfType<PlayerControl>().emDialogo = false;
+        //FindObjectOfType<PlayerControl>().emDialogo = false;
         animator.gameObject.SetActive(false);
         Destroy(animator.gameObject);
     }

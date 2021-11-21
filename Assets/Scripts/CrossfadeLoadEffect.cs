@@ -40,6 +40,9 @@ public class CrossfadeLoadEffect : MonoBehaviour
         crossfadeTransition.SetTrigger("Start");
         yield return new WaitForSeconds(tempoDeCrossfade);
 
+        if(FindObjectOfType<SFXPlayer>() != null)
+        FindObjectOfType<SFXPlayer>().StopAll();
+
         SceneManager.LoadScene(cena);
 
         if (player == null)

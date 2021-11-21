@@ -6,9 +6,11 @@ public class FogoOverlay : MonoBehaviour
 {
     private Animator anim;
     [SerializeField] private float tempo;
+    [SerializeField] private float tempoFadeOut;
     [SerializeField] int turnoAtivar;
     [SerializeField] Item extintor;
     [SerializeField] string somIncendio;
+    [SerializeField] string musicaFloresta;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +35,7 @@ public class FogoOverlay : MonoBehaviour
             }
 
             FindObjectOfType<MusicPlayer>().ChangeMusic(somIncendio);
+            FindObjectOfType<SFXPlayer>().PlayAudio("Fire");
         }
 
         
@@ -49,8 +52,20 @@ public class FogoOverlay : MonoBehaviour
         FindObjectOfType<ChamasAnimation>().apagar = true;
         FindObjectOfType<EstadoDeMundo>().save.apagouIncendio2 = true;
         FindObjectOfType<EstadoDeMundo>().save.alarmeIncendio2 = false;
+
+        StartCoroutine(FogoTermiandoApagar());
+
+    }
+
+    IEnumerator FogoTermiandoApagar()
+    {
+        yield return new WaitForSeconds(tempoFadeOut);
+        FindObjectOfType<SFXPlayer>().StopAudio("Fire");
+        FindObjectOfType<MusicPlayer>().ChangeMusic(musicaFloresta);
+        FindObjectOfType<PlayerControl>().emDialogo = false;
     }
 
 
-    
+
+
 }

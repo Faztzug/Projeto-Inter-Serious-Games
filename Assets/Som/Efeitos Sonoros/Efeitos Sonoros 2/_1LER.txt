@@ -1,0 +1,1 @@
+Tem 3 sons que são basicamente a mesma coisa, o UnlockDoorLabAll, o Unlock e o DoorLab, acho que da de entender pelos nomes, mas o UnlockDoorLabAll tem o som da trava e em seguida o da porta, ai o Unlock é só o som da trava e o DoorLab é só o som da porta, coso precise deles separados.
