@@ -58,7 +58,7 @@ public class DTEmpresarioRuim : DialogueTrigger
         }
         else if (estado.save.turno == 6)
         {
-
+            DTplayer.StartDialogue(171, 171);
         }
         else if (estado.save.turno == 7)
         {
@@ -175,7 +175,34 @@ public class DTEmpresarioRuim : DialogueTrigger
         }
         else if (estado.save.turno == 6)
         {
-
+            if(lastSentence == 40)
+                DTplayer.StartDialogue(172, 173);
+            else if (lastSentence == 41)
+                DTplayer.StartDialogue(174, 174);
+            else if (lastSentence == 42)
+                DTplayer.StartDialogue(175, 177);
+            else if (lastSentence == 44)
+                DTplayer.StartDialogue(178, 178);
+            else if (lastSentence == 46)
+                DTplayer.StartDialogue(179, 179);
+            else if (lastSentence == 48)
+                DTplayer.StartDialogue(180, 180);
+            else if (lastSentence == 51)
+                DTplayer.StartDialogue(181, 181);
+            else if (lastSentence == 52)
+                DTplayer.StartDialogue(182, 182);
+            else if (lastSentence == 53)
+                DTplayer.StartDialogue(183, 183);
+            else if (lastSentence == 54)
+                DTplayer.StartDialogue(184, 184);
+            else if (lastSentence == 60)
+            {
+                DTplayer.MomentoDeResponder(lastSentence, dialogueData.name);
+                DTplayer.answerManager.GerarRespostas(DTplayer.responses[24]);
+                DTplayer.answerManager.GerarRespostas(DTplayer.responses[25]);
+                
+            }
+                
         }
         else if (estado.save.turno == 7)
         {

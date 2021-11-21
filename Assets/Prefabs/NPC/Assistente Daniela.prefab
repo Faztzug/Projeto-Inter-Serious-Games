@@ -506,6 +506,8 @@ MonoBehaviour:
     - "Doutor, preciso falar com voc\xEA"
     - "Ocorreu um vazamento da m\xE1quina no rio e est\xE1 contaminando a \xE1gua"
     - Antes do Senhor ir tome esse frasco para poder coletar uma amostra
+    - "Doutor eu consegui escutar o'que o senhor falou para ele \xE9 mesmo verdade
+      de fechar o projeto ?"
 --- !u!58 &7849470484585874826
 CircleCollider2D:
   m_ObjectHideFlags: 0

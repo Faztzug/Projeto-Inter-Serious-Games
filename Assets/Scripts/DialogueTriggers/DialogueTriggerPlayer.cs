@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class DialogueTriggerPlayer : DialogueTrigger
 {
-    private AnswerManager answerManager;
-    private DialogueData dialogueData;
-    private DialogueResponses dialogueResponses;
-    private string[] responses;
+    [HideInInspector]
+    public AnswerManager answerManager;
+    //private DialogueData dialogueData;
+    [HideInInspector]
+    public DialogueResponses dialogueResponses;
+    [HideInInspector]
+    public string[] responses;
     private string[] sentences;
     private string NPCPerguntando;
     private int ultimaSentenca;
@@ -335,7 +338,57 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 80)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(90, 90);
 
-
+            //dialogo com empresario
+            else if(lastSentence == 171)
+            {
+                FindObjectOfType<DTEmpresarioRuim>().fazerAndar.AndeParaOPlayer();
+            }
+            else if (lastSentence == 172)
+            {
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(39,39);
+            }
+            else if (lastSentence == 174)
+            {
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(40, 40);
+            }
+            else if (lastSentence == 175)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(41, 41);
+            else if (lastSentence == 178)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(42, 43);
+            else if (lastSentence == 179)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(44, 45);
+            else if (lastSentence == 180)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(46, 47);
+            else if (lastSentence == 181)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(48, 50);
+            else if (lastSentence == 182)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(51, 51);
+            else if (lastSentence == 183)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(52, 52);
+            else if (lastSentence == 184)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(53, 53);
+            else if (lastSentence == 185)
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(54, 59);
+            else if (lastSentence == 186)
+            {
+                if(estado.save.coletouProvasContraER6 == false)
+                {
+                    FindObjectOfType<DTEmpresarioRuim>().fazerAndar.AndePara(new Vector2(20, -3f));
+                    player.andando = true;
+                    player.touchPosition = new Vector2(20, -3f);
+                } else if(estado.save.coletouProvasContraER6 == true)
+                {
+                    FindObjectOfType<DTEmpresarioRuim>().fazerAndar.AndePara(new Vector2(20, -3f));
+                    player.emDialogo = true;
+                    FindObjectOfType<DialogueTriggerAssistente>().fazerAndar.AndeParaOPlayer(5f);
+                }
+            }
+            else if (lastSentence == 187)
+            {
+                FindObjectOfType<DialogueTriggerAssistente>().fazerAndar.AndePara(new Vector2(20, -3f));
+                player.andando = true;
+                player.touchPosition = new Vector2(20, -3f);
+            }
 
         }
 
@@ -686,6 +739,26 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 
                 estado.save.ONUInvestiuExaustores5 = true;
                 StartDialogue(122, 122);
+            }
+
+
+        }
+
+        if (estado.save.turno == 6)
+        {
+
+            if (resposta == dialogueResponses.Responses[24])
+            {
+
+                estado.save.fimDialogoER6 = true;
+                estado.save.coletouProvasContraER6 = false;
+                StartDialogue(185, 185);
+            }
+            else if (resposta == dialogueResponses.Responses[25])
+            {
+                estado.save.fimDialogoER6 = true;
+                estado.save.coletouProvasContraER6 = true;
+                StartDialogue(185, 185);
             }
 
 

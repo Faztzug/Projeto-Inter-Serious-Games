@@ -19,6 +19,7 @@ public class ItemMicrofone : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             estado.save.coletouMicrofone6 = true;
+            collision.GetComponent<DialogueTriggerPlayer>().StartDialogue(165, 165);
         }
     }
 }

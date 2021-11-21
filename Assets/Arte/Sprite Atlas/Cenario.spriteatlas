@@ -82,7 +82,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 0ebfc061e9911194c9147962cda07fb4, type: 3}
   - {fileID: 21300000, guid: b943e6613d4a06c48a33dacba0ac4f04, type: 3}
   - {fileID: 21300000, guid: 72bcb9610b07ab545a856623e55e76ce, type: 3}
-  - {fileID: 21300000, guid: 2e94da61ef938f040ba035b5f33eb10b, type: 3}
+  - {fileID: -7329420797598585349, guid: 2e94da61ef938f040ba035b5f33eb10b, type: 3}
   - {fileID: 21300000, guid: 7c16fc911e23ccf4e90b39614703d43d, type: 3}
   - {fileID: 21300000, guid: fd0da2b1ce6a6b647bbc1d7e4ad018b3, type: 3}
   - {fileID: 21300000, guid: 2a0b4bc17c2ddb74f854f0131760d364, type: 3}
@@ -101,7 +101,7 @@ SpriteAtlas:
   - {fileID: -7964371224966061518, guid: 7a5a5672e3d5c8d4083a332d3f1d2b16, type: 3}
   - {fileID: 21300000, guid: e47bd872075af9a47b32956f6fe1ec01, type: 3}
   - {fileID: 21300000, guid: ae4b0e72080437e48adc6601afe6d55b, type: 3}
-  - {fileID: 21300000, guid: acc3e4a2e0560834e810b585b2b551f5, type: 3}
+  - {fileID: 5972460678479062119, guid: acc3e4a2e0560834e810b585b2b551f5, type: 3}
   - {fileID: 21300000, guid: fb92d6c25c5e7a24396c3a34be74b950, type: 3}
   - {fileID: 21300000, guid: e3d2cfd2a15ba5e4b8de51beb32c903e, type: 3}
   - {fileID: 21300000, guid: 2ad0b1f2a0685e24c956f5b537127596, type: 3}
@@ -325,7 +325,7 @@ SpriteAtlas:
   - "\xC1rvore_QuartoPlano_2"
   - Fundo_CentroEsquerda
   - "\xC1rvore_queimada_8"
-  - Pia_Aberta
+  - Pia_Aberta_0
   - Nuvem_4
   - Porta_3 1
   - "\xC1rvore_TerceiroPlano_4"
@@ -344,7 +344,7 @@ SpriteAtlas:
   - Parede 1_6
   - Grama_Savana
   - Puzzle_Extintor
-  - Pia
+  - Pia_0
   - "Arm\xE1rioLateral"
   - Grama_3
   - Mesa_Lateral

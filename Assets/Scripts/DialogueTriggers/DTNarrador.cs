@@ -63,7 +63,8 @@ public class DTNarrador : DialogueTrigger
             {
                 if(estado.save.conversouFazendeiro6 == true
                     && estado.save.conversouEB6 == true
-                    && estado.save.conversouVozDoPovo6 == true)
+                    && estado.save.conversouVozDoPovo6 == true
+                    && estado.save.fimDialogoER6 == false)
                 {
                     DTplayer.StartDialogue(164,164);
                 }

@@ -55,6 +55,10 @@ public class FimDeTurno : MonoBehaviour
             {
                 dtPlayer.StartDialogue(163, 163);
             }
+            else if (estado.save.turno == 6 && estado.save.fimDialogoER6 == true)
+            {
+                EncerrarTurno();
+            }
         }
         
     }

@@ -84,4 +84,25 @@ public class SlotsManager : MonoBehaviour
         return null;
     }
 
+    public int AcharItemQuantidade(string acharItem)
+    {
+        int quantidade = 0;
+        Debug.Log("procurando Item: " + acharItem + " ...");
+
+        foreach (Item item in GetComponentsInChildren<Item>())
+        {
+            if (item.itemName == acharItem)
+            {
+                Debug.Log("Item: " + acharItem + " encontrado!");
+
+                quantidade++;
+            }
+            
+        }
+        Debug.Log("Item: " + acharItem + " encontrado: " + quantidade + " vezes!");
+        return quantidade;
+
+        
+    }
+
 }

@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 2.4603908, y: -3.6937757}
+  touchPosition: {x: -2.7714007, y: -6.520278}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -304,6 +304,49 @@ MonoBehaviour:
     - Agora preciso decidir onde investir a verba recebida pela ONU.
     - "Irei precisar esconder uma c\xE2mera e um microfone pr\xF3ximos para conseguir
       gravar tudo que Leandro falar."
+    - "Pronto, microfone na m\xE3o, agora preciso ajustar as c\xE2meras e ir esconder
+      o microfone."
+    - "C\xE2mera posicionada."
+    - "C\xE2meras prontas."
+    - "Microfone pronto, mas ainda falta posicionar as c\xE2meras."
+    - "Pronto, microfone e c\xE2meras prontas, ajeitar e pedir para ele sentar aqui
+      para podermos conversar, agora irei chamar ele."
+    - "Leandro, voc\xEA poderia vir aqui, por favor? Precisamos conversar e fazermos
+      um trato."
+    - "Bom Senhor Leandro agrade\xE7o por voc\xEA ter aceitado vim aqui conversar
+      comigo, temos muitos assuntos a tratar"
+    - "Antes de come\xE7armos queria deixar bem claro que o nosso \xFAltimo encontro
+      n\xE3o foi um dos melhores, mas estamos aqui para podermos resolver esses problemas,"
+    - "por isso n\xE3o precisa ficar muito intimado comigo e nem com os outros que
+      est\xE3o aqui."
+    - "Bem, ent\xE3o senhor Leandro, j\xE1 que estamos todos reunidos aqui gostaria
+      de saber se o senhor tem algum projeto, alguma coisa que o senhor tenha feito
+      que gostaria de compartilhar comigo aqui ."
+    - "Bem, eu quis marcar essa reuni\xE3o mais para podermos, nos podermos entender
+      o seu lado da hist\xF3ria, eu entendo que no nosso \xFAltimo encontro eu possa
+      ter me exaltado muito "
+    - "e entendo meu erro agora de n\xE3o ter deixado voc\xEA explicar o seu ponto
+      de vista nisso tudo que estamos passando, voc\xEA sendo um homem de neg\xF3cios
+      muito bem sucedidos, "
+    - "sinto que n\xE3o te dei o espa\xE7o que voc\xEA deveria ter, por isso me encare
+      aqui como um ouvinte e n\xE3o como um cientista ou doutor."
+    - "Disponha, agora vamos falar do seu projeto do \xD4nibus."
+    - "Entendo que essa popula\xE7\xE3o que voc\xEA est\xE1 falando s\xE3o todos
+      ou s\xF3 uma parte dela."
+    - "Ent\xE3o de maneira mais direta seria da Elite ir no \xD4nibus espacial e
+      a classe m\xE9dia e Pobre ficaria aqui na Terra"
+    - "Sim estou entendo mas me responda essa duvida como voc\xEA conseguiu todo
+      esse dinheiro para bancar esse \xD4nibus espacial."
+    - "Esses outros meios seriam pelo Senhor Pedro e pelas doa\xE7\xF5es que foram
+      feitas para o senhor ?"
+    - O senhor Pedro sabe sobre isso ?
+    - "Entendo, agora gostaria de saber sobre o motivo, dos ataques que a maquina
+      de carbono teve tendo v\xE1rios preju\xEDzos, gostaria de entender o motivo
+      desses ataques."
+    - Entendo todos os seu pontos e concordo com sua proposta, irei terminar algumas
+      coisas e daqui alguns meses eu irei fechar o projeto
+    - "Claro que n\xE3o, mas o mais importante \xE9 que agora temos a prova para
+      mostrar para o senhor Pedro."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,7 +403,15 @@ MonoBehaviour:
     conversouEB6: 0
     conversouFazendeiro6: 0
     conversouVozDoPovo6: 0
+    coletouCamera6: 0
+    coletouMicrofone6: 0
+    posicionouCameraEsquerda6: 0
+    posicionouCameraMeio6: 0
+    posicionouCameraDireita6: 0
+    posicionouMicrofone6: 0
+    fimDialogoER6: 0
     coletouProvasContraER6: 0
+    fimDialogoAssistente6: 0
     fimIntroducaoTurno7: 0
     aceitouDarAguaFazendeiro7: 0
     biancaInvestiuHidreletrica7: 0
@@ -557,6 +608,8 @@ MonoBehaviour:
   - Investir nas Maquinas
   - "Investir na Hidrel\xE9trica"
   - Investir nos Exaustores
+  - Aceitar a Proposta
+  - Fingir que Aceita
 --- !u!114 &375688004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,6 +638,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fazerAndar: {fileID: 0}
+  answerManager: {fileID: 0}
+  dialogueResponses: {fileID: 0}
+  responses: []
 --- !u!114 &375688008
 MonoBehaviour:
   m_ObjectHideFlags: 0

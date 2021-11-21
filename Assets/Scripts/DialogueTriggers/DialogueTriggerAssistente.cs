@@ -79,9 +79,22 @@ public class DialogueTriggerAssistente : DialogueTrigger
         {
             StartDialogue(59, 59);
         }
-        else if (estado.save.turno == 6 && estado.save.fimIntroducaoTurno6 == false)
+        else if (estado.save.turno == 6)
         {
-            StartDialogue(80, 80);
+            if (estado.save.fimIntroducaoTurno6 == false)
+                StartDialogue(80, 80);
+            else if (estado.save.fimIntroducaoTurno6 == true && estado.save.fimDialogoER6 == true 
+                && estado.save.coletouProvasContraER6 == true
+                && estado.save.fimDialogoAssistente6 == false)
+            {
+                StartDialogue(135, 135);
+                estado.save.fimDialogoAssistente6 = true;
+            }
+                
+            else
+            {
+
+            }
         }
         else if (estado.save.turno == 7 && estado.save.fimIntroducaoTurno7 == false)
         {
@@ -317,6 +330,10 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 DTplayer.StartDialogue(79, 79);
             else if (lastSentence == 91)
                 estado.save.fimIntroducaoTurno6 = true;
+
+            //apos empressario
+            else if (lastSentence == 136)
+                DTplayer.StartDialogue(186,186);
 
 
         }

@@ -10,6 +10,7 @@ public class DialogueTrigger : MonoBehaviour
     protected PlayerControl player;
     protected DialogueTriggerPlayer DTplayer;
     [HideInInspector] public FazerAndar fazerAndar;
+    protected DialogueData dialogueData;
     
 
     public virtual void Start()
@@ -18,6 +19,7 @@ public class DialogueTrigger : MonoBehaviour
         dialogueManager = GetComponent<DialogueManager>();
         player = estado.gameObject.GetComponent<PlayerControl>();
         DTplayer = estado.gameObject.GetComponent<DialogueTriggerPlayer>();
+        dialogueData = GetComponent<DialogueData>();
 
         if (gameObject.GetComponentInParent<FazerAndar>() != null)
             fazerAndar = gameObject.GetComponentInParent<FazerAndar>();

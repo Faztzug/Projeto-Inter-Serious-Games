@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -4662585570535470772, guid: 7efdf248d9b6139448b656c858c2fd3d, type: 3}
   m_Color: {r: 0.101381935, g: 0.14297707, b: 0.6509434, a: 1}
   m_FlipX: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 2841271471603013712, guid: 8dbb7a29c5f20c148a76360ac7f822e3, type: 3}
-  apagarDuplicata: 1
+  apagarDuplicata: 0
 --- !u!114 &4444459133266354550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,3 +151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f6574f61dae6fd45895e21c95354944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemCameraNumber: 0

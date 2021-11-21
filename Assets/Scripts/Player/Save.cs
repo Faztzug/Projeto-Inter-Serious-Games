@@ -81,7 +81,15 @@
     public bool conversouVozDoPovo6 = false;
     public bool coletouCamera6 = false;
     public bool coletouMicrofone6 = false;
+
+    public bool posicionouCameraEsquerda6 = false;
+    public bool posicionouCameraMeio6 = false;
+    public bool posicionouCameraDireita6 = false;
+    public bool posicionouMicrofone6 = false;
+
+    public bool fimDialogoER6 = false;
     public bool coletouProvasContraER6 = false;
+    public bool fimDialogoAssistente6 = false;
 
     public bool fimIntroducaoTurno7 = false;
 
