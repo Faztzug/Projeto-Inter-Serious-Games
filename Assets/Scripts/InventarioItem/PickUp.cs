@@ -19,7 +19,11 @@ public class PickUp : MonoBehaviour
             Debug.Log(gameObject.name + " Achou Verificar turno");
             verificarTurno = GetComponent<VerificarTurnoAtual>();
             if (verificarTurno.Verificar() == false)
+            {
                 this.gameObject.SetActive(false);
+                Destroy(this.gameObject);
+            }
+                
         }
         
 

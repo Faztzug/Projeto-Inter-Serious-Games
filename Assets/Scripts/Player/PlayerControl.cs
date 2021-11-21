@@ -53,9 +53,11 @@ public class PlayerControl : MonoBehaviour
 
             //UpdatePosition();
 
+            perspectiva = false;
+
             if(perspectiva == false) 
             rgbd.MovePosition(Vector2.MoveTowards(currentPosition, touchPosition, velocidade * Time.fixedDeltaTime));
-            else
+            else if(perspectiva == true)
             {
                 //rgbd.MovePosition(Vector3.MoveTowards(currentPositionV3, touchPositionV3, velocidade * Time.fixedDeltaTime));
                 //transform.Translate(Vector3.MoveTowards(currentPositionV3, touchPositionV3, velocidade * Time.fixedDeltaTime));
@@ -67,7 +69,7 @@ public class PlayerControl : MonoBehaviour
                 || Mathf.Abs(distanceX) < margemDeParada && Mathf.Abs(distanceY) < margemDeParada)            
             {
                 andando = false;
-                //rgbd.velocity = Vector2.zero;
+                
                 Debug.Log("Parou de Andar");
             }
         }
@@ -129,7 +131,7 @@ public class PlayerControl : MonoBehaviour
             {
                 andando = false;
                 //rgbd.velocity = Vector2.zero;
-                Debug.Log("Parou de Andar");
+                Debug.Log("Parou de Andar On Collision Stay");
                 contadorPararDeAndarAoColidir = segundosPararDeAndarAoColidir;
             }
         }
@@ -165,7 +167,15 @@ public class PlayerControl : MonoBehaviour
             //Touch touch = Input.GetTouch(0);
             touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            if(perspectiva == true)
+            /*touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            touchPosition = new Vector3(touchPosition.x, touchPosition.y, 0);*/
+
+            /*if(touchPosition == new Vector2(transform.position.x, transform.position.y))
+            {
+                touchPosition = Camera.main.WorldToScreenPoint(Input.mousePosition);
+            }*/
+
+            if (perspectiva == true)
             {
                 //touchPositionV3 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -177,7 +187,7 @@ public class PlayerControl : MonoBehaviour
                 
 
             andando = true;
-            Debug.Log("touch " + touchPositionV3);
+            Debug.Log("touch " + touchPosition);
         }
     }
     

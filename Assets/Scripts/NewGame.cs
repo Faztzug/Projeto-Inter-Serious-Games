@@ -5,12 +5,14 @@ using UnityEngine;
 public class NewGame : MonoBehaviour
 {
     private CrossfadeLoadEffect crossfade;
+    [SerializeField]
     private EstadoDeMundo estadoDeMundo;
     private Save newGameSave;
     [SerializeField]
     private float taxDeAtualizacao = 0.1f;
     [SerializeField]
-    private GameObject rootGameObject;
+    private GameObject BlackScreen;
+    private string cenaQueFoiCarregada;
     private void Start()
     {
         estadoDeMundo = FindObjectOfType<EstadoDeMundo>();
@@ -20,6 +22,7 @@ public class NewGame : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
+        cenaQueFoiCarregada = sceneName;
         DontDestroyOnLoad(this.transform.root.gameObject);
         crossfade = FindObjectOfType<CrossfadeLoadEffect>();
         crossfade.ChamarCrossfade(sceneName, Vector2.zero);
@@ -33,8 +36,14 @@ public class NewGame : MonoBehaviour
 
         if(GameObject.FindGameObjectWithTag("Player") != null)
         {
-            GameObject.FindGameObjectWithTag("Player")
-                .GetComponent<EstadoDeMundo>().save = newGameSave;
+            Instantiate(BlackScreen);
+
+            GameObject player;
+            Debug.Log("Save state set to New Game!");
+            player = GameObject.FindGameObjectWithTag("Player");
+                player.GetComponent<EstadoDeMundo>().save = newGameSave;
+
+            FindObjectOfType<CrossfadeLoadEffect>().ChamarCrossfade(cenaQueFoiCarregada, player.transform.position);
             this.transform.root.gameObject.SetActive(false);
             Destroy(this.transform.root.gameObject);
         }

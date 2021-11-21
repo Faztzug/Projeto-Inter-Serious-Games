@@ -6,7 +6,7 @@ public class NewGameButton : MonoBehaviour
 {
     [SerializeField] private string cena;
     [SerializeField] private GameObject caseSensetive;
-    private EstadoDeMundo estado;
+    [SerializeField] private EstadoDeMundo estado;
     private LoadSceneOnClick loadOnClick;
     private NewGame newGame;
 

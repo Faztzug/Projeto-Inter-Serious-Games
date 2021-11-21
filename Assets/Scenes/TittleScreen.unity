@@ -1403,8 +1403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b9283ed770a6fe4ebd72565499bf632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  taxDeAtualizacao: 0.1
-  rootGameObject: {fileID: 0}
+  estadoDeMundo: {fileID: 0}
+  taxDeAtualizacao: 0.05
+  BlackScreen: {fileID: 1370177311826245896, guid: 5a4e0387104d06e4da289cf6bdddd30f, type: 3}
 --- !u!1001 &445221631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2135,6 +2136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1c93bdeae2a704eb50684e43d12476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  taxaAtualizacao: 0.1
 --- !u!1 &676681633
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,19 +3720,31 @@ MonoBehaviour:
     projetoSucesso: 0
     fimIntroducaoTurno10: 0
     avancoProjeto: 0
-    relacaoAssistente: 2
-    relacaoGovernador: 2
-    relacaoEmpresarioRuim: 2
-    relacaoEmpresarioBom: 2
-    relacaoFazendeiro: 2
-    relacaoVozDoPovo: 2
+    relacaoAssistente: 1
+    relacaoGovernador: 1
+    relacaoEmpresarioRuim: 1
+    relacaoEmpresarioBom: 1
+    relacaoFazendeiro: 1
+    relacaoVozDoPovo: 1
     musicVolume: 1
     SFXVolume: 1
     frameRate: 30
     textTypingSpeed: 10
     textBoxBoundsY: 0.9
     textBoxBoundsX: 0.8
-    inventarioData: []
+    inventarioData:
+    - SlotID: 0
+      itemChildName: 
+    - SlotID: 0
+      itemChildName: 
+    - SlotID: 0
+      itemChildName: 
+    - SlotID: 0
+      itemChildName: 
+    - SlotID: 0
+      itemChildName: 
+    - SlotID: 0
+      itemChildName: 
     testeQuestBarrilVermelho: 0
     testeBarrilVermelhoDestruido: 0
   itemsDatabase:
@@ -6501,6 +6515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cena: Laboratorio_1
   caseSensetive: {fileID: 349325910}
+  estado: {fileID: 0}
 --- !u!114 &1956732960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6513,8 +6528,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b9283ed770a6fe4ebd72565499bf632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  taxDeAtualizacao: 0.1
-  rootGameObject: {fileID: 0}
+  estadoDeMundo: {fileID: 0}
+  taxDeAtualizacao: 0.05
+  BlackScreen: {fileID: 1370177311826245896, guid: 5a4e0387104d06e4da289cf6bdddd30f, type: 3}
 --- !u!1 &2026727626
 GameObject:
   m_ObjectHideFlags: 0
