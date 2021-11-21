@@ -2584,6 +2584,7 @@ MonoBehaviour:
   - {fileID: 1926493872}
   - {fileID: 1751119792}
   - {fileID: 1892429609}
+  paraADireita: 1
 --- !u!1 &559495208
 GameObject:
   m_ObjectHideFlags: 0
