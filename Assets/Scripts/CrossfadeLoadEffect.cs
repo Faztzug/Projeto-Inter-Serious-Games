@@ -43,6 +43,9 @@ public class CrossfadeLoadEffect : MonoBehaviour
         if(FindObjectOfType<SFXPlayer>() != null)
         FindObjectOfType<SFXPlayer>().StopAll();
 
+        
+            
+
         SceneManager.LoadScene(cena);
 
         if (player == null)
@@ -78,7 +81,13 @@ public class CrossfadeLoadEffect : MonoBehaviour
 
         }
 
-        
+        if (FindObjectOfType<GetCameraToCanvas>() != null)
+        {
+            foreach (GetCameraToCanvas item in FindObjectsOfType<GetCameraToCanvas>())
+            {
+                item.SetCameraToCanvas();
+            }
+        }
 
         crossfadeTransition.SetTrigger("End");
     }

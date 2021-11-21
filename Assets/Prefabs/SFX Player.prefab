@@ -62,4 +62,10 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     audioSource: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 033c6300492907f42883e4fcf174702a, type: 3}
+    name: Radio Noise
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
   overallVolume: 1

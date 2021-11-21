@@ -429,12 +429,12 @@ MonoBehaviour:
     projetoSucesso: 0
     fimIntroducaoTurno10: 0
     avancoProjeto: 0
-    relacaoAssistente: 2
-    relacaoGovernador: 2
-    relacaoEmpresarioRuim: 2
-    relacaoEmpresarioBom: 2
-    relacaoFazendeiro: 2
-    relacaoVozDoPovo: 2
+    relacaoAssistente: 1
+    relacaoGovernador: 1
+    relacaoEmpresarioRuim: 1
+    relacaoEmpresarioBom: 1
+    relacaoFazendeiro: 1
+    relacaoVozDoPovo: 1
     musicVolume: 1
     SFXVolume: 1
     frameRate: 30
@@ -462,6 +462,12 @@ MonoBehaviour:
     - {fileID: 2841271471603013712, guid: de5f2edaf72992e4eb69ab8c7f1e1433, type: 3}
     - {fileID: 8178883786478874463, guid: c188f6216da778040a5e1a0de861204d, type: 3}
     - {fileID: 5654511949045924154, guid: d638da67e81a6b546991b202bd9db0f4, type: 3}
+    - {fileID: 2841271471603013712, guid: 8dbb7a29c5f20c148a76360ac7f822e3, type: 3}
+    - {fileID: 2841271471603013712, guid: 77ee72731a289154cb056aec99bd5d90, type: 3}
+    - {fileID: 1332506630945303748, guid: ca6d5e7e799d66749b0bb66494486f49, type: 3}
+    - {fileID: 2841271471603013712, guid: 3b6b7f5a512305847a4fcb0832ea7e1e, type: 3}
+    - {fileID: 2841271471603013712, guid: b6afee44e67c3c248be405a276ca72cd, type: 3}
+    - {fileID: 2841271471603013712, guid: eaaa987e0e226da4594d71a503d50df2, type: 3}
 --- !u!212 &465966177179946060
 SpriteRenderer:
   m_ObjectHideFlags: 0

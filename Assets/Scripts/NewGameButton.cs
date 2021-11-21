@@ -8,11 +8,13 @@ public class NewGameButton : MonoBehaviour
     [SerializeField] private GameObject caseSensetive;
     private EstadoDeMundo estado;
     private LoadSceneOnClick loadOnClick;
+    private NewGame newGame;
 
     private void Start()
     {
         estado = FindObjectOfType<EstadoDeMundo>();
         loadOnClick = GetComponent<LoadSceneOnClick>();
+        newGame = GetComponent<NewGame>();
         caseSensetive.SetActive(false);
     }
 
@@ -23,7 +25,8 @@ public class NewGameButton : MonoBehaviour
             caseSensetive.SetActive(true);
         } else
         {
-            loadOnClick.LoadScene(cena);
+            //loadOnClick.LoadScene(cena);
+            newGame.LoadScene(cena);
         }
     }
 }

@@ -12,7 +12,9 @@ public class TouchBall : MonoBehaviour
     }
     public void Touch(bool drag)
     {
-        transform.position = Input.mousePosition;
+        //transform.position = Input.mousePosition;
+        transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
 
         if (drag == true)
         {

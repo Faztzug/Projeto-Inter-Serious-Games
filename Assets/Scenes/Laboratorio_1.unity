@@ -2755,6 +2755,7 @@ GameObject:
   - component: {fileID: 1129818962}
   - component: {fileID: 1129818961}
   - component: {fileID: 1129818960}
+  - component: {fileID: 1129818963}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2827,6 +2828,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129818963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129818959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9420f5aea32df7646ab1a75a6346d5df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matteColor: {r: 0, g: 0, b: 0, a: 1}
+  referenceMode: 0
+  x: 16
+  y: 9
+  width: 960
+  height: 540
+  onAwake: 1
+  onUpdate: 1
 --- !u!1 &1141576993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3665,46 +3686,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.coletouTerra
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.conversouEB6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimDialogoER6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.coletouCamera6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.coletouFusivel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.rioPurificado4
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.alarmeIncendio2
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.apagouIncendio2
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.turno2Concluido
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.coletouMicrofone6
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
@@ -3716,119 +3697,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.conversouVozDoPovo6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno2
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno3
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno4
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno5
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno7
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.playerGanhouFrasco4
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.conversouFazendeiro6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.investiuHidreletrica
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.posicionouMicrofone6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimDialogoAssistente6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.posicionouCameraMeio6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.puzzleTurno4Concluido
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.coletouProvasContraER6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuEmpresarioRuim
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.olhouCamerasSeguranca4
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.conversouComGovernador5
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.ONUInvestiuSalaContorle5
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.aceitouCompraERDoProjeto
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.mostrouProvasGovernador7
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.posicionouCameraDireita6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.posicionouCameraEsquerda6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimDialogoGovernadorTurno4
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.puzzleExaustores3Resolvido
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.AceitouAOfertaDoEmpresarioRuim
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.AceitouLiberarAguasParaFazendeiro
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.aceitouPlantacaoDePlantaNaFloresta
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.aceitouCompartilharMaquinasFazendeiro
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946061, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}

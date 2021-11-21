@@ -18,7 +18,13 @@ public class DTNarrador : DialogueTrigger
             if (gameObject.scene.name == maquinasCena && estado.save.coletouFusivel == false)
                 DTplayer.StartDialogue(147, 147);
             else if (gameObject.scene.name == salaControleDireitaCena)
-                DTplayer.StartDialogue(153, 153);
+            {
+                player.andando = false;
+                player.emDialogo = true;
+                FindObjectOfType<SFXPlayer>().PlayAudio("Radio Noise");
+                DTplayer.StartDialogue(153, 153, 1f);
+            }
+                
             else if (gameObject.scene.name == hidreletricaCena)
                 DTplayer.StartDialogue(154, 154);
         }
