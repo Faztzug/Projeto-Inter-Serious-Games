@@ -190,6 +190,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3944fb397e93b964ab1e70d44a86fb54, type: 3}
   - {fileID: 21300000, guid: e90ea3498606f174d900f7b0104a8919, type: 3}
   - {fileID: 7482667652216324306, guid: 0b10a459c335e954f9543f2232656c2a, type: 3}
+  - {fileID: -6812170270185271561, guid: 20942c597e527e24ea91989c213608d0, type: 3}
   - {fileID: 21300000, guid: 99df1789798a68347ba4fe9a6a93ee42, type: 3}
   - {fileID: 7482667652216324306, guid: 969cee89f648db54b9b9b4da3524ad59, type: 3}
   - {fileID: 21300000, guid: 83dff4a9771685c4380907127afd8813, type: 3}
@@ -290,6 +291,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 53592deffefbb914ea5e842ab8178cc4, type: 3}
   - {fileID: 21300000, guid: 2a86d4ff10ac69045bbe2c2e4bacb890, type: 3}
   - {fileID: 21300000, guid: 01df86ffdbc16d144ab61a8bc6ba1351, type: 3}
+  - {fileID: 2806678561558414994, guid: b09207ff78ce84a4a8be3ffc217f312b, type: 3}
   - {fileID: 7482667652216324306, guid: 0be8b9ff7308d8145b8bdea20a9c59e5, type: 3}
   m_PackedSpriteNamesToIndex:
   - "M\xE1quina_de_controle"
@@ -433,6 +435,7 @@ SpriteAtlas:
   - Monitor
   - Mesa_2
   - Square
+  - Camera_Puzzle_0
   - Armazenamento
   - Square
   - "\xC1rvore_2"
@@ -533,6 +536,7 @@ SpriteAtlas:
   - Gabinete
   - Nuvem_1
   - Rachadura_7
+  - Gravador_Puzzle_0
   - Square
   m_RenderDataMap: {}
   m_Tag: Cenario
