@@ -30,6 +30,8 @@ public class PlayerControl : MonoBehaviour
 
     [SerializeField] private bool perspectiva;
 
+    [SerializeField] private float modYTouchPosition;
+
 
 
     private void Start()
@@ -166,6 +168,8 @@ public class PlayerControl : MonoBehaviour
         {
             //Touch touch = Input.GetTouch(0);
             touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            touchPosition.y += modYTouchPosition;
 
             /*touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             touchPosition = new Vector3(touchPosition.x, touchPosition.y, 0);*/

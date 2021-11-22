@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 2.3344843, y: -2.2528176}
+  touchPosition: {x: 3.6014414, y: -3.6851091}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -72,6 +72,7 @@ MonoBehaviour:
   emTransicaoDECena: 0
   NPCfalando: {fileID: 0}
   perspectiva: 0
+  modYTouchPosition: -0.6
 --- !u!114 &375688009
 MonoBehaviour:
   m_ObjectHideFlags: 0
