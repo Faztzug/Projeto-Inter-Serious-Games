@@ -46,6 +46,7 @@ public class DTVozDoPovo : DialogueTrigger
         }
         else if (estado.save.turno == 7)
         {
+            if(estado.save.fimIntroducaoTurno7 == false)
             StartDialogue(0, 0);
         }
     }
@@ -89,6 +90,13 @@ public class DTVozDoPovo : DialogueTrigger
                 DTplayer.StartDialogue(86, 86);
             else if (lastSentence == 5)
                 DTplayer.StartDialogue(87, 87);
+
+            //dialogo governador
+            if(estado.save.averigouProvas7 == true)
+            {
+                if (lastSentence == 6)
+                    DTplayer.StartDialogue(192, 192);
+            }
         }
     }
 }

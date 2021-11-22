@@ -12,6 +12,7 @@ public class CrossfadeLoadEffect : MonoBehaviour
     public string tittleScreenCena;
     public string MaquinasCena;
     public string areaGovernamentalForaCena;
+    public string lab1Cena;
 
     private void Start()
     {

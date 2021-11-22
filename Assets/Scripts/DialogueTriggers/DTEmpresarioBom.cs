@@ -108,5 +108,15 @@ public class DTEmpresarioBom : DialogueTrigger
             else if (lastSentence == 28)
                 DTplayer.StartDialogue(68, 68);
         }
+
+        else if (estado.save.turno == 7)
+        {
+            if(estado.save.averigouProvas7 == true)
+            {
+                if (lastSentence == 29)
+                    FindObjectOfType<DTGovernandor>().StartDialogue(38,38);
+            }
+
+        }
     }
 }

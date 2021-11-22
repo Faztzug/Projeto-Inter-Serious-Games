@@ -187,7 +187,7 @@ public class PlayerControl : MonoBehaviour
                 
 
             andando = true;
-            Debug.Log("touch " + touchPosition);
+            //Debug.Log("touch " + touchPosition);
         }
     }
     

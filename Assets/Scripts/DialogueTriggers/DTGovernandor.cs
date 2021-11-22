@@ -55,6 +55,13 @@ public class DTGovernandor : DialogueTrigger
         }
 
 
+        else if (estado.save.turno == 7)
+        {
+            if (estado.save.averigouProvas7 == true && estado.save.mostrouProvasGovernador7 == false)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(5,5);
+        }
+
+
         else if (estado.save.turno == 10)
         {
 
@@ -134,7 +141,16 @@ public class DTGovernandor : DialogueTrigger
         }
 
 
-
+        else if (estado.save.turno == 7)
+        {
+            if(estado.save.averigouProvas7 == true)
+            {
+                if (lastSentence == 39)
+                    DTplayer.StartDialogue(193, 193);
+                else if (lastSentence == 40)
+                    DTplayer.StartDialogue(194, 194);
+            }
+        }
 
 
 

@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 9.335956, y: -4.049386}
+  touchPosition: {x: 1.4788159, y: -0.8962828}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -354,6 +354,10 @@ MonoBehaviour:
       com Pedro."
     - Eu esqueci de trazer as provas comigo, preciso coletar elas na sala de controle
       antes de vir conversar com Pedro
+    - "Somente resolvendo alguns problemas, me desculpem. Precau\xE7\xE3o contra
+      o Leandro"
+    - Trouxe sim, senhor. Tenho tudo aqui
+    - "Est\xE1 tudo bem, senhor Pedro, o que importa \xE9 que conseguiu ver a verdade."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0

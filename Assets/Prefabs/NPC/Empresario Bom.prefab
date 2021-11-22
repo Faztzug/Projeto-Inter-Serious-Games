@@ -291,6 +291,8 @@ MonoBehaviour:
     - "recomendo ao senhor ir conversar com os seus contatos para ver se eles v\xE3o
       ajud\xE1-lo."
     - "Bom estou indo ent\xE3o, lembre-se Paulo de ir atr\xE1s das testemunhas "
+    - "Est\xE1 certo em fazer isso, Leandro \xE9 um homem perigoso. Voc\xEA ver\xE1
+      como estou correta, Pedro."
 --- !u!58 &578460683487209619
 CircleCollider2D:
   m_ObjectHideFlags: 0

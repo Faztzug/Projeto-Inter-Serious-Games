@@ -132,6 +132,10 @@ MonoBehaviour:
       narrativa que eu n\xE3o conhe\xE7o, para eu poder analisar antes de dar alguma
       senten\xE7a final a ele."
     - "Lembre-se at\xE9 o meio dia"
+    - "Hum\u2026 Vamos ver isso, senhora Bianca. Paulo, voc\xEA trouxe provas?"
+    - "Ent\xE3o voc\xEAs estavam falando a verdade\u2026 Isso n\xE3o pode ficar assim\u2026Irei
+      preparar as coisas para poder apreender ele. Voltem para suas casas e Paulo\u2026
+      Me desculpe."
 --- !u!58 &2645994734902680494
 CircleCollider2D:
   m_ObjectHideFlags: 0

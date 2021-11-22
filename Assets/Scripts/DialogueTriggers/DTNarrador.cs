@@ -10,6 +10,7 @@ public class DTNarrador : DialogueTrigger
     [SerializeField] private string salaControleDireitaCena;
     [SerializeField] private string hidreletricaCena;
     [SerializeField] private string lab1Cena;
+    [SerializeField] private string areaGovernamentalFrenteCena;
 
     public override void StartDialogue()
     {
@@ -82,6 +83,14 @@ public class DTNarrador : DialogueTrigger
             {
                 DTplayer.StartDialogue(190, 190);
                 estado.save.averigouProvas7 = true;
+            }
+
+            if(gameObject.scene.name == areaGovernamentalFrenteCena)
+            {
+                if (estado.save.averigouProvas7 == false)
+                    DTplayer.StartDialogue(191, 191);
+                else if (estado.save.averigouProvas7 == true)
+                    FindObjectOfType<SegurancasCollider>().gameObject.SetActive(false);
             }
         }
     }

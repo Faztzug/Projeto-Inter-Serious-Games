@@ -424,9 +424,27 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(94, 94);
 
             //pos introdução
+            //dialogo governador
+            if(estado.save.averigouProvas7 == true)
+            {
+                if (lastSentence == 193)
+                    FindObjectOfType<DTEmpresarioBom>().StartDialogue(28, 28);
+                else if (lastSentence == 194)
+                {
+                    player.emDialogo = true;
+                    FindObjectOfType<DTGovernandor>().StartDialogue(39, 39, 3f);
+                }
+                else if (lastSentence == 195)
+                {
+                    estado.save.mostrouProvasGovernador7 = true;
+                    CrossfadeLoadEffect crossfade;
+                    crossfade = FindObjectOfType<CrossfadeLoadEffect>();
+                    crossfade.ChamarCrossfade(crossfade.lab1Cena, new Vector2(-4f,-2.5f));
+                }
+            }
 
             //fim de turno
-            else if (lastSentence == 189)
+            if (lastSentence == 189)
             {
                 MomentoDeResponder(lastSentence, dialogueData.name);
                 answerManager.GerarRespostas(responses[26]);

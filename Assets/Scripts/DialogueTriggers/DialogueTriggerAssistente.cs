@@ -11,7 +11,16 @@ public class DialogueTriggerAssistente : DialogueTrigger
     {
         base.Start();
 
-        if(gameObject.scene.name != lab1Cena)
+        VerificarTurnoAtual turnoAtual;
+
+        if (GetComponent<VerificarTurnoAtual>() != null)
+        {
+            turnoAtual = GetComponent<VerificarTurnoAtual>();
+            if (turnoAtual.Verificar() == false)
+                transform.parent.gameObject.SetActive(false);
+        }
+
+        if (gameObject.scene.name != lab1Cena)
             fazerAndar.PararAndar();
 
         if (estado.save.turno == 2 && estado.save.fimIntroducaoTurno2 == true)

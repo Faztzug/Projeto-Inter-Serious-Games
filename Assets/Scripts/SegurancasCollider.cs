@@ -5,10 +5,17 @@ using UnityEngine;
 public class SegurancasCollider : MonoBehaviour
 {
     EstadoDeMundo estado;
+    VerificarTurnoAtual turnoAtual;
 
     private void Start()
     {
         estado = FindObjectOfType<EstadoDeMundo>();
+        turnoAtual = GetComponent<VerificarTurnoAtual>();
+
+        if(turnoAtual.Verificar() == false)
+        {
+            gameObject.SetActive(false);
+        }
 
         if(estado.save.turno == 5)
         {
@@ -17,9 +24,9 @@ public class SegurancasCollider : MonoBehaviour
                 gameObject.SetActive(false);
             }
         }
-        else if(estado.save.turno != 5)
+        /*else if(estado.save.turno != 5)
         {
             gameObject.SetActive(false);
-        }
+        }*/
     }
 }
