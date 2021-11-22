@@ -111,6 +111,14 @@
 
     public bool fimIntroducaoTurno9 = false;
 
+    public bool concertouAMaquinaNaHidreletrica9 = false;
+    public bool puzzleConcertouHidreletrica9 = false;
+
+    public bool puzzleConcertouMaquinas9 = false;
+
+    public bool puzzleAverigouOPC9 = false;
+    public bool puzzleConcertouSalaDeControle9 = false;
+
     public bool projetoSucesso = false;
 
     public bool fimIntroducaoTurno10 = false;

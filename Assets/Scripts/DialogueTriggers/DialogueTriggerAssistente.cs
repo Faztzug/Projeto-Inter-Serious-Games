@@ -58,7 +58,18 @@ public class DialogueTriggerAssistente : DialogueTrigger
         else if (estado.save.turno == 8 && estado.save.fimIntroducaoTurno8 == true)
             fazerAndar.PararAndar();
         else if (estado.save.turno == 9 && estado.save.fimIntroducaoTurno9 == true)
+        {
             fazerAndar.PararAndar();
+            
+            if(estado.save.puzzleConcertouHidreletrica9 == false
+           || estado.save.puzzleConcertouMaquinas9 == false
+           || estado.save.puzzleConcertouSalaDeControle9 == false)
+            {
+                if(gameObject.scene.name == lab1Cena)
+                StartDialogue(136,136,0.5f);
+            }
+        }
+            
         else if (estado.save.turno == 10 && estado.save.fimIntroducaoTurno10 == true)
             fazerAndar.PararAndar();
     }
@@ -447,6 +458,16 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 DTplayer.StartDialogue(100, 100);
             else if (lastSentence == 121)
                 estado.save.fimIntroducaoTurno9 = true;
+
+            //puzzle
+
+            if(estado.save.fimIntroducaoTurno9 == true)
+            {
+                if (lastSentence == 137)
+                    DTplayer.StartDialogue(195,195);
+                else if (lastSentence == 138)
+                    DTplayer.StartDialogue(196, 196);
+            }
 
 
         }

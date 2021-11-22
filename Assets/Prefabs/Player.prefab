@@ -358,6 +358,25 @@ MonoBehaviour:
       o Leandro"
     - Trouxe sim, senhor. Tenho tudo aqui
     - "Est\xE1 tudo bem, senhor Pedro, o que importa \xE9 que conseguiu ver a verdade."
+    - O que houve, Daniela?
+    - Entendido, irei rapidamente.
+    - "Meu deus\u2026 O que aconteceu aqui?"
+    - "Est\xE1 pedindo uma senha\u2026 Quem que colocou isso? Precisarei decodificar
+      de algum jeito"
+    - "Seja l\xE1 quem for, deixou a senha escrita no papel\u2026 N\xE3o \xE9 a pessoa
+      mais esperta do mundo"
+    - "Pera, tem algo aqui atr\xE1s\u2026 o \xF4nibus espacial est\xE1 pronto?? Precisarei
+      avisar Pedro urgente"
+    - "Aumentaram a press\xE3o\u2026 Se eu tivesse deixado mais tempo iria causar
+      danos irrevers\xEDveis."
+    - "Hum\u2026 Aquilo s\xE3o pegadas? e tem um broche no ch\xE3o\u2026? Obviamente
+      da empresa de Leandro"
+    - "A m\xE1quina est\xE1 quebrada, de continuar assim a \xE1gua vai cair toda,
+      causando inunda\xE7\xF5es e perda de energia, melhor consertar r\xE1pido."
+    - "Um peda\xE7o de cip\xF3 aqui? Isso quer dizer que a pessoa veio da floresta\u2026
+      Hum\u2026Preciso resolver os assuntos pendentes aqui dentro e ir falar com
+      Pedro sobre o que achei."
+    - "Aparentemente houveram problemas na Maquinaria e na Hidrel\xE9trica tamb\xE9m..."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,6 +454,10 @@ MonoBehaviour:
     InvestiuHidreletrica8: 0
     InvestiuExaustores8: 0
     fimIntroducaoTurno9: 0
+    puzzleConcertouHidreletrica9: 0
+    puzzleConcertouMaquinas9: 0
+    puzzleAverigouOPC9: 0
+    puzzleConcertouSalaDeControle9: 0
     projetoSucesso: 0
     fimIntroducaoTurno10: 0
     avancoProjeto: 0

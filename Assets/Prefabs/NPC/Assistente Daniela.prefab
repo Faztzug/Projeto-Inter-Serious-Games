@@ -509,6 +509,9 @@ MonoBehaviour:
     - Antes do Senhor ir tome esse frasco para poder coletar uma amostra
     - "Doutor eu consegui escutar o'que o senhor falou para ele \xE9 mesmo verdade
       de fechar o projeto ?"
+    - "Doutor, urgente\u2026 meu deus\u2026 Tantos locais\u2026"
+    - "Diversos locais come\xE7aram a reportar pane, doutor\u2026 Precisamos consertar
+      rapidamente antes de tudo ser destru\xEDdo."
 --- !u!58 &7849470484585874826
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -62,6 +62,18 @@ public class FimDeTurno : MonoBehaviour
             else if (estado.save.turno == 7 && estado.save.mostrouProvasGovernador7 == true)
             {
                 dtPlayer.StartDialogue(187, 188);
+            }
+
+
+            else if (estado.save.turno == 9 
+                && estado.save.puzzleConcertouHidreletrica9 == true
+                && estado.save.puzzleConcertouMaquinas9 == true
+                && estado.save.puzzleConcertouSalaDeControle9 == true)
+            {
+                EncerrarTurno();
+                //ação provisoria pro turno 10
+
+                estado.save.projetoSucesso = true;
             }
         }
         

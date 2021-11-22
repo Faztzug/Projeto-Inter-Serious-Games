@@ -33,6 +33,15 @@ public class AlarmeAnimation : MonoBehaviour
             music.ChangeMusic(alarmeSom);
             estado.save.alarmePoluicaoRio4 = true;
         }
+        else if (estado.save.turno == 9 && estado.save.fimIntroducaoTurno9 == true
+           && (estado.save.puzzleConcertouHidreletrica9 == false 
+           || estado.save.puzzleConcertouMaquinas9 == false
+           || estado.save.puzzleConcertouSalaDeControle9 == false))
+        {
+            GetComponent<Animator>().SetTrigger("Incendio");
+            music.ChangeMusic(alarmeSom);
+            
+        }
     }
 
     

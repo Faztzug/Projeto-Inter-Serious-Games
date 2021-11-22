@@ -496,6 +496,13 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(119, 119);
             else if (lastSentence == 101)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(120, 120);
+
+             //puzzle
+             if(estado.save.fimIntroducaoTurno9 == true)
+            {
+                if(lastSentence == 196)
+                    FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(137, 137);
+            }
         }
 
         else if (estado.save.turno == 10)

@@ -86,13 +86,13 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     audioSource: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 64aaa09033a142e46b9c2d8d1b8e15db, type: 3}
+  - clip: {fileID: 8300000, guid: 3d5c91d9f990ce746a471f9de6af82d8, type: 3}
     name: A Hidreletrica
     volume: 1
     pitch: 1
     loop: 1
     audioSource: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 169e0662c8fe51e4ab45ee9fbced8d1a, type: 3}
+  - clip: {fileID: 8300000, guid: ca14be2fb52a1974fa079d339826ed92, type: 3}
     name: O Rio
     volume: 1
     pitch: 1
