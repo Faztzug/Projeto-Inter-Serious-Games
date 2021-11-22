@@ -255,7 +255,13 @@ MonoBehaviour:
       produ\xE7\xE3o e faltar alimento."
     - Bom dia, doutor Paulo.
     - "Com toda certeza, doutor. Estarei l\xE1."
-    - "Ah, doutor, \xE9 que XXXXX"
+    - "Ah, doutor, \xE9 que n\xF3s estamos num impasse aqui. "
+    - "Alguma coisa aconteceu com o armazenamento de \xE1gua da cidade e algu\xE9m
+      comprou boa parte dos gal\xF5es de \xE1gua\u2026 "
+    - "Imagino que voc\xEA tenha ideia quem pode ter feito isso e agora est\xE1 tendo
+      uma crise. "
+    - "Eu preciso de \xE1gua para poder cuidar das planta\xE7\xF5es e se voc\xEA
+      puder compartilhar comigo, eu ficaria agradecido. "
 --- !u!58 &1623160345188279258
 CircleCollider2D:
   m_ObjectHideFlags: 0

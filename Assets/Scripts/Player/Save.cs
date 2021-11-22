@@ -93,7 +93,9 @@
 
     public bool fimIntroducaoTurno7 = false;
 
+    public bool averigouProvas7 = false;
     public bool mostrouProvasGovernador7 = false;
+
 
     public bool aceitouDarAguaFazendeiro7 = false;
     public bool biancaInvestiuHidreletrica7 = false;

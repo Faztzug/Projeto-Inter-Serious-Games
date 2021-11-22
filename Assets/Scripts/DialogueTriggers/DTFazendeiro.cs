@@ -4,6 +4,20 @@ using UnityEngine;
 
 public class DTFazendeiro : DialogueTrigger
 {
+    public override void Start()
+    {
+        base.Start();
+
+        VerificarTurnoAtual turnoAtual;
+
+        if (GetComponent<VerificarTurnoAtual>() != null)
+        {
+            turnoAtual = GetComponent<VerificarTurnoAtual>();
+            if (turnoAtual.Verificar() == false)
+                transform.parent.gameObject.SetActive(false);
+        }
+    }
+
     public override void StartDialogue()
     {
         if(estado.save.turno == 1)

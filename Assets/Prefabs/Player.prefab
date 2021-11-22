@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 3.7613585, y: -3.7763765}
+  touchPosition: {x: 9.335956, y: -4.049386}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -350,6 +350,10 @@ MonoBehaviour:
     - "Agora devo dar uma resposta para Raul e Jo\xE3o"
     - "A \xE1gua deve ser distribu\xEDda para a popula\xE7\xE3o ou para a fazenda?\r"
     - Onde devo investir o incentivo de Bianca?
+    - "Todas as provas est\xE3o armazenadas com sucesso, agora \xE9 somente ir conversar
+      com Pedro."
+    - Eu esqueci de trazer as provas comigo, preciso coletar elas na sala de controle
+      antes de vir conversar com Pedro
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +420,7 @@ MonoBehaviour:
     coletouProvasContraER6: 0
     fimDialogoAssistente6: 0
     fimIntroducaoTurno7: 0
+    averigouProvas7: 0
     mostrouProvasGovernador7: 0
     aceitouDarAguaFazendeiro7: 0
     biancaInvestiuHidreletrica7: 0
