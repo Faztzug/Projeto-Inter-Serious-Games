@@ -93,6 +93,23 @@ public class DTNarrador : DialogueTrigger
                     FindObjectOfType<SegurancasCollider>().gameObject.SetActive(false);
             }
         }
+
+        else if (estado.save.turno == 8)
+        {
+
+        }
+
+        else if (estado.save.turno == 9)
+        {
+            if (gameObject.scene.name == salaControleMeioCena)
+            {
+                if(estado.save.puzzleConcertouSalaDeControle9 == true 
+                    && (estado.save.puzzleConcertouHidreletrica9 == false
+                    || estado.save.puzzleConcertouMaquinas9 == false))
+                DTplayer.StartDialogue(205, 205);
+                
+            }
+        }
     }
     public override void EndOfDialogue(int lastSentence, string NPCname)
     {

@@ -20,11 +20,7 @@ public class SFXPlayer : MonoBehaviour
         }
 
         DontDestroy();
-    }
 
-
-    private void Start()
-    {
         foreach (Sound sound in sounds)
         {
             sound.audioSource = gameObject.AddComponent<AudioSource>();
@@ -34,6 +30,12 @@ public class SFXPlayer : MonoBehaviour
             sound.audioSource.loop = sound.loop;
 
         }
+    }
+
+
+    private void Start()
+    {
+        
 
         
 
