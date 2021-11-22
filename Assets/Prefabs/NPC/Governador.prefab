@@ -136,6 +136,13 @@ MonoBehaviour:
     - "Ent\xE3o voc\xEAs estavam falando a verdade\u2026 Isso n\xE3o pode ficar assim\u2026Irei
       preparar as coisas para poder apreender ele. Voltem para suas casas e Paulo\u2026
       Me desculpe."
+    - "Bom dia, Paulo, como voc\xEA est\xE1?"
+    - "Sim sim, est\xE1 tudo preparado para irmos atr\xE1s de Leandro. Vamos quando
+      voc\xEA estiver preparado."
+    - "Excelente. Fique aqui que irei fazer a liga\xE7\xE3o"
+    - "Not\xEDcias ruins\u2026 Quando a pol\xEDcia chegou, Leandro j\xE1 tinha fugido,
+      est\xE1 agora foragido, mas a pol\xEDcia vai continuar no caso. N\xE3o iremos
+      desistir."
 --- !u!58 &2645994734902680494
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -165,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fazerAndar: {fileID: 0}
+  dialogueData: {fileID: 0}
 --- !u!1 &2645994735013250889
 GameObject:
   m_ObjectHideFlags: 0

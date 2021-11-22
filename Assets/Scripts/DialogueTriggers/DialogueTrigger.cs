@@ -10,7 +10,7 @@ public class DialogueTrigger : MonoBehaviour
     protected PlayerControl player;
     protected DialogueTriggerPlayer DTplayer;
     [HideInInspector] public FazerAndar fazerAndar;
-    protected DialogueData dialogueData;
+    [HideInInspector] public DialogueData dialogueData;
     
 
     public virtual void Start()

@@ -98,5 +98,11 @@ public class DTVozDoPovo : DialogueTrigger
                     DTplayer.StartDialogue(192, 192);
             }
         }
+
+        else if (estado.save.turno == 8)
+        {
+            if(lastSentence == 7)
+                DTplayer.StartDialogue(208, 208);
+        }
     }
 }

@@ -64,6 +64,11 @@ public class FimDeTurno : MonoBehaviour
                 dtPlayer.StartDialogue(187, 188);
             }
 
+            else if (estado.save.turno == 8 && estado.save.conversouGovernador8 == true)
+            {
+                dtPlayer.StartDialogue(210, 210);
+            }
+
 
             else if (estado.save.turno == 9 
                 && estado.save.puzzleConcertouHidreletrica9 == true

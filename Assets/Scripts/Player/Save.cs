@@ -8,6 +8,9 @@
     public int turno = 1;
     public int ato = 1;
 
+    [Range(0, 100)]
+    public int avancoProjeto = 0;
+
     public string cenaAtual = "Laboratorio_1";
 
     public float _positionX;
@@ -103,6 +106,7 @@
 
 
     public bool fimIntroducaoTurno8 = false;
+    public bool conversouGovernador8 = false;
 
     public bool InvestiuSalaContorle8 = false;
     public bool InvestiuMaquinaria8 = false;
@@ -123,8 +127,7 @@
 
     public bool fimIntroducaoTurno10 = false;
 
-    [Range(0,100)]
-    public int avancoProjeto = 0;
+    
 
     //estrelas
     [Range(0, 5)] public int relacaoAssistente = 2;

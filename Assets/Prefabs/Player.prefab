@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 1.4788159, y: -0.8962828}
+  touchPosition: {x: 2.3344843, y: -2.2528176}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -377,6 +377,11 @@ MonoBehaviour:
       Hum\u2026Preciso resolver os assuntos pendentes aqui dentro e ir falar com
       Pedro sobre o que achei."
     - "Aparentemente houveram problemas na Maquinaria e na Hidrel\xE9trica tamb\xE9m..."
+    - Bom dia, senhor Pedro
+    - "Estou bem, senhor, e voc\xEA? Daniela falou que voc\xEA queria falar comigo?"
+    - Paz para continuar o trabalho agora.
+    - "Isso n\xE3o pode acabar assim\u2026 Iremos ajudar no que for poss\xEDvel."
+    - Onde devo investir a verba extra que sobrou?
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,6 +397,7 @@ MonoBehaviour:
   save:
     turno: 1
     ato: 1
+    avancoProjeto: 0
     cenaAtual: Laboratorio_1
     _positionX: 0
     _positionY: 0
@@ -449,18 +455,19 @@ MonoBehaviour:
     biancaInvestiuHidreletrica7: 0
     biancaInvestiuMaquinas7: 0
     fimIntroducaoTurno8: 0
+    conversouGovernador8: 0
     InvestiuSalaContorle8: 0
     InvestiuMaquinaria8: 0
     InvestiuHidreletrica8: 0
     InvestiuExaustores8: 0
     fimIntroducaoTurno9: 0
+    concertouAMaquinaNaHidreletrica9: 0
     puzzleConcertouHidreletrica9: 0
     puzzleConcertouMaquinas9: 0
     puzzleAverigouOPC9: 0
     puzzleConcertouSalaDeControle9: 0
     projetoSucesso: 0
     fimIntroducaoTurno10: 0
-    avancoProjeto: 0
     relacaoAssistente: 1
     relacaoGovernador: 1
     relacaoEmpresarioRuim: 1
@@ -654,6 +661,8 @@ MonoBehaviour:
   - Fingir que Aceita
   - "Apoiar Jo\xE3o na distribui\xE7\xE3o de \xE1gua para a fazenda"
   - "Apoiar Raul na distribui\xE7\xE3o de \xE1gua para a popula\xE7\xE3o"
+  - Estou preparado
+  - "Ainda n\xE3o"
 --- !u!114 &375688004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,6 +691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fazerAndar: {fileID: 0}
+  dialogueData: {fileID: 0}
   answerManager: {fileID: 0}
   dialogueResponses: {fileID: 0}
   responses: []

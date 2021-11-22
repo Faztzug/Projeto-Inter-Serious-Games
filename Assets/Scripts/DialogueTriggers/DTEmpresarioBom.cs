@@ -118,5 +118,15 @@ public class DTEmpresarioBom : DialogueTrigger
             }
 
         }
+
+        else if (estado.save.turno == 8)
+        {
+            if (estado.save.fimIntroducaoTurno8 == true)
+            {
+                if (lastSentence == 30)
+                    FindObjectOfType<DTVozDoPovo>().StartDialogue(6, 6);
+            }
+
+        }
     }
 }

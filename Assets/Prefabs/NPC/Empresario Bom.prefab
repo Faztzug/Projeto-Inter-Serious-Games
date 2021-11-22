@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fazerAndar: {fileID: 0}
+  dialogueData: {fileID: 0}
 --- !u!114 &578460683487209620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +294,7 @@ MonoBehaviour:
     - "Bom estou indo ent\xE3o, lembre-se Paulo de ir atr\xE1s das testemunhas "
     - "Est\xE1 certo em fazer isso, Leandro \xE9 um homem perigoso. Voc\xEA ver\xE1
       como estou correta, Pedro."
+    - "Finalmente est\xE1 acontecendo, esperei anos por isso."
 --- !u!58 &578460683487209619
 CircleCollider2D:
   m_ObjectHideFlags: 0

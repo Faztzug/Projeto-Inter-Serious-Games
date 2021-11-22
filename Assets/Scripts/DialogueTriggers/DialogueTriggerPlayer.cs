@@ -485,6 +485,38 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 98)
                 estado.save.fimIntroducaoTurno8 = true;
 
+            //dialogo governador
+            else if (lastSentence == 207)
+                FindObjectOfType<DTGovernandor>().StartDialogue(40,40);
+            else if (lastSentence == 208)
+                FindObjectOfType<DTGovernandor>().StartDialogue(41, 41);
+            else if (lastSentence == 209)
+            {
+                estado.save.conversouGovernador8 = true;
+                player.emDialogo = true;
+                FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(-4, 0.6f));
+                FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(-1.5f, -2.1f), 0.7f);
+                FindObjectOfType<DTGovernandor>().StartDialogue(43, 43, 4f);
+            }
+            else if (lastSentence == 210)
+            {
+                
+                CrossfadeLoadEffect crossfade;
+                crossfade = FindObjectOfType<CrossfadeLoadEffect>();
+                crossfade.ChamarCrossfade(crossfade.lab1Cena, new Vector2(4f, -2.5f));
+            }
+
+            //escolhas
+            else if (lastSentence == 211)
+            {
+                MomentoDeResponder(lastSentence, dialogueData.name);
+                answerManager.GerarRespostas(responses[20]);
+                answerManager.GerarRespostas(responses[21]);
+                answerManager.GerarRespostas(responses[22]);
+                answerManager.GerarRespostas(responses[23]);
+            }
+            else if (lastSentence == 123)
+                FindObjectOfType<FimDeTurno>().EncerrarTurno();
 
         }
 
@@ -850,6 +882,63 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 estado.save.biancaInvestiuHidreletrica7 = false;
                 StartDialogue(122, 122);
             }
+        }
+
+        if (estado.save.turno == 8)
+        {
+            //governador
+            if(NPCPerguntando == FindObjectOfType<DTGovernandor>().dialogueData.dialogue.characterName)
+            {
+                if (resposta == dialogueResponses.Responses[28])
+                {
+
+
+                    FindObjectOfType<DTGovernandor>().StartDialogue(42, 42);
+                }
+                else if (resposta == dialogueResponses.Responses[29])
+                {
+                    player.emDialogo = false;
+                    player.emResposdendo = false;
+                }
+            }
+
+            if (NPCPerguntando == dialogueData.name
+                && resposta == dialogueResponses.Responses[20])
+            {
+                estado.save.relacaoEmpresarioBom++;
+
+                estado.save.avancoProjeto++;
+                estado.save.InvestiuSalaContorle8 = true;
+                StartDialogue(122, 122);
+            }
+            else if (NPCPerguntando == dialogueData.name
+              && resposta == dialogueResponses.Responses[21])
+            {
+                estado.save.relacaoVozDoPovo++;
+                estado.save.avancoProjeto++;
+                estado.save.InvestiuMaquinaria8 = true;
+                StartDialogue(122, 122);
+            }
+            else if (NPCPerguntando == dialogueData.name
+                && resposta == dialogueResponses.Responses[22])
+            {
+                estado.save.relacaoFazendeiro++;
+                estado.save.avancoProjeto++;
+                estado.save.InvestiuHidreletrica8 = true;
+                StartDialogue(122, 122);
+            }
+            else if (NPCPerguntando == dialogueData.name
+              && resposta == dialogueResponses.Responses[23])
+            {
+                estado.save.relacaoGovernador++;
+                estado.save.avancoProjeto++;
+
+                estado.save.InvestiuExaustores8 = true;
+                StartDialogue(122, 122);
+            }
+
+
+
         }
     }
 }
