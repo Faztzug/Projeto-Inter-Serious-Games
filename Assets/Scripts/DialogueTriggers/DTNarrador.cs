@@ -76,6 +76,14 @@ public class DTNarrador : DialogueTrigger
                 }
             }
         }
+        else if (estado.save.turno == 7)
+        {
+            if(gameObject.scene.name == salaControleMeioCena)
+            {
+                DTplayer.StartDialogue(190, 190);
+                estado.save.averigouProvas7 = true;
+            }
+        }
     }
     public override void EndOfDialogue(int lastSentence, string NPCname)
     {

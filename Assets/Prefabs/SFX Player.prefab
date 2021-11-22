@@ -68,4 +68,10 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     audioSource: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 12fa404e03d12ec47abd319e7c61460b, type: 3}
+    name: Coletou Item
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
   overallVolume: 1

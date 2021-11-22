@@ -46,6 +46,8 @@ public class PickUp : MonoBehaviour
                     {
                         if (inventory.isFull[i] == false)
                         {
+                            //sonzinho
+                            FindObjectOfType<SFXPlayer>().PlayAudio("Coletou Item");
                             //Vai ser adicionado.
                             inventory.isFull[i] = true;
                             Instantiate(itemButton, inventory.slotsGameObject[i].transform, false);

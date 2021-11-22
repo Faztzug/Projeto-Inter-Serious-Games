@@ -9,6 +9,15 @@ public class DTEmpresarioRuim : DialogueTrigger
     {
         base.Start();
 
+        VerificarTurnoAtual turnoAtual;
+
+        if(GetComponent<VerificarTurnoAtual>() != null)
+        {
+            turnoAtual = GetComponent<VerificarTurnoAtual>();
+            if (turnoAtual.Verificar() == false)
+                transform.parent.gameObject.SetActive(false);
+        }
+
         if (estado.save.turno == 5 && estado.save.conversouComGovernador5 == true)
         {
             //FindObjectOfType<DialogueTriggerAssistente>().transform.parent.position = new Vector2(40, -20);

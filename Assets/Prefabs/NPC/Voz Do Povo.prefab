@@ -255,7 +255,10 @@ MonoBehaviour:
     - "Bom dia, Paulo. Primeiramente gostaria de saber de novidades sobre a situa\xE7\xE3o
       com o patife."
     - Pode contar comigo, sim.
-    - Entretanto YYYYY
+    - "Entretanto, o povo precisa urgente dessa \xE1gua, n\xE3o d\xE1 para se viver
+      sem. "
+    - "Dando a \xE1gua para as fazendas far\xE1 o povo passar por ainda mais necessidades
+      e n\xE3o podemos deixar isso acontecer, Paulo."
 --- !u!58 &3834709144419141984
 CircleCollider2D:
   m_ObjectHideFlags: 0
