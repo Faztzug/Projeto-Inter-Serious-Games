@@ -42,11 +42,11 @@ public class NPCAnimation : MonoBehaviour
         //esquerda
         else if (fazerAndar.distanceX < -0.1 &&
             fazerAndar.distanceX < Mathf.Abs(fazerAndar.distanceY) * -1)
-            anim.SetBool("WalkFrente", true);
+            anim.SetBool("WalkEsquerda", true);
         //direita
         else if (fazerAndar.distanceX > 0.1 &&
             fazerAndar.distanceX > Mathf.Abs(fazerAndar.distanceY))
-            anim.SetBool("WalkCostas", true);
+            anim.SetBool("WalkDireita", true);
 
 
         anim.SetFloat("DistanceX", fazerAndar.distanceX);
