@@ -126,6 +126,8 @@
     public bool projetoSucesso = false;
 
     public bool fimIntroducaoTurno10 = false;
+    public bool iniciarPuzzleTurno10 = false;
+    public bool preparouArmadilha10 = false;
 
     
 

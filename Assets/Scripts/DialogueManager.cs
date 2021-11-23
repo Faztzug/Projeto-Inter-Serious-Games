@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     private Dialogue dialogueData;
 
     private TextMeshProUGUI dialogueTextMeshPro;
+    [SerializeField]
     private TypingEffect typingEffect;
     private TextBoxDialogue textBox;
 
@@ -22,7 +23,7 @@ public class DialogueManager : MonoBehaviour
 
     private EstadoDeMundo estadoDeMundo;
 
-    private void Start()
+    private void Awake()
     {
         NextSentenceFirstCall = true;
         typingEffect = FindObjectOfType<TypingEffect>();
@@ -33,6 +34,22 @@ public class DialogueManager : MonoBehaviour
 
         dialogueData = GetComponent<DialogueData>().dialogue;
         numberSentences = dialogueData.sentences.Length;
+
+        playerControl = FindObjectOfType<PlayerControl>();
+        estadoDeMundo = playerControl.gameObject.GetComponent<EstadoDeMundo>();
+    }
+
+    private void Start()
+    {
+        //NextSentenceFirstCall = true;
+        typingEffect = FindObjectOfType<TypingEffect>();
+        dialogueTextMeshPro = typingEffect.gameObject.GetComponent<TextMeshProUGUI>();
+        textBox = FindObjectOfType<TextBoxDialogue>();
+
+        //dialogueTrigger = GetComponent<DialogueTrigger>();
+
+        //dialogueData = GetComponent<DialogueData>().dialogue;
+        //numberSentences = dialogueData.sentences.Length;
 
         playerControl = FindObjectOfType<PlayerControl>();
         estadoDeMundo = playerControl.gameObject.GetComponent<EstadoDeMundo>();

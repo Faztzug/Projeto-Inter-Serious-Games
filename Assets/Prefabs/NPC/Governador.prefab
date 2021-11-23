@@ -143,6 +143,13 @@ MonoBehaviour:
     - "Not\xEDcias ruins\u2026 Quando a pol\xEDcia chegou, Leandro j\xE1 tinha fugido,
       est\xE1 agora foragido, mas a pol\xEDcia vai continuar no caso. N\xE3o iremos
       desistir."
+    - "Bom dia, Paulo. Fizemos um rastreamento baseado em suas pistas e conseguimos
+      achar o paradeiro de Leandro. Est\xE1 preparado?"
+    - Prepare armadilhas para ele, caso ele tente fugir
+    - "N\xF3s j\xE1 fechamos o seu projeto, Leandro. Desista que \xE9 melhor para
+      voc\xEA."
+    - FINALMENTE
+    - "Iremos agora resolver tudo no tribunal. Voc\xEA est\xE1 preso."
 --- !u!58 &2645994734902680494
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -173,6 +180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fazerAndar: {fileID: 0}
   dialogueData: {fileID: 0}
+  florestaMeioCena: Floresta_1
+  florestaEsquerdaCena: Floresta_3
 --- !u!1 &2645994735013250889
 GameObject:
   m_ObjectHideFlags: 0

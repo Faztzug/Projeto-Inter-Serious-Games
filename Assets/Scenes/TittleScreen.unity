@@ -2090,7 +2090,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1942262706}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -2099,7 +2099,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &610665952
 RectTransform:
@@ -3656,6 +3656,7 @@ MonoBehaviour:
   save:
     turno: 1
     ato: 1
+    avancoProjeto: 0
     cenaAtual: Laboratorio_1
     _positionX: 0
     _positionY: 0
@@ -3707,19 +3708,27 @@ MonoBehaviour:
     coletouProvasContraER6: 0
     fimDialogoAssistente6: 0
     fimIntroducaoTurno7: 0
+    averigouProvas7: 0
     mostrouProvasGovernador7: 0
     aceitouDarAguaFazendeiro7: 0
     biancaInvestiuHidreletrica7: 0
     biancaInvestiuMaquinas7: 0
     fimIntroducaoTurno8: 0
+    conversouGovernador8: 0
     InvestiuSalaContorle8: 0
     InvestiuMaquinaria8: 0
     InvestiuHidreletrica8: 0
     InvestiuExaustores8: 0
     fimIntroducaoTurno9: 0
+    concertouAMaquinaNaHidreletrica9: 0
+    puzzleConcertouHidreletrica9: 0
+    puzzleConcertouMaquinas9: 0
+    puzzleAverigouOPC9: 0
+    puzzleConcertouSalaDeControle9: 0
     projetoSucesso: 0
     fimIntroducaoTurno10: 0
-    avancoProjeto: 0
+    iniciarPuzzleTurno10: 0
+    preparouArmadilha10: 0
     relacaoAssistente: 1
     relacaoGovernador: 1
     relacaoEmpresarioRuim: 1

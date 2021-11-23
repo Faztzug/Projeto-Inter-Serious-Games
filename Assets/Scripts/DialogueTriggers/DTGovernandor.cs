@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DTGovernandor : DialogueTrigger
 {
+    public string florestaMeioCena;
+    public string florestaEsquerdaCena;
+
     public override void Start()
     {
         base.Start();
@@ -16,14 +19,30 @@ public class DTGovernandor : DialogueTrigger
         }
         else if (estado.save.turno == 6)
         {
-            StartDialogue(19, 19);
+            //StartDialogue(19, 19);
         }
 
         
 
         else if (estado.save.turno == 10)
         {
-            StartDialogue(27, 27);
+            //StartDialogue(27, 27);
+
+            if(estado.save.iniciarPuzzleTurno10 == true)
+            {
+                if(gameObject.scene.name == florestaMeioCena)
+                {
+                    if (estado.save.preparouArmadilha10 == true)
+                        Destroy(this.transform.parent.gameObject);
+                    else
+                    {
+                        player.emDialogo = true;
+                        StartDialogue(45, 45, 4f);
+                    }
+                    
+                }
+                    
+            }
         }
     }
 
@@ -70,8 +89,10 @@ public class DTGovernandor : DialogueTrigger
 
         else if (estado.save.turno == 10)
         {
-
+            if(estado.save.fimIntroducaoTurno10 == false)
             StartDialogue(27, 27);
+            else if(estado.save.fimIntroducaoTurno10 == true && estado.save.iniciarPuzzleTurno10 == false)
+                StartDialogue(44, 44);
         }
 
     }
@@ -191,6 +212,33 @@ public class DTGovernandor : DialogueTrigger
                 DTplayer.StartDialogue(106, 106);
             else if (lastSentence == 29)
                 DTplayer.StartDialogue(107, 107);
+
+            //final
+            else if(lastSentence == 45)
+                DTplayer.StartDialogue(211, 211);
+            else if (lastSentence == 46)
+                DTplayer.StartDialogue(212, 212);
+
+            else if (lastSentence == 47)
+            {
+                player.emDialogo = true;
+
+                DTEmpresarioRuim DTER = FindObjectOfType<DTEmpresarioRuim>();
+
+                DTER.fazerAndar.AndePara(new Vector2(1f, -4.5f));
+                DTER.fazerAndar.AndePara(new Vector2(40f, -5.0f), 0.35f);
+
+                DTER.StartDialogue(61,61, 6f);
+
+            }
+            else if (lastSentence == 48)
+                DTplayer.StartDialogue(214, 214);
+
+            else if (lastSentence == 49)
+            {
+                player.emDialogo = true;
+                FindObjectOfType<DTNarrador>().StartDialogue(1, 2);
+            }
         }
 
 

@@ -13,6 +13,8 @@ public class CrossfadeLoadEffect : MonoBehaviour
     public string MaquinasCena;
     public string areaGovernamentalForaCena;
     public string lab1Cena;
+    public string florestaMeio;
+    public string florestaEsquerda;
 
     private void Start()
     {
@@ -61,10 +63,11 @@ public class CrossfadeLoadEffect : MonoBehaviour
 
             playerControl.touchPosition = novaPosicao;
             player.transform.position = novaPosicao;
+            playerControl.touchPosition = player.transform.position;
+            playerControl.perspectiva = false;
 
-            
 
-            playerControl.ChecarCamera();
+            //playerControl.ChecarCamera();
 
             if(cena != tittleScreenCena)
             {

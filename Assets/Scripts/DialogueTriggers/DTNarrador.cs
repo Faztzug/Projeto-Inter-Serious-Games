@@ -110,6 +110,9 @@ public class DTNarrador : DialogueTrigger
                 
             }
         }
+
+
+        
     }
     public override void EndOfDialogue(int lastSentence, string NPCname)
     {
@@ -117,9 +120,16 @@ public class DTNarrador : DialogueTrigger
 
         if(lastSentence == 1)
         {
-            FindObjectOfType<CrossfadeLoadEffect>().ChamarCrossfade(titleScreenCena, player.transform.position);
+            FindObjectOfType<CrossfadeLoadEffect>().ChamarCrossfade(titleScreenCena, new Vector2(6, -2));
         }
 
-        
+        else if (estado.save.turno == 10)
+        {
+
+            if (lastSentence == 3)
+            {
+                FindObjectOfType<CrossfadeLoadEffect>().ChamarCrossfade(titleScreenCena, new Vector2(6,-2));
+            }
+        }
     }
 }

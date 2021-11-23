@@ -109,6 +109,7 @@ public class FazerAndar : MonoBehaviour
 
     public void PararAndar()
     {
+        if(gameObject.activeSelf == true)
         StartCoroutine(PararAndarCourotine());
     }
 

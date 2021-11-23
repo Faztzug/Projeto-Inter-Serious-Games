@@ -28,7 +28,7 @@ public class PlayerControl : MonoBehaviour
 
     public DialogueManager NPCfalando;
 
-    [SerializeField] private bool perspectiva;
+    public bool perspectiva;
 
     [SerializeField] private float modYTouchPosition;
 
@@ -85,7 +85,7 @@ public class PlayerControl : MonoBehaviour
     {
         Debug.Log("Checando Camera...");
         if (FindObjectOfType<Camera>().orthographic == false)
-            perspectiva = true;
+            perspectiva = false;
         else 
             perspectiva = false;
     }

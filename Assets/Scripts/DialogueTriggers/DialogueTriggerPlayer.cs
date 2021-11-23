@@ -553,22 +553,22 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 105)
             {
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(126, 126);
-                
+
             }
             else if (lastSentence == 106)
             {
                 player.emDialogo = true;
                 FindObjectOfType<DTGovernandor>().fazerAndar.AndeParaOPlayer(3f);
             }
-                
+
             else if (lastSentence == 107)
             {
                 FindObjectOfType<DTGovernandor>().StartDialogue(28, 28);
-                
+
             }
             else if (lastSentence == 108)
             {
-                
+
                 FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(17, -3));
                 player.emDialogo = true;
                 StartDialogue(108, 108, 3f);
@@ -587,8 +587,24 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 crossfade.ChamarCrossfade(crossfade.tittleScreenCena, player.transform.position);
             }
 
+            //final
+
+            else if (lastSentence == 212)
+            {
+                estado.save.iniciarPuzzleTurno10 = true;
+                CrossfadeLoadEffect crossfade = FindObjectOfType<CrossfadeLoadEffect>();
+
+                crossfade.ChamarCrossfade(crossfade.florestaMeio, new Vector2(7, -4));
+            }
+
+            else if (lastSentence == 214)
+            {
+                FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(-20, -5));
 
 
+            }
+            else if (lastSentence == 215)
+                FindObjectOfType<DTGovernandor>().StartDialogue(48,48);
         }
 
     }

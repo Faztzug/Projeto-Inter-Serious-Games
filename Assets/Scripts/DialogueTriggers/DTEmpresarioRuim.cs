@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DTEmpresarioRuim : DialogueTrigger
 {
@@ -74,6 +74,21 @@ public class DTEmpresarioRuim : DialogueTrigger
             
             FindObjectOfType<DialogueTriggerAssistente>().fazerAndar.PararAndar();
             StartDialogue(32, 32);
+        }
+
+
+        //ele não aparece no turno 8
+
+
+        //e nem no turno 9
+
+        else if (estado.save.turno == 10)
+        {
+
+            if (estado.save.iniciarPuzzleTurno10 == true
+                && estado.save.preparouArmadilha10 == true)
+                StartDialogue(60, 60);
+            
         }
     }
 
@@ -217,6 +232,16 @@ public class DTEmpresarioRuim : DialogueTrigger
         {
             if (lastSentence == 33)
                 DTplayer.StartDialogue(80,80);
+        }
+
+
+
+        else if (estado.save.turno == 10)
+        {
+            if (lastSentence == 61)
+                FindObjectOfType<DTGovernandor>().StartDialogue(46, 46);
+            else if (lastSentence == 62)
+                FindObjectOfType<DTGovernandor>().StartDialogue(47, 47);
         }
     }
 }

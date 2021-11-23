@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 3.6014414, y: -3.6851091}
+  touchPosition: {x: -6.7124147, y: -6.902793}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -383,6 +383,10 @@ MonoBehaviour:
     - Paz para continuar o trabalho agora.
     - "Isso n\xE3o pode acabar assim\u2026 Iremos ajudar no que for poss\xEDvel."
     - Onde devo investir a verba extra que sobrou?
+    - Sim senhor, vamos indo.
+    - Okay.
+    - Pronto, senhor, vamos seguindo
+    - "Esse \xE9 o fim para voc\xEA, Leandro."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,6 +473,8 @@ MonoBehaviour:
     puzzleConcertouSalaDeControle9: 0
     projetoSucesso: 0
     fimIntroducaoTurno10: 0
+    iniciarPuzzleTurno10: 0
+    preparouArmadilha10: 0
     relacaoAssistente: 1
     relacaoGovernador: 1
     relacaoEmpresarioRuim: 1
