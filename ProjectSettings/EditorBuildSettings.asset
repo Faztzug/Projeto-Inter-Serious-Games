@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rio.unity
     guid: b912316aa4d3f464b87e778fdaea380a
+  - enabled: 1
+    path: Assets/Scenes/Area_Comercial.unity
+    guid: 00dc6c2ad2bec144899ce62d7849d8bf
   m_configObjects: {}
