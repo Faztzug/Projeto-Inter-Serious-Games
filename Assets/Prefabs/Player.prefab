@@ -59,14 +59,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: -6.7124147, y: -6.902793}
+  touchPosition: {x: -1.3112313, y: -1.5148869}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
   distanceY: 0
   margemDeParada: 0.1
   margemDeAndo: 0.05
-  segundosPararDeAndarAoColidir: 0.5
+  segundosPararDeAndarAoColidir: 2
   emDialogo: 0
   emResposdendo: 0
   emTransicaoDECena: 0
@@ -715,6 +715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberSentences: 0
+  typingEffect: {fileID: 0}
 --- !u!114 &5491225684420223664
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -59,6 +59,7 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("Starting Dialogue: " + startSentence + ", " + finalSentence);
         playerControl.emDialogo = true;
+        playerControl.emTrueDialogoFalando = true;
         playerControl.andando = false;
         playerControl.NPCfalando = this;
         this.startSentence = startSentence;

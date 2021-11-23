@@ -19,6 +19,7 @@ public class PlayerControl : MonoBehaviour
     private float contadorPararDeAndarAoColidir;
 
     public bool emDialogo = false;
+    public bool emTrueDialogoFalando = false;
     public bool emResposdendo = false;
     public bool emTransicaoDECena = false;
 
@@ -198,7 +199,7 @@ public class PlayerControl : MonoBehaviour
 
     public void ContinueDialogue()
     {
-        if (emDialogo == true && emResposdendo == false)
+        if (emDialogo == true && emResposdendo == false && emTrueDialogoFalando == true)
             NPCfalando.NextSentence();
 
         /*if (emDialogo == true)

@@ -90,7 +90,7 @@ public class SFXPlayer : MonoBehaviour
         yield return new WaitForEndOfFrame();
 
         int length = allAudioSources.Length;
-        Debug.Log("Update Volume");
+        Debug.Log("SFX Update Volume");
 
         for (int i = 0; i < length; i++)
         {

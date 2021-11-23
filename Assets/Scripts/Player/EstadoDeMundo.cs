@@ -11,6 +11,8 @@ public class EstadoDeMundo : MonoBehaviour
 
     private MusicPlayer musicPlayer;
 
+    private SFXPlayer sfxPlayer;
+
     private TypingEffect typingEffect;
 
     private string savePath = "/Save.sav";
@@ -27,10 +29,13 @@ public class EstadoDeMundo : MonoBehaviour
         if (FindObjectOfType<MusicPlayer>() != null)
             musicPlayer = FindObjectOfType<MusicPlayer>();
 
+        if (FindObjectOfType<SFXPlayer>() != null)
+            sfxPlayer = FindObjectOfType<SFXPlayer>();
+
         if (FindObjectOfType<TypingEffect>() != null)
             typingEffect = FindObjectOfType<TypingEffect>();
 
-        if (typingEffect != null && musicPlayer != null)
+        if (typingEffect != null || musicPlayer != null || sfxPlayer != null)
             UpdateSettings();
 
     }
@@ -43,7 +48,12 @@ public class EstadoDeMundo : MonoBehaviour
             musicPlayer.overallVolume = save.musicVolume;
             musicPlayer.UpdateVolume();
         }
-        if(typingEffect != null)
+        if (sfxPlayer != null)
+        {
+            sfxPlayer.overallVolume = save.musicVolume;
+            sfxPlayer.UpdateVolume();
+        }
+        if (typingEffect != null)
         typingEffect.textTypingSpeed = save.textTypingSpeed;
     }
 

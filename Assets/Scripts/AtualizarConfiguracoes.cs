@@ -3,6 +3,14 @@ using UnityEngine.UI;
 
 public class AtualizarConfiguracoes : MonoBehaviour
 {
+    private Toggle som;
+    private Text somText;
+
+    [SerializeField]
+    private string somTextOn;
+    [SerializeField]
+    private string somTextOff;
+
     private Dropdown fps;
     [SerializeField] private Slider[] sliders;
     private Slider music;
@@ -12,6 +20,8 @@ public class AtualizarConfiguracoes : MonoBehaviour
 
     private void Start()
     {
+        som = GetComponentInChildren<Toggle>();
+        somText = som.GetComponentInChildren<Text>();
         fps = GetComponentInChildren<Dropdown>();
         estadoDeMundo = FindObjectOfType<EstadoDeMundo>();
         sliders = GetComponentsInChildren<Slider>();
@@ -32,6 +42,17 @@ public class AtualizarConfiguracoes : MonoBehaviour
         estadoDeMundo.save.musicVolume = music.value;
         estadoDeMundo.save.SFXVolume = sfx.value;
         estadoDeMundo.save.textTypingSpeed = typing.value;
+
+        if(som.isOn == true)
+        {
+            
+            somText.text = somTextOn;
+        } else if(som.isOn == false)
+        {
+            somText.text = somTextOff;
+            estadoDeMundo.save.musicVolume = 0;
+            estadoDeMundo.save.SFXVolume = 0;
+        }
 
         estadoDeMundo.UpdateSettings();
     }

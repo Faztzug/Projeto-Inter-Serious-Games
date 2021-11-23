@@ -39,6 +39,7 @@ public class DialogueTrigger : MonoBehaviour
     public virtual void EndOfDialogue(int lastSentence, string NPCname)
     {
         player.emDialogo = false;
+        player.emTrueDialogoFalando = false;
         Debug.Log("fim de dialogo com " + NPCname + "Ultima fala foi: " + lastSentence);
     }
 
