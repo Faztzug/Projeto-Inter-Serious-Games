@@ -42,7 +42,10 @@ public class DTVozDoPovo : DialogueTrigger
         }
         else if (estado.save.turno == 6)
         {
-
+            if(estado.save.fimIntroducaoTurno6 == true)
+            {
+                DTplayer.StartDialogue(218, 218);
+            }
         }
         else if (estado.save.turno == 7)
         {
@@ -78,7 +81,15 @@ public class DTVozDoPovo : DialogueTrigger
         }
         else if (estado.save.turno == 6)
         {
-
+            if (lastSentence == 8)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(30,30);
+            else if (lastSentence == 9)
+                DTplayer.StartDialogue(220, 220);
+            else if (lastSentence == 10)
+            {
+                estado.save.conversouVozDoPovo6 = true;
+                estado.save.conversouEB6 = true;
+            }
         }
         else if (estado.save.turno == 7)
         {

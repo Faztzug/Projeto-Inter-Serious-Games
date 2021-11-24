@@ -166,6 +166,8 @@ public class DTEmpresarioRuim : DialogueTrigger
                 player.emDialogo = true;
                 FindObjectOfType<DialogueTriggerAssistente>().fazerAndar.AndeParaOPlayer(3);
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(57, 57, 5);
+                estado.save.fimDialogoGovernadorTurno4 = true;
+                FindObjectOfType<DTEmpresarioBom>().fazerAndar.pararDeAndarAoAtingirPlayer = true;
             }
         }
         else if (estado.save.turno == 5)

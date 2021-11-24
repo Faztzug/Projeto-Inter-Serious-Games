@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 1.7890077, y: 4.558171}
+  touchPosition: {x: -4.9860945, y: -1.8765123}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -388,6 +388,14 @@ MonoBehaviour:
     - Okay.
     - Pronto, senhor, vamos seguindo
     - "Esse \xE9 o fim para voc\xEA, Leandro."
+    - "Bom dia, senhor Jo\xE3o"
+    - "Irei hoje tentar conseguir provas contra Leandro, Jo\xE3o. O que voc\xEA acha
+      que eu poderia fazer?"
+    - "Essa \xE9 uma excelente ideia, verei o que posso fazer. Obrigado, Jo\xE3o."
+    - Bom dia, Raul. Bom dia, Bianca.
+    - "Tudo bem, sim, e com voc\xEAs? Vim aqui ver se voc\xEAs sabem alguma coisa
+      que me ajudaria para fazer Leandro soltar as sujeiras dele"
+    - "E voc\xEA tem algo a acrescentar, Bianca?"
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,27 +409,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   save:
-    turno: 1
+    turno: 6
     ato: 1
     avancoProjeto: 0
     cenaAtual: Laboratorio_1
     _positionX: 0
     _positionY: 0
-    conheceuGovernador: 0
-    conheceuEmpresarioRuim: 0
-    conheceuFazendeiro: 0
-    coletouTerra: 0
-    coletouFusivel: 0
+    conheceuGovernador: 1
+    conheceuEmpresarioRuim: 1
+    conheceuFazendeiro: 1
+    coletouTerra: 1
+    coletouFusivel: 1
     AceitouAOfertaDoEmpresarioRuim: 0
-    AceitouLiberarAguasParaFazendeiro: 0
+    AceitouLiberarAguasParaFazendeiro: 1
     alarmeIncendio2: 0
     apagouIncendio2: 0
-    turno2Concluido: 0
+    turno2Concluido: 1
     fimIntroducaoTurno2: 0
     aceitouPlantacaoDePlantaNaFloresta: 0
     aceitouCompartilharMaquinasFazendeiro: 0
     fimIntroducaoTurno3: 0
-    puzzleExaustores3Resolvido: 0
+    puzzleExaustores3Resolvido: 1
     aceitouCompraERDoProjeto: 0
     investiuHidreletrica: 0
     investiuMaquinas: 0

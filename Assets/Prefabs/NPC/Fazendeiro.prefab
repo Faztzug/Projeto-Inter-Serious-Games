@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberSentences: 0
+  typingEffect: {fileID: 0}
 --- !u!114 &1623160345188279257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +263,11 @@ MonoBehaviour:
       uma crise. "
     - "Eu preciso de \xE1gua para poder cuidar das planta\xE7\xF5es e se voc\xEA
       puder compartilhar comigo, eu ficaria agradecido. "
+    - Oh, doutor, bom dia.
+    - "Olha doutor, se tem uma coisa que Leandro adora \xE9 falar sem parar sobre
+      suas qualidades\u2026 Deixe ele falar, elogie suas ideias, mesmo suspeito ele
+      vai esquecer e vai acabar falando."
+    - De nada, Doutor.
 --- !u!58 &1623160345188279258
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -291,3 +297,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fazerAndar: {fileID: 0}
+  dialogueData: {fileID: 0}

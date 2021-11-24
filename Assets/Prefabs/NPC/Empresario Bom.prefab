@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberSentences: 0
+  typingEffect: {fileID: 0}
 --- !u!114 &5254119481873632845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,6 +296,9 @@ MonoBehaviour:
     - "Est\xE1 certo em fazer isso, Leandro \xE9 um homem perigoso. Voc\xEA ver\xE1
       como estou correta, Pedro."
     - "Finalmente est\xE1 acontecendo, esperei anos por isso."
+    - Bom dia, senhor Paulo, tudo bem?
+    - "N\xE3o, imagino que Raul j\xE1 falou bem, ele \xE9 bem f\xE1cil de se ler,
+      n\xE3o se preocupe com isso."
 --- !u!58 &578460683487209619
 CircleCollider2D:
   m_ObjectHideFlags: 0

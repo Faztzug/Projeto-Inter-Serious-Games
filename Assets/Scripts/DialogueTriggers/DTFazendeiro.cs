@@ -31,6 +31,15 @@ public class DTFazendeiro : DialogueTrigger
         {
             DTplayer.StartDialogue(25,25);
         }
+
+        if (estado.save.turno == 6)
+        {
+            if(estado.save.fimIntroducaoTurno6 == true)
+            {
+                DTplayer.StartDialogue(215, 215);
+            }
+            
+        }
     }
 
     public override void EndOfDialogue(int lastSentence, string NPCname)
@@ -74,7 +83,12 @@ public class DTFazendeiro : DialogueTrigger
         }
         else if (estado.save.turno == 6)
         {
-
+            if (lastSentence == 18)
+                DTplayer.StartDialogue(216, 216);
+            else if (lastSentence == 19)
+                DTplayer.StartDialogue(217, 217);
+            else if (lastSentence == 20)
+                estado.save.conversouFazendeiro6 = true;
         }
         else if (estado.save.turno == 7)
         {

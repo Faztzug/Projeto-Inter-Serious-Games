@@ -327,7 +327,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             {
                 FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(17, -10f));
                 player.emDialogo = true;
-                StartDialogue(75,75,2f);
+                StartDialogue(75, 75, 2f);
             }
             else if (lastSentence == 76)
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(86, 86);
@@ -339,13 +339,13 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(90, 90);
 
             //dialogo com empresario
-            else if(lastSentence == 171)
+            else if (lastSentence == 171)
             {
                 FindObjectOfType<DTEmpresarioRuim>().fazerAndar.AndeParaOPlayer();
             }
             else if (lastSentence == 172)
             {
-                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(39,39);
+                FindObjectOfType<DTEmpresarioRuim>().StartDialogue(39, 39);
             }
             else if (lastSentence == 174)
             {
@@ -371,12 +371,13 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DTEmpresarioRuim>().StartDialogue(54, 59);
             else if (lastSentence == 186)
             {
-                if(estado.save.coletouProvasContraER6 == false)
+                if (estado.save.coletouProvasContraER6 == false)
                 {
                     FindObjectOfType<DTEmpresarioRuim>().fazerAndar.AndePara(new Vector2(20, -3f));
                     player.andando = true;
                     player.touchPosition = new Vector2(20, -3f);
-                } else if(estado.save.coletouProvasContraER6 == true)
+                }
+                else if (estado.save.coletouProvasContraER6 == true)
                 {
                     FindObjectOfType<DTEmpresarioRuim>().fazerAndar.AndePara(new Vector2(20, -3f));
                     player.emDialogo = true;
@@ -389,6 +390,25 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 player.andando = true;
                 player.touchPosition = new Vector2(20, -3f);
             }
+
+
+            //6 interações
+            //fazenda
+            else if (lastSentence == 216)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(17, 17);
+            else if (lastSentence == 217)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(18, 18);
+            else if (lastSentence == 218)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(19, 19);
+
+            //comercial
+            else if (lastSentence == 219)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(7,7);
+            else if (lastSentence == 220)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(8, 8);
+            else if (lastSentence == 221)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(31, 31);
+            
 
         }
 

@@ -27,12 +27,20 @@ public class DTEmpresarioBom : DialogueTrigger
         {
             if (estado.save.fimIntroducaoTurno4 == false)
                 DTplayer.StartDialogue(49, 49);
-            else
+            else if(estado.save.fimDialogoGovernadorTurno4 == true)
                 StartDialogue(16,16);
         }
         else if (estado.save.turno == 5)
         {
             StartDialogue(20, 20);
+        }
+
+        else if (estado.save.turno == 6)
+        {
+            if (estado.save.fimIntroducaoTurno6 == true)
+            {
+                DTplayer.StartDialogue(218, 218);
+            }
         }
     }
 
@@ -88,7 +96,12 @@ public class DTEmpresarioBom : DialogueTrigger
             else if (lastSentence == 19)
                 DTplayer.StartDialogue(58, 58);
             else if (lastSentence == 20)
+            {
+                estado.save.fimDialogoGovernadorTurno4 = true;
+                fazerAndar.pararDeAndarAoAtingirPlayer = false;
                 fazerAndar.AndePara(new Vector2(17, -5));
+            }
+                
 
 
         }
@@ -107,6 +120,14 @@ public class DTEmpresarioBom : DialogueTrigger
                 DTplayer.StartDialogue(65, 65);
             else if (lastSentence == 28)
                 DTplayer.StartDialogue(68, 68);
+        }
+
+        else if (estado.save.turno == 6)
+        {
+            if (lastSentence == 31)
+                DTplayer.StartDialogue(219, 219);
+            else if (lastSentence == 32)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(9, 9);
         }
 
         else if (estado.save.turno == 7)
