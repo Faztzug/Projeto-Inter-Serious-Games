@@ -312,7 +312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148194601}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.01, y: -1.05, z: 0}
+  m_LocalPosition: {x: -6.01, y: -2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 612557258}
@@ -342,7 +342,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.19, y: 3.71}
+  m_Size: {x: 5.23, y: 0.82}
   m_EdgeRadius: 0
 --- !u!1 &151723847
 GameObject:
@@ -599,7 +599,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484899382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.41, y: -5.15, z: 0}
+  m_LocalPosition: {x: 3.88, y: -5.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 612557258}
@@ -629,7 +629,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 26.99, y: 1}
+  m_Size: {x: 15.5, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &487901668
 GameObject:
@@ -1187,11 +1187,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.07
+      value: 5.9
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.88
+      value: -3.35
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946063, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1417,9 +1417,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -656601029
-  m_SortingLayer: -2
-  m_SortingOrder: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 95a2c12083affa84cb1cf5879eed83bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1430,7 +1430,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &877749971
 Transform:
   m_ObjectHideFlags: 0
@@ -1439,7 +1439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877749969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.08, y: -1.8, z: 0}
+  m_LocalPosition: {x: -6.08, y: -3.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1552,7 +1552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219898876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: -0.69, z: 0}
+  m_LocalPosition: {x: 2.91, y: -1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 612557258}
@@ -1582,7 +1582,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.85, y: 1}
+  m_Size: {x: 10.89, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1236875340
 GameObject:
@@ -1824,9 +1824,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -656601029
-  m_SortingLayer: -2
-  m_SortingOrder: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 42e6dd2db4ce19143a5de4ae39448f6b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -1837,7 +1837,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &1392691875
 Transform:
   m_ObjectHideFlags: 0
@@ -1846,7 +1846,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392691873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.59, y: -0.98999995, z: 0}
+  m_LocalPosition: {x: -6.59, y: -2.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

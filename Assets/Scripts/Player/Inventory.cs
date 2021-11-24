@@ -12,6 +12,13 @@ public class Inventory : MonoBehaviour
     [HideInInspector] public SlotsManager slotsManager;
 
 
+    private void Awake()
+    {
+        slotsManager = FindObjectOfType<SlotsManager>();
+        slotsGameObject = GameObject.FindGameObjectsWithTag("Slot");
+        int slotsLength = slotsGameObject.Length;
+    }
+
     private void Start()
     {
         slotsManager = FindObjectOfType<SlotsManager>();

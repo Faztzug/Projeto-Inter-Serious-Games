@@ -774,7 +774,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.68, y: 6.372}
+    oldSize: {x: 7.6799994, y: 6.3749995}
     newSize: {x: 19.2, y: 15.93}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1462,7 +1462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223887158}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.52, y: 0.431, z: 0}
+  m_LocalPosition: {x: 2.35, y: 0.431, z: 0}
   m_LocalScale: {x: 12.635052, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1675314005}
@@ -1559,10 +1559,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conversouEB6
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.conheceuFazendeiro
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.conheceuGovernador
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
@@ -1571,6 +1579,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conversouFazendeiro6
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.conheceuEmpresarioRuim
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946061, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}

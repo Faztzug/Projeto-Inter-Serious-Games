@@ -14,8 +14,11 @@ public class ColetarEngrenagem : MonoBehaviour
         inventario = FindObjectOfType<Inventory>();
         estado = inventario.gameObject.GetComponent<EstadoDeMundo>();
 
-        //if (estado.save.coletouFusivel == true)
-            //this.gameObject.SetActive(false);
+        if (estado.save.coletouFusivel == true)
+        {
+            this.gameObject.SetActive(false);
+        }
+            
         /*if(estado != null)
         {
             if (estado.save.coletouFusivel == true
@@ -49,7 +52,7 @@ public class ColetarEngrenagem : MonoBehaviour
         {
             //collision.GetComponent<EstadoDeMundo>().save.coletouFusivel = true;
             collision.GetComponent<DialogueTrigger>().StartDialogue(10, 11);
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
         }
     }
 }

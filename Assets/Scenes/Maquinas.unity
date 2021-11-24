@@ -786,6 +786,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ea643067347a8e4481c967d1be4b6cd, type: 3}
+--- !u!1001 &129588865
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2762153351915215316, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_Name
+      value: SFX Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
 --- !u!1001 &148211844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2119,15 +2176,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno
-      value: 9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.fimDialogoER6
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.coletouCamera6
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.coletouFusivel
@@ -2139,43 +2196,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.averigouProvas7
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.coletouMicrofone6
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.alarmePoluicaoRio4
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.puzzleAverigouOPC9
+      propertyPath: save.conheceuFazendeiro
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.conheceuGovernador
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.puzzleAverigouOPC9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.InvestiuExaustores8
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.InvestiuMaquinaria8
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conversouVozDoPovo6
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.fimIntroducaoTurno6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.fimIntroducaoTurno7
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.fimIntroducaoTurno8
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.fimIntroducaoTurno9
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.playerGanhouFrasco4
@@ -2183,26 +2252,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.posicionouMicrofone6
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.InvestiuHidreletrica8
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.InvestiuSalaContorle8
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.fimDialogoAssistente6
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.posicionouCameraMeio6
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.coletouProvasContraER6
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.conheceuEmpresarioRuim
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
@@ -2211,35 +2284,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.biancaInvestiuMaquinas7
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.mostrouProvasGovernador7
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.posicionouCameraDireita6
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.puzzleConcertouMaquinas9
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.aceitouDarAguaFazendeiro7
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.posicionouCameraEsquerda6
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.biancaInvestiuHidreletrica7
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.puzzleConcertouSalaDeControle9
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946061, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_Name
@@ -3360,6 +3433,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8402454040532164058, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402454040532164058, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402454040532164058, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402454040532164058, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c89db36163507d439ebd136cd9cce0c, type: 3}
 --- !u!1 &714246028
@@ -3398,7 +3487,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.6, y: 5.4}
+    oldSize: {x: 9.599999, y: 5.3999996}
     newSize: {x: 9.6, y: 5.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4941,7 +5030,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.6, y: 5.4}
+    oldSize: {x: 9.599999, y: 5.3999996}
     newSize: {x: 9.6, y: 5.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

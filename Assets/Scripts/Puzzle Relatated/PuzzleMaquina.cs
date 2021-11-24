@@ -13,6 +13,9 @@ public class PuzzleMaquina : MonoBehaviour
 
         if (FindObjectOfType<EstadoDeMundo>().save.turno != 1)
             gameObject.SetActive(false);
+
+        if(FindObjectOfType<EstadoDeMundo>().save.coletouFusivel == true)
+            gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

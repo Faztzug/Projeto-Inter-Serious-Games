@@ -28,8 +28,12 @@ public class DialogueTriggerAssistente : DialogueTrigger
             fazerAndar.PararAndar();
             if(estado.save.apagouIncendio2 == false)
             {
-                player.emDialogo = true;
-                DTplayer.StartDialogue(113, 113, 1f);
+                if(gameObject.scene.name == lab1Cena)
+                {
+                    player.emDialogo = true;
+                    DTplayer.StartDialogue(113, 113, 1f);
+                }
+                
             }
             
         }
@@ -37,15 +41,20 @@ public class DialogueTriggerAssistente : DialogueTrigger
         else if(estado.save.turno == 3 && estado.save.fimIntroducaoTurno3 == true)
         {
             fazerAndar.PararAndar();
-            if(estado.save.puzzleExaustores3Resolvido == false)
-            DTplayer.StartDialogue(123, 123, 1f);
+
+            if(gameObject.scene.name == lab1Cena)
+            {
+                if (estado.save.puzzleExaustores3Resolvido == false)
+                    DTplayer.StartDialogue(123, 123, 1f);
+            }
+            
         }
             
         else if (estado.save.turno == 4 && estado.save.fimIntroducaoTurno4 == true
             && estado.save.fimDialogoGovernadorTurno4 == true)
         {
             fazerAndar.PararAndar();
-            if (estado.save.rioPurificado4 == false)
+            if (estado.save.rioPurificado4 == false && gameObject.scene.name == lab1Cena)
                 StartDialogue(132, 132, 1f);
         }
             

@@ -9,7 +9,7 @@ public class DestruirSeForaDoTurnoAtual : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        verificarTurnoAtual = FindObjectOfType<VerificarTurnoAtual>();
+        verificarTurnoAtual = GetComponent<VerificarTurnoAtual>();
 
         if (verificarTurnoAtual.Verificar() == false)
             Destroy(this.gameObject);

@@ -21,7 +21,11 @@ public class DTFazendeiro : DialogueTrigger
     public override void StartDialogue()
     {
         if(estado.save.turno == 1)
-            dialogueManager.StartingDialogue(0, 2);
+        {
+            if(estado.save.conheceuFazendeiro == false)
+                dialogueManager.StartingDialogue(0, 2);
+        }
+            
 
         if(estado.save.turno == 2)
         {

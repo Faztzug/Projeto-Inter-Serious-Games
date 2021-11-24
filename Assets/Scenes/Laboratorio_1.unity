@@ -1137,7 +1137,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.20257574, y: 0.2500194}
-    oldSize: {x: 7.1050005, y: 8.79217}
+    oldSize: {x: 7.1075397, y: 8.79}
     newSize: {x: 28.420002, y: 35.16868}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3732,134 +3732,38 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.coletouTerra
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimDialogoER6
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.coletouCamera6
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.projetoSucesso
+      propertyPath: save.coletouFusivel
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.averigouProvas7
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.coletouMicrofone6
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuFazendeiro
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuGovernador
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.puzzleAverigouOPC9
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.InvestiuMaquinaria8
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno6
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno7
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno8
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno9
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.conversouGovernador8
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimIntroducaoTurno10
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.posicionouMicrofone6
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.InvestiuHidreletrica8
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.InvestiuSalaContorle8
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.fimDialogoAssistente6
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.posicionouCameraMeio6
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.coletouProvasContraER6
+      propertyPath: save.fimIntroducaoTurno2
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuEmpresarioRuim
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.biancaInvestiuMaquinas7
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.mostrouProvasGovernador7
+      propertyPath: save.AceitouAOfertaDoEmpresarioRuim
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.posicionouCameraDireita6
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.puzzleConcertouMaquinas9
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.aceitouDarAguaFazendeiro7
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.posicionouCameraEsquerda6
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.biancaInvestiuHidreletrica7
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.puzzleConcertouHidreletrica9
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.puzzleConcertouSalaDeControle9
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
-      propertyPath: save.concertouAMaquinaNaHidreletrica9
+      propertyPath: save.AceitouLiberarAguasParaFazendeiro
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946061, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
