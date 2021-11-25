@@ -9,6 +9,7 @@ public class TypingEffect : MonoBehaviour
     [HideInInspector] public float textTypingSpeed;
     private TextMeshProUGUI dialogueTextMeshPro;
     private TextBoxDialogue textBox;
+    private SFXPlayer sfx;
 
     
 
@@ -17,6 +18,7 @@ public class TypingEffect : MonoBehaviour
         textTypingSpeed = FindObjectOfType<EstadoDeMundo>().save.textTypingSpeed;
         dialogueTextMeshPro = GetComponent<TextMeshProUGUI>();
         textBox = gameObject.GetComponentInParent<TextBoxDialogue>();
+        sfx = FindObjectOfType<SFXPlayer>();
     }
 
 
@@ -31,6 +33,11 @@ public class TypingEffect : MonoBehaviour
     {
         Debug.Log("Start Typing: "+sentence);
 
+        if (sfx == null)
+            sfx = FindObjectOfType<SFXPlayer>();
+
+        sfx.PlayAudio("Typing");
+
         textBox.AtualizarSprite();
 
         dialogueTextMeshPro.text = "";
@@ -40,5 +47,13 @@ public class TypingEffect : MonoBehaviour
             yield return new WaitForSeconds(0.5f / (textTypingSpeed + 5));
             dialogueTextMeshPro.text += letter;
         }
+
+        StopSFX();
+    }
+
+
+    public void StopSFX()
+    {
+        sfx.StopAudio("Typing");
     }
 }

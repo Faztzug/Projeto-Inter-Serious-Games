@@ -268,6 +268,38 @@ MonoBehaviour:
       suas qualidades\u2026 Deixe ele falar, elogie suas ideias, mesmo suspeito ele
       vai esquecer e vai acabar falando."
     - De nada, Doutor.
+    - "Ah, senhor Paulo, que bom ver voc\xEA."
+    - "Estou \xF3timo, e extremamente feliz por ter aceito o que eu pedi. Com isso
+      n\xE3o terei mais problemas por um tempo para alimentar o povo. Te agrade\xE7o
+      novamente."
+    - "Ah, \xE9 voc\xEA."
+    - "Estou preocupado com a situa\xE7\xE3o, j\xE1 que voc\xEA n\xE3o aceitou minha
+      proposta. N\xE3o sei como farei para alimentar todas essas pessoas agora."
+    - "E voc\xEA acha que n\xE3o alimentar o povo \xE9 a coisa certa a se fazer?
+      Para que voc\xEA est\xE1 cuidando do clima se n\xE3o para o povo?"
+    - "Bem, tenho que voltar a trabalhar, se me der licen\xE7a."
+    - Bom dia, Doutor
+    - "Vou bem, com a melhoria na hidrel\xE9trica consegui aumentar as terras e as
+      planta\xE7\xF5es est\xE3o ainda maiores."
+    - Vou bem, doutor. Embora preocupado.
+    - "Eu comprei novas terras, Doutor, mas n\xE3o estou com capacidade de gerar
+      a mesma qualidade, estou com escassez de \xE1gua"
+    - Opa, doutor, bom dia, o que devo a honra?
+    - O que tem ele?
+    - "Olha\u2026 Ele me ajudou quando tive problemas financeiros uns anos atr\xE1s,
+      mas vira e mexe vem pedir um favor ou outro, me fazendo at\xE9 gastar dinheiro "
+    - "e sempre usa essa ajuda de chantagem, achava ele um bom homem, mas visivelmente
+      fez aquilo s\xF3 para poder receber de volta."
+    - "Se voc\xEA precisar de gente para dar for\xE7a ao seu argumento, pode contar
+      comigo."
+    - Bom dia doutor Paulo
+    - "n\xE3o, a \xFAnica coisa que eu ouvi foi da popula\xE7\xE3o falar que viu
+      algu\xE9m encapuzado na \xE1rea comercial acredito que possa ser o Leandro"
+    - "Bom dia, Paulo, alguma not\xEDcia sobre Leandro?"
+    - "Ah, na medida do poss\xEDvel est\xE1 t\xE3o bem quanto poderia estar."
+    - "At\xE9."
+    - Bom dia, Paulo.
+    - "Eu que agrade\xE7o, Paulo. Obrigado por tudo e fique bem."
 --- !u!58 &1623160345188279258
 CircleCollider2D:
   m_ObjectHideFlags: 0

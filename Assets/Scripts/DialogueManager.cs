@@ -89,6 +89,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Next Sentence, Current Sentence: " + currentSentence);
 
         typingEffect.StopAllCoroutines();
+        typingEffect.StopSFX();
         
         if (NextSentenceFirstCall == true
             || dialogueTextMeshPro.text == dialogueData.sentences[currentSentence]) //-1

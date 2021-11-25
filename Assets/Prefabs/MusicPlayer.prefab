@@ -98,5 +98,11 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     audioSource: {fileID: 0}
+  - clip: {fileID: 8300000, guid: c062e1f202a8b114ebbf67d657ce562b, type: 3}
+    name: Final Bom
+    volume: 1
+    pitch: 1
+    loop: 1
+    audioSource: {fileID: 0}
   playThis: Akuanduba
   overallVolume: 1

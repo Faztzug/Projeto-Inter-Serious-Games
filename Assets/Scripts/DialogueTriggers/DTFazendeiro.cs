@@ -22,14 +22,50 @@ public class DTFazendeiro : DialogueTrigger
     {
         if(estado.save.turno == 1)
         {
-            if(estado.save.conheceuFazendeiro == false)
+            if (estado.save.conheceuFazendeiro == false)
                 dialogueManager.StartingDialogue(0, 2);
+            else if (estado.save.conheceuFazendeiro == true)
+                DTplayer.StartDialogue(221,221);
         }
             
 
         if(estado.save.turno == 2)
         {
             DTplayer.StartDialogue(25,25);
+        }
+
+        if (estado.save.turno == 3)
+        {
+            if(estado.save.fimIntroducaoTurno3 == true)
+            {
+                if (estado.save.aceitouCompartilharMaquinasFazendeiro == true)
+                    StartDialogue(20, 20);
+                else if (estado.save.aceitouCompartilharMaquinasFazendeiro == false)
+                    StartDialogue(22, 22);
+            }
+            
+        }
+
+        if (estado.save.turno == 4)
+        {
+            if (estado.save.fimIntroducaoTurno4 == true)
+            {
+                if (estado.save.investiuHidreletrica == true)
+                    StartDialogue(26, 26);
+                else if (estado.save.investiuMaquinas == true)
+                    DTplayer.StartDialogue(229, 229);
+            }
+
+        }
+
+        if (estado.save.turno == 5)
+        {
+            if (estado.save.fimIntroducaoTurno5 == true)
+            {
+                
+                    DTplayer.StartDialogue(231, 231);
+            }
+
         }
 
         if (estado.save.turno == 6)
@@ -39,6 +75,39 @@ public class DTFazendeiro : DialogueTrigger
                 DTplayer.StartDialogue(215, 215);
             }
             
+        }
+
+        if (estado.save.turno == 7)
+        {
+            DTplayer.StartDialogue(235,235);
+
+        }
+
+        if (estado.save.turno == 8)
+        {
+            if (estado.save.fimIntroducaoTurno8 == true)
+            {
+                DTplayer.StartDialogue(236, 236);
+            }
+
+        }
+
+        if (estado.save.turno == 9)
+        {
+            if (estado.save.fimIntroducaoTurno9 == true)
+            {
+                DTplayer.StartDialogue(239, 239);
+            }
+
+        }
+
+        if (estado.save.turno == 10)
+        {
+            if (estado.save.fimIntroducaoTurno10 == true)
+            {
+                DTplayer.StartDialogue(242, 242);
+            }
+
         }
     }
 
@@ -71,15 +140,39 @@ public class DTFazendeiro : DialogueTrigger
         }
         else if (estado.save.turno == 3)
         {
+            if (lastSentence == 21)
+                DTplayer.StartDialogue(222,222);
+            else if (lastSentence == 22)
+                DTplayer.StartDialogue(223, 223);
 
+            else if(lastSentence == 23)
+                DTplayer.StartDialogue(224, 224);
+            else if (lastSentence == 24)
+                DTplayer.StartDialogue(225, 225);
+            else if (lastSentence == 25)
+                DTplayer.StartDialogue(226, 226);
         }
         else if (estado.save.turno == 4)
         {
+            if (lastSentence == 27)
+                DTplayer.StartDialogue(227,227);
+            else if (lastSentence == 28)
+                DTplayer.StartDialogue(228, 228);
 
+            else if (lastSentence == 29)
+                DTplayer.StartDialogue(230, 230);
+            
         }
         else if (estado.save.turno == 5)
         {
-
+            if (lastSentence == 31)
+                DTplayer.StartDialogue(232,232);
+            else if (lastSentence == 32)
+                DTplayer.StartDialogue(233, 233);
+            
+            else if(lastSentence == 34)
+                DTplayer.StartDialogue(234, 234);
+            
         }
         else if (estado.save.turno == 6)
         {
@@ -100,6 +193,33 @@ public class DTFazendeiro : DialogueTrigger
                 FindObjectOfType<DTVozDoPovo>().StartDialogue(2, 2);
             else if (lastSentence == 17)
                 FindObjectOfType<DTVozDoPovo>().StartDialogue(3, 4);
+
+        }
+
+        else if (estado.save.turno == 8)
+        {
+            if (lastSentence == 36)
+                DTplayer.StartDialogue(237, 237);
+            else if (lastSentence == 37)
+                DTplayer.StartDialogue(238, 238);
+
+        }
+
+        else if (estado.save.turno == 9)
+        {
+            if (lastSentence == 38)
+                DTplayer.StartDialogue(240, 240);
+            else if (lastSentence == 39)
+                DTplayer.StartDialogue(241, 241);
+
+        }
+
+        else if (estado.save.turno == 10)
+        {
+            if (lastSentence == 41)
+                DTplayer.StartDialogue(243, 243);
+            
+
         }
     }
 }

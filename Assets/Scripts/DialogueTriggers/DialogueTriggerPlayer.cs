@@ -147,7 +147,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
             //puzzle
             else if (lastSentence == 124)
-                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(131,131);
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(131, 131);
             else if (lastSentence == 130)
             {
                 MomentoDeResponder(lastSentence, dialogueData.name);
@@ -162,6 +162,17 @@ public class DialogueTriggerPlayer : DialogueTrigger
             }
             else if (lastSentence == 123)
                 FindObjectOfType<FimDeTurno>().EncerrarTurno();
+
+            //interações
+            else if (lastSentence == 223)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(21,21);
+
+            else if (lastSentence == 225)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(23, 23);
+            else if (lastSentence == 226)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(24, 24);
+            else if (lastSentence == 227)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(25, 25);
 
 
         }
@@ -194,7 +205,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 56)
                 FindObjectOfType<DTEmpresarioRuim>().fazerAndar.AndeParaOPlayer();
             else if (lastSentence == 57)
-                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(58,58);
+                FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(58, 58);
             else if (lastSentence == 58)
                 FindObjectOfType<DTEmpresarioBom>().StartDialogue(17, 18);
             else if (lastSentence == 59)
@@ -226,6 +237,16 @@ public class DialogueTriggerPlayer : DialogueTrigger
             }
             else if (lastSentence == 123)
                 FindObjectOfType<FimDeTurno>().EncerrarTurno();
+
+            //interações
+
+            else if (lastSentence == 228)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(27,27);
+
+            else if (lastSentence == 230)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(28, 28);
+            else if (lastSentence == 231)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(29, 29);
 
         }
 
@@ -304,7 +325,18 @@ public class DialogueTriggerPlayer : DialogueTrigger
 
             }
 
+            //interações
+            if (lastSentence == 232)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(30,30);
+            else if (lastSentence == 233)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(31, 31);
+            else if (lastSentence == 234)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(32, 33);
+            else if (lastSentence == 235)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(34, 34);
             
+
+
 
         }
 
@@ -538,6 +570,13 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 123)
                 FindObjectOfType<FimDeTurno>().EncerrarTurno();
 
+
+            //interações
+            if (lastSentence == 237)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(35,35);
+            else if (lastSentence == 238)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(36, 36);
+
         }
 
         else if (estado.save.turno == 9)
@@ -555,6 +594,15 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 if(lastSentence == 196)
                     FindObjectOfType<DialogueTriggerAssistente>().StartDialogue(137, 137);
             }
+
+            //interações
+
+            if (lastSentence == 240)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(37,37);
+            else if(lastSentence == 241)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(38, 38);
+            else if (lastSentence == 242)
+                FindObjectOfType<DTFazendeiro>().StartDialogue(39, 39);
         }
 
         else if (estado.save.turno == 10)
@@ -626,6 +674,13 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 215)
                 FindObjectOfType<DTGovernandor>().StartDialogue(48,48);
         }
+
+        //interações
+        if (lastSentence == 243)
+            FindObjectOfType<DTFazendeiro>().StartDialogue(40,40);
+        else if (lastSentence == 244)
+            FindObjectOfType<DTFazendeiro>().StartDialogue(41, 41);
+        
 
     }
 

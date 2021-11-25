@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: -4.9860945, y: -1.8765123}
+  touchPosition: {x: 3.8105822, y: -5.0624847}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -396,6 +396,34 @@ MonoBehaviour:
     - "Tudo bem, sim, e com voc\xEAs? Vim aqui ver se voc\xEAs sabem alguma coisa
       que me ajudaria para fazer Leandro soltar as sujeiras dele"
     - "E voc\xEA tem algo a acrescentar, Bianca?"
+    - "Crescem fortes e saud\xE1veis, alimentando todos aqueles que precisam. Jo\xE3o
+      faz um \xF3timo servi\xE7o."
+    - "Igualmente, senhor Jo\xE3o, como voc\xEA est\xE1?"
+    - "N\xE3o precisa me agradecer, Jo\xE3o. Estou feliz por isso e espero que d\xEA
+      tudo certo."
+    - "Bom dia, senhor Jo\xE3o. Como voc\xEA est\xE1?"
+    - "Desculpe, Jo\xE3o, mas voc\xEA precisa entender que o trabalho n\xE3o \xE9
+      f\xE1cil e preciso focar nas coisas certas."
+    - ...
+    - "Bom dia, Jo\xE3o. Como vai voc\xEA?"
+    - "Fico contente, Jo\xE3o."
+    - "Bom dia, Jo\xE3o, como vai?"
+    - Preocupado com o que, homem?
+    - "Bom dia, Jo\xE3o."
+    - "Eu vim aqui conversar com voc\xEA sobre o senhor Leandro."
+    - "O que voc\xEA acha dele?"
+    - "O buraco cada momento fica mais embaixo\u2026 Se eu precisar de um suporte
+      quando for conversar com Pedro, voc\xEA o faria?"
+    - "Jo\xE3o fazendo um \xF3timo servi\xE7o, vasta planta\xE7\xE3o."
+    - "Bom dia senhor Jo\xE3o."
+    - "Jo\xE3o, voc\xEA andou tendo alguma not\xEDcia do Leandro"
+    - "Obrigado por essa informa\xE7\xE3o, vou passar para o Pedro."
+    - "Bom dia, Jo\xE3o."
+    - "Irei ver com Pedro mais tarde e voc\xEA, como anda sua planta\xE7\xE3o?"
+    - "Que bom, agora eu vou me retirar, at\xE9 outra hora, Jo\xE3o."
+    - "Bom dia, Jo\xE3o"
+    - "O fim do projeto \xE9 iminente, n\xE3o sei se te verei mais, mas estou grato
+      por ter te conhecido e obrigado por todo o suporte."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -243,7 +243,11 @@ public class DTEmpresarioRuim : DialogueTrigger
             if (lastSentence == 61)
                 FindObjectOfType<DTGovernandor>().StartDialogue(46, 46);
             else if (lastSentence == 62)
+            {
+                FindObjectOfType<MusicPlayer>().ChangeMusic("Final Bom");
                 FindObjectOfType<DTGovernandor>().StartDialogue(47, 47);
+            }
+                
         }
     }
 }
