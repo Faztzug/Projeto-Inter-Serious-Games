@@ -32,6 +32,7 @@ public class AbrirEFecharPia : MonoBehaviour
             if(fechada == true)
             {
                 spriteRenderer.sprite = piaAberta;
+                FindObjectOfType<SFXPlayer>().PlayAudio("PiaAbrindo");
                 fechada = false;
 
                 for (int i = 0; i < childs.Length; i++)
@@ -45,6 +46,7 @@ public class AbrirEFecharPia : MonoBehaviour
             else if(fechada == false)
             {
                 spriteRenderer.sprite = piaFechada;
+                FindObjectOfType<SFXPlayer>().PlayAudio("PiaFechando");
                 fechada = true;
             }
         }

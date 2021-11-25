@@ -3285,10 +3285,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SFX Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2762153351915215317, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
-      propertyPath: sounds.Array.data[8].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 8de28d470dc10784fad9380063dc38c2, type: 3}
     - target: {fileID: 2762153351915215322, guid: ef63dfa049e3e6a49a0cc3a7147d2976, type: 3}
       propertyPath: m_RootOrder
       value: 23

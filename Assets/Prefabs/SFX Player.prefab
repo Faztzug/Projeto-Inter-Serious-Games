@@ -92,10 +92,22 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     audioSource: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 8de28d470dc10784fad9380063dc38c2, type: 3}
+  - clip: {fileID: 8300000, guid: 9692b4fa891d3124686e1b785e8344a2, type: 3}
     name: Typing
     volume: 1
     pitch: 1
     loop: 1
+    audioSource: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 1e8dda2b891fbe54db9d0ef5dcba02db, type: 3}
+    name: PiaAbrindo
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 75a0240f7be53684791a7673ccf6dbb0, type: 3}
+    name: PiaFechando
+    volume: 1
+    pitch: 1
+    loop: 0
     audioSource: {fileID: 0}
   overallVolume: 1
