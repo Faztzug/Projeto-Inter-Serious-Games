@@ -37,6 +37,21 @@ public class DialogueManager : MonoBehaviour
 
         playerControl = FindObjectOfType<PlayerControl>();
         estadoDeMundo = playerControl.gameObject.GetComponent<EstadoDeMundo>();
+
+        //meh
+
+        //NextSentenceFirstCall = true;
+        typingEffect = FindObjectOfType<TypingEffect>();
+        dialogueTextMeshPro = typingEffect.gameObject.GetComponent<TextMeshProUGUI>();
+        textBox = FindObjectOfType<TextBoxDialogue>();
+
+        //dialogueTrigger = GetComponent<DialogueTrigger>();
+
+        //dialogueData = GetComponent<DialogueData>().dialogue;
+        //numberSentences = dialogueData.sentences.Length;
+
+        playerControl = FindObjectOfType<PlayerControl>();
+        estadoDeMundo = playerControl.gameObject.GetComponent<EstadoDeMundo>();
     }
 
     private void Start()
@@ -78,7 +93,9 @@ public class DialogueManager : MonoBehaviour
         if (NextSentenceFirstCall == true
             || dialogueTextMeshPro.text == dialogueData.sentences[currentSentence]) //-1
         {
+
             //altera cor da caixa
+            
             textBox.box.color = dialogueData.characterColor;
             //dialogueTextMeshPro.color = dialogueData.characterColor;
 

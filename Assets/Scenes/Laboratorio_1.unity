@@ -4074,15 +4074,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.turno
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.coletouTerra
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.coletouFusivel
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.rioPurificado4
@@ -4090,6 +4090,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.alarmeIncendio2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
+      propertyPath: save.turno2Concluido
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
@@ -4102,15 +4106,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuFazendeiro
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuGovernador
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.fimIntroducaoTurno2
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.fimIntroducaoTurno3
@@ -4146,7 +4150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.conheceuEmpresarioRuim
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.olhouCamerasSeguranca4
@@ -4174,11 +4178,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.AceitouAOfertaDoEmpresarioRuim
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.AceitouLiberarAguasParaFazendeiro
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.aceitouEBComprarTerrenoFazendeiro
@@ -4190,7 +4194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 375688006, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: save.aceitouPlantacaoDePlantaNaFloresta
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 465966177179946061, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
       propertyPath: m_Name
@@ -5667,6 +5671,62 @@ PrefabInstance:
     - target: {fileID: 3229071668714731707, guid: 92b3b591063ee31418848593c756d15d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071670326244107, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071670326244107, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "Devido ao aquecimento global gerado por emiss\xF5es de gases estufa
+        e outras a\xE7\xF5es humanas, "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071670326244107, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "em 2035 os efeitos j\xE1 eram extremamente graves e vis\xEDveis, tendo
+        a cat\xE1strofe da humanidade como algo iminente at\xE9 2050.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071670326244107, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "Por isso, neste mesmo ano de 2035, foi decidido pelo Acordo de Manaus
+        um plano para recuperar o que fosse poss\xEDvel do clima da terra e nos dar
+        mais tempo para a\xE7\xF5es mais ativas, ou a sa\xEDda do planeta.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071670326244107, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: "Planos foram feitos, op\xE7\xF5es pensadas e especialistas decididos
+        com o trabalho de monitorar, guiar e melhorar a situa\xE7\xE3o. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071670326244107, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: "Atualmente em 2040 o Projeto Akuanduba foi iniciado e os especialistas
+        come\xE7aram a trabalhar."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071670326244107, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: "Voc\xEA \xE9 Paulo Augusto, um desses especialistas, que est\xE1 encarregado
+        de monitorar a Amaz\xF4nia e as m\xE1quinas que suportam a captura de carbono
+        do ar. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071670326244107, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: "Uma das maiores responsabilidades de todo o mundo, e \xE9 voc\xEA que
+        est\xE1 encarregado dela. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071670326244107, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[8]
+      value: "Para manter tudo funcionando voc\xEA ter\xE1 que continuamente checar
+        as m\xE1quinas, as mudan\xE7as no ambiente e tamb\xE9m agradar os pol\xEDticos,
+        empres\xE1rios e o povo, "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071670326244107, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[9]
+      value: "que podem remover seus recursos, atacar sua f\xE1brica, ou pedir sua
+        demiss\xE3o, ou at\xE9 total descontinua\xE7\xE3o do projeto.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229071670326244107, guid: 92b3b591063ee31418848593c756d15d, type: 3}
+      propertyPath: dialogue.sentences.Array.data[10]
+      value: "Boa sorte, o futuro da humanidade conta com voc\xEA.\r"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92b3b591063ee31418848593c756d15d, type: 3}

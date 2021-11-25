@@ -23,6 +23,9 @@ public class DialogueTriggerAssistente : DialogueTrigger
         if (gameObject.scene.name != lab1Cena)
             fazerAndar.PararAndar();
 
+        if(estado.save.turno == 1)
+            fazerAndar.PararAndar();
+
         if (estado.save.turno == 2 && estado.save.fimIntroducaoTurno2 == true)
         {
             fazerAndar.PararAndar();

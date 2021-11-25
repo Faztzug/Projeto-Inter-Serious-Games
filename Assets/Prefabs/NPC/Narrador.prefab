@@ -187,6 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberSentences: 0
+  typingEffect: {fileID: 0}
 --- !u!114 &3229071670326244111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +201,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fazerAndar: {fileID: 0}
+  dialogueData: {fileID: 0}
+  playerPrefab: {fileID: 375688009, guid: e9bc92b13e9e6594b853fa4aefde5b47, type: 3}
   titleScreenCena: TittleScreen
   maquinasCena: Maquinas
   salaControleMeioCena: Sala_de_Controle_2
