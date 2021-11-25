@@ -10,6 +10,8 @@
 
     [Range(0, 100)]
     public int avancoProjeto = 0;
+    [Range(0, 100)]
+    public int metaMinProjeto = 20;
 
     public string cenaAtual = "Laboratorio_1";
 

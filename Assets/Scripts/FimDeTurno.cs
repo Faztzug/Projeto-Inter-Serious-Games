@@ -76,9 +76,13 @@ public class FimDeTurno : MonoBehaviour
                 && estado.save.puzzleConcertouSalaDeControle9 == true)
             {
                 EncerrarTurno();
-                //ação provisoria pro turno 10
 
                 estado.save.projetoSucesso = true;
+
+                if (estado.save.avancoProjeto < estado.save.metaMinProjeto)
+                    estado.save.projetoSucesso = false;
+                else
+                    estado.save.projetoSucesso = true;
             }
         }
         
@@ -86,6 +90,7 @@ public class FimDeTurno : MonoBehaviour
 
     public void EncerrarTurno()
     {
+        estado.save.avancoProjeto++;
         estado.save.turno++;
         crossfade.ChamarCrossfade(this.gameObject.scene.name, dtPlayer.transform.position);
     }

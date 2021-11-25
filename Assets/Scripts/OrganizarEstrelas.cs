@@ -8,6 +8,8 @@ public class OrganizarEstrelas : MonoBehaviour
 
     public void Organizar(int estrelas)
     {
+        Debug.Log("Organizando Estrelas de: " + nome);
+
         for (int i = 0; i < transform.childCount; i++)
         {
             transform.GetChild(i).transform.GetChild(0).gameObject.SetActive(false);

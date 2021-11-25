@@ -775,6 +775,8 @@ public class DialogueTriggerPlayer : DialogueTrigger
         if (NPCPerguntando == dialogueData.name
             && resposta == dialogueResponses.Responses[2] && ultimaSentenca == 17)
         {
+            estado.save.avancoProjeto++;
+
             estado.save.relacaoEmpresarioRuim++;
             estado.save.AceitouAOfertaDoEmpresarioRuim = true;
             StartDialogue(17, 17);
@@ -792,13 +794,17 @@ public class DialogueTriggerPlayer : DialogueTrigger
             && resposta == dialogueResponses.Responses[4] && ultimaSentenca == 18)
         {
             estado.save.relacaoFazendeiro++;
+            estado.save.relacaoVozDoPovo--;
             estado.save.AceitouLiberarAguasParaFazendeiro = true;
             StartDialogue(18, 18);
         }
         else if (NPCPerguntando == dialogueData.name
           && resposta == dialogueResponses.Responses[5] && ultimaSentenca == 18)
         {
+            estado.save.avancoProjeto++;
+
             estado.save.relacaoFazendeiro--;
+            estado.save.relacaoVozDoPovo--;
             estado.save.AceitouLiberarAguasParaFazendeiro = false; 
             StartDialogue(18, 18);
         }
@@ -808,6 +814,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             if (NPCPerguntando == dialogueData.name
             && resposta == dialogueResponses.Responses[6])
             {
+                estado.save.relacaoVozDoPovo--;
                 estado.save.relacaoEmpresarioRuim++;
                 estado.save.aceitouPlantacaoDePlantaNaFloresta = true;
                 StartDialogue(121, 121);
@@ -815,6 +822,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[7])
             {
+                estado.save.relacaoVozDoPovo++;
                 estado.save.relacaoEmpresarioRuim--;
                 estado.save.aceitouPlantacaoDePlantaNaFloresta = false;
                 StartDialogue(121, 121);
@@ -831,6 +839,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[9])
             {
+                estado.save.avancoProjeto++;
                 estado.save.relacaoFazendeiro--;
                 estado.save.aceitouCompartilharMaquinasFazendeiro = false;
                 StartDialogue(122, 122);
@@ -845,7 +854,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             if (NPCPerguntando == dialogueData.name
             && resposta == dialogueResponses.Responses[10])
             {
-                
+                estado.save.avancoProjeto++;
                 estado.save.investiuHidreletrica = true;
                 estado.save.investiuMaquinas = false;
                 StartDialogue(130, 130);
@@ -853,7 +862,8 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[11])
             {
-                
+                estado.save.avancoProjeto++;
+                estado.save.relacaoFazendeiro++;
                 estado.save.investiuMaquinas = true;
                 estado.save.investiuHidreletrica = false;
                 StartDialogue(130, 130);
@@ -863,7 +873,10 @@ public class DialogueTriggerPlayer : DialogueTrigger
             if (NPCPerguntando == dialogueData.name
                 && resposta == dialogueResponses.Responses[12])
             {
+                estado.save.avancoProjeto++;
                 estado.save.relacaoEmpresarioRuim++;
+                estado.save.relacaoVozDoPovo--;
+                estado.save.relacaoFazendeiro--;
                 estado.save.aceitouCompraERDoProjeto = true;
                 StartDialogue(122, 122);
             }
@@ -871,6 +884,8 @@ public class DialogueTriggerPlayer : DialogueTrigger
               && resposta == dialogueResponses.Responses[13])
             {
                 estado.save.relacaoEmpresarioRuim--;
+                estado.save.relacaoVozDoPovo++;
+                estado.save.relacaoFazendeiro++;
                 estado.save.aceitouCompraERDoProjeto = false;
                 StartDialogue(122, 122);
             }
@@ -884,6 +899,8 @@ public class DialogueTriggerPlayer : DialogueTrigger
             && resposta == dialogueResponses.Responses[14])
             {
                 estado.save.relacaoEmpresarioRuim++;
+                estado.save.relacaoVozDoPovo--;
+                estado.save.relacaoFazendeiro--;
                 estado.save.aceitouDoarDinheiroER = true;
                 
                 StartDialogue(145, 145);
@@ -891,7 +908,9 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[15])
             {
+                //estado.save.avancoProjeto++;
 
+                estado.save.relacaoGovernador--;
                 estado.save.relacaoEmpresarioRuim--;
                 estado.save.aceitouDoarDinheiroER = false;
                 StartDialogue(145, 145);
@@ -901,14 +920,16 @@ public class DialogueTriggerPlayer : DialogueTrigger
             if (NPCPerguntando == dialogueData.name
                 && resposta == dialogueResponses.Responses[16])
             {
-                estado.save.relacaoEmpresarioBom++;
+                estado.save.relacaoFazendeiro++;
                 estado.save.aceitouEBComprarTerrenoFazendeiro = true;
                 StartDialogue(146, 146);
             }
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[17])
             {
-                estado.save.relacaoEmpresarioBom--;
+                estado.save.avancoProjeto++;
+
+                estado.save.relacaoFazendeiro--;
                 estado.save.aceitouEBComprarTerrenoFazendeiro = false;
                 StartDialogue(146, 146);
             }
@@ -917,7 +938,10 @@ public class DialogueTriggerPlayer : DialogueTrigger
             if (NPCPerguntando == dialogueData.name
                 && resposta == dialogueResponses.Responses[18])
             {
+                estado.save.avancoProjeto++;
+
                 estado.save.relacaoEmpresarioBom++;
+                estado.save.relacaoEmpresarioRuim--;
                 estado.save.aceitouEBParticiparProjetoRemedios = true;
                 StartDialogue(122, 122);
             }
@@ -925,6 +949,8 @@ public class DialogueTriggerPlayer : DialogueTrigger
               && resposta == dialogueResponses.Responses[19])
             {
                 estado.save.relacaoEmpresarioBom--;
+                estado.save.relacaoEmpresarioBom++;
+                estado.save.relacaoVozDoPovo--;
                 estado.save.aceitouEBParticiparProjetoRemedios = false;
                 StartDialogue(122, 122);
             }
@@ -1018,6 +1044,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             {
 
                 estado.save.avancoProjeto++;
+                estado.save.avancoProjeto++;
                 estado.save.biancaInvestiuMaquinas7 = true;
                 StartDialogue(122, 122);
             }
@@ -1031,7 +1058,8 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 {
                     estado.save.relacaoVozDoPovo++;
                 }
-                
+
+                estado.save.avancoProjeto++;
                 estado.save.biancaInvestiuHidreletrica7 = false;
                 StartDialogue(122, 122);
             }

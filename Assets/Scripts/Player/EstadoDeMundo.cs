@@ -1,4 +1,4 @@
-using System.IO;
+﻿using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using System.Collections;
@@ -14,6 +14,8 @@ public class EstadoDeMundo : MonoBehaviour
     private SFXPlayer sfxPlayer;
 
     private TypingEffect typingEffect;
+
+    public AtualizarAvancoProjeto atualizarAvancoProjeto;
 
     private string savePath = "/Save.sav";
 
@@ -37,6 +39,13 @@ public class EstadoDeMundo : MonoBehaviour
 
         if (typingEffect != null || musicPlayer != null || sfxPlayer != null)
             UpdateSettings();
+
+        if (GameObject.FindGameObjectWithTag("Avanço Projeto") != null)
+            atualizarAvancoProjeto = GameObject.FindGameObjectWithTag("Avanço Projeto")
+                .GetComponent<AtualizarAvancoProjeto>();
+
+        if (atualizarAvancoProjeto != null)
+            atualizarAvancoProjeto.Atualizar();
 
     }
 
@@ -80,6 +89,9 @@ public class EstadoDeMundo : MonoBehaviour
         }
 
         slotsManagerGO.SetActive(false);
+
+        if (atualizarAvancoProjeto != null)
+            atualizarAvancoProjeto.Atualizar();
 
         FileStream file = File.Create(Application.persistentDataPath + savePath);
         BinaryFormatter bf = new BinaryFormatter();

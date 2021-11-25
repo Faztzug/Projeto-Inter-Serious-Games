@@ -356,7 +356,11 @@ public class DialogueTriggerAssistente : DialogueTrigger
 
             }
             else if (lastSentence > 81 && lastSentence < 86)
+            {
+                estado.save.avancoProjeto += 2;
                 StartDialogue(85, 85);
+            }
+                
             else if (lastSentence == 86)
                 DTplayer.StartDialogue(69, 69);
             else if (lastSentence == 87)
