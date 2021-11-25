@@ -299,6 +299,15 @@ MonoBehaviour:
     - Bom dia, senhor Paulo, tudo bem?
     - "N\xE3o, imagino que Raul j\xE1 falou bem, ele \xE9 bem f\xE1cil de se ler,
       n\xE3o se preocupe com isso."
+    - Bom dia, senhor Paulo.
+    - Estamos bem.
+    - "N\xE3o \xE9 assim t\xE3o f\xE1cil. Conseguir acesso n\xE3o vai ser f\xE1cil
+      j\xE1 pelos seguran\xE7as que s\xE3o pagos por Leandro. Convenc\xEA-lo n\xE3o
+      ser\xE1 f\xE1cil e voc\xEA tem um oponente extremamente forte na sua frente, "
+    - "mas se voc\xEA conseguir convencer Pedro a cogitar a ideia, fale com a gente
+      e iremos te ajudar, com certeza."
+    - Bom dia, Paulo.
+    - "N\xE3o precisa agradecer, Paulo. Fico feliz que tenha dado tudo certo."
 --- !u!58 &578460683487209619
 CircleCollider2D:
   m_ObjectHideFlags: 0

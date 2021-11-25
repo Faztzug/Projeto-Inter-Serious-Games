@@ -108,6 +108,10 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (lastSentence == 123)
                 FindObjectOfType<FimDeTurno>().EncerrarTurno();
 
+            //interações
+            if (lastSentence == 246)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(10,10);
+
 
         }
 
@@ -173,6 +177,21 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DTFazendeiro>().StartDialogue(24, 24);
             else if (lastSentence == 227)
                 FindObjectOfType<DTFazendeiro>().StartDialogue(25, 25);
+
+
+            if (lastSentence == 247)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(11,11);
+            else if (lastSentence == 248)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(12, 12);
+            else if (lastSentence == 249)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(13, 13);
+
+            else if(lastSentence == 251)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(14, 14);
+            else if (lastSentence == 252)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(15, 15);
+            else if (lastSentence == 253)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(16, 16);
 
 
         }
@@ -247,6 +266,12 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DTFazendeiro>().StartDialogue(28, 28);
             else if (lastSentence == 231)
                 FindObjectOfType<DTFazendeiro>().StartDialogue(29, 29);
+
+            if (lastSentence == 254)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(17,17);
+            else if (lastSentence == 255)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(18, 18);
+            
 
         }
 
@@ -334,8 +359,16 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DTFazendeiro>().StartDialogue(32, 33);
             else if (lastSentence == 235)
                 FindObjectOfType<DTFazendeiro>().StartDialogue(34, 34);
-            
 
+
+            if (lastSentence == 257)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(19,19);
+            else if (lastSentence == 258)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(33, 33);
+            else if (lastSentence == 259)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(21, 21);
+            else if (lastSentence == 260)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(34, 35);
 
 
         }
@@ -603,6 +636,11 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DTFazendeiro>().StartDialogue(38, 38);
             else if (lastSentence == 242)
                 FindObjectOfType<DTFazendeiro>().StartDialogue(39, 39);
+
+            if (lastSentence == 262)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(22,22);
+            else if (lastSentence == 263)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(23, 23);
         }
 
         else if (estado.save.turno == 10)
@@ -680,7 +718,13 @@ public class DialogueTriggerPlayer : DialogueTrigger
             FindObjectOfType<DTFazendeiro>().StartDialogue(40,40);
         else if (lastSentence == 244)
             FindObjectOfType<DTFazendeiro>().StartDialogue(41, 41);
-        
+
+        if (lastSentence == 265)
+            FindObjectOfType<DTEmpresarioBom>().StartDialogue(36, 36);
+        else if (lastSentence == 266)
+            FindObjectOfType<DTVozDoPovo>().StartDialogue(25,25);
+            
+
 
     }
 

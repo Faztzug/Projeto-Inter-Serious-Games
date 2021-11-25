@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 3.8105822, y: -5.0624847}
+  touchPosition: {x: 4.7356086, y: -4.1578426}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -424,6 +424,34 @@ MonoBehaviour:
     - "Bom dia, Jo\xE3o"
     - "O fim do projeto \xE9 iminente, n\xE3o sei se te verei mais, mas estou grato
       por ter te conhecido e obrigado por todo o suporte."
+    - hum... esse deve ser Raul, mais conhecido como a voz do povo.
+    - Bom dia senhor Raul, como anda as coisas por aqui?
+    - Bom dia, Raul.
+    - "Vou bem, como est\xE3o as coisas agora com as fazendas melhor equipadas para
+      grandes planta\xE7\xF5es?"
+    - "N\xE3o me falou nada n\xE3o, imaginei que o pre\xE7o teria diminu\xEDdo\u2026"
+    - ...
+    - Senhor Raul?
+    - "Estava de passagem e aproveitei para dar um bom dia para voc\xEA."
+    - "N\xE3o tinha como aceitar a proposta, Raul. Existem coisas mais urgentes nesse
+      momento."
+    - Bom dia, Raul.
+    - "Vim aqui perguntar sobre os rem\xE9dios que a Senhora Bianca disse que voc\xEAs
+      estavam recebendo, confere a informa\xE7\xE3o?"
+    - Okay, Raul. Obrigado, fico feliz em saber.
+    - "Ah, que bom ver voc\xEAs dois aqui, Raul e Bianca."
+    - "Bom dia para voc\xEAs dois. Como est\xE3o?"
+    - "Er\u2026 Claro, claro, desculpe. Eu arranjei algumas provas dos problemas
+      que Leandro est\xE1 fazendo com o projeto e gostaria do suporte de voc\xEAs."
+    - "A ideia \xE9 mostrar as provas para ele e fazer ele ver a luz\u2026"
+    - Obrigado, Bianca e Raul.
+    - Bom dia, Raul.
+    - "Raul, me diga uma coisa, como a popula\xE7\xE3o est\xE1 vendo o projeto?"
+    - "Eu\u2026 Eu n\xE3o desapontarei, n\xE3o se preocupe."
+    - Bom dia, Raul, Bianca.
+    - "O fim do projeto \xE9 iminente, n\xE3o sei se verei voc\xEAs mais, mas estou
+      grato por ter  conhecido voc\xEAs e obrigado por todo o suporte. Principalmente
+      voc\xEA, Bianca. N\xE3o conseguiria chegar aqui sem voc\xEA."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,27 +465,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   save:
-    turno: 6
+    turno: 1
     ato: 1
     avancoProjeto: 0
     cenaAtual: Laboratorio_1
     _positionX: 0
     _positionY: 0
-    conheceuGovernador: 1
-    conheceuEmpresarioRuim: 1
-    conheceuFazendeiro: 1
-    coletouTerra: 1
-    coletouFusivel: 1
+    conheceuGovernador: 0
+    conheceuEmpresarioRuim: 0
+    conheceuFazendeiro: 0
+    coletouTerra: 0
+    coletouFusivel: 0
     AceitouAOfertaDoEmpresarioRuim: 0
-    AceitouLiberarAguasParaFazendeiro: 1
+    AceitouLiberarAguasParaFazendeiro: 0
     alarmeIncendio2: 0
     apagouIncendio2: 0
-    turno2Concluido: 1
+    turno2Concluido: 0
     fimIntroducaoTurno2: 0
     aceitouPlantacaoDePlantaNaFloresta: 0
     aceitouCompartilharMaquinasFazendeiro: 0
     fimIntroducaoTurno3: 0
-    puzzleExaustores3Resolvido: 1
+    puzzleExaustores3Resolvido: 0
     aceitouCompraERDoProjeto: 0
     investiuHidreletrica: 0
     investiuMaquinas: 0
@@ -477,7 +505,7 @@ MonoBehaviour:
     ONUInvestiuMaquinaria5: 0
     ONUInvestiuHidreletrica5: 0
     ONUInvestiuExaustores5: 0
-    fimIntroducaoTurno6: 1
+    fimIntroducaoTurno6: 0
     conversouEB6: 0
     conversouFazendeiro6: 0
     conversouVozDoPovo6: 0

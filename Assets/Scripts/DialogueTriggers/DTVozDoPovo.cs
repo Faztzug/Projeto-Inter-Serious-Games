@@ -22,23 +22,33 @@ public class DTVozDoPovo : DialogueTrigger
     {
         if(estado.save.turno == 1)
         {
-
+            DTplayer.StartDialogue(244,244);
         }
         else if (estado.save.turno == 2)
         {
-
+            if (estado.save.fimIntroducaoTurno2 == true)
+                DTplayer.StartDialogue(245,245);
         }
         else if (estado.save.turno == 3)
         {
-
+            if (estado.save.fimIntroducaoTurno3 == true)
+            {
+                if (estado.save.aceitouCompartilharMaquinasFazendeiro == true)
+                    DTplayer.StartDialogue(246, 246);
+                else if (estado.save.aceitouCompartilharMaquinasFazendeiro == false)
+                    DTplayer.StartDialogue(250, 250);
+            }
+                
         }
         else if (estado.save.turno == 4)
         {
-
+            if (estado.save.fimIntroducaoTurno4 == true)
+                DTplayer.StartDialogue(253,253);
         }
         else if (estado.save.turno == 5)
         {
-
+            if (estado.save.fimIntroducaoTurno5 == true)
+                DTplayer.StartDialogue(256, 256);
         }
         else if (estado.save.turno == 6)
         {
@@ -51,6 +61,23 @@ public class DTVozDoPovo : DialogueTrigger
         {
             if(estado.save.fimIntroducaoTurno7 == false)
             StartDialogue(0, 0);
+        }
+
+
+        else if (estado.save.turno == 9)
+        {
+            if (estado.save.fimIntroducaoTurno9 == true)
+            {
+                DTplayer.StartDialogue(261, 261);
+            }
+        }
+
+        else if (estado.save.turno == 10)
+        {
+            if (estado.save.fimIntroducaoTurno10 == true)
+            {
+                DTplayer.StartDialogue(264, 264);
+            }
         }
     }
 
@@ -69,15 +96,33 @@ public class DTVozDoPovo : DialogueTrigger
         }
         else if (estado.save.turno == 3)
         {
+            if (lastSentence == 12)
+                DTplayer.StartDialogue(247,247);
+            else if (lastSentence == 13)
+                DTplayer.StartDialogue(248, 248);
+            else if (lastSentence == 14)
+                DTplayer.StartDialogue(249, 249);
 
+            else if (lastSentence == 15)
+                DTplayer.StartDialogue(251, 251);
+            else if (lastSentence == 16)
+                DTplayer.StartDialogue(252, 252);
         }
         else if (estado.save.turno == 4)
         {
-
+            if (lastSentence == 18)
+                DTplayer.StartDialogue(254,254);
+            else if (lastSentence == 19)
+                DTplayer.StartDialogue(255, 255);
         }
         else if (estado.save.turno == 5)
         {
-
+            if (lastSentence == 20)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(32,32);
+            else if (lastSentence == 21)
+                DTplayer.StartDialogue(258, 258);
+            else if (lastSentence == 22)
+                DTplayer.StartDialogue(259, 259);
         }
         else if (estado.save.turno == 6)
         {
@@ -114,6 +159,23 @@ public class DTVozDoPovo : DialogueTrigger
         {
             if(lastSentence == 7)
                 DTplayer.StartDialogue(208, 208);
+        }
+
+        else if (estado.save.turno == 9)
+        {
+            if (lastSentence == 23)
+                DTplayer.StartDialogue(262, 262);
+            else if (lastSentence == 24)
+                DTplayer.StartDialogue(263, 263);
+        }
+
+        else if (estado.save.turno == 10)
+        {
+            if (lastSentence == 25)
+                DTplayer.StartDialogue(265, 265);
+            else if (lastSentence == 26)
+                FindObjectOfType<DTEmpresarioBom>().StartDialogue(37, 37);
+
         }
     }
 }

@@ -267,6 +267,33 @@ MonoBehaviour:
     - "Aquele patife \xE9 estupido, diga qualquer coisa que fa\xE7a ele achar que
       ter\xE1 lucro e voc\xEA j\xE1 ganhou ele."
     - Boa sorte.
+    - "Bom dia, Paulo. O povo est\xE1 ansioso para ver as mudan\xE7as que voc\xEA
+      trar\xE1, esperamos o melhor de voc\xEA e que seu objetivo seja ajudar ao povo."
+    - "Bom dia, Paulo. Como vai voc\xEA?"
+    - "Estamos finalmente bem alimentados, mas n\xE3o entendi o aumento dos pre\xE7os.
+      Jo\xE3o te falou alguma coisa?"
+    - "Hum\u2026 Entendo. Infelizmente esperava uma a\xE7\xE3o diferente dele. Com
+      o pre\xE7o aumentado n\xE3o adianta ter mais, as pessoas necessitadas ainda
+      n\xE3o v\xE3o conseguir comer."
+    - O que foi, Senhor Paulo? Estou ocupado.
+    - "N\xE3o temos um bom dia desde que voc\xEA recusou a proposta de Jo\xE3o. Chegamos
+      ao ponto de precisar particionar a comida. Mas, enfim, tenha um bom dia."
+    - "Nada \xE9 mais urgente que a vida das pessoas, Paulo. Todas as outras coisas
+      podem esperar ou dar um jeito, menos uma vida perdida."
+    - Bom dia, senhor Paulo, busca alguma coisa?
+    - "Ah sim, a senhora Bianca. Sim, estamos recebendo dela e alguns outros suportes.
+      Sempre \xE9 bom ver algu\xE9m usar o dinheiro para o que realmente \xE9 necess\xE1rio."
+    - Bom dia, Paulo.
+    - "Vejo nos seus olhos que voc\xEA n\xE3o est\xE1 aqui para conversa fiada, Paulo.
+      Vamos direto ao ponto, sim?"
+    - "E o que voc\xEA planeja fazer com isso? Levar para o Pedro? Ha! boa sorte
+      fazendo aquele velho perceber qualquer coisa, totalmente cego pela gan\xE2ncia."
+    - Bom dia, Paulo.
+    - "Olha, Paulo. Eles est\xE3o esperan\xE7osos que voc\xEA tem o melhor para eles
+      em mente e que isso vai finalmente resolver nosso problema. Espero que voc\xEA
+      n\xE3o nos desaponte."
+    - Bom dia, Paulo.
+    - "Eu que agrade\xE7o, senhor. Obrigado por ter feito tanto por n\xF3s"
 --- !u!58 &3834709144419141984
 CircleCollider2D:
   m_ObjectHideFlags: 0

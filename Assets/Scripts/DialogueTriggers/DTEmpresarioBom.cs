@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -32,7 +32,10 @@ public class DTEmpresarioBom : DialogueTrigger
         }
         else if (estado.save.turno == 5)
         {
-            StartDialogue(20, 20);
+            if (estado.save.fimIntroducaoTurno5 == false)
+                StartDialogue(20, 20);
+            else if (estado.save.fimIntroducaoTurno5 == true)
+                DTplayer.StartDialogue(256,256);
         }
 
         else if (estado.save.turno == 6)
@@ -40,6 +43,14 @@ public class DTEmpresarioBom : DialogueTrigger
             if (estado.save.fimIntroducaoTurno6 == true)
             {
                 DTplayer.StartDialogue(218, 218);
+            }
+        }
+
+        else if (estado.save.turno == 10)
+        {
+            if (estado.save.fimIntroducaoTurno10 == true)
+            {
+                DTplayer.StartDialogue(264, 264);
             }
         }
     }
@@ -120,6 +131,14 @@ public class DTEmpresarioBom : DialogueTrigger
                 DTplayer.StartDialogue(65, 65);
             else if (lastSentence == 28)
                 DTplayer.StartDialogue(68, 68);
+
+            //interação
+            if (lastSentence == 33)
+                DTplayer.StartDialogue(257,257);
+            else if (lastSentence == 34)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(20, 20);
+            else if (lastSentence == 36)
+                DTplayer.StartDialogue(260, 260);
         }
 
         else if (estado.save.turno == 6)
@@ -148,6 +167,12 @@ public class DTEmpresarioBom : DialogueTrigger
                     FindObjectOfType<DTVozDoPovo>().StartDialogue(6, 6);
             }
 
+        }
+
+        else if(estado.save.turno == 10)
+        {
+            if (lastSentence == 37)
+                FindObjectOfType<DTVozDoPovo>().StartDialogue(24,24);
         }
     }
 }
