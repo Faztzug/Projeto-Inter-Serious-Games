@@ -80,7 +80,7 @@ public class DTGovernandor : DialogueTrigger
         }
         else if (estado.save.turno == 4)
         {
-            if(estado.save.fimIntroducaoTurno4 == false)
+            if(estado.save.fimDialogoGovernadorTurno4 == false)
             DTplayer.StartDialogue(54, 54);
         }
         else if (estado.save.turno == 5)

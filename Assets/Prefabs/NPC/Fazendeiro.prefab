@@ -330,3 +330,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fazerAndar: {fileID: 0}
   dialogueData: {fileID: 0}
+  fazendaCena: Fazenda

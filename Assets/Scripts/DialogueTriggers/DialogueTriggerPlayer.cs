@@ -822,6 +822,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[7])
             {
+                estado.save.avancoProjeto++;
                 estado.save.relacaoVozDoPovo++;
                 estado.save.relacaoEmpresarioRuim--;
                 estado.save.aceitouPlantacaoDePlantaNaFloresta = false;
@@ -908,7 +909,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             else if (NPCPerguntando == dialogueData.name
               && resposta == dialogueResponses.Responses[15])
             {
-                //estado.save.avancoProjeto++;
+                estado.save.avancoProjeto++;
 
                 estado.save.relacaoGovernador--;
                 estado.save.relacaoEmpresarioRuim--;

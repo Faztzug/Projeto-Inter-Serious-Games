@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DTFazendeiro : DialogueTrigger
 {
+    [SerializeField] private string fazendaCena;
+
     public override void Start()
     {
         base.Start();
@@ -31,6 +33,7 @@ public class DTFazendeiro : DialogueTrigger
 
         if(estado.save.turno == 2)
         {
+            if(estado.save.fimIntroducaoTurno2 == false)
             DTplayer.StartDialogue(25,25);
         }
 
@@ -77,7 +80,7 @@ public class DTFazendeiro : DialogueTrigger
             
         }
 
-        if (estado.save.turno == 7)
+        if (estado.save.turno == 7 && gameObject.scene.name == fazendaCena)
         {
             DTplayer.StartDialogue(235,235);
 

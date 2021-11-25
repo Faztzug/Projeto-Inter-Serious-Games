@@ -98,6 +98,7 @@ public class DTEmpresarioBom : DialogueTrigger
                 FindObjectOfType<DTGovernandor>().fazerAndar.AndePara(new Vector2(5.5f, -3.2f));
                 StartDialogue(15, 15, 2);
                 //StartDialogue(15, 15);
+                fazerAndar.pararDeAndarAoAtingirPlayer = false;
                 estado.save.fimIntroducaoTurno4 = true;
             }
             else if (lastSentence == 16)

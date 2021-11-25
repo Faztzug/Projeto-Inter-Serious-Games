@@ -98,7 +98,12 @@ public class DTNarrador : DialogueTrigger
                 {
                     DTplayer.StartDialogue(164,164);
                 }
+
+                
             }
+
+            if (gameObject.scene.name == areaGovernamentalFrenteCena)
+                DTplayer.StartDialogue(277, 277);
         }
         else if (estado.save.turno == 7)
         {
