@@ -794,7 +794,7 @@ public class DialogueTriggerPlayer : DialogueTrigger
             && resposta == dialogueResponses.Responses[4] && ultimaSentenca == 18)
         {
             estado.save.relacaoFazendeiro++;
-            estado.save.relacaoVozDoPovo--;
+            estado.save.relacaoVozDoPovo++;
             estado.save.AceitouLiberarAguasParaFazendeiro = true;
             StartDialogue(18, 18);
         }
