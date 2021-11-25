@@ -112,6 +112,11 @@ public class DialogueTriggerPlayer : DialogueTrigger
             if (lastSentence == 246)
                 FindObjectOfType<DTVozDoPovo>().StartDialogue(10,10);
 
+            if (lastSentence == 268)
+                FindObjectOfType<DTGovernandor>().StartDialogue(50,50);
+            else if (lastSentence == 269)
+                FindObjectOfType<DTGovernandor>().StartDialogue(51, 51);
+
 
         }
 
@@ -192,6 +197,12 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DTVozDoPovo>().StartDialogue(15, 15);
             else if (lastSentence == 253)
                 FindObjectOfType<DTVozDoPovo>().StartDialogue(16, 16);
+
+
+            if (lastSentence == 271)
+                FindObjectOfType<DTGovernandor>().StartDialogue(52,52);
+            else if (lastSentence == 272)
+                FindObjectOfType<DTGovernandor>().StartDialogue(53, 53);
 
 
         }

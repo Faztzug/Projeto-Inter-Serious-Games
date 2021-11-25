@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +6,7 @@ public class DTGovernandor : DialogueTrigger
 {
     public string florestaMeioCena;
     public string florestaEsquerdaCena;
+    public string areaGovernamentalDentro;
 
     public override void Start()
     {
@@ -48,14 +49,34 @@ public class DTGovernandor : DialogueTrigger
 
     public override void StartDialogue()
     {
-        if (estado.save.turno == 1 && estado.save.conheceuGovernador == false)
+        if (estado.save.turno == 1)
         {
-            dialogueManager.StartingDialogue(0, 3);
-            fazerAndar.pararDeAndarAoAtingirPlayer = false;
+            if(estado.save.conheceuGovernador == false)
+            {
+                dialogueManager.StartingDialogue(0, 3);
+                fazerAndar.pararDeAndarAoAtingirPlayer = false;
+            }
+
+            if(estado.save.conheceuGovernador == true 
+                && gameObject.scene.name == areaGovernamentalDentro)
+            {
+                DTplayer.StartDialogue(266,266);
+            }
+            
+
+            
+        }
+        else if (estado.save.turno == 2)
+        {
+            if(estado.save.fimIntroducaoTurno2 == true)
+            StartDialogue(49, 49);
         }
         else if (estado.save.turno == 3)
         {
-            DTplayer.StartDialogue(38, 38);
+            if (estado.save.fimIntroducaoTurno3 == false)
+                DTplayer.StartDialogue(38, 38);
+            else if (estado.save.fimIntroducaoTurno3 == true)
+                DTplayer.StartDialogue(270,270);
         }
         else if (estado.save.turno == 4)
         {
@@ -103,7 +124,17 @@ public class DTGovernandor : DialogueTrigger
             FindObjectOfType<DTEmpresarioRuim>().GetComponentInParent<FazerAndar>()
                 .AndePara(new Vector2(-6.5f,-3));
 
-        if(estado.save.turno == 3)
+        if(estado.save.turno == 2)
+        {
+            if (lastSentence == 50)
+                DTplayer.StartDialogue(267,267);
+            else if (lastSentence == 51)
+                DTplayer.StartDialogue(268, 268);
+            else if (lastSentence == 52)
+                DTplayer.StartDialogue(269, 269);
+        }
+
+        else if(estado.save.turno == 3)
         {
             if (lastSentence == 5)
                 DTplayer.StartDialogue(39, 39);
@@ -119,6 +150,13 @@ public class DTGovernandor : DialogueTrigger
                 DTplayer.StartDialogue(44, 44);
             else if (lastSentence == 15)
                 FindObjectOfType<DTEmpresarioRuim>().StartDialogue(22, 22);
+
+            //interação
+            if (lastSentence == 53)
+                DTplayer.StartDialogue(271,271);
+            else if (lastSentence == 54)
+                DTplayer.StartDialogue(272, 272);
+
         }
 
         else if (estado.save.turno == 4)

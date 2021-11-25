@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 4.7356086, y: -4.1578426}
+  touchPosition: {x: 6.5976295, y: -3.557516}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -452,6 +452,16 @@ MonoBehaviour:
     - "O fim do projeto \xE9 iminente, n\xE3o sei se verei voc\xEAs mais, mas estou
       grato por ter  conhecido voc\xEAs e obrigado por todo o suporte. Principalmente
       voc\xEA, Bianca. N\xE3o conseguiria chegar aqui sem voc\xEA."
+    - "Aqui \xE9 onde o Senhor Pedro trabalha, caso eu precise vir falar com ele."
+    - Estava passando por aqui e decidi dar um bom dia, senhor.
+    - "Claro, Senhor. Estamos avan\xE7ando, devagar mas constantemente. Ap\xF3s os
+      estudos terem dados resultados, iremos agora formar um plano mais concreto
+      e em alguns anos teremos \xF3timos resultados."
+    - "Claro, senhor Pedro. Estarei me retirando, ent\xE3o. At\xE9 mais."
+    - Bom dia, senhor Pedro.
+    - "Ah, sobre isso. Alguma pessoa est\xE1 tentando sabotar, senhor. Estou buscando
+      descobrir o culpado ainda."
+    - "Sim, senhor, n\xE3o se preocupe."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberSentences: 0
+  typingEffect: {fileID: 0}
 --- !u!114 &2645994734902680495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +151,15 @@ MonoBehaviour:
       voc\xEA."
     - FINALMENTE
     - "Iremos agora resolver tudo no tribunal. Voc\xEA est\xE1 preso."
+    - "Bom dia, senhor Paulo, a que devo \xE0 honra?"
+    - "Agrade\xE7o, Paulo. Mas j\xE1 que est\xE1 aqui, poderia me dizer seu progresso?"
+    - "Fico feliz com isso. Espero o melhor de voc\xEA, senhor Paulo. Agora se me
+      der licen\xE7a, tenho uma reuni\xE3o com alguns conselheiros, vejo voc\xEA
+      outro dia, sim?"
+    - "Bom dia, senhor Paulo. Soube dos problemas nas m\xE1quinas, o que pode me
+      dizer sobre isso?"
+    - "\xC9 melhor voc\xEA verificar isso r\xE1pido, n\xE3o podemos deixar isso chegar
+      ao p\xFAblico."
 --- !u!58 &2645994734902680494
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -182,6 +192,7 @@ MonoBehaviour:
   dialogueData: {fileID: 0}
   florestaMeioCena: Floresta_1
   florestaEsquerdaCena: Floresta_3
+  areaGovernamentalDentro: AreaGovernamental_dentro
 --- !u!1 &2645994735013250889
 GameObject:
   m_ObjectHideFlags: 0
