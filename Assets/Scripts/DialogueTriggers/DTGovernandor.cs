@@ -80,17 +80,20 @@ public class DTGovernandor : DialogueTrigger
         }
         else if (estado.save.turno == 4)
         {
+            if(estado.save.fimIntroducaoTurno4 == false)
             DTplayer.StartDialogue(54, 54);
         }
         else if (estado.save.turno == 5)
         {
-            if(estado.save.fimIntroducaoTurno5 == true)
+            if(estado.save.fimIntroducaoTurno5 == true
+                && estado.save.conversouComGovernador5 == false)
             {
                 DTplayer.StartDialogue(152,152);
             }
         }
         else if (estado.save.turno == 6)
         {
+            if(estado.save.fimIntroducaoTurno6 == false)
             StartDialogue(19, 19);
         }
 
@@ -105,6 +108,14 @@ public class DTGovernandor : DialogueTrigger
         {
             if (estado.save.averigouProvas7 == true && estado.save.mostrouProvasGovernador7 == false)
                 FindObjectOfType<DTVozDoPovo>().StartDialogue(5,5);
+        }
+
+        else if(estado.save.turno == 9)
+        {
+            if(estado.save.fimIntroducaoTurno9 == true)
+            {
+                DTplayer.StartDialogue(273,273);
+            }
         }
 
 
@@ -241,7 +252,15 @@ public class DTGovernandor : DialogueTrigger
             }
         }
 
-
+        else if(estado.save.turno == 9)
+        {
+            if (lastSentence == 55)
+                DTplayer.StartDialogue(274,274);
+            else if (lastSentence == 56)
+                DTplayer.StartDialogue(275, 275);
+            else if (lastSentence == 57)
+                DTplayer.StartDialogue(276, 276);
+        }
 
 
         else if (estado.save.turno == 10)

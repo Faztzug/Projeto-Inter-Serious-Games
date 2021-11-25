@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: 6.5976295, y: -3.557516}
+  touchPosition: {x: 0.33650982, y: -2.9651961}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -462,6 +462,11 @@ MonoBehaviour:
     - "Ah, sobre isso. Alguma pessoa est\xE1 tentando sabotar, senhor. Estou buscando
       descobrir o culpado ainda."
     - "Sim, senhor, n\xE3o se preocupe."
+    - Bom dia, Pedro.
+    - "Vim lhe informar que a m\xE1quina est\xE1 trabalhando melhor do que nunca
+      e que estamos chegando perto do resultado."
+    - "Sim\u2026 e sobre Leandro, alguma not\xEDcia?"
+    - "Entendo\u2026 Bem, tenha um bom dia."
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0

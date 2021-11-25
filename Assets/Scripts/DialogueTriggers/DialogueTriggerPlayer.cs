@@ -652,6 +652,13 @@ public class DialogueTriggerPlayer : DialogueTrigger
                 FindObjectOfType<DTVozDoPovo>().StartDialogue(22,22);
             else if (lastSentence == 263)
                 FindObjectOfType<DTVozDoPovo>().StartDialogue(23, 23);
+
+            if (lastSentence == 274)
+                FindObjectOfType<DTGovernandor>().StartDialogue(54,54);
+            else if (lastSentence == 275)
+                FindObjectOfType<DTGovernandor>().StartDialogue(55, 55);
+            else if (lastSentence == 276)
+                FindObjectOfType<DTGovernandor>().StartDialogue(56, 56);
         }
 
         else if (estado.save.turno == 10)

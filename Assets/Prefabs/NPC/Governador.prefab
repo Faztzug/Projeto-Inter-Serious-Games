@@ -160,6 +160,10 @@ MonoBehaviour:
       dizer sobre isso?"
     - "\xC9 melhor voc\xEA verificar isso r\xE1pido, n\xE3o podemos deixar isso chegar
       ao p\xFAblico."
+    - Bom dia, Paulo, o que devo a honra?
+    - "Isso s\xE3o \xF3timas not\xEDcias."
+    - "Estamos procurando\u2026 Acho que achamos umas pistas mas n\xE3o quero falar
+      nada ainda nesse momento."
 --- !u!58 &2645994734902680494
 CircleCollider2D:
   m_ObjectHideFlags: 0
