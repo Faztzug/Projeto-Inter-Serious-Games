@@ -15,6 +15,7 @@ public class PortaAnimation : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            FindObjectOfType<SFXPlayer>().PlayAudio("PortaLab");
             Debug.Log("Abrir Porta");
             anim.SetTrigger("Abrir");
         }

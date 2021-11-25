@@ -18,6 +18,7 @@ public class LockPortaAtivar : MonoBehaviour
         
         if (collision.CompareTag("Player"))
         {
+            FindObjectOfType<SFXPlayer>().PlayAudio("Unlock");
             TrocarSprite();
         }
     }

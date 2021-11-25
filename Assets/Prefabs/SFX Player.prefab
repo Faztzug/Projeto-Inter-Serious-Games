@@ -74,4 +74,22 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     audioSource: {fileID: 0}
+  - clip: {fileID: 8300000, guid: bf727110eeaf52c4d8a319b27d7cc66f, type: 3}
+    name: PortaLab
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
+  - clip: {fileID: 8300000, guid: e1ccffe091fa79c4a8c1f4cd4ce795f6, type: 3}
+    name: Button
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
+  - clip: {fileID: 8300000, guid: e193961b6161309468214abac5fcc983, type: 3}
+    name: Unlock
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioSource: {fileID: 0}
   overallVolume: 1

@@ -40,7 +40,7 @@ public class SlotsManager : MonoBehaviour
         }
 
         AplicarCorSelecao(selectID);
-        
+        FindObjectOfType<SFXPlayer>().PlayAudio("Button");
         
     }
 
