@@ -1,5 +1,8 @@
+Bugs:
+legenda: * significa que já foi corrigdo
+
 aumentar colliders barrils*
 aumentar cenario Centro*
 turno 6 faltando dialogo na area governamental do narrador.*
-colocar interação com joão do turno 6 pra ocorrer só na fazenda.
-Turno 10, desativar cipo armadilha.
+colocar interação com joão do turno 7* pra ocorrer só na fazenda.*
+Turno 10, desativar cipo armadilha.*
