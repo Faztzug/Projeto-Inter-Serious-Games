@@ -460,7 +460,7 @@ public class DialogueTriggerAssistente : DialogueTrigger
                 }
 
             }
-            else if (lastSentence > 112 && lastSentence < 116)
+            else if (lastSentence > 112 && lastSentence < 117)
             {
                 estado.save.avancoProjeto += 2;
                 StartDialogue(116, 116);

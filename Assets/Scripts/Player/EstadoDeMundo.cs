@@ -15,6 +15,7 @@ public class EstadoDeMundo : MonoBehaviour
 
     private TypingEffect typingEffect;
 
+    [HideInInspector]
     public AtualizarAvancoProjeto atualizarAvancoProjeto;
 
     private string savePath = "/Save.sav";

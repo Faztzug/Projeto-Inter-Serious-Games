@@ -51,6 +51,7 @@
 
     public bool fimIntroducaoTurno3 = false;
 
+    public bool alarme3 = false;
     public bool puzzleExaustores3Resolvido = false;
 
     public bool aceitouCompraERDoProjeto = false;
@@ -116,6 +117,7 @@
     public bool InvestiuExaustores8 = false;
 
     public bool fimIntroducaoTurno9 = false;
+    public bool alarme9 = false;
 
     public bool concertouAMaquinaNaHidreletrica9 = false;
     public bool puzzleConcertouHidreletrica9 = false;
