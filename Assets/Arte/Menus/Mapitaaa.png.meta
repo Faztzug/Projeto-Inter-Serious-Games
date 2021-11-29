@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7f96e5b6f50717f4f99aedac3d1a8b64
+guid: dbcd6e972d722274bb0600fd0b071a42
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1512723972637703469
-    second: mapita_0
+      213: 4953142118899028111
+    second: Mapitaaa_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,7 +142,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mapita_0
+      name: Mapitaaa_0
       rect:
         serializedVersion: 2
         x: 18
@@ -156,8 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d246b7cf89b10be0800000000000000
-      internalID: -1512723972637703469
+      spriteID: f809007a3881db440800000000000000
+      internalID: 4953142118899028111
       vertices: []
       indices: 
       edges: []
