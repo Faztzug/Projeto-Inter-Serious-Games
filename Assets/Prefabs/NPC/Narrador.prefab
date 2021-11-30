@@ -209,7 +209,13 @@ MonoBehaviour:
   salaControleDireitaCena: Sala_de_Controle
   hidreletricaCena: Hidreletrica
   lab1Cena: Laboratorio_1
+  lab2Cena: Laboratorio_2
   areaGovernamentalFrenteCena: AreaGovernamental_Frente
+  floresta3Cena: Floresta_3
+  savanaCena: Savana
+  rioCena: Rio
+  exaustoresCena: Exaustores
+  centro2Cena: Centro 1
 --- !u!114 &3229071670326244107
 MonoBehaviour:
   m_ObjectHideFlags: 0

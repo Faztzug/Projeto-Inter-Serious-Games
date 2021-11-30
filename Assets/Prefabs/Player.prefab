@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  touchPosition: {x: -3.1308966, y: -3.4586463}
+  touchPosition: {x: -4.540901, y: -4.6605215}
   touchPositionV3: {x: 0, y: 0, z: 0}
   andando: 1
   distanceX: 0
@@ -469,6 +469,32 @@ MonoBehaviour:
     - "Entendo\u2026 Bem, tenha um bom dia."
     - "Melhor n\xE3o entrar agora, preciso de provas antes de vir falar qualquer
       coisa"
+    - "Esse \xE9 o s\xF3 o come\xE7o, espero poder ver voc\xEA crescendo novamente."
+    - "Essa luz. Verdade, tenho que pedir para algu\xE9m fazer a an\xE1lise semestral."
+    - "Quem \xE9 que tenha feito esse fogo, eu me pergunto por que fazer isso."
+    - "Parece que foi ontem que iniciamos o projeto, mas tanta coisa j\xE1 ocorreu
+      e ainda estamos no come\xE7o."
+    - "Estamos perto da metade do que foi desejado\u2026 Espero conseguir melhorar
+      e chegar at\xE9 o fim."
+    - "Melhor confirmar que n\xE3o tem nada de errado aqui"
+    - "Estranho esse res\xEDduo, precisarei estudar melhor."
+    - "Espero que n\xE3o tenha nenhum efeito prolongado o res\xEDduo que caiu aqui.
+      Torcerei por isso."
+    - "Vamos ver como est\xE1 voc\xEA, tamb\xE9m."
+    - Que bela vista
+    - Tudo parece estar funcionando bem, mas irei pedir para fazerem a checagem semestral.
+    - Depois de todos os problemas, melhor eu fazer mais uma checagem aqui
+    - Que felicidade ver ela crescendo tanto
+    - "Agora que todas as pistas est\xE3o prontas, espero dar tudo certo com Pedro."
+    - "Agora que j\xE1 provei, hora de focar em prend\xEA-lo e resolver nossos problemas"
+    - "Nossa, como est\xE1 fria\u2026 Mas acho que isso \xE9 um bom sinal"
+    - "O belo som dos p\xE1ssaros, fico feliz por ver eles estarem voltando com tamanho
+      volume"
+    - "Est\xE1 acabando\u2026 Estou grato por tudo isso"
+    - "Todo meu esfor\xE7o me trouxe at\xE9 esse ponto, sinto somente orgulho."
+    - "Obrigado por tudo que voc\xEA fez, n\xF3s conseguimos"
+    - Tantos peixes, fico feliz pelo meu trabalho ter dado resultado
+    - "Tudo parece t\xE3o mais vivo agora\u2026"
 --- !u!114 &375688006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,6 +529,7 @@ MonoBehaviour:
     aceitouPlantacaoDePlantaNaFloresta: 0
     aceitouCompartilharMaquinasFazendeiro: 0
     fimIntroducaoTurno3: 0
+    alarme3: 0
     puzzleExaustores3Resolvido: 0
     aceitouCompraERDoProjeto: 0
     investiuHidreletrica: 0
@@ -549,6 +576,7 @@ MonoBehaviour:
     InvestiuHidreletrica8: 0
     InvestiuExaustores8: 0
     fimIntroducaoTurno9: 0
+    alarme9: 0
     concertouAMaquinaNaHidreletrica9: 0
     puzzleConcertouHidreletrica9: 0
     puzzleConcertouMaquinas9: 0

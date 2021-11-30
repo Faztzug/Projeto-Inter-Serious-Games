@@ -5,14 +5,20 @@ using UnityEngine;
 public class DTNarrador : DialogueTrigger
 {
     [SerializeField] private DialogueData playerPrefab;
-    [SerializeField] private string playerName;
+    private string playerName;
     [SerializeField] private string titleScreenCena;
     [SerializeField] private string maquinasCena;
     [SerializeField] private string salaControleMeioCena;
     [SerializeField] private string salaControleDireitaCena;
     [SerializeField] private string hidreletricaCena;
     [SerializeField] private string lab1Cena;
+    [SerializeField] private string lab2Cena;
     [SerializeField] private string areaGovernamentalFrenteCena;
+    [SerializeField] private string floresta3Cena;
+    [SerializeField] private string savanaCena;
+    [SerializeField] private string rioCena;
+    [SerializeField] private string exaustoresCena;
+    [SerializeField] private string centro2Cena;
 
     public override void Start()
     {
@@ -51,6 +57,9 @@ public class DTNarrador : DialogueTrigger
                 
             else if (gameObject.scene.name == hidreletricaCena)
                 DTplayer.StartDialogue(154, 154);
+
+            else if (gameObject.scene.name == floresta3Cena)
+                DTplayer.StartDialogue(278, 278);
         }
         else if (estado.save.turno == 2)
         {
@@ -63,6 +72,11 @@ public class DTNarrador : DialogueTrigger
                 && estado.save.fimIntroducaoTurno3 == true 
                 && estado.save.puzzleExaustores3Resolvido == false)
                 DTplayer.StartDialogue(125, 125);
+
+            else if(gameObject.scene.name == hidreletricaCena)
+                DTplayer.StartDialogue(279, 279);
+            else if (gameObject.scene.name == floresta3Cena)
+                DTplayer.StartDialogue(280, 280);
         }
         else if (estado.save.turno == 4)
         {
@@ -81,11 +95,25 @@ public class DTNarrador : DialogueTrigger
                 DTplayer.StartDialogue(141, 142);
                 estado.save.puzzleTurno4Concluido = true;
             }
-                
+
+            else if (gameObject.scene.name == savanaCena)
+                DTplayer.StartDialogue(281, 281);
+
         }
         else if (estado.save.turno == 5)
         {
-
+            if (gameObject.scene.name == salaControleMeioCena)
+                DTplayer.StartDialogue(282, 282);
+            else if (gameObject.scene.name == maquinasCena)
+                DTplayer.StartDialogue(283, 283);
+            else if (gameObject.scene.name == hidreletricaCena)
+                DTplayer.StartDialogue(284, 284);
+            else if (gameObject.scene.name == rioCena)
+                DTplayer.StartDialogue(285, 285);
+            else if (gameObject.scene.name == exaustoresCena)
+                DTplayer.StartDialogue(286, 286);
+            else if (gameObject.scene.name == savanaCena)
+                DTplayer.StartDialogue(287, 287);
         }
         else if (estado.save.turno == 6)
         {
@@ -104,6 +132,13 @@ public class DTNarrador : DialogueTrigger
 
             if (gameObject.scene.name == areaGovernamentalFrenteCena)
                 DTplayer.StartDialogue(277, 277);
+
+            else if (gameObject.scene.name == maquinasCena)
+                DTplayer.StartDialogue(288, 288);
+            else if (gameObject.scene.name == hidreletricaCena)
+                DTplayer.StartDialogue(289, 289);
+            else if (gameObject.scene.name == floresta3Cena)
+                DTplayer.StartDialogue(290, 290);
         }
         else if (estado.save.turno == 7)
         {
@@ -120,6 +155,17 @@ public class DTNarrador : DialogueTrigger
                 else if (estado.save.averigouProvas7 == true)
                     FindObjectOfType<SegurancasCollider>().gameObject.SetActive(false);
             }
+
+            else if(gameObject.scene.name == centro2Cena)
+            {
+                if(estado.save.mostrouProvasGovernador7 == false)
+                    DTplayer.StartDialogue(291, 291);
+                else
+                    DTplayer.StartDialogue(292, 292);
+            }
+
+            else if (gameObject.scene.name == rioCena)
+                DTplayer.StartDialogue(293, 293);
         }
 
         else if (estado.save.turno == 8)
@@ -137,10 +183,25 @@ public class DTNarrador : DialogueTrigger
                 DTplayer.StartDialogue(205, 205);
                 
             }
+
+            else if (gameObject.scene.name == floresta3Cena)
+                DTplayer.StartDialogue(294, 294);
         }
 
+        else if (estado.save.turno == 10)
+        {
+            if (gameObject.scene.name == salaControleMeioCena)
+                DTplayer.StartDialogue(295, 295);
+            else if (gameObject.scene.name == lab2Cena)
+                DTplayer.StartDialogue(296, 296);
+            else if (gameObject.scene.name == maquinasCena)
+                DTplayer.StartDialogue(297, 297);
+            else if (gameObject.scene.name == rioCena)
+                DTplayer.StartDialogue(298, 298);
+            else if (gameObject.scene.name == savanaCena)
+                DTplayer.StartDialogue(299, 299);
+        }
 
-        
     }
     public override void EndOfDialogue(int lastSentence, string NPCname)
     {
