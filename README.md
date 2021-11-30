@@ -1,2 +1,2 @@
 # Projeto-Inter-Serious-Games
-Destinado ao Inetr
+Destinado ao Inter do 4 semestre do Curso Deisgn de Games.
